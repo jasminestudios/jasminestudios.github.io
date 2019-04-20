@@ -13,8 +13,8 @@ The latest version of Swift Browser is available in AppStore
 
 ## Key Bindings
 #### In-page navigation
-Key | Command
---- | ---
+| Key          | Command           |
+|:-------------|:------------------|
 <kbd>k</kbd> | Scroll up
 <kbd>j</kbd> | Scroll down
 <kbd>h</kbd> | Scroll left
@@ -28,21 +28,21 @@ Key | Command
 <kbd>esc</kbd> or <kbd>command</kbd> + <kbd>`</kbd> | Back to View mode
 
 #### Tab navigation
-Key | Command
---- | ---
-<kbd>command</kbd> + <kbd>j</kbd> | Move to previous tab
-<kbd>command</kbd> + <kbd>k</kbd> | Move to next tab
-<kbd>command</kbd> + <kbd>t</kbd> | New tab
-<kbd>command</kbd> + <kbd>w</kbd> | Close tab
-<kbd>command</kbd> + <kbd>r</kbd> | Reload
-<kbd>command</kbd> + <kbd>b</kbd> | Show tabs
-<kbd>command</kbd> + <kbd>y</kbd> | Show history
-<kbd>command</kbd> + <kbd>z</kbd> | Undo close tab
-<kbd>command</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | Open tab 1...9
-<kbd>option</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | Open bookmark 1...9
+| Key          | Command           |
+|:-------------|:------------------|
+| <kbd>command</kbd> + <kbd>j</kbd> | Move to previous tab |
+| <kbd>command</kbd> + <kbd>k</kbd> | Move to next tab |
+| <kbd>command</kbd> + <kbd>t</kbd> | New tab |
+| <kbd>command</kbd> + <kbd>w</kbd> | Close tab |
+| <kbd>command</kbd> + <kbd>r</kbd> | Reload |
+| <kbd>command</kbd> + <kbd>b</kbd> | Show tabs |
+| <kbd>command</kbd> + <kbd>y</kbd> | Show history |
+| <kbd>command</kbd> + <kbd>z</kbd> | Undo close tab |
+| <kbd>command</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | Open tab 1...9 |
+| <kbd>option</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | Open bookmark 1...9 |
 
 #### Address bar
-| Key        | Command          |
+| Key          | Command           |
 |:-------------|:------------------|
 | <kbd>command</kbd> + <kbd>l</kbd> | Open address |
 | <kbd>:</kbd> | Open command |
