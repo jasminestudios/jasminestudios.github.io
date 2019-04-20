@@ -42,11 +42,12 @@ Key | Command
 <kbd>option</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | Open bookmark 1...9
 
 #### Address bar
-Key | Command
---- | ---
-<kbd>command</kbd> + <kbd>l</kbd> | Open address
-<kbd>:</kbd> | Open command
-<kbd>/</kbd> or <kbd>command</kbd> + <kbd>f</kbd> | Search in page
+| Key        | Command          |
+|:-------------|:------------------|
+
+| <kbd>command</kbd> + <kbd>l</kbd> | Open address |
+| <kbd>:</kbd> | Open command |
+| <kbd>/</kbd> or <kbd>command</kbd> + <kbd>f</kbd> | Search in page |
 
 ## Commands
   ![Screen Shot](Resources/swift-browser-screen-02.jpg)
