@@ -11,13 +11,6 @@
 ## Downloads
 The latest version of Swift Browser is available in AppStore
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
 ## Key Bindings
 #### In-page navigation
 Key | Command
@@ -51,7 +44,6 @@ Key | Command
 #### Address bar
 | Key        | Command          |
 |:-------------|:------------------|
-
 | <kbd>command</kbd> + <kbd>l</kbd> | Open address |
 | <kbd>:</kbd> | Open command |
 | <kbd>/</kbd> or <kbd>command</kbd> + <kbd>f</kbd> | Search in page |
