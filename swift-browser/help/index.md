@@ -1,5 +1,3 @@
-# Swift Browser Help
-
 - [Getting Started](#getting-started)
 - [Downloads](#downloads)
 - [Key Bindings](#key-bindings)
