@@ -22,9 +22,9 @@ The latest version of Swift Browser is available in AppStore
 | <kbd>t</kbd> | Go to top of page|
 | <kbd>b</kbd> | Go to bottom of page|
 | <kbd>y</kbd> | Zoom in|
-| <kbd>tab</kbd> <br/><kbd>n</kbd> | Toggle links / Move to next link or search result|
-| <kbd>shift</kbd> + <kbd>tab</kbd> or <kbd>shift</kbd> + <kbd>n</kbd> | Toggle links / Move to previous link or search result|
-| <kbd>esc</kbd> or <kbd>command</kbd> + <kbd>`</kbd> or <kbd>§</kbd> | Back to View mode|
+| <kbd>tab</kbd><br/>or <kbd>n</kbd> | Toggle links / Move to next link or search result|
+| <kbd>shift</kbd> + <kbd>tab</kbd><br/>or <kbd>shift</kbd> + <kbd>n</kbd> | Toggle links / Move to previous link or search result|
+| <kbd>esc</kbd><br/>or <kbd>command</kbd> + <kbd>`</kbd><br/>or <kbd>§</kbd> | Back to View mode|
 
 
 #### Tab navigation
@@ -48,7 +48,7 @@ The latest version of Swift Browser is available in AppStore
 |:---------------------|:--------------------------|
 | <kbd>command</kbd> + <kbd>l</kbd> | Open address |
 | <kbd>:</kbd> | Open command |
-| <kbd>/</kbd> or <kbd>command</kbd> + <kbd>f</kbd> | Search in page |
+| <kbd>/</kbd><br/>or <kbd>command</kbd> + <kbd>f</kbd> | Search in page |
 
 ## Commands
   ![Screen Shot](/Resources/swift-browser-screen-02.jpg)
