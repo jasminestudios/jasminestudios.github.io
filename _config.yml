@@ -1,5 +1,5 @@
 theme: jekyll-theme-primer
-title: Jasmine Studios
+title: Swift Browser
 plugins:
   - jekyll-relative-links
 relative_links:
