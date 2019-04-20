@@ -1,4 +1,6 @@
 theme: jekyll-theme-primer
+title: Swift Browser
+description: Swift Browser
 plugins:
   - jekyll-relative-links
 relative_links:
