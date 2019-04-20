@@ -14,7 +14,7 @@ The latest version of Swift Browser is available in AppStore
 ## Key Bindings
 #### In-page navigation
 | Key          | Command               |
-|:-------------|:----------------------|
+|-------------|----------------------|
 | <kbd>k</kbd> | Scroll up             |
 | <kbd>j</kbd> | Scroll down           |
 | <kbd>h</kbd> | Scroll left           |
