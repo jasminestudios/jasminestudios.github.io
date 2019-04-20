@@ -54,6 +54,7 @@ The latest version of Swift Browser is available in AppStore
   ![Screen Shot](/Resources/swift-browser-screen-02.jpg)
 
 #### ping
+_ping_ sends ICMP ECHO_REQUEST packets to network hosts. _ping_ allows a user to verify that a particular IP address exists and can accept requests
 ##### usage
 ```
 ping target_name | target_address
