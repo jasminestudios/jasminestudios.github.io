@@ -10,7 +10,7 @@
 The latest version of Swift Browser is available in AppStore
 
 ## Key Bindings
-#### In-page navigation
+### In-page navigation
 
 | Key          |Command|
 |:-------------|:----------------------|
@@ -27,7 +27,7 @@ The latest version of Swift Browser is available in AppStore
 | <kbd>esc</kbd> or<br/><kbd>command</kbd> + <kbd>`</kbd> or <kbd>§</kbd> | Back to View mode|
 
 
-#### Tab navigation
+### Tab navigation
 
 | Key          | Command           |
 |:-------------|:------------------|
@@ -42,7 +42,7 @@ The latest version of Swift Browser is available in AppStore
 | <kbd>command</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | Open tab 1...9 |
 | <kbd>option</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | Open bookmark 1...9 |
 
-#### Address bar
+### Address bar
 
 | Key          | Command           |
 |:---------------------|:--------------------------|
@@ -53,14 +53,14 @@ The latest version of Swift Browser is available in AppStore
 ## Commands
   ![Screen Shot](/Resources/swift-browser-screen-02.jpg)
 
-#### ping
+### ping
 **ping** sends ICMP ECHO_REQUEST packets to network hosts. **ping** allows a user to verify that a particular IP address exists and can accept requests
-##### usage
+#### usage
 ```
 ping target_name | target_address
 ```
 
-##### example
+#### example
 ```
 [20/4/2019, 5:55 PM] $ :ping www.google.com
 PING www.google.com (216.58.220.196): 56 data bytes
