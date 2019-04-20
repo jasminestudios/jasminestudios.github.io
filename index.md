@@ -11,6 +11,9 @@
 ## Downloads
 The latest version of Swift Browser is available in AppStore
 
+## Key Bindings
+#### In-page navigation
+
 | Key          |Command|
 |:-------------|:----------------------|
 | <kbd>k</kbd> | Scroll up|
@@ -25,15 +28,9 @@ The latest version of Swift Browser is available in AppStore
 | <kbd>shift</kbd> + <kbd>tab</kbd> or <kbd>shift</kbd> + <kbd>n</kbd> | Toggle links / Move to previous link|
 | <kbd>esc</kbd> or <kbd>command</kbd> + <kbd>`</kbd> | Back to View mode|
 
-## Key Bindings
-#### In-page navigation
-
-
-
-
-
 
 #### Tab navigation
+
 | Key          | Command           |
 |:-------------|:------------------|
 | <kbd>command</kbd> + <kbd>j</kbd> | Move to previous tab |
@@ -48,6 +45,7 @@ The latest version of Swift Browser is available in AppStore
 | <kbd>option</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | Open bookmark 1...9 |
 
 #### Address bar
+
 | Key          | Command           |
 |:---------------------|:--------------------------|
 | <kbd>command</kbd> + <kbd>l</kbd> | Open address |
