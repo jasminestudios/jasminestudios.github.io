@@ -13,16 +13,16 @@ The latest version of Swift Browser is available in AppStore
 
 ## Key Bindings
 #### In-page navigation
-| Key          | Command               |
-|-------------|----------------------|
-| <kbd>k</kbd> | Scroll up             |
-| <kbd>j</kbd> | Scroll down           |
-| <kbd>h</kbd> | Scroll left           |
-| <kbd>u</kbd> | Scroll right          |
-| <kbd>d</kbd> | Scroll up half page   |
-| <kbd>t</kbd> | Go to top of page     |
-| <kbd>b</kbd> | Go to bottom of page  |
-| <kbd>y</kbd> | Zoom in               |
+| Key          |Command|
+|:-------------|:----------------------|
+| <kbd>k</kbd> | Scroll up|
+| <kbd>j</kbd> | Scroll down|
+| <kbd>h</kbd> | Scroll left|
+| <kbd>u</kbd> | Scroll right|
+| <kbd>d</kbd> | Scroll up half page|
+| <kbd>t</kbd> | Go to top of page|
+| <kbd>b</kbd> | Go to bottom of page|
+| <kbd>y</kbd> | Zoom in|
 
 
 | <kbd>tab</kbd> or <kbd>n</kbd> | Toggle links / Move to next link |
