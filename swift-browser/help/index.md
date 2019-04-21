@@ -80,3 +80,21 @@ PING www.google.com (216.58.220.196): 56 data bytes
 --- www.google.com ping statistics ---
 5 packets transmitted, 5 packets received, 0.0% packet loss
 ```
+
+
+### ifconfig
+**ifconfig** 
+
+#### usage
+```
+ifconfig
+```
+
+#### example
+```
+[20/4/2019, 5:55 PM] $ :ifconfig
+lo0: inet 127.0.0.1
+lo0: inet6 ::1
+lo0: inet6 fe80::1%lo0
+
+```
