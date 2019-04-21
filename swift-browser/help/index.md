@@ -24,6 +24,9 @@ The latest version of Swift Browser is available in AppStore
 | <kbd>b</kbd> or<br/><kbd>command</kbd> + <kbd>&darr;</kbd>  | Go to bottom of page|
 | <kbd>y</kbd> | Zoom in|
 | <kbd>shift</kbd> + <kbd>y</kbd> | Zoom out to default (100%)|
+| <kbd>command</kbd> + <kbd>+</kbd> | Increase text size |
+| <kbd>command</kbd> + <kbd>-</kbd> | Decrease text size |
+| <kbd>command</kbd> + <kbd>0</kbd> | To default text size (100%) |
 | <kbd>tab</kbd> or<br/><kbd>n</kbd> | Toggle links / Move to next link or search result|
 | <kbd>shift</kbd> + <kbd>tab</kbd> or<br/><kbd>shift</kbd> + <kbd>n</kbd> | Toggle links / Move to previous link or search result|
 | <kbd>esc</kbd> or<br/><kbd>command</kbd> + <kbd>`</kbd> or<br/><kbd>§</kbd> (U.K layout) | Back to View mode|
