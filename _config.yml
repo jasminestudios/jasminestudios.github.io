@@ -14,3 +14,6 @@ include:
   - CONTRIBUTING.md
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
+  
+# Google Analytics
+google_analytics: UA-138756895-1
