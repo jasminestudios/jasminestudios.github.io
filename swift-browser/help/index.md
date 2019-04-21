@@ -14,14 +14,14 @@ The latest version of Swift Browser is available in AppStore
 
 | Key          |Command|
 |:-------------|:----------------------|
-| <kbd>k</kbd> or<br/><kbd>Arrow Up</kbd>| Scroll up|
-| <kbd>j</kbd> | Scroll down|
-| <kbd>h</kbd> | Scroll left|
-| <kbd>l</kbd> | Scroll right|
-| <kbd>u</kbd> | Scroll up half page|
-| <kbd>d</kbd> | Scroll down half page|
-| <kbd>t</kbd> | Go to top of page|
-| <kbd>b</kbd> | Go to bottom of page|
+| <kbd>k</kbd> or<br/><kbd>&uarr;</kbd>| Scroll up|
+| <kbd>j</kbd> or<br/><kbd>&darr;</kbd>| Scroll down|
+| <kbd>h</kbd> or<br/><kbd>&larr;</kbd>| Scroll left|
+| <kbd>l</kbd> or<br/><kbd>&rarr;</kbd>| Scroll right|
+| <kbd>u</kbd> or<br/><kbd>option</kbd> + <kbd>&uarr;</kbd> | Scroll up half page|
+| <kbd>d</kbd> or<br/><kbd>option</kbd> + <kbd>&darr;</kbd> | Scroll down half page|
+| <kbd>t</kbd> or<br/><kbd>command</kbd> + <kbd>&uarr;</kbd>  | Go to top of page|
+| <kbd>b</kbd> or<br/><kbd>command</kbd> + <kbd>&darr;</kbd>  | Go to bottom of page|
 | <kbd>y</kbd> | Zoom in|
 | <kbd>tab</kbd> or<br/><kbd>n</kbd> | Toggle links / Move to next link or search result|
 | <kbd>shift</kbd> + <kbd>tab</kbd> or<br/><kbd>shift</kbd> + <kbd>n</kbd> | Toggle links / Move to previous link or search result|
