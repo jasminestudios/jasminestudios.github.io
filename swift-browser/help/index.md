@@ -14,7 +14,7 @@ The latest version of Swift Browser is available in AppStore
 
 | Key          |Command|
 |:-------------|:----------------------|
-| <kbd>k</kbd> | Scroll up|
+| <kbd>k</kbd> or<br/><kbd>up</kbd>| Scroll up|
 | <kbd>j</kbd> | Scroll down|
 | <kbd>h</kbd> | Scroll left|
 | <kbd>l</kbd> | Scroll right|
