@@ -14,10 +14,10 @@ The latest version of Swift Browser is available in AppStore
 
 | Key          |Command|
 |:-------------|:----------------------|
-| <kbd>k</kbd> or<br/><kbd>&uarr;</kbd>| Scroll up|
-| <kbd>j</kbd> or<br/><kbd>&darr;</kbd>| Scroll down|
-| <kbd>h</kbd> or<br/><kbd>&larr;</kbd>| Scroll left|
-| <kbd>l</kbd> or<br/><kbd>&rarr;</kbd>| Scroll right|
+| <kbd>k</kbd> or <kbd>&uarr;</kbd>| Scroll up|
+| <kbd>j</kbd> or <kbd>&darr;</kbd>| Scroll down|
+| <kbd>h</kbd> or <kbd>&larr;</kbd>| Scroll left|
+| <kbd>l</kbd> or <kbd>&rarr;</kbd>| Scroll right|
 | <kbd>u</kbd> or<br/><kbd>option</kbd> + <kbd>&uarr;</kbd> | Scroll up half page|
 | <kbd>d</kbd> or<br/><kbd>option</kbd> + <kbd>&darr;</kbd> | Scroll down half page|
 | <kbd>t</kbd> or<br/><kbd>command</kbd> + <kbd>&uarr;</kbd>  | Go to top of page|
