@@ -63,12 +63,12 @@ The latest version of Swift Browser is available in AppStore
 
 ## ping
 **ping** sends ICMP packets to network hosts. **ping** allows a user to verify that a particular IP address exists and can accept requests
-### usage:
+#### usage:
 ```
 ping target_name | target_address
 ```
 
-### example:
+#### example:
 ```
 [20/4/2019, 5:55 PM] $ :ping www.google.com
 PING www.google.com (216.58.220.196): 56 data bytes
@@ -85,12 +85,12 @@ PING www.google.com (216.58.220.196): 56 data bytes
 ## ifconfig
 **ifconfig** shows the network configuration 
 
-### usage:
+#### usage:
 ```
 ifconfig
 ```
 
-### example:
+#### example:
 ```
 [20/4/2019, 5:55 PM] $ :ifconfig
 lo0: inet 127.0.0.1
