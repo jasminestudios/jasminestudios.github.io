@@ -83,7 +83,7 @@ PING www.google.com (216.58.220.196): 56 data bytes
 
 
 ### ifconfig
-**ifconfig** 
+**ifconfig** shows the network configuration 
 
 #### usage
 ```
@@ -96,5 +96,5 @@ ifconfig
 lo0: inet 127.0.0.1
 lo0: inet6 ::1
 lo0: inet6 fe80::1%lo0
-
+en0: 192.168.1.2
 ```
