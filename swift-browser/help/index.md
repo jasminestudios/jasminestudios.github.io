@@ -23,6 +23,7 @@ The latest version of Swift Browser is available in AppStore
 | <kbd>t</kbd> or<br/><kbd>command</kbd> + <kbd>&uarr;</kbd>  | Go to top of page|
 | <kbd>b</kbd> or<br/><kbd>command</kbd> + <kbd>&darr;</kbd>  | Go to bottom of page|
 | <kbd>y</kbd> | Zoom in|
+| <kbd>shift</kbd> + <kbd>y</kbd> | Zoom out to default|
 | <kbd>tab</kbd> or<br/><kbd>n</kbd> | Toggle links / Move to next link or search result|
 | <kbd>shift</kbd> + <kbd>tab</kbd> or<br/><kbd>shift</kbd> + <kbd>n</kbd> | Toggle links / Move to previous link or search result|
 | <kbd>esc</kbd> or<br/><kbd>command</kbd> + <kbd>`</kbd> or <kbd>§</kbd> | Back to View mode|
