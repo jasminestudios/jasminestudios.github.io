@@ -17,8 +17,9 @@ The latest version of Swift Browser is available in AppStore
 | <kbd>k</kbd> | Scroll up|
 | <kbd>j</kbd> | Scroll down|
 | <kbd>h</kbd> | Scroll left|
-| <kbd>u</kbd> | Scroll right|
-| <kbd>d</kbd> | Scroll up half page|
+| <kbd>l</kbd> | Scroll right|
+| <kbd>u</kbd> | Scroll up half page|
+| <kbd>d</kbd> | Scroll down half page|
 | <kbd>t</kbd> | Go to top of page|
 | <kbd>b</kbd> | Go to bottom of page|
 | <kbd>y</kbd> | Zoom in|
@@ -31,6 +32,8 @@ The latest version of Swift Browser is available in AppStore
 
 | Key          | Command           |
 |:-------------|:------------------|
+| <kbd>g</kbd> | Go back |
+| <kbd>;</kbd> | Go forward |
 | <kbd>command</kbd> + <kbd>j</kbd> | Move to previous tab |
 | <kbd>command</kbd> + <kbd>k</kbd> | Move to next tab |
 | <kbd>command</kbd> + <kbd>t</kbd> | New tab |
