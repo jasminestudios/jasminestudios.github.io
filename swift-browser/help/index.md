@@ -147,6 +147,8 @@ javascript source
 #### example:
 ```
 [20/4/2019, 5:55 PM] $ :javascript document.URL;
+result: https://www.google.com
 
 [20/4/2019, 5:56 PM] $ :javascript document.body.style.backgroundColor = "#ff0000";
+result: 
 ```
