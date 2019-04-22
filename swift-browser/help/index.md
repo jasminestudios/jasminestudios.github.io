@@ -98,3 +98,21 @@ lo0: inet6 ::1
 lo0: inet6 fe80::1%lo0
 en0: 192.168.1.2
 ```
+
+
+## tab
+**tab** command manages tabs 
+
+#### usage:
+```
+tab list
+tab open __tab_index__
+tab close [__tab_index__ | all]
+```
+
+#### example:
+```
+[20/4/2019, 5:55 PM] $ :tab list
+```
+
+
