@@ -47,6 +47,7 @@ The latest version of Swift Browser is available in AppStore
 | <kbd>command</kbd> + <kbd>y</kbd> | Show history |
 | <kbd>command</kbd> + <kbd>z</kbd> | Undo close tab |
 | <kbd>command</kbd> + <kbd>m</kbd> | Toggle Private / Normal mode |
+| <kbd>command</kbd> + <kbd>i</kbd> | Open Share... |
 | <kbd>command</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | Open tab 1...9 |
 | <kbd>option</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | Open bookmark 1...9 |
 
