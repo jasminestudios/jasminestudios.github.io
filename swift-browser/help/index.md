@@ -17,7 +17,7 @@ Swift Browser is a faster web browser with a VIM-like keyboard access.
 * **Built-in Adblock**: Swift Browser has a built-in Adblock.
 
 # Downloads
-The latest version of Swift Browser is available in AppStore
+The latest version of Swift Browser is available in AppStore:
 
 # Key Bindings
 ## In-page navigation
