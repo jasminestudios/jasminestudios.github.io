@@ -1,4 +1,5 @@
 - [Introduction](#introduction)
+- [In-page navigation](#in-page-navigation)
 - [Downloads](#downloads)
 - [Key Bindings](#key-bindings)
 - [Commands](#commands)
