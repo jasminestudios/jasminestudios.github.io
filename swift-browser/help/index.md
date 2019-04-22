@@ -8,10 +8,10 @@ Swift Browser is a faster web browser with a VIM-like keyboard access.
 
   ![Screen Shot](/Resources/swift-browser-screen-01.jpg)
 
-* **VIM-like full keyboard access**: Swift Browser is designed to browse with the keyboard without touching the iPad. You can navigate a page, type a link, and execute a command with the keyboard
-* **Darkmode**: browse the web with the dark mode
+* **VIM-like full keyboard access**: Swift Browser is designed to browse with the keyboard. You can navigate a page, type a link, and execute a command with the keyboard.
+* **Darkmode**: browse the web with the dark mode.
 * **Command**: type the command and execute javascript, ping, ifconfig, search and more.
-* **Built-in Adblock**: Swift Browser has a built-in Adblock
+* **Built-in Adblock**: Swift Browser has a built-in Adblock.
 
 # Downloads
 The latest version of Swift Browser is available in AppStore
