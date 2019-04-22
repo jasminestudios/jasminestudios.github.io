@@ -141,14 +141,28 @@ google [-image] keyword
 
 #### usage:
 ```
-javascript source
+javascript script
 ```
 
 #### example:
 ```
 [20/4/2019, 5:55 PM] $ :javascript document.URL;
-result: https://www.google.com
+result: https://www.google.com/
 
 [20/4/2019, 5:56 PM] $ :javascript document.body.style.backgroundColor = "#ff0000";
 result: ff0000
+```
+
+## source
+**source** command shows the page source
+
+#### usage:
+```
+source
+```
+
+#### example:
+```
+[20/4/2019, 5:55 PM] $ :source
+
 ```
