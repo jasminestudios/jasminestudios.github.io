@@ -5,6 +5,7 @@
 
 # Introduction
 Swift Browser is a faster web browser with a VIM-like keyboard access.
+
   ![Screen Shot](/Resources/swift-browser-screen-01.jpg)
 
 * **VIM-like full keyboard access**: Swift Browser is designed to browse with the keyboard without touching the iPad. You can navigate a page, type a link, and execute a command with the keyboard
