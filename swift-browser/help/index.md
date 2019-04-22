@@ -119,3 +119,18 @@ tab close [tab_index | all]
 
 [20/4/2019, 5:58 PM] $ :tab close all
 ```
+
+## google
+**google** command searches the keyword with Google
+
+#### usage:
+```
+google [-image] keyword
+```
+
+#### example:
+```
+[20/4/2019, 5:55 PM] $ :google black hole
+
+[20/4/2019, 5:56 PM] $ :google -image black hole
+```
