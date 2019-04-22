@@ -1,7 +1,9 @@
 - [Introduction](#introduction)
-  - [In-page navigation](#in-page-navigation)
 - [Downloads](#downloads)
 - [Key Bindings](#key-bindings)
+  - [In-page navigation](#in-page-navigation)
+  - [Tab navigation](#tab-navigation)
+  - [Address bar](#address-bar)
 - [Commands](#commands)
 
 # Introduction
