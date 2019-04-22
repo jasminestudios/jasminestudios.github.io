@@ -166,3 +166,17 @@ source
 [20/4/2019, 5:55 PM] $ :source
 
 ```
+
+## cookies
+**cookies** command shows the cookies
+
+#### usage:
+```
+cookies
+```
+
+#### example:
+```
+[20/4/2019, 5:55 PM] $ :cookies
+
+```
