@@ -99,20 +99,23 @@ lo0: inet6 fe80::1%lo0
 en0: 192.168.1.2
 ```
 
-
 ## tab
 **tab** command manages tabs 
 
 #### usage:
 ```
 tab list
-tab open __tab_index__
-tab close [__tab_index__ | all]
+tab open tab_index
+tab close [tab_index | all]
 ```
 
 #### example:
 ```
 [20/4/2019, 5:55 PM] $ :tab list
+
+[20/4/2019, 5:56 PM] $ :tab open 1
+
+[20/4/2019, 5:57 PM] $ :tab close 3
+
+[20/4/2019, 5:58 PM] $ :tab close all
 ```
-
-
