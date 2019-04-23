@@ -69,14 +69,20 @@ The latest version of Swift Browser is available in AppStore:
 | <kbd>:</kbd> | Open command |
 | <kbd>/</kbd> or<br/><kbd>command</kbd> + <kbd>f</kbd> | Search in page |
 
+
+# Links
+Swift Browser supports navigating the web pages with the keyboard. When you type <kbd>tab</kbd> or <kbd>n</kbd>, Swift Browser shows the link tags. You can type <kbd>tab</kbd> / <kbd>n</kbd>, or <kbd>shift</kbd> + <kbd>tab</kbd> / <kbd>shift</kbd> + <kbd>n</kbd> to move the focus to the next link or the previous link. And you press enter to open the link. Otherwise, type the tag number to open the link directly.
+
+
 # Commands
+Swift Browser supports command line interface in its address bar. Command starts with <kbd>:</kbd>. When you type <kbd>:</kbd> in the address bar, Swift Browser shows the console. You can type the command and press enter to execute the command.
   ![Screen Shot](/Resources/swift-browser-screen-02.jpg)
 
 ## ping
-**ping** sends ICMP packets to network hosts. **ping** allows a user to verify that a particular IP address exists and can accept requests
+**ping** sends ICMP packets to network hosts. **ping** allows a user to verify that a particular IP address exists and can accept requests.
 #### usage:
 ```
-ping target_name | target_address
+ping target_domain | target_ip
 ```
 
 #### example:
@@ -94,7 +100,7 @@ PING www.google.com (216.58.220.196): 56 data bytes
 
 
 ## ifconfig
-**ifconfig** shows the network configuration 
+**ifconfig** shows the network configuration.
 
 #### usage:
 ```
@@ -111,13 +117,13 @@ en0: 192.168.1.2
 ```
 
 ## tab
-**tab** command manages tabs 
+**tab** command shows, opens, and closes tabs. 
 
 #### usage:
 ```
 tab list
 tab open tab_index
-tab close [tab_index | all]
+tab close tab_index | all
 ```
 
 #### example:
@@ -132,7 +138,7 @@ tab close [tab_index | all]
 ```
 
 ## google
-**google** command searches the keyword with Google
+**google** command searches the keyword with Google.
 
 #### usage:
 ```
@@ -147,7 +153,7 @@ google [-image] keyword
 ```
 
 ## javascript
-**javascript** command executes javascript
+**javascript** command executes javascript.
 
 #### usage:
 ```
@@ -164,7 +170,7 @@ result: ff0000
 ```
 
 ## source
-**source** command shows the page source
+**source** command shows the page source.
 
 #### usage:
 ```
@@ -178,7 +184,7 @@ source
 ```
 
 ## cookies
-**cookies** command shows the cookies
+**cookies** command shows the cookies.
 
 #### usage:
 ```
@@ -190,3 +196,26 @@ cookies
 [20/4/2019, 5:55 PM] $ :cookies
 
 ```
+
+## settings
+**set** command writes settings and **get** command reads settings.
+
+#### usage:
+```
+set key=value
+get key
+
+set toolbar=always | autohide
+set darkmode=true | false
+set desktopmode=true | false
+set adblock=true | false
+```
+
+#### example:
+```
+[20/4/2019, 5:55 PM] $ :set toolbar=alawys
+
+[20/4/2019, 5:56 PM] $ :get toolbar
+toolbar=alawys
+```
+
