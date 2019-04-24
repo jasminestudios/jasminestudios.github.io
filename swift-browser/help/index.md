@@ -73,8 +73,7 @@ The latest version of Swift Browser is available in AppStore:
 # Links
 Swift Browser supports navigating the web pages with the keyboard. When you type <kbd>tab</kbd> or <kbd>n</kbd>, Swift Browser shows the link tags. You can type <kbd>tab</kbd> / <kbd>n</kbd>, or <kbd>shift</kbd> + <kbd>tab</kbd> / <kbd>shift</kbd> + <kbd>n</kbd> to move the focus to the next link or the previous link. And you press enter to open the link. Otherwise, type the tag number to open the link directly.
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=v_z9phEmKP8
-" target="_blank"><img src="http://img.youtube.com/vi/v_z9phEmKP8/0.jpg" width="240" height="180" border="10" /></a>
+  ![Screen Shot](/Resources/links.gif)
 
 # Commands
 Swift Browser supports command line interface in its address bar. Command starts with <kbd>:</kbd>. When you type <kbd>:</kbd> in the address bar, Swift Browser shows the console. You can type the command and press enter to execute the command.
