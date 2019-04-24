@@ -77,7 +77,7 @@ Swift Browser supports navigating the web pages with the keyboard. When you type
 
 # Commands
 Swift Browser supports command line interface in its address bar. Command starts with <kbd>:</kbd>. When you type <kbd>:</kbd> in the address bar, Swift Browser shows the console. You can type the command and press enter to execute the command.
-  ![Screen Shot](/Resources/command.gif)
+  ![Screen Shot](/Resources/commands.gif)
 
 ## ping
 **ping** sends ICMP packets to network hosts. **ping** allows a user to verify that a particular IP address exists and can accept requests.
