@@ -9,7 +9,7 @@
 # Introduction
 Swift Browser is a faster web browser with a VIM-like keyboard access.
 
-  ![Screen Shot](/Resources/swift-browser-screen-01.jpg)
+  ![Screen Shot](/Resources/swift-browser-screen-03.jpg)
 
 * **VIM-like full keyboard access**: Swift Browser is designed to browse with the keyboard. You can navigate a page, type a link, and execute a command with the keyboard.
 * **Darkmode**: Browse the web with the dark mode CSS.
