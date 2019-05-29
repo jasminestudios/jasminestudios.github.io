@@ -1,3 +1,5 @@
+[<img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://itunes.apple.com/app/id1457482155)
+
 - [Introduction](#introduction)
 - [Downloads](#downloads)
 - [Key Bindings](#key-bindings)
