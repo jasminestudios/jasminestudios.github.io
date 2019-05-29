@@ -18,6 +18,8 @@ Swift Browser is a faster web browser with a VIM-like keyboard access.
 
 # Downloads
 The latest version of Swift Browser is available in AppStore:
+  ![Screen Shot](/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg)
+
 
 # Key Bindings
 ## In-page navigation
