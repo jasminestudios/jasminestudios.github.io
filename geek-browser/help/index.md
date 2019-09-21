@@ -9,17 +9,17 @@
 - [Commands](#commands)
 
 # Introduction
-Swift Browser is a faster web browser with a VIM-like keyboard access.
+Geek Browser is a faster web browser with a VIM-like keyboard access.
 
   ![Screen Shot](/Resources/swift-browser-screen-03.jpg)
 
-* **VIM-like full keyboard access**: Swift Browser is designed to browse with the keyboard. You can navigate a page, type a link, and execute a command with the keyboard.
+* **VIM-like full keyboard access**: Geek Browser is designed to browse with the keyboard. You can navigate a page, type a link, and execute a command with the keyboard.
 * **Darkmode**: Browse the web with the dark mode CSS.
 * **Command**: Type the command and execute javascript, ping, ifconfig, search and more.
-* **Built-in Adblock**: Swift Browser has a built-in Adblock.
+* **Built-in Adblock**: Geek Browser has a built-in Adblock.
 
 # Downloads
-The latest version of Swift Browser is available in AppStore:
+The latest version of Geek Browser is available in AppStore:
 
 [<img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://itunes.apple.com/app/id1457482155)
 
@@ -75,12 +75,12 @@ The latest version of Swift Browser is available in AppStore:
 
 
 # Links
-Swift Browser supports navigating the web pages with the keyboard. When you type <kbd>tab</kbd> or <kbd>n</kbd>, Swift Browser shows the link tags. You can type <kbd>tab</kbd> / <kbd>n</kbd>, or <kbd>shift</kbd> + <kbd>tab</kbd> / <kbd>shift</kbd> + <kbd>n</kbd> to move the focus to the next link or the previous link. And you press enter to open the link. Otherwise, type the tag number to open the link directly.
+Geek Browser supports navigating the web pages with the keyboard. When you type <kbd>tab</kbd> or <kbd>n</kbd>, Geek Browser shows the link tags. You can type <kbd>tab</kbd> / <kbd>n</kbd>, or <kbd>shift</kbd> + <kbd>tab</kbd> / <kbd>shift</kbd> + <kbd>n</kbd> to move the focus to the next link or the previous link. And you press enter to open the link. Otherwise, type the tag number to open the link directly.
 
   ![Screen Shot](/Resources/links.gif)
 
 # Commands
-Swift Browser supports command line interface in its address bar. Command starts with <kbd>:</kbd>. When you type <kbd>:</kbd> in the address bar, Swift Browser shows the console. You can type the command and press enter to execute the command.
+Geek Browser supports command line interface in its address bar. Command starts with <kbd>:</kbd>. When you type <kbd>:</kbd> in the address bar, Geek Browser shows the console. You can type the command and press enter to execute the command.
   ![Screen Shot](/Resources/commands.gif)
 
 ## ping
