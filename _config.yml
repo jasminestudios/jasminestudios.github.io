@@ -1,5 +1,5 @@
 theme: jekyll-theme-primer
-title: Swift Browser
+title: Geek Browser
 plugins:
   - jekyll-relative-links
 relative_links:
