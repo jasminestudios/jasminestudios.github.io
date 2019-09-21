@@ -221,5 +221,5 @@ set adblock=true | false
 [20/4/2019, 5:55 PM] $ :set toolbar=alawys
 
 [20/4/2019, 5:56 PM] $ :get toolbar
-toolbar=alawys
+toolbar=always
 ```
