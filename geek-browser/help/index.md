@@ -32,7 +32,7 @@ The latest version of Geek Browser is available in AppStore:
 | <kbd>j</kbd> or <kbd>&darr;</kbd>| Scroll down|
 | <kbd>h</kbd> or <kbd>&larr;</kbd>| Scroll left|
 | <kbd>l</kbd> or <kbd>&rarr;</kbd>| Scroll right|
-| <kbd>u</kbd> or <kbd>option</kbd> + <kbd>&uarr;</kbd> | Scroll up half page|
+| <kbd>control</kbd> + <kbd>u</kbd> or <kbd>option</kbd> + <kbd>&uarr;</kbd> | Scroll up half page|
 | <kbd>d</kbd> or <kbd>option</kbd> + <kbd>&darr;</kbd> | Scroll down half page|
 | <kbd>t</kbd> or <kbd>command</kbd> + <kbd>&uarr;</kbd>  | Go to top of page|
 | <kbd>b</kbd> or <kbd>command</kbd> + <kbd>&darr;</kbd>  | Go to bottom of page|
