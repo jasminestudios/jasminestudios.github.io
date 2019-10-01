@@ -25,7 +25,7 @@ The latest version of Geek Browser is available in AppStore:
 
 # Key Bindings
 ## Cheatsheet
-  ![Screen Shot](/Resources/keyboard.jpg)
+  ![Screen Shot](/Resources/keyboard.jpg) 
 
 ## In-page navigation
 
