@@ -65,6 +65,7 @@ The latest version of Geek Browser is available in AppStore:
 | <kbd>command</kbd> + <kbd>+</kbd> | Increase text size |
 | <kbd>command</kbd> + <kbd>-</kbd> | Decrease text size |
 | <kbd>command</kbd> + <kbd>0</kbd> | To default text size (100%) |
+| <kbd>command</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | Open tab 1...9 |
 | <kbd>/</kbd> or <br/><kbd>command</kbd> + <kbd>f</kbd> | Search in page |
 
 
