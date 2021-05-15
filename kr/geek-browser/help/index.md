@@ -226,3 +226,4 @@ toolbar=always
 ```
 
 ---
+[English](/geek-browser/help)
