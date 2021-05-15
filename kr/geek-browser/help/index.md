@@ -1,4 +1,4 @@
-<div style="text-align: right"> English | 한국어 </div>
+[<div style="text-align: right"> English | 한국어 </div>]
 
 - [소개](#소개)
 - [다운로드](#다운로드)
