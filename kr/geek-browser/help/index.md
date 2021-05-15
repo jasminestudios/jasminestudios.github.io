@@ -1,5 +1,3 @@
-[<div style="text-align: right"> English | 한국어 </div>]
-
 - [소개](#소개)
 - [다운로드](#다운로드)
 - [키보드 단축키](#키보드-단축키)
