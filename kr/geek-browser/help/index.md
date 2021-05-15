@@ -1,25 +1,25 @@
-- [소개](#introduction)
-- [다운로드](#downloads)
-- [키보드 바인딩](#key-bindings)
-- [명령어](#commands)
+- [소개](#소개)
+- [다운로드](#다운로드)
+- [키보드 단축키](#키보드-단축키)
+- [명령어](#명령어)
 
-# Introduction
-Geek Browser is a faster web browser for iPad with a VIM-like keyboard access and command line interface.
+# 소개
+Geek Browser는 VIM 단축키와 명령어를 지원하는 키보드 중심의 아이패드용 웹브라우저입니다.
 
   ![Screen Shot](/Resources/GeekBrowser01.jpg)
 
-* **VIM-like full keyboard access**: Geek Browser is designed to browse with the keyboard. You can navigate a page, type a link, and execute a command with the keyboard.
-* **Darkmode**: Browse the web with the dark mode CSS.
-* **Command**: Type the command and execute javascript, ping, ifconfig, search and more.
-* **Built-in Adblock**: Geek Browser has a built-in Adblock.
-
-# Downloads
-The latest version of Geek Browser is available in AppStore:
+* **VIM 명령어와 단축키 지원**: Geek Browser는 키보드로 웹브라우징을 하도록 디자인되었습니다. 키보드로 웹페이지를 브라우징하고 링크를 열고 명령어를 실행할 수 있습니다.
+* **다크모드**: 웹페이지를 다크모드로 브라우징할 수 있습니다.
+* **명령어**: 명령어를 실행하여 자바스크립트를 실행하거나, ping, ifconfig, 검색 등의 명령을 실행할 수 있습니다.
+* **광고 차단**: Geek Browser는 광고차단 기능을 탑재하고 있습니다.
+* 
+# 다운로드
+Geek Browser는 앱스토어를 통해 다운로드할 수 있습니다.
 
 [<img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://itunes.apple.com/app/id1457482155)
 
-# Key Bindings
-## Cheatsheet (Default)
+# 키보드 단축키
+## 키보드 단축키 목록 (디폴트)
   ![Screen Shot](/Resources/keyboard_default.jpg) 
 
 | Key          |Command|
