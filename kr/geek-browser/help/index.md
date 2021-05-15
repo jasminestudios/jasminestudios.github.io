@@ -226,4 +226,4 @@ toolbar=always
 ```
 
 ---
-[English](/geek-browser/help) | Korean
+<sub>[English](/geek-browser/help) | Korean</sub>
