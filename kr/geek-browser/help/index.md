@@ -1,7 +1,7 @@
-- [Introduction](#introduction)
-- [Downloads](#downloads)
-- [Key Bindings](#key-bindings)
-- [Commands](#commands)
+- [소개](#introduction)
+- [다운로드](#downloads)
+- [키보드 바인딩](#key-bindings)
+- [명령어](#commands)
 
 # Introduction
 Geek Browser is a faster web browser for iPad with a VIM-like keyboard access and command line interface.
