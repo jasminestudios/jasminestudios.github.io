@@ -4,94 +4,94 @@
 - [명령어](#명령어)
 
 # 소개
-Geek Browser는 VIM 단축키와 명령어를 지원하는 키보드 중심의 아이패드용 웹브라우저입니다.
+Geek Browser는 VIM 단축키와 명령어를 지원하는 아이패드용 웹브라우저입니다.
 
   ![Screen Shot](/Resources/GeekBrowser01.jpg)
 
-* **VIM 명령어와 단축키 지원**: Geek Browser는 키보드로 웹브라우징을 하도록 디자인되었습니다. 키보드로 웹페이지를 브라우징하고 링크를 열고 명령어를 실행할 수 있습니다.
+* **VIM 명령어와 단축키 지원**: Geek Browser는 키보드로 웹브라우징을 하도록 설계되었습니다. 키보드로 웹페이지를 브라우징하고 링크를 열고 명령어를 실행할 수 있습니다.
 * **다크모드**: 웹페이지를 다크모드로 브라우징할 수 있습니다.
 * **명령어**: 명령어를 실행하여 자바스크립트를 실행하거나, ping, ifconfig, 검색 등의 명령을 실행할 수 있습니다.
 * **광고 차단**: Geek Browser는 광고차단 기능을 탑재하고 있습니다.
-* 
+
 # 다운로드
 Geek Browser는 앱스토어를 통해 다운로드할 수 있습니다.
 
 [<img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://itunes.apple.com/app/id1457482155)
 
 # 키보드 단축키
-## 키보드 단축키 목록 (디폴트)
+## 키보드 단축키 목록 (기본)
   ![Screen Shot](/Resources/keyboard_default.jpg) 
 
 | Key          |Command|
 |:-------------|:----------------------|
-| <kbd>k</kbd> or <kbd>&uarr;</kbd>| Scroll up|
-| <kbd>j</kbd> or <kbd>&darr;</kbd>| Scroll down|
-| <kbd>h</kbd> or <kbd>&larr;</kbd>| Scroll left|
-| <kbd>l</kbd> or <kbd>&rarr;</kbd>| Scroll right|
-| <kbd>g</kbd> or <kbd>command</kbd> + <kbd>&uarr;</kbd>  | Go to top of page|
-| <kbd>shift</kbd> + <kbd>g</kbd> or <kbd>command</kbd> + <kbd>&darr;</kbd>  | Go to bottom of page|
-| <kbd>y</kbd> | Zoom in|
-| <kbd>shift</kbd> + <kbd>y</kbd> | Zoom out to default (100%)|
-| <kbd>tab</kbd> or <kbd>n</kbd> | Toggle links / Move to next link or search result|
-| <kbd>shift</kbd> + <kbd>tab</kbd> or <kbd>shift</kbd> + <kbd>n</kbd> | Toggle links / Move to previous link or search result|
-| <kbd>esc</kbd> or <kbd>`</kbd> or<br/><kbd>§</kbd> (configurable in Settings) | Back to View mode|
-| <kbd>shift</kbd> + <kbd>h</kbd> | Go back |
-| <kbd>shift</kbd> + <kbd>l</kbd> | Go forward |
-| <kbd>o</kbd> or <kbd>command</kbd> + <kbd>l</kbd> | Open address |
-| <kbd>shift</kbd> + <kbd>;</kbd> | Open command |
-| <kbd>/</kbd> or <br/><kbd>command</kbd> + <kbd>f</kbd> | Search in page |
+| <kbd>k</kbd> or <kbd>&uarr;</kbd>| 위로 스크롤|
+| <kbd>j</kbd> or <kbd>&darr;</kbd>| 아래로 스크롤|
+| <kbd>h</kbd> or <kbd>&larr;</kbd>| 왼쪽으로 스크롤|
+| <kbd>l</kbd> or <kbd>&rarr;</kbd>| 오른쪽으로 스크롤|
+| <kbd>g</kbd> or <kbd>command</kbd> + <kbd>&uarr;</kbd>  | 페이지 상단으로 스크롤|
+| <kbd>shift</kbd> + <kbd>g</kbd> or <kbd>command</kbd> + <kbd>&darr;</kbd>  | 페이지 하단으로 스크롤|
+| <kbd>y</kbd> | 페이지 확대|
+| <kbd>shift</kbd> + <kbd>y</kbd> | 페이지 100%로 보기|
+| <kbd>tab</kbd> or <kbd>n</kbd> | 링크 모드로 변경 / 다음 링크나 검색 결과로 이동|
+| <kbd>shift</kbd> + <kbd>tab</kbd> or <kbd>shift</kbd> + <kbd>n</kbd> | 링크 모드 / 이전 링크나 검색 결과로 이동|
+| <kbd>esc</kbd> or <kbd>`</kbd> or<br/><kbd>§</kbd> (configurable in Settings) | 보기 모드로 변경|
+| <kbd>shift</kbd> + <kbd>h</kbd> | 이전 웹페이지로 이동 |
+| <kbd>shift</kbd> + <kbd>l</kbd> | 다음 웹페이지로 이동 |
+| <kbd>o</kbd> or <kbd>command</kbd> + <kbd>l</kbd> | 검색 창 열기 |
+| <kbd>shift</kbd> + <kbd>;</kbd> | 명령어 창 열기 |
+| <kbd>/</kbd> or <br/><kbd>command</kbd> + <kbd>f</kbd> | 페이지에서 검색 |
 
 
-## Cheatsheet (+Command)
+## 키보드 단축키 목록 (+커맨드 키)
   ![Screen Shot](/Resources/keyboard_command.jpg) 
 
 | Key          | Command           |
 |:-------------|:------------------|
-| <kbd>command</kbd> + <kbd>j</kbd> | Move to previous tab |
-| <kbd>command</kbd> + <kbd>k</kbd> | Move to next tab |
-| <kbd>command</kbd> + <kbd>t</kbd> | New tab |
-| <kbd>command</kbd> + <kbd>w</kbd> | Close tab |
-| <kbd>command</kbd> + <kbd>r</kbd> | Reload |
-| <kbd>command</kbd> + <kbd>b</kbd> | Show tabs |
-| <kbd>command</kbd> + <kbd>y</kbd> | Show history |
-| <kbd>command</kbd> + <kbd>z</kbd> | Undo close tab |
-| <kbd>command</kbd> + <kbd>m</kbd> | Toggle Private / Normal mode |
-| <kbd>command</kbd> + <kbd>i</kbd> | Open Share... |
-| <kbd>command</kbd> + <kbd>+</kbd> | Increase text size |
-| <kbd>command</kbd> + <kbd>-</kbd> | Decrease text size |
-| <kbd>command</kbd> + <kbd>0</kbd> | To default text size (100%) |
-| <kbd>command</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | Open tab 1...9 |
-| <kbd>/</kbd> or <br/><kbd>command</kbd> + <kbd>f</kbd> | Search in page |
+| <kbd>command</kbd> + <kbd>j</kbd> | 이전 탭 열기 |
+| <kbd>command</kbd> + <kbd>k</kbd> | 다음 탭 열기 |
+| <kbd>command</kbd> + <kbd>t</kbd> | 새로운 탭 열기 |
+| <kbd>command</kbd> + <kbd>w</kbd> | 탭 닫기 |
+| <kbd>command</kbd> + <kbd>r</kbd> | 새로 고침 |
+| <kbd>command</kbd> + <kbd>b</kbd> | 탭 보기 |
+| <kbd>command</kbd> + <kbd>y</kbd> | 검색 결과 보기 |
+| <kbd>command</kbd> + <kbd>z</kbd> | 닫은 탭을 다시 열기 |
+| <kbd>command</kbd> + <kbd>m</kbd> | 개인 보호 검색 창 / 일반 창 변경 |
+| <kbd>command</kbd> + <kbd>i</kbd> | 공유 메뉴 열기... |
+| <kbd>command</kbd> + <kbd>+</kbd> | 글자 크게 보기 |
+| <kbd>command</kbd> + <kbd>-</kbd> | 글자 작게 보기 |
+| <kbd>command</kbd> + <kbd>0</kbd> | 글자 기본 크기로 보기 (100%) |
+| <kbd>command</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | 1...9번 탭 열기 |
+| <kbd>/</kbd> or <br/><kbd>command</kbd> + <kbd>f</kbd> | 페이지에서 검색 |
 
 
-## Cheatsheet (+Control)
+## 키보드 단축키 목록 (+컨트롤 키)
   ![Screen Shot](/Resources/keyboard_control.jpg) 
 
 | Key          |Command|
 |:-------------|:----------------------|
-| <kbd>control</kbd> + <kbd>u</kbd> | Scroll up half page|
-| <kbd>control</kbd> + <kbd>d</kbd> | Scroll down half page|
-| <kbd>control</kbd> + <kbd>f</kbd> or <kbd>option</kbd> + <kbd>&uarr;</kbd> | Scroll up a page|
-| <kbd>control</kbd> + <kbd>b</kbd> or <kbd>option</kbd> + <kbd>&darr;</kbd> | Scroll down a page|
-| <kbd>control</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | Open bookmark 1...9 |
+| <kbd>control</kbd> + <kbd>u</kbd> | 반 페이지 위로 스크롤|
+| <kbd>control</kbd> + <kbd>d</kbd> | 반 페이지 아래로 스크롤|
+| <kbd>control</kbd> + <kbd>f</kbd> or <kbd>option</kbd> + <kbd>&uarr;</kbd> | 한 페이지 위로 스크롤|
+| <kbd>control</kbd> + <kbd>b</kbd> or <kbd>option</kbd> + <kbd>&darr;</kbd> | 한 페이지 아래로 스크롤|
+| <kbd>control</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | 1...9번 책갈피 열기 |
 
 # Links
-Geek Browser supports navigating the web pages with the keyboard. When you type <kbd>tab</kbd> or <kbd>n</kbd>, Geek Browser shows the link tags. You can type <kbd>tab</kbd> / <kbd>n</kbd>, or <kbd>shift</kbd> + <kbd>tab</kbd> / <kbd>shift</kbd> + <kbd>n</kbd> to move the focus to the next link or the previous link. And you press enter to open the link. Otherwise, type the tag code or number to open the link directly.
+Geek Browser는 키보드로 웹페이지를 이동하도록 설계되었습니다. 키보드로 <kbd>tab</kbd> 혹은 <kbd>n</kbd>을 누르면, Geek Browser는 링크를 태그로 보여줍니다. <kbd>tab</kbd>혹은 <kbd>n</kbd>를 눌러서 다음 링크로 이동하고, <kbd>shift</kbd> + <kbd>tab</kbd> 혹은 <kbd>shift</kbd> + <kbd>n</kbd>를 눌러서 이전 링크로 이동할 수 있습니다. <kbd>enter</kbd>를 눌러서 선택된 링크를 열거나, 링크의 태그를 입력하여 바로 링크를 열 수 있습니다.
 
   ![Screen Shot](/Resources/links.gif)
 
 # Commands
-Geek Browser supports command line interface in its address bar. Command starts with <kbd>:</kbd>. When you type <kbd>:</kbd> in the address bar, Geek Browser shows the console. You can type the command and press enter to execute the command.
+Geek Browser는 검색창에서 명령어를 실행할 수 있습니다. 명령어는 <kbd>:</kbd>로 시작합니다. 검색창에서 키보드 <kbd>:</kbd>를 누르면 Geek Browser는 명령어 창을 표시합니다. 명령어를 입력한 후 <kbd>enter</kbd>를 눌러 명령어를 실행합니다.
   ![Screen Shot](/Resources/commands.gif)
 
 ## ping
-**ping** sends ICMP packets to network hosts. **ping** allows a user to verify that a particular IP address exists and can accept requests.
-#### usage:
+**ping** 명령은 ICMP 패킷을 네트워크 호스트로 보냅니다. **ping** 명령은 특정 IP주소가 존재하고 요청을 받아들일 수 있는지 확인하도로 도와줍니다.
+#### 사용방법:
 ```
 ping target_domain | target_ip
 ```
 
-#### example:
+#### 예제:
 ```
 [20/4/2019, 5:55 PM] $ :ping www.google.com
 PING www.google.com (216.58.220.196): 56 data bytes
@@ -106,14 +106,14 @@ PING www.google.com (216.58.220.196): 56 data bytes
 
 
 ## ifconfig
-**ifconfig** shows the network configuration.
+**ifconfig** 네트워크 설정을 표시합니다.
 
-#### usage:
+#### 사용방법:
 ```
 ifconfig
 ```
 
-#### example:
+#### 예제:
 ```
 [20/4/2019, 5:55 PM] $ :ifconfig
 lo0: inet 127.0.0.1
