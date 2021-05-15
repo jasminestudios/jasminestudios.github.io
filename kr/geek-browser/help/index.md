@@ -123,16 +123,16 @@ en0: 192.168.1.2
 ```
 
 ## tab
-**tab** command shows, opens, and closes tabs. 
+**tab** 명령은 탭의 목록을 보여주거나, 탭을 열고 닫도록 도와줍니다.
 
-#### usage:
+#### 사용방법:
 ```
 tab list
 tab open tab_index
 tab close tab_index | all
 ```
 
-#### example:
+#### 예제:
 ```
 [20/4/2019, 5:55 PM] $ :tab list
 
@@ -144,7 +144,7 @@ tab close tab_index | all
 ```
 
 ## google
-**google** command searches the keyword with Google.
+**google** 명령은 Google 검색을 실행합니다.
 
 #### usage:
 ```
@@ -159,14 +159,14 @@ google [-image] keyword
 ```
 
 ## javascript
-**javascript** command executes javascript.
+**javascript** 명령은 자바스크립트를 실행합니다.
 
-#### usage:
+#### 사용방법:
 ```
 javascript script
 ```
 
-#### example:
+#### 예제:
 ```
 [20/4/2019, 5:55 PM] $ :javascript document.URL;
 result: https://www.google.com/
@@ -176,37 +176,37 @@ result: ff0000
 ```
 
 ## source
-**source** command shows the page source.
+**source** 명령은 웹페이지의 소스코드를 표시합니다.
 
-#### usage:
+#### 사용방법:
 ```
 source
 ```
 
-#### example:
+#### 예제:
 ```
 [20/4/2019, 5:55 PM] $ :source
 
 ```
 
 ## cookies
-**cookies** command shows the cookies.
+**cookies** 명령은 웹페이지의 쿠키를 표시합니다.
 
-#### usage:
+#### 사용방법:
 ```
 cookies
 ```
 
-#### example:
+#### 예제:
 ```
 [20/4/2019, 5:55 PM] $ :cookies
 
 ```
 
 ## settings
-**set** command writes settings and **get** command reads settings.
+**set** 명령은 설정을 저장하고 **get** 명령은 현재 설정값을 보여줍니다.
 
-#### usage:
+#### 사용방법:
 ```
 set key=value
 get key
@@ -217,7 +217,7 @@ set desktopmode=true | false
 set adblock=true | false
 ```
 
-#### example:
+#### 예제:
 ```
 [20/4/2019, 5:55 PM] $ :set toolbar=alawys
 
