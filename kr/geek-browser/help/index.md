@@ -1,6 +1,7 @@
 - [소개](#소개)
 - [다운로드](#다운로드)
 - [키보드 단축키](#키보드-단축키)
+- [링크](#링크)
 - [명령어](#명령어)
 
 # 소개
@@ -75,7 +76,7 @@ Geek Browser는 앱스토어를 통해 다운로드할 수 있습니다.
 | <kbd>control</kbd> + <kbd>b</kbd> or <kbd>option</kbd> + <kbd>&darr;</kbd> | 한 페이지 아래로 스크롤|
 | <kbd>control</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | 1...9번 책갈피 열기 |
 
-# Links
+# 링크
 Geek Browser는 키보드로 웹페이지를 이동하도록 설계되었습니다. 키보드로 <kbd>tab</kbd> 혹은 <kbd>n</kbd>을 누르면, Geek Browser는 링크를 태그로 보여줍니다. <kbd>tab</kbd>혹은 <kbd>n</kbd>를 눌러서 다음 링크로 이동하고, <kbd>shift</kbd> + <kbd>tab</kbd> 혹은 <kbd>shift</kbd> + <kbd>n</kbd>를 눌러서 이전 링크로 이동할 수 있습니다. <kbd>enter</kbd>를 눌러서 선택된 링크를 열거나, 링크의 태그를 입력하여 바로 링크를 열 수 있습니다.
 
   ![Screen Shot](/Resources/links.gif)
