@@ -80,7 +80,7 @@ Geek Browser는 키보드로 웹페이지를 이동하도록 설계되었습니�
 
   ![Screen Shot](/Resources/links.gif)
 
-# Commands
+# 명령어
 Geek Browser는 검색창에서 명령어를 실행할 수 있습니다. 명령어는 <kbd>:</kbd>로 시작합니다. 검색창에서 키보드 <kbd>:</kbd>를 누르면 Geek Browser는 명령어 창을 표시합니다. 명령어를 입력한 후 <kbd>enter</kbd>를 눌러 명령어를 실행합니다.
   ![Screen Shot](/Resources/commands.gif)
 
