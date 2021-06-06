@@ -1,6 +1,7 @@
 - [Introduction](#introduction)
 - [Downloads](#downloads)
 - [Key Bindings](#key-bindings)
+- [Links](#links)
 - [Commands](#commands)
 
 # Introduction
