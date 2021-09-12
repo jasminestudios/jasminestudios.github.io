@@ -1,4 +1,4 @@
-<h1>Vimlike</h1>
+<h1>Vimlike - Safari extension for VIM-like keyboard experience</h1>
 
 - [Introduction](#introduction)
 - [Downloads](#downloads)
