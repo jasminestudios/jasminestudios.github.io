@@ -1,10 +1,9 @@
-<h1>Vimlike - Safari extension for VIM-like keyboard experience</h1>
+<h1>Vimlike</h1>
 
 - [Introduction](#introduction)
 - [Downloads](#downloads)
 - [Key Bindings](#key-bindings)
 - [Links](#links)
-- [Commands](#commands)
 
 # Introduction
 VIMlike is iOS Safari extension for the VIM-like keyboard experience. 
