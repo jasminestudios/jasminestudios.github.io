@@ -1,5 +1,4 @@
 theme: jekyll-theme-primer
-title: Jasmine Studios
 plugins:
   - jekyll-relative-links
 relative_links:
