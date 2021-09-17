@@ -8,15 +8,12 @@
 # Introduction
 VIMlike is iOS Safari extension for the VIM-like keyboard experience. 
 
-  ![Screen Shot](/Resources/vimlike-screen1.png)
+  ![Screen Shot](/Resources/vimlike-screen3.png)
 
-* **VIM-like full keyboard access**: Geek Browser is designed to browse with the keyboard. You can navigate a page, type a link, and execute a command with the keyboard.
-* **Darkmode**: Browse the web with the dark mode CSS.
-* **Command**: Type the command and execute javascript, ping, ifconfig, search and more.
-* **Built-in Adblock**: Geek Browser has a built-in Adblock.
+* **Vim-like full keyboard access**: Vimlike is Safari extension to browse web with the keyboard. You can navigate a page, type a link, and execute a command with the keyboard.
 
 # Downloads
-The latest version of Geek Browser is available in AppStore:
+The latest version of Vimlike is available in AppStore:
 
 [<img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://itunes.apple.com/app/id1457482155)
 
@@ -78,9 +75,9 @@ The latest version of Geek Browser is available in AppStore:
 | <kbd>control</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | Open bookmark 1...9 |
 
 # Links
-Geek Browser supports navigating the web pages with the keyboard. When you type <kbd>tab</kbd> or <kbd>n</kbd>, Geek Browser shows the link tags. You can type <kbd>tab</kbd> / <kbd>n</kbd>, or <kbd>shift</kbd> + <kbd>tab</kbd> / <kbd>shift</kbd> + <kbd>n</kbd> to move the focus to the next link or the previous link. And you press enter to open the link. Otherwise, type the tag code or number to open the link directly.
+Vimlike supports navigating the web pages with the keyboard. When you type <kbd>tab</kbd> or <kbd>n</kbd>, Vimlike shows the link tags. You can type <kbd>tab</kbd> / <kbd>n</kbd>, or <kbd>shift</kbd> + <kbd>tab</kbd> / <kbd>shift</kbd> + <kbd>n</kbd> to move the focus to the next link or the previous link. And you press enter to open the link. Otherwise, type the tag code or number to open the link directly.
 
-  ![Screen Shot](/Resources/links.gif)
+  ![Screen Shot](/Resources/vimlike-screen1.gif)
 
 ---
 <sub>English | [Korean](/kr/geek-browser/help)</sub>
