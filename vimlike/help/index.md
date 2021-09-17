@@ -4,6 +4,7 @@
 - [Downloads](#downloads)
 - [Key Bindings](#key-bindings)
 - [Links](#links)
+- [Customization](#customization)
 
 # Introduction
 VIMlike is Safari extension for the Vim-like keyboard experience. You can navigate a page and open a link with the keyboard shortcuts.
@@ -59,8 +60,6 @@ The latest version of Vimlike is available in AppStore:
 
 # Links
 Vimlike supports navigating the web pages with the keyboard. When you type <kbd>tab</kbd> or <kbd>n</kbd>, Vimlike shows link tags. You can type <kbd>tab</kbd> / <kbd>n</kbd>, or <kbd>shift</kbd> + <kbd>tab</kbd> / <kbd>shift</kbd> + <kbd>n</kbd> to move the focus to the next link or the previous link. And you press enter to open the link. Otherwise, type the tag code or number to open the link directly.
-
-  ![Screen Shot](/Resources/vimlike-screen1.png)
 
 Shortcut <kbd>/</kbd> opens the console to type the text and find matching links. You can also type <kbd>tab</kbd> / <kbd>n</kbd>, or <kbd>shift</kbd> + <kbd>tab</kbd> / <kbd>shift</kbd> + <kbd>n</kbd> to move the focus to the next matching link or the previous matching link.
 
