@@ -19,7 +19,7 @@ The latest version of Vimlike is available in AppStore:
 
 # Key Bindings
 ## Cheatsheet (Default)
-  ![Screen Shot](/Resources/keyboard_default.jpg) 
+  ![Screen Shot](/Resources/vimlike-keyboard1.jpg) 
 
 | Key          |Command|
 |:-------------|:----------------------|
@@ -41,30 +41,8 @@ The latest version of Vimlike is available in AppStore:
 | <kbd>/</kbd> or <br/><kbd>command</kbd> + <kbd>f</kbd> | Search in page |
 
 
-## Cheatsheet (+Command)
-  ![Screen Shot](/Resources/keyboard_command.jpg) 
-
-| Key          | Command           |
-|:-------------|:------------------|
-| <kbd>command</kbd> + <kbd>j</kbd> | Move to previous tab |
-| <kbd>command</kbd> + <kbd>k</kbd> | Move to next tab |
-| <kbd>command</kbd> + <kbd>t</kbd> | New tab |
-| <kbd>command</kbd> + <kbd>w</kbd> | Close tab |
-| <kbd>command</kbd> + <kbd>r</kbd> | Reload |
-| <kbd>command</kbd> + <kbd>b</kbd> | Show tabs |
-| <kbd>command</kbd> + <kbd>y</kbd> | Show history |
-| <kbd>command</kbd> + <kbd>z</kbd> | Undo close tab |
-| <kbd>command</kbd> + <kbd>m</kbd> | Toggle Private / Normal mode |
-| <kbd>command</kbd> + <kbd>i</kbd> | Open Share... |
-| <kbd>command</kbd> + <kbd>+</kbd> | Increase text size |
-| <kbd>command</kbd> + <kbd>-</kbd> | Decrease text size |
-| <kbd>command</kbd> + <kbd>0</kbd> | To default text size (100%) |
-| <kbd>command</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | Open tab 1...9 |
-| <kbd>/</kbd> or <br/><kbd>command</kbd> + <kbd>f</kbd> | Search in page |
-
-
 ## Cheatsheet (+Control)
-  ![Screen Shot](/Resources/keyboard_control.jpg) 
+  ![Screen Shot](/Resources/vimlike-keyboard2.jpg) 
 
 | Key          |Command|
 |:-------------|:----------------------|
