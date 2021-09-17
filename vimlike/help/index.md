@@ -8,7 +8,7 @@
 # Introduction
 VIMlike is iOS Safari extension for the VIM-like keyboard experience. 
 
-  ![Screen Shot](/Resources/GeekBrowser01.jpg)
+  ![Screen Shot](/Resources/vimlike-screen1.png)
 
 * **VIM-like full keyboard access**: Geek Browser is designed to browse with the keyboard. You can navigate a page, type a link, and execute a command with the keyboard.
 * **Darkmode**: Browse the web with the dark mode CSS.
