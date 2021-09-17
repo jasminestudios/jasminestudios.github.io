@@ -65,3 +65,13 @@ Vimlike supports navigating the web pages with the keyboard. When you type <kbd>
 Shortcut <kbd>/</kbd> opens the console to type the text and find matching links. You can also type <kbd>tab</kbd> / <kbd>n</kbd>, or <kbd>shift</kbd> + <kbd>tab</kbd> / <kbd>shift</kbd> + <kbd>n</kbd> to move the focus to the next matching link or the previous matching link.
 
   ![Screen Shot](/Resources/vimlike-screen2.png)
+
+# Customization
+Vimlike supports customizing the mapping of the keyboard shortcuts in Vimlike app.
+
+```
+settings.map('j', VLCommand.SCROLL_DOWN);
+settings.map('k', VLCommand.SCROLL_UP);
+settings.map('h', VLCommand.SCROLL_LEFT);
+settings.map('l', VLCommand.SCROLL_RIGHT);
+```
