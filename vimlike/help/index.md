@@ -6,11 +6,9 @@
 - [Links](#links)
 
 # Introduction
-VIMlike is iOS Safari extension for the VIM-like keyboard experience. 
+VIMlike is Safari extension for the Vim-like keyboard experience. You can navigate a page and open a link with the keyboard shortcuts.
 
   ![Screen Shot](/Resources/vimlike-screen3.png)
-
-* **Vim-like full keyboard access**: Vimlike is Safari extension to browse web with the keyboard. You can navigate a page, type a link, and execute a command with the keyboard.
 
 # Downloads
 The latest version of Vimlike is available in AppStore:
@@ -52,13 +50,12 @@ The latest version of Vimlike is available in AppStore:
 
 | Key          |Command|
 |:-------------|:----------------------|
-| <kbd>control</kbd> + <kbd>u</kbd> | Play video in a fullscreen|
-| <kbd>control</kbd> + <kbd>p</kbd> | Play video in a PIP (picture-in-picture)|
 | <kbd>control</kbd> + <kbd>f</kbd> | Scroll up a page|
 | <kbd>control</kbd> + <kbd>b</kbd> | Scroll down a page|
 | <kbd>control</kbd> + <kbd>j</kbd> | Previous Tab |
 | <kbd>control</kbd> + <kbd>k</kbd> | Next Tab |
-
+| <kbd>control</kbd> + <kbd>u</kbd> | Play video in a fullscreen|
+| <kbd>control</kbd> + <kbd>p</kbd> | Play video in a PIP (picture-in-picture)|
 
 # Links
 Vimlike supports navigating the web pages with the keyboard. When you type <kbd>tab</kbd> or <kbd>n</kbd>, Vimlike shows link tags. You can type <kbd>tab</kbd> / <kbd>n</kbd>, or <kbd>shift</kbd> + <kbd>tab</kbd> / <kbd>shift</kbd> + <kbd>n</kbd> to move the focus to the next link or the previous link. And you press enter to open the link. Otherwise, type the tag code or number to open the link directly.
