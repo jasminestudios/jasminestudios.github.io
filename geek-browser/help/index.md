@@ -1,10 +1,12 @@
+# Geek Browser
+
 - [Introduction](#introduction)
 - [Downloads](#downloads)
 - [Key Bindings](#key-bindings)
 - [Links](#links)
 - [Commands](#commands)
 
-# Introduction
+## Introduction
 Geek Browser is a faster web browser for iPad with a VIM-like keyboard access and command line interface.
 
   ![Screen Shot](/Resources/GeekBrowser01.jpg)
@@ -14,13 +16,13 @@ Geek Browser is a faster web browser for iPad with a VIM-like keyboard access an
 * **Command**: Type the command and execute javascript, ping, ifconfig, search and more.
 * **Built-in Adblock**: Geek Browser has a built-in Adblock.
 
-# Downloads
+## Downloads
 The latest version of Geek Browser is available in AppStore:
 
 [<img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://itunes.apple.com/app/id1457482155)
 
-# Key Bindings
-## Cheatsheet (Default)
+## Key Bindings
+### Cheatsheet (Default)
   ![Screen Shot](/Resources/keyboard_default.jpg) 
 
 | Key          |Command|
@@ -43,7 +45,7 @@ The latest version of Geek Browser is available in AppStore:
 | <kbd>/</kbd> or <br/><kbd>command</kbd> + <kbd>f</kbd> | Search in page |
 
 
-## Cheatsheet (+Command)
+### Cheatsheet (+Command)
   ![Screen Shot](/Resources/keyboard_command.jpg) 
 
 | Key          | Command           |
@@ -65,7 +67,7 @@ The latest version of Geek Browser is available in AppStore:
 | <kbd>/</kbd> or <br/><kbd>command</kbd> + <kbd>f</kbd> | Search in page |
 
 
-## Cheatsheet (+Control)
+### Cheatsheet (+Control)
   ![Screen Shot](/Resources/keyboard_control.jpg) 
 
 | Key          |Command|
@@ -76,16 +78,16 @@ The latest version of Geek Browser is available in AppStore:
 | <kbd>control</kbd> + <kbd>b</kbd> or <kbd>option</kbd> + <kbd>&darr;</kbd> | Scroll down a page|
 | <kbd>control</kbd> + <kbd>1</kbd> ... <kbd>9</kbd> | Open bookmark 1...9 |
 
-# Links
+## Links
 Geek Browser supports navigating the web pages with the keyboard. When you type <kbd>tab</kbd> or <kbd>n</kbd>, Geek Browser shows the link tags. You can type <kbd>tab</kbd> / <kbd>n</kbd>, or <kbd>shift</kbd> + <kbd>tab</kbd> / <kbd>shift</kbd> + <kbd>n</kbd> to move the focus to the next link or the previous link. And you press enter to open the link. Otherwise, type the tag code or number to open the link directly.
 
   ![Screen Shot](/Resources/links.gif)
 
-# Commands
+## Commands
 Geek Browser supports command line interface in its address bar. Command starts with <kbd>:</kbd>. When you type <kbd>:</kbd> in the address bar, Geek Browser shows the console. You can type the command and press enter to execute the command.
   ![Screen Shot](/Resources/commands.gif)
 
-## ping
+### ping
 **ping** sends ICMP packets to network hosts. **ping** allows a user to verify that a particular IP address exists and can accept requests.
 #### usage:
 ```
@@ -106,7 +108,7 @@ PING www.google.com (216.58.220.196): 56 data bytes
 ```
 
 
-## ifconfig
+### ifconfig
 **ifconfig** shows the network configuration.
 
 #### usage:
@@ -123,7 +125,7 @@ lo0: inet6 fe80::1%lo0
 en0: 192.168.1.2
 ```
 
-## tab
+### tab
 **tab** command shows, opens, and closes tabs. 
 
 #### usage:
@@ -144,7 +146,7 @@ tab close tab_index | all
 [20/4/2019, 5:58 PM] $ :tab close all
 ```
 
-## google
+### google
 **google** command searches the keyword with Google.
 
 #### usage:
@@ -159,7 +161,7 @@ google [-image] keyword
 [20/4/2019, 5:56 PM] $ :google -image black hole
 ```
 
-## javascript
+### javascript
 **javascript** command executes javascript.
 
 #### usage:
@@ -176,7 +178,7 @@ result: https://www.google.com/
 result: ff0000
 ```
 
-## source
+### source
 **source** command shows the page source.
 
 #### usage:
@@ -190,7 +192,7 @@ source
 
 ```
 
-## cookies
+### cookies
 **cookies** command shows the cookies.
 
 #### usage:
@@ -204,7 +206,7 @@ cookies
 
 ```
 
-## settings
+### settings
 **set** command writes settings and **get** command reads settings.
 
 #### usage:
