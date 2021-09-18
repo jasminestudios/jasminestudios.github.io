@@ -6,7 +6,7 @@
 - [Links](#links)
 - [Customization](#customization)
 
-# Introduction
+## Introduction
 VIMlike is Safari extension for the Vim-like keyboard experience. You can navigate a page and open a link with the keyboard shortcuts.
 
   ![Screen Shot](/Resources/vimlike-screen1.png)
