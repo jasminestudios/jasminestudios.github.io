@@ -18,7 +18,7 @@ VIMlike is Safari extension for the Vim-like keyboard experience. You can naviga
 ## Downloads
 The latest version of Vimlike is available in AppStore:
 
-[<img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://itunes.apple.com/app/id1457482155)
+[<img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://itunes.apple.com/app/id1584519802)
 
 ## Key Bindings
 ### Cheatsheet (Default)
