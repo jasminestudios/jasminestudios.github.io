@@ -1,4 +1,4 @@
-<h1>Vimlike</h1>
+# Vimlike
 
 - [Introduction](#introduction)
 - [Downloads](#downloads)
