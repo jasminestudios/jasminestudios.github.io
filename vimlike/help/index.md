@@ -1,3 +1,6 @@
+---
+layouts: default
+---
 # Vimlike
 
 - [Introduction](#introduction)
