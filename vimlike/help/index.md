@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Home
 ---
+
+# Vimlike
 
 - [Introduction](#introduction)
 - [Downloads](#downloads)
