@@ -3,8 +3,6 @@ layout: default
 title: Home
 ---
 
-# Vimlike
-
 - [Introduction](#introduction)
 - [Downloads](#downloads)
 - [Key Bindings](#key-bindings)
