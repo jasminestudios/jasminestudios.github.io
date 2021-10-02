@@ -41,14 +41,14 @@ The latest version of Vimlike is available in AppStore:
 | <kbd>esc</kbd> or <kbd>`</kbd> or<br/><kbd>§</kbd> (configurable in Settings) | Back to Normal mode|
 | <kbd>shift</kbd> + <kbd>h</kbd> | Go back |
 | <kbd>shift</kbd> + <kbd>l</kbd> | Go forward |
-| <kbd>q</kbd> | Previous Tab |
-| <kbd>w</kbd> | Next Tab |
-| <kbd>t</kbd> | New Tab |
-| <kbd>x</kbd> | Close Tab |
+| <kbd>q</kbd> | Previous tab |
+| <kbd>w</kbd> | Next tab |
+| <kbd>t</kbd> | New tab |
+| <kbd>x</kbd> | Close tab |
 | <kbd>/</kbd> | Search links |
 | <kbd>i</kbd> | Go to the first edit box |
 | <kbd>1</kbd> ... <kbd>9</kbd> | Open tab 1...9 |
-
+| <kbd>shift</kbd> + <kbd>/</kbd> | Toggle shortcut help |
 
 ### Cheatsheet (+Control)
   ![Screen Shot](/Resources/vimlike-keyboard2.jpg) 
@@ -57,8 +57,10 @@ The latest version of Vimlike is available in AppStore:
 |:-------------|:----------------------|
 | <kbd>control</kbd> + <kbd>f</kbd> | Scroll up a page|
 | <kbd>control</kbd> + <kbd>b</kbd> | Scroll down a page|
-| <kbd>control</kbd> + <kbd>j</kbd> | Previous Tab |
-| <kbd>control</kbd> + <kbd>k</kbd> | Next Tab |
+| <kbd>control</kbd> + <kbd>j</kbd> | Previous tab |
+| <kbd>control</kbd> + <kbd>k</kbd> | Next tab |
+| <kbd>control</kbd> + <kbd>i</kbd> | Insert mode (Shortcuts are disabled) |
+| <kbd>control</kbd> + <kbd>d</kbd> | Toggle dark mode |
 | <kbd>control</kbd> + <kbd>u</kbd> | Play video in a fullscreen|
 | <kbd>control</kbd> + <kbd>p</kbd> | Play video in a PIP (picture-in-picture)|
 
