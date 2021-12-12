@@ -90,7 +90,7 @@ Shortcut <kbd>/</kbd> opens the console to type the text and find matching links
   ![Screen Shot](/Resources/vimlike-screen2.png)
 
 ## Customization
-Vimlike supports customizing the mapping of the keyboard shortcuts in Vimlike app.
+Vimlike supports customizing the mapping of the keyboard shortcuts in Vimlike app. Please refer [Customization Guide](/vimlike/keys) for details.
 
 ```javascript
 settings.map('j', VLCommand.SCROLL_DOWN);
