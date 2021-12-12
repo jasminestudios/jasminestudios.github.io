@@ -49,6 +49,9 @@ settings.map('r', VLCommand.RELOAD);
 * Suppressed 1...9 key to open the tab by default (planned to repurpose 1...9 keys in future. Please use Safari default cmd+1...9 instead)
 * Fix the bug: Tab key is back to select the link
 
+### v1.0
+* Initial release
+
 ## Key Bindings
 ### Cheatsheet (Default)
   ![Screen Shot](/Resources/vimlike-keyboard1.jpg) 
