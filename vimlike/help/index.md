@@ -38,6 +38,17 @@ settings.map('r', VLCommand.RELOAD);
 
 * Added keyboard shortcut help button to open the help page listing the key codes
 
+### v1.1.1
+* Supports to open the link in background as an option when it opens as a new tab
+* Supports to open the multiple links continuously in background as an option
+* Supports 2 themes - Classic (black text and yellow background) and Terminal (terminal-like green text and black background)
+* Supports alpha+numeric link labels
+* Option to turn on/off image blur when the links are displayed
+* Option to turn on/off scroll animation
+* Option to show the link labels in upper case or lower case
+* Suppressed 1...9 key to open the tab by default (planned to repurpose 1...9 keys in future. Please use Safari default cmd+1...9 instead)
+* Fix the bug: Tab key is back to select the link
+
 ## Key Bindings
 ### Cheatsheet (Default)
   ![Screen Shot](/Resources/vimlike-keyboard1.jpg) 
