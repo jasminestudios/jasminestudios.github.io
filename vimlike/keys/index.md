@@ -6,6 +6,35 @@ layout: default
 - [Default Mapping](#default-mapping)
 - [Keys](#keys)
 
+## Key Bindings
+### Cheatsheet (Default)
+
+| Key          |Command|
+|:-------------|:----------------------|
+| <kbd>k</kbd> | Scroll up|
+| <kbd>j</kbd> | Scroll down|
+| <kbd>h</kbd> | Scroll left|
+| <kbd>l</kbd> | Scroll right|
+| <kbd>u</kbd> | Half page up|
+| <kbd>d</kbd> | Half page down|
+| <kbd>g</kbd> | Go to top of page|
+| <kbd>shift</kbd> + <kbd>g</kbd> | Go to bottom of page|
+| <kbd>f</kbd> | Toggle links|
+| <kbd>shift</kbd> + <kbd>f</kbd> | Toggle links (open a link in a new tab)|
+| <kbd>tab</kbd> or <kbd>n</kbd> | Toggle links / Move to next link or search result|
+| <kbd>shift</kbd> + <kbd>tab</kbd> or <kbd>shift</kbd> + <kbd>n</kbd> | Toggle links / Move to previous link or search result|
+| <kbd>esc</kbd> or <kbd>`</kbd> or<br/><kbd>§</kbd> (configurable in Settings) | Back to Normal mode|
+| <kbd>shift</kbd> + <kbd>h</kbd> | Go back |
+| <kbd>shift</kbd> + <kbd>l</kbd> | Go forward |
+| <kbd>q</kbd> | Previous tab |
+| <kbd>w</kbd> | Next tab |
+| <kbd>t</kbd> | New tab |
+| <kbd>x</kbd> | Close tab |
+| <kbd>/</kbd> | Search links |
+| <kbd>i</kbd> | Go to the first edit box |
+| <kbd>1</kbd> ... <kbd>9</kbd> | Open tab 1...9 |
+| <kbd>shift</kbd> + <kbd>/</kbd> | Toggle shortcut help |
+
 # Default Mapping
 ```
 // Scroll
@@ -60,6 +89,30 @@ settings.map('r', VLCommand.RELOAD);
 ```
 
 ## Keys
+
 | Key          |Command|
 |:-------------|:----------------------|
 | <kbd>tab</kbd> | Tab |
+| space | Space |
+| page up | PageUp |
+| page down | PageDown |
+| end | End |
+| home | Home |
+| left arrow | ArrowLeft |
+| up arrow | ArrowUp |
+| right arrow | ArrowRight |
+| down arrow | ArrowDown |
+| print screen | PrintScreen |
+| insert | Insert |
+| delete | Delete |
+| semi-colon | Semicolon |
+| equal sign | Equal |
+| comma | Comma |
+| dash | Minus |
+| period | Period |
+| forward slash | Slash |
+| Backquote/Grave accent | Backquote |
+| open bracket | BracketLeft |
+| back slash | Backslash |
+| close bracket | BracketRight |
+| single quote | Quote |
