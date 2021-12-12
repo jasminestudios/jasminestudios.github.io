@@ -8,6 +8,7 @@ layout: default
 
 - [Introduction](#introduction)
 - [Downloads](#downloads)
+- [History](#history)
 - [Key Bindings](#key-bindings)
 - [Links](#links)
 - [Customization](#customization)
@@ -22,6 +23,20 @@ The latest version of Vimlike is available in AppStore:
 
 [<img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://itunes.apple.com/app/id1584519802)
 [<img src="/Resources/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://apps.apple.com/app/vimlike/id1584519802)
+
+## History
+### v1.1.3
+* Added a shortcut to reload a page. In case you customized keyboard shortcuts, please add following;
+```javascript
+settings.map('r', VLCommand.RELOAD);
+```
+
+* Added new settings;
+** Require Enter when opening the link in Console
+** Ignore Keyboard Layout; to support the latin keyboards other than US-EN Qwerty (e.g. German).
+** Prevent focus on page load
+
+* Added keyboard shortcut help button to open the help page listing the key codes
 
 ## Key Bindings
 ### Cheatsheet (Default)
@@ -77,7 +92,7 @@ Shortcut <kbd>/</kbd> opens the console to type the text and find matching links
 ## Customization
 Vimlike supports customizing the mapping of the keyboard shortcuts in Vimlike app.
 
-```
+```javascript
 settings.map('j', VLCommand.SCROLL_DOWN);
 settings.map('k', VLCommand.SCROLL_UP);
 settings.map('h', VLCommand.SCROLL_LEFT);
