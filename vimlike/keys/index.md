@@ -70,7 +70,7 @@ settings.map('r', VLCommand.RELOAD);
 | <kbd>end</kbd> | End |
 | <kbd>home</kbd> | Home |
 | <kbd>left arrow</kbd> | ArrowLeft |
-| <kbd>up arrow</kbd> | ArrowUp |
+| <kbd>↑</kbd> | ArrowUp |
 | <kbd>right arrow</kbd> | ArrowRight |
 | <kbd>down arrow</kbd> | ArrowDown |
 | <kbd>print screen</kbd> | PrintScreen |
