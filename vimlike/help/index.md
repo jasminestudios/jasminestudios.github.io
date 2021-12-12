@@ -77,6 +77,7 @@ settings.map('r', VLCommand.RELOAD);
 | <kbd>w</kbd> | Next tab |
 | <kbd>t</kbd> | New tab |
 | <kbd>x</kbd> | Close tab |
+| <kbd>r</kbd> | Reload tab |
 | <kbd>/</kbd> | Search links |
 | <kbd>i</kbd> | Go to the first edit box |
 | <kbd>1</kbd> ... <kbd>9</kbd> | Open tab 1...9 |
