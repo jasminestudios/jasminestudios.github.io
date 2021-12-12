@@ -60,7 +60,7 @@ settings.map('r', VLCommand.RELOAD);
 ```
 
 ## Keys
-| Name | Key |
+| Key          |Command|
 |:-------------|:----------------------|
 | tab | Tab |
 | space | Space |
