@@ -61,7 +61,7 @@ settings.map('r', VLCommand.RELOAD);
 
 ## Keys
 
-| Key          |Command|
+| Key          |Code|
 |:-------------|:----------------------|
 | <kbd>tab</kbd> | Tab |
 | <kbd>space</kbd> | Space |
