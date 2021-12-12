@@ -83,7 +83,7 @@ layout: default
 |	close bracket	|	BracketRight	|
 |	single quote	|	Quote	|
 
-Default Mapping
+# Default Mapping
 ```
 // Scroll
 settings.map('j', VLCommand.SCROLL_DOWN);
