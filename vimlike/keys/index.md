@@ -60,12 +60,8 @@ settings.map('r', VLCommand.RELOAD);
 ```
 
 ## Keys
-| Name | Key |
+| Name          |Key|
 |:-------------|:----------------------|
-| tab | Tab |
-
-
-
 | tab | Tab |
 | space | Space |
 | page up | PageUp |
