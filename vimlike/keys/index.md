@@ -6,6 +6,7 @@ layout: default
 
 # Keyboard Shortcut Customization
 - [Keys](#keys)
+- [Default Mapping](#default-mapping)
 
 ## Keys
 | Name          |Key|
