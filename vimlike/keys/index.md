@@ -7,7 +7,7 @@ layout: default
 - [Keys](#keys)
 
 # Default Mapping
-```
+```javascript
 // Scroll
 settings.map('j', VLCommand.SCROLL_DOWN);
 settings.map('k', VLCommand.SCROLL_UP);
