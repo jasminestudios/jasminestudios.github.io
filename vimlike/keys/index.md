@@ -9,6 +9,7 @@ layout: default
 
 ## Keys
 | Name          |Key|
+|:-------------|:----------------------|
 |	tab	|	Tab	|
 |	space	|	Space	|
 |	page up	|	PageUp	|
@@ -80,4 +81,4 @@ layout: default
 |	open bracket	|	BracketLeft	|
 |	back slash	|	Backslash	|
 |	close bracket	|	BracketRight	|
-|	single quote	|	Quote	|![image](https://user-images.githubusercontent.com/49808320/145703781-68748230-cd93-458b-a0ba-8c184b5d607b.png)
+|	single quote	|	Quote	|
