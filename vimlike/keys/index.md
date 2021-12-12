@@ -62,27 +62,4 @@ settings.map('r', VLCommand.RELOAD);
 ## Keys
 | Key          |Command|
 |:-------------|:----------------------|
-| tab | Tab |
-| space | Space |
-| page up | PageUp |
-| page down | PageDown |
-| end | End |
-| home | Home |
-| left arrow | ArrowLeft |
-| up arrow | ArrowUp |
-| right arrow | ArrowRight |
-| down arrow | ArrowDown |
-| print screen | PrintScreen |
-| insert | Insert |
-| delete | Delete |
-| semi-colon | Semicolon |
-| equal sign | Equal |
-| comma | Comma |
-| dash | Minus |
-| period | Period |
-| forward slash | Slash |
-| Backquote/Grave accent | Backquote |
-| open bracket | BracketLeft |
-| back slash | Backslash |
-| close bracket | BracketRight |
-| single quote | Quote |
+| <kbd>tab</kbd> | Tab |
