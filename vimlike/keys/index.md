@@ -84,6 +84,6 @@ settings.map('r', VLCommand.RELOAD);
 | <kbd>/</kbd> | Slash |
 | <kbd>`</kbd> | Backquote |
 | <kbd>[</kbd> | BracketLeft |
-| <kbd>\\</kbd> | Backslash |
+| <kbd> \ </kbd> | Backslash |
 | <kbd>]</kbd> | BracketRight |
 | <kbd>'</kbd> | Quote |
