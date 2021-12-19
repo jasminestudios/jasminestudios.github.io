@@ -109,9 +109,20 @@ Vimlike supports customizing the mapping of the keyboard shortcuts in Vimlike ap
 
 ```javascript
 settings.map(key, COMMAND);
+settings.map(key, COMMAND, {includes: url}); // mapping the key only for the url
+settings.map(key, COMMAND, {excludes: url}); // mapping the key excluding the url
 ```
 
-### Default Mapping
+The parameter <i>url</i> can be array of strings and regular expressions. For example,
+
+```javascript
+settings.map('space', VLCommand.HALF_PAGE_DOWN, {excludes: ['https://www.youtube.com/watch', 'https://www.netflix.com/watch/']});
+settings.map('space', VLCommand.HALF_PAGE_DOWN, {includes: [/www\.google\.co.*\/search\?/g]});
+```
+
+### Default Key Mapping
+Following script is the default key mapping.
+
 ```javascript
 // Scroll
 settings.map('j', VLCommand.SCROLL_DOWN);
@@ -210,6 +221,7 @@ settings.map('r', VLCommand.RELOAD);
 | VLCommand.RELOAD | Reload |
 
 ### Keys
+Vimlike uses Javascript KeyboardEvent.code for the keyboard command. Following table shows codes for the special keys. 
 
 | Key          |Code|
 |:-------------|:----------------------|
@@ -237,3 +249,5 @@ settings.map('r', VLCommand.RELOAD);
 | <kbd> \ </kbd> | Backslash |
 | <kbd>]</kbd> | BracketRight |
 | <kbd>'</kbd> | Quote |
+
+KeyboardEvent.code uses the key based on the QWERTY layout. Therefore, key bindings of some of the latin keyboards are different. For example, the code "z" represents for the Z key on a QWERTY layout keyboard, but the same code value also represents the Y key on German keyboards.
