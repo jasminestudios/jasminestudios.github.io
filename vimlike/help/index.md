@@ -108,10 +108,7 @@ Shortcut <kbd>/</kbd> opens the console to type the text and find matching links
 Vimlike supports customizing the mapping of the keyboard shortcuts in Vimlike app. Please refer [Customization Guide](/vimlike/keys) for details.
 
 ```javascript
-settings.map('j', VLCommand.SCROLL_DOWN);
-settings.map('k', VLCommand.SCROLL_UP);
-settings.map('h', VLCommand.SCROLL_LEFT);
-settings.map('l', VLCommand.SCROLL_RIGHT);
+settings.map(key, COMMAND);
 ```
 
 ### Default Mapping
