@@ -16,7 +16,7 @@ You can create your own dictionary from CSV file and import it to One Dictionary
 ### CSV Prepration
 
 ### Dictionary Generation Script
-'''ruby
+```ruby
 require 'CSV'
 require 'sqlite3'
 require 'fileutils'
@@ -48,4 +48,4 @@ end
 db.execute("UPDATE metadata SET value=(?) where name='name'", "My Dictionary")
 db.execute("UPDATE metadata SET value=(?) where name='content_type'", "plain_text")
 db.execute("UPDATE metadata SET value=(?) where name='entry_type'", "default")
-'''
+```
