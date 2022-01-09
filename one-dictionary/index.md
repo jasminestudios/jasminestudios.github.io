@@ -2,6 +2,7 @@
 
 - [Introduction](#introduction)
 - [Downloads](#downloads)
+- [Privacy Policy](#privacy-policy)
 - [Creating new Dictionary](#creating-new-dictionary)
 
 
