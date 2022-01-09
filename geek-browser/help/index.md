@@ -7,7 +7,7 @@
 - [Commands](#commands)
 
 ## Introduction
-Geek Browser is a faster web browser for iPad with a VIM-like keyboard access and command line interface.
+Geek Browser is a full-screen and super-fast web browser for iPad with a VIM-like keyboard access and command line interface.
 
   ![Screen Shot](/Resources/GeekBrowser01.jpg)
 
