@@ -8,6 +8,10 @@ Better Player for Youtube is a Safari Extension for theater-like experience for 
 
   ![Screen Shot](/Resources/better-player.png)
 
+* You can play videos in a fullscreen or picture-in-picture mode. 
+* Better Player blocks all the ads.
+* Better Player automatically darken the background with embedded controller for Youtube videos. 
+
 ## Downloads
 The latest version of Geek Browser is available in AppStore:
 
