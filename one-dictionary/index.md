@@ -24,9 +24,9 @@ You can create your own dictionary from CSV file and import it to One Dictionary
 
 ### Template Downloads
 Please download the following files for Dictionary data.
-* ![input.csv](build/input.csv) (sample CSV file to generate)
-* template.dictionary (template dictionary data file)
-* dict_gen.rb (ruby script to generate the dictionary data file)
+* [input.csv](build/input.csv) (sample CSV file to generate)
+* [template.dictionary](build/template.dictionary) (template dictionary data file)
+* [dict_gen.rb](build/dict_gen.rb) (ruby script to generate the dictionary data file)
 
 ### Run
 Put 3 files in same directory and run ruby script file
