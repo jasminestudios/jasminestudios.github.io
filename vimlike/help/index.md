@@ -9,6 +9,7 @@ layout: default
 - [Introduction](#introduction)
 - [Downloads](#downloads)
 - [Version History](#version-history)
+- [Privacy Policy](#privacy-policy)
 - [Key Bindings](#key-bindings)
 - [Links](#links)
 - [Customization](#customization)
@@ -51,6 +52,11 @@ settings.map('r', VLCommand.RELOAD);
 
 ### v1.0
 * Initial release
+
+## Privacy Policy
+Vimlike does NOT collect any of your data. The only data Vimlike stores are your settings. These are only saved locally. No one, other than you, has access to this data.
+
+Because of the way Vimlike works, the Vimlike extension needs to have permission to access to the website. This is needed because Vimlike has to add javascript to manage keyboard shortcuts and links to the web page. However, Vimlike never use these permissions to actually read the websites you visit, or to access your browsing history. Vimlike does not store any information about the websites you're visiting. Not even locally on your device.
 
 ## Key Bindings
 ### Cheatsheet (Default)
