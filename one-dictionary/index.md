@@ -10,10 +10,27 @@ One Dictionary is offline dictionary. One Dictionary provides abbreviations dict
 
   ![Screen Shot](/Resources/one-dictionary.png)
 
-## Creating new Dictionary
-You can create your own dictionary from CSV file and import it to One Dictionary. This section explains a step-by-step guideline to create a new dictionary. Dictionary data file (.dictionary) is a simple SQLite database file. Please download the template file for Dictionary data.
+## Downloads
+The latest version of One Dictionary is available in AppStore:
 
-### CSV Prepration
+[<img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://apps.apple.com/us/app/one-dictionary/id1207632925)
+
+## Creating new Dictionary
+You can create your own dictionary from CSV file and import it to One Dictionary. Dictionary data file (.dictionary) is a simple SQLite database file. 
+
+### Template Downloads
+Please download the following files for Dictionary data.
+* input.csv (sample CSV file to generate)
+* template.dictionary (template dictionary data file)
+* dict_gen.rb (ruby script to generate the dictionary data file)
+
+### Run
+Put 3 files in same directory and run ruby script file
+```shell
+ruby dict_gen.rb
+```
+
+It will generate new dictionary file in the same directory (./my_dic.dictionary).
 
 ### Dictionary Generation Script
 ```ruby
