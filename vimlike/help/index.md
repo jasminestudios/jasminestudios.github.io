@@ -56,7 +56,11 @@ settings.map('r', VLCommand.RELOAD);
 ## Privacy Policy
 Vimlike does NOT collect any of your data. The only data Vimlike stores are your settings. These are only saved locally. No one, other than you, has access to this data.
 
-Because of the way Vimlike works, the Vimlike extension needs to have permission to access to the website. This is needed because Vimlike has to add javascript to manage keyboard shortcuts and links to the web page. However, Vimlike never use these permissions to actually read the websites you visit, or to access your browsing history. Vimlike does not store any information about the websites you're visiting. Not even locally on your device.
+Because of the way Vimlike works, the Vimlike extension needs to have permission to access to the website. This is needed because Vimlike has to add javascript to manage keyboard shortcuts and links to the web page. However, Vimlike never use these permissions to actually read the websites you visit, or to access your browsing history. 
+
+Vimlike does not store any information about the websites you're visiting. Not even locally on your device.
+
+In Safari Preference, you can Allow or Deny the extensions to specific websites. In case you want to be extra cautious to certain websites, you can enable or disable Vimlike to the specific websites only.
 
 ## Key Bindings
 ### Cheatsheet (Default)
