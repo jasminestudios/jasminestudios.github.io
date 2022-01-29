@@ -23,7 +23,7 @@ The latest version of Better Player for Youtube is available in AppStore:
 1. Launch Better Player for Youtube application. Select *Setup* in side bar of the application. And click *Open Safari Extensions Preferences* button. 
 
   ![Screen Shot](/Resources/better-player/mac-setup-01.png)
-  <img src="/Resources/better-player/mac-setup-01.png" style="max-width:600px;"/>
+  <img src="/Resources/better-player/mac-setup-01.png" width="600"/>
 
 2. It will open Safari's Extensions Preferences. Please check the check-box next to Better Player. Then, click *Always Allow on Every Websites..." button.
 
