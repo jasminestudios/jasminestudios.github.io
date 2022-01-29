@@ -29,7 +29,7 @@ The latest version of Better Player for Youtube is available in AppStore:
 
   <img src="/Resources/better-player/mac-setup-02.png" width="720"/>
 
-3. It opens following warning. Because of the way Better Player for Youtube works, the Better Player for Youtube extension needs to have permission to access to the website. Better Player for Youtube does NOT collect any of your data. Please refer [Privacy Policy](#privacy-policy) for details.
+3. Safari will open the following warning. Because of the way Better Player for Youtube works, the Better Player for Youtube extension needs to have permission to access to the website. Better Player for Youtube does NOT collect any of your data. Please refer [Privacy Policy](#privacy-policy) for details.
 
   <img src="/Resources/better-player/mac-setup-03.png" width="180"/>
 
@@ -37,7 +37,7 @@ The latest version of Better Player for Youtube is available in AppStore:
 
   <img src="/Resources/better-player/mac-setup-04.png" width="720"/>
 
-5. All set. Go to youtube.com and play the youtube video you want to watch. You'll see the Better Player for Youtube darken the background of the video and it skips the ads.
+5. All set. Go to *youtube.com* and play the youtube video you want to watch. You'll see the Better Player for Youtube darken the background of the video and it skips the ads.
 
   <img src="/Resources/better-player/mac-setup-05.png" width="720"/>
 
