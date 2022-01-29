@@ -31,7 +31,7 @@ The latest version of Better Player for Youtube is available in AppStore:
 
 3. It opens following warning. Because of the way Better Player for Youtube works, the Better Player for Youtube extension needs to have permission to access to the website. Better Player for Youtube does NOT collect any of your data. Please refer [Privacy Policy] for details.
 
-  <img src="/Resources/better-player/mac-setup-03.png" width="240" align="center"/>
+  <img src="/Resources/better-player/mac-setup-03.png" width="240"/>
 
 4. Once Better Player for Youtube set up is done, you will see Safari's Extension Preferences as follows;
 
