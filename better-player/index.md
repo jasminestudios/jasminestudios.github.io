@@ -2,6 +2,7 @@
 
 - [Introduction](#introduction)
 - [Downloads](#downloads)
+- [Installation Guide](#installation-guide)
 - [Privacy Policy](#privacy-policy)
 
 ## Introduction
