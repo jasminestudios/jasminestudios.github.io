@@ -2,6 +2,7 @@
 
 - [Introduction](#introduction)
 - [Downloads](#downloads)
+- [Installation Guide](#installation-guide)
 - [Privacy Policy](#privacy-policy)
 
 ## Introduction
@@ -24,13 +25,13 @@ The latest version of Better Player for Youtube is available in AppStore:
 
   <img src="/Resources/better-player/mac-setup-01.png" width="720"/>
 
-2. It will open Safari's Extensions Preferences. Please check the check-box next to Better Player. Then, click *Always Allow on Every Websites..." button.
+2. It will open Safari's Extensions Preferences. Please check the check-box next to Better Player. Then, click *Always Allow on Every Websites...* button.
 
   <img src="/Resources/better-player/mac-setup-02.png" width="720"/>
 
-3. It opens following warning. Because of the way Better Player for Youtube works, the Better Player for Youtube extension needs to have permission to access to the website. Better Player for Youtube does NOT collect any of your data. Please refer [Privacy Policy] for details.
+3. It opens following warning. Because of the way Better Player for Youtube works, the Better Player for Youtube extension needs to have permission to access to the website. Better Player for Youtube does NOT collect any of your data. Please refer [Privacy Policy](#privacy-policy) for details.
 
-  <img src="/Resources/better-player/mac-setup-03.png" width="360"/>
+  <img src="/Resources/better-player/mac-setup-03.png" width="180"/>
 
 4. Once Better Player for Youtube set up is done, you will see Safari's Extension Preferences as follows;
 
