@@ -18,6 +18,26 @@ The latest version of Better Player for Youtube is available in AppStore:
 
 [<img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://apps.apple.com/app/better-player-for-youtube/id1592876082)
 
+## Installation Guide
+### macOS
+1. Launch Better Player for Youtube application. Select *Setup* in side bar of the application. And click *Open Safari Extensions Preferences* button. 
+  ![Screen Shot](/Resources/better-player/mac-setup-01.png)
+
+2. It will open Safari's Extensions Preferences. Please check the check-box next to Better Player. Then, click *Always Allow on Every Websites..." button.
+  ![Screen Shot](/Resources/better-player/mac-setup-02.png)
+
+3. It opens following warning. Because of the way Better Player for Youtube works, the Better Player for Youtube extension needs to have permission to access to the website. Better Player for Youtube does NOT collect any of your data. Please refer [Privacy Policy] for details.
+  ![Screen Shot](/Resources/better-player/mac-setup-03.png)
+
+4. Once Better Player for Youtube set up is done, you will see Safari's Extension Preferences as follows;
+  ![Screen Shot](/Resources/better-player/mac-setup-04.png)
+
+5. Once Better Player for Youtube set up is done, you will see Safari's Extension Preferences as follows;
+  ![Screen Shot](/Resources/better-player/mac-setup-04.png)
+
+6. All set. Go to youtube.com and play the youtube video you want to watch. You'll see the Better Player for Youtube darken the background of the video and it skips the ads.
+  ![Screen Shot](/Resources/better-player/mac-setup-05.png)
+
 ## Privacy Policy
 Better Player for Youtube does NOT collect any of your data. The only data Better Player for Youtube stores are your settings. These are only saved locally. No one, other than you, has access to this data.
 
