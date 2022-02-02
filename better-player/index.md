@@ -41,6 +41,19 @@ The latest version of Better Player for Youtube is available in AppStore:
 
   <img src="/Resources/better-player/mac-setup-05.png" width="720"/>
 
+### iOS
+1. Launch Settings app and go to Safari > Extensions. Turn on Better Player as follows;
+
+  <img src="/Resources/better-player/ipad-setup-01.png" width="680"/>
+
+2. Touch *All Websites* and and select *Allow*;
+
+  <img src="/Resources/better-player/ipad-setup-02.png" width="680"/>
+
+3. All set. Go to *youtube.com* and play the youtube video you want to watch. You'll see the Better Player for Youtube darken the background of the video and it skips the ads.
+
+  <img src="/Resources/better-player/ipad-setup-03.png" width="680"/>
+
 ## Privacy Policy
 Better Player for Youtube does NOT collect any of your data. The only data Better Player for Youtube stores are your settings. These are only saved locally. No one, other than you, has access to this data.
 
