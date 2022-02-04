@@ -26,6 +26,10 @@ The latest version of Vimlike is available in AppStore:
 [<img src="/Resources/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://apps.apple.com/app/vimlike/id1584519802)
 
 ## Version History
+### v1.1.5
+* Now Vimlike supports iPhone. Browse the web with iPhone and the bluetooth keyboard like a geek
+* Fixed the latin keyboard layout issue (e.g. German, French layouts) with "Ignore Keyboard Layout" option
+
 ### v1.1.3
 * Added a shortcut to reload a page. In case you customized keyboard shortcuts, please add following;
 ```javascript
