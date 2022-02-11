@@ -81,3 +81,5 @@ Because of the way Better Player for Youtube works, the Better Player for Youtub
 Better Player for Youtube does not store any information about the websites you're visiting. Not even locally on your device.
 
 In Safari Preference, you can Allow or Deny the extensions to specific websites. In case you want to be extra cautious to certain websites, you can enable or disable Better Player for Youtube to the specific websites only.
+
+<sub>English | [Korean](/kr/better-player) </sub>
