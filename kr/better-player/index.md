@@ -79,3 +79,5 @@ Better Player for Youtube는 귀하의 데이터를 수집하지 않습니다. �
 Better Player for Youtube가 작동하는 방식 때문에 본 확장 프로그램은 웹사이트에 액세스할 수 있는 권한을 필요로 합니다. 이는 Better Player for Youtube가 Youtube 비디오를 제어하고 페이지를 어둡게 하기 위해 javascript를 추가해야 하기 때문에 필요합니다. Better Player for Youtube는 방문한 웹사이트를 읽거나 검색 기록에 액세스하는 데 이러한 권한을 사용하지 않으며, 귀하가 방문하는 웹사이트에 대한 정보를 저장하지 않습니다.
 
 Safari 환경설정에서 특정 웹사이트에 대해서만 Better Player for Youtube를 활성화 또는 비활성화할 수 있습니다.
+
+<sub>[English](/better-player) | Korean</sub>
