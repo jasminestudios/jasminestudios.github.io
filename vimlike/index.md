@@ -87,7 +87,7 @@ In Safari Preference, you can Allow or Deny the extensions to specific websites.
 | <kbd>l</kbd> | Scroll right|
 | <kbd>u</kbd> | Half page up|
 | <kbd>d</kbd> | Half page down|
-| <kbd>g</kbd> | Go to top of page|
+| <kbd>g</kbd><kbd>g</kbd> | Go to top of page|
 | <kbd>shift</kbd> + <kbd>g</kbd> | Go to bottom of page|
 | <kbd>f</kbd> | Toggle links|
 | <kbd>shift</kbd> + <kbd>f</kbd> | Toggle links (open a link in a new tab)|
