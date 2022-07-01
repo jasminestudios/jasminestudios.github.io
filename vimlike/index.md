@@ -87,7 +87,7 @@ In Safari Preference, you can Allow or Deny the extensions to specific websites.
 | <kbd>l</kbd> | Scroll right|
 | <kbd>u</kbd> | Half page up|
 | <kbd>d</kbd> | Half page down|
-| <kbd>g</kbd><kbd>g</kbd> | Go to top of page|
+| <kbd>g</kbd> <kbd>g</kbd> | Go to top of page|
 | <kbd>shift</kbd> + <kbd>g</kbd> | Go to bottom of page|
 | <kbd>f</kbd> | Toggle links|
 | <kbd>shift</kbd> + <kbd>f</kbd> | Toggle links (open a link in a new tab)|
@@ -103,7 +103,8 @@ In Safari Preference, you can Allow or Deny the extensions to specific websites.
 | <kbd>r</kbd> | Reload tab |
 | <kbd>/</kbd> | Search links |
 | <kbd>i</kbd> | Go to the first edit box |
-| <kbd>1</kbd> ... <kbd>9</kbd> | Open tab 1...9 |
+| <kbd>g</kbd> <kbd>1</kbd> ... <kbd>g</kbd> <kbd>9</kbd> | Go to tab 1...9 |
+| <kbd>g</kbd> <kbd>shift</kbd>+<kbd>1</kbd> | Go to the last tab |
 | <kbd>shift</kbd> + <kbd>/</kbd> | Toggle shortcut help |
 
 ### Cheatsheet (+Control)
@@ -158,7 +159,8 @@ settings.map('space', VLCommand.HALF_PAGE_DOWN, {excludes: ['https://www.youtube
 settings.map('shift+space', VLCommand.HALF_PAGE_UP);
 settings.map('ctrl+f', VLCommand.PAGE_DOWN);
 settings.map('ctrl+b', VLCommand.PAGE_UP);
-settings.map('g', VLCommand.SCROLL_TO_TOP);
+//settings.map('g', VLCommand.SCROLL_TO_TOP); // deprecated
+settings.map('g g', VLCommand.SCROLL_TO_TOP);
 settings.map('shift+g', VLCommand.SCROLL_TO_BOTTOM);
 
 // Normal mode
@@ -173,29 +175,33 @@ settings.map('shift+l', VLCommand.GO_FORWARD);
 settings.map('q', VLCommand.PREV_TAB);
 settings.map('w', VLCommand.NEXT_TAB);
 settings.map('ctrl+j', VLCommand.PREV_TAB);
+settings.map('g shift+t', VLCommand.PREV_TAB);
 settings.map('ctrl+k', VLCommand.NEXT_TAB);
+settings.map('g t', VLCommand.NEXT_TAB);
 settings.map('t', VLCommand.NEW_TAB);
 settings.map('i', VLCommand.FOCUS_INPUT);
 settings.map('slash', VLCommand.SHOW_CONSOLE);
 settings.map('ctrl+i', VLCommand.INSERT_MODE);
-//settings.map('1', VLCommand.OPEN_TAB1);
-//settings.map('2', VLCommand.OPEN_TAB2);
-//settings.map('3', VLCommand.OPEN_TAB3);
-//settings.map('4', VLCommand.OPEN_TAB4);
-//settings.map('5', VLCommand.OPEN_TAB5);
-//settings.map('6', VLCommand.OPEN_TAB6);
-//settings.map('7', VLCommand.OPEN_TAB7);
-//settings.map('8', VLCommand.OPEN_TAB8);
-//settings.map('9', VLCommand.OPEN_TAB9);
+settings.map('g 1', VLCommand.OPEN_TAB1);
+settings.map('g 2', VLCommand.OPEN_TAB2);
+settings.map('g 3', VLCommand.OPEN_TAB3);
+settings.map('g 4', VLCommand.OPEN_TAB4);
+settings.map('g 5', VLCommand.OPEN_TAB5);
+settings.map('g 6', VLCommand.OPEN_TAB6);
+settings.map('g 7', VLCommand.OPEN_TAB7);
+settings.map('g 8', VLCommand.OPEN_TAB8);
+settings.map('g 9', VLCommand.OPEN_TAB9);
+settings.map('g shift+4', VLCommand.OPEN_LAST_TAB);
+settings.map('g 0', VLCommand.OPEN_TAB1);
 settings.map('x', VLCommand.CLOSE_TAB);
 settings.map('ctrl+u', VLCommand.VIDEO_FULLSCREEN);
 settings.map('ctrl+p', VLCommand.VIDEO_PIP);
-settings.map('shift+slash', VLCommand.TOGGLE_HELP);
 settings.map('ctrl+d', VLCommand.DARK_MODE);
-
-settings.map('shift+enter', VLCommand.OPEN_SELECTED_LINK);
-
 settings.map('r', VLCommand.RELOAD);
+settings.map('?', VLCommand.TOGGLE_HELP);
+settings.map('shift+slash', VLCommand.TOGGLE_HELP);
+settings.map('/', VLCommand.SHOW_CONSOLE);
+
 ```
 
 ### Commands
