@@ -104,7 +104,7 @@ In Safari Preference, you can Allow or Deny the extensions to specific websites.
 | <kbd>/</kbd> | Search links |
 | <kbd>i</kbd> | Go to the first edit box |
 | <kbd>g</kbd> <kbd>1</kbd> ... <kbd>g</kbd> <kbd>9</kbd> | Go to tab 1...9 |
-| <kbd>g</kbd> <kbd>shift</kbd>+<kbd>1</kbd> | Go to the last tab |
+| <kbd>g</kbd> <kbd>shift</kbd>+<kbd>4</kbd> | Go to the last tab |
 | <kbd>shift</kbd> + <kbd>/</kbd> | Toggle shortcut help |
 
 ### Cheatsheet (+Control)
