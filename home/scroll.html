@@ -1,0 +1,273 @@
+<html>
+    <head>
+        <script>
+            let start, previousTimeStamp;
+            let done = false
+            let duration = 5000;
+            let distance = 1000;
+            let startLocation = 0;
+            let speed = 3000;
+            
+            function scroll(timestamp) {
+                if (start === undefined) {
+                    start = timestamp;
+                }
+                var elapsed = timestamp - start;
+                var percentage = speed === 0 ? 0 : (elapsed / speed);
+                percentage = (percentage > 1) ? 1 : percentage;
+                
+                console.log('elapsed: ' + elapsed);
+                console.log(percentage);
+                
+                var position = startLocation + (distance * easingPattern(percentage));
+               
+                if (previousTimeStamp !== timestamp) {
+                    window.scrollTo(0, position);
+                }
+                
+                if (percentage < 1) {
+                    previousTimeStamp = timestamp;
+                    window.requestAnimationFrame(scroll);
+                }
+            }
+            
+            function easingPattern(time) {
+                return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+            }
+            
+            function load() {
+                window.addEventListener('keydown', function(e) {onkeydown(e);}, true);
+            }
+            
+            function onkeydown(event) {
+                var key = event.key;
+
+                console.log("key: " + key);
+                
+                if (key == 'j') {
+                    start = 0;
+                    startLocation = window.scrollY;
+                    distance = 30;
+                    
+                    window.requestAnimationFrame(scroll);
+                } else if (key == 'k') {
+                    start = 0;
+                    startLocation = window.scrollY;
+                    distance = -30;
+                    
+                    window.requestAnimationFrame(scroll);
+   
+                }
+                
+                event.stopPropagation();
+                event.stopImmediatePropagation();
+                event.preventDefault();
+            }
+        </script>
+    </head>
+    <body style="text-align:center;" onload="load();">
+        <a href="https://www.google.com">Google</a><br/>
+        <a href="https://www.naver.com">Naver</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a href="https://www.google.com">Google</a><br/>
+        <a href="https://www.naver.com">Naver</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a href="https://www.google.com">Google</a><br/>
+        <a href="https://www.naver.com">Naver</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a href="https://www.google.com">Google</a><br/>
+        <a href="https://www.naver.com">Naver</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a href="https://www.google.com">Google</a><br/>
+        <a href="https://www.naver.com">Naver</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a href="https://www.google.com">Google</a><br/>
+        <a href="https://www.naver.com">Naver</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.^⌥J
+        </p>
+        <a href="https://www.google.com">Google</a><br/>
+        <a href="https://www.naver.com">Naver</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.^⌥J
+        </p>
+        <a href="https://www.google.com">Google</a><br/>
+        <a href="https://www.naver.com">Naver</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.^⌥J
+        </p>
+        <a href="https://www.google.com">Google</a><br/>
+        <a href="https://www.naver.com">Naver</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.^⌥J
+        </p>
+        <a href="https://www.google.com">Google</a><br/>
+        <a href="https://www.naver.com">Naver</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.^⌥J
+        </p>
+        <a href="https://www.google.com">Google</a><br/>
+        <a href="https://www.naver.com">Naver</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.^⌥J
+        </p>
+        <a href="https://www.google.com">Google</a><br/>
+        <a href="https://www.naver.com">Naver</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.^⌥J
+        </p>
+        <a href="https://www.google.com">Google</a><br/>
+        <a href="https://www.naver.com">Naver</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.^⌥J
+        </p>
+        <a href="https://www.google.com">Google</a><br/>
+        <a href="https://www.naver.com">Naver</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.^⌥J
+        </p>
+        <a href="https://www.google.com">Google</a><br/>
+        <a href="https://www.naver.com">Naver</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.^⌥J
+        </p>
+        <a href="https://www.google.com">Google</a><br/>
+        <a href="https://www.naver.com">Naver</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <a href="https://www.amazon.com">Amazon</a><br/>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.^⌥J
+        </p>
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
+
