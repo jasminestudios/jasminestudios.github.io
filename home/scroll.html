@@ -10,9 +10,9 @@
                 speed = 0;
                 duration = 200;
                 destination = 0;
-                DEFAULT_DURATION = 250;
+                DEFAULT_DURATION = 300;
                 MAX_DURATION = 50;
-                MAX_DURATION_PAGE_DOWN = 250;
+                MAX_DURATION_PAGE_DOWN = 150;
                 previousAcceleratedTimeStamp = 0;
                 
                 constructor() {
@@ -42,9 +42,9 @@
                         Scroller.shared.previousAcceleratedTimeStamp = timestamp;
                     } else {
                         if (timestamp - Scroller.shared.previousAcceleratedTimeStamp > 20) {
-                            let maxDuration = (Scroller.shared.distance > 100) ? Scroller.shared.MAX_DURATION_PAGE_DOWN : Scroller.shared.MAX_DURATION;
+                            let maxDuration = (Math.abs(Scroller.shared.distance) > 100) ? Scroller.shared.MAX_DURATION_PAGE_DOWN : Scroller.shared.MAX_DURATION;
 
-                            Scroller.shared.duration = Scroller.shared.duration > maxDuration ? Scroller.shared.duration - (Scroller.shared.duration - maxDuration) * 0.2 : maxDuration;
+                            Scroller.shared.duration = Scroller.shared.duration > maxDuration ? Scroller.shared.duration - (Scroller.shared.duration - maxDuration) * 0.1 : maxDuration;
                             Scroller.shared.previousAcceleratedTimeStamp = timestamp;
                         }
                     }
@@ -84,7 +84,7 @@
                 } else if (key == 'k') {
                     Scroller.shared.scroll(-60);
                 } else if (key == 'd') {
-                    Scroller.shared.scroll(window.innerHeight);
+                    Scroller.shared.scroll(window.innerHeight / 2);
                 } else if (key == 'u') {
                     Scroller.shared.scroll(-window.innerHeight / 2);
                 } else if (key == 'f') {
