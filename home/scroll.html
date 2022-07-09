@@ -112,9 +112,13 @@
                 } else if (key == 'k') {
                     Scroller.shared.scroll(-50);
                 } else if (key == 'd') {
-                    Scroller.shared.scroll(500);
+                    Scroller.shared.scroll(window.innerHeight);
                 } else if (key == 'u') {
-                    Scroller.shared.scroll(-500);
+                    Scroller.shared.scroll(-window.innerHeight / 2);
+                } else if (key == 'f') {
+                    Scroller.shared.scroll(window.innerHeight * 0.8);
+                } else if (key == 'b') {
+                    Scroller.shared.scroll(-window.innerHeight * 0.8);
                 }
             }
         </script>
