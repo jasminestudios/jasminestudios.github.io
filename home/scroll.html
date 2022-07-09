@@ -8,19 +8,23 @@
                 position = 0;
                 previousTimeStamp = 0;
                 speed = 0;
-                duration = 250;
+                duration = 200;
                 destination = 0;
+                DEFAULT_DURATION = 200;
+                MAX_DURATION = 100;
                 
                 constructor() {
                 }
                 
                 scroll(distance) {
                     if (this.scrolling === true) {
+                        this.duration = this.duration > this.MAX_DURATION ? this.duration - 10 : this.MAX_DURATION;
                         this.distance = distance;
                         this.position = window.scrollY;
                         this.destination = this.position + this.distance;
                         this.speed = distance / this.duration;
                     } else {
+                        this.duration = this.DEFAULT_DURATION;
                         this.distance = distance;
                         this.position = window.scrollY;
                         this.destination = this.position + this.distance;
@@ -31,8 +35,6 @@
                 }
                 
                 animateScroll(timestamp) {
-                    console.log('speed: ' + Scroller.shared.speed);
-                    
                     if (Scroller.shared.scrolling === false) {
                         Scroller.shared.scrolling = true;
                         Scroller.shared.previousTimeStamp = timestamp;
@@ -51,45 +53,6 @@
                     } else {
                         Scroller.shared.scrolling = false;
                     }
-                    
-                }
-            }
-            
-            
-            var start = null;
-            let previousTimeStamp;
-            let distance = 500;
-            let startLocation = 0;
-            let speed = 300;
-            var scrolling = false;
-            var position = null;
-            var dest = 100;
-            
-            function scroll(timestamp) {
-                if (start === null) {
-                    start = timestamp;
-                    previousTimeStamp = timestamp;
-                    position = window.scrollY;
-                    scrolling = true;
-                }
-                
-                var elapsed = timestamp - previousTimeStamp;
-                position = position + speed * elapsed / 1000;
-                
-                console.log("start: " + start);
-                console.log("elapsed: " + elapsed);
-                console.log("position: " + position);
-                console.log("dest: " + dest);
-               
-                if (previousTimeStamp !== timestamp) {
-                    window.scrollTo(0, position);
-                }
-                
-                if (position < dest) {
-                    previousTimeStamp = timestamp;
-                    window.requestAnimationFrame(scroll);
-                } else {
-                    scrolling = false;
                 }
             }
             
