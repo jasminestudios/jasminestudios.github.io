@@ -3,10 +3,9 @@
         <script>
             var start = null;
             let previousTimeStamp;
-            let duration = 5000;
             let distance = 500;
             let startLocation = 0;
-            let speed = 200;
+            let speed = 300;
             var scrolling = false;
             var position = null;
             var dest = 100;
@@ -56,10 +55,12 @@
                 if (key == 'j') {
                     if (!scrolling) {
                         start = null;
-                        dest = window.scrollY + 100;
+                        dest = window.scrollY + 50;
+                        speed = 250;
                         window.requestAnimationFrame(scroll);
                     } else {
-                        dest = window.scrollY + 100;
+                        dest = window.scrollY + 50;
+<!--                        speed = 350;-->
                     }
                 } else if (key == 'k') {
                     start = null;
@@ -67,12 +68,7 @@
                     distance = -300;
                     
                     window.requestAnimationFrame(scroll);
-   
                 }
-                
-                event.stopPropagation();
-                event.stopImmediatePropagation();
-                event.preventDefault();
             }
         </script>
     </head>
