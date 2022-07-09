@@ -1,37 +1,46 @@
 <html>
     <head>
         <script>
-            let start, previousTimeStamp;
-            let done = false
+            var start = null;
+            let previousTimeStamp;
             let duration = 5000;
-            let distance = 1000;
+            let distance = 500;
             let startLocation = 0;
-            let speed = 3000;
+            let speed = 200;
+            var scrolling = false;
+            var position = null;
+            var dest = 100;
             
             function scroll(timestamp) {
-                if (start === undefined) {
+                if (start === null) {
                     start = timestamp;
+                    previousTimeStamp = timestamp;
+                    position = window.scrollY;
+                    scrolling = true;
                 }
-                var elapsed = timestamp - start;
-                var percentage = speed === 0 ? 0 : (elapsed / speed);
-                percentage = (percentage > 1) ? 1 : percentage;
                 
-                console.log('elapsed: ' + elapsed);
-                console.log(percentage);
+                var elapsed = timestamp - previousTimeStamp;
+                position = position + speed * elapsed / 1000;
                 
-                var position = startLocation + (distance * easingPattern(percentage));
+                console.log("start: " + start);
+                console.log("elapsed: " + elapsed);
+                console.log("position: " + position);
+                console.log("dest: " + dest);
                
                 if (previousTimeStamp !== timestamp) {
                     window.scrollTo(0, position);
                 }
                 
-                if (percentage < 1) {
+                if (position < dest) {
                     previousTimeStamp = timestamp;
                     window.requestAnimationFrame(scroll);
+                } else {
+                    scrolling = false;
                 }
             }
             
             function easingPattern(time) {
+                return time;
                 return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
             }
             
@@ -45,15 +54,17 @@
                 console.log("key: " + key);
                 
                 if (key == 'j') {
-                    start = 0;
-                    startLocation = window.scrollY;
-                    distance = 30;
-                    
-                    window.requestAnimationFrame(scroll);
+                    if (!scrolling) {
+                        start = null;
+                        dest = window.scrollY + 100;
+                        window.requestAnimationFrame(scroll);
+                    } else {
+                        dest = window.scrollY + 100;
+                    }
                 } else if (key == 'k') {
-                    start = 0;
+                    start = null;
                     startLocation = window.scrollY;
-                    distance = -30;
+                    distance = -300;
                     
                     window.requestAnimationFrame(scroll);
    
