@@ -1,6 +1,61 @@
 <html>
     <head>
         <script>
+            class Scroller {
+                static shared = new Scroller();
+                scrolling = false;
+                distance = 0;
+                position = 0;
+                previousTimeStamp = 0;
+                speed = 0;
+                duration = 250;
+                destination = 0;
+                
+                constructor() {
+                }
+                
+                scroll(distance) {
+                    if (this.scrolling === true) {
+                        this.distance = distance;
+                        this.position = window.scrollY;
+                        this.destination = this.position + this.distance;
+                        this.speed = distance / this.duration;
+                    } else {
+                        this.distance = distance;
+                        this.position = window.scrollY;
+                        this.destination = this.position + this.distance;
+                        this.speed = distance / this.duration;
+                        
+                        window.requestAnimationFrame(Scroller.shared.animateScroll);
+                    }
+                }
+                
+                animateScroll(timestamp) {
+                    console.log('speed: ' + Scroller.shared.speed);
+                    
+                    if (Scroller.shared.scrolling === false) {
+                        Scroller.shared.scrolling = true;
+                        Scroller.shared.previousTimeStamp = timestamp;
+                    }
+                    
+                    var elapsed = timestamp - Scroller.shared.previousTimeStamp;
+                    Scroller.shared.position = Scroller.shared.position + Scroller.shared.speed * elapsed;
+                    
+                    if (Scroller.shared.previousTimeStamp != timestamp) {
+                        window.scrollTo(window.scrollX, Scroller.shared.position);
+                    }
+                    
+                    if ((Scroller.shared.distance > 0 && Scroller.shared.position < Scroller.shared.destination) || (Scroller.shared.distance < 0 && Scroller.shared.position > Scroller.shared.destination)) {
+                        Scroller.shared.previousTimeStamp = timestamp;
+                        window.requestAnimationFrame(Scroller.shared.animateScroll);
+                    } else {
+                        Scroller.shared.scrolling = false;
+                    }
+                    
+                }
+            }
+            
+            
             var start = null;
             let previousTimeStamp;
             let distance = 500;
@@ -53,31 +108,13 @@
                 console.log("key: " + key);
                 
                 if (key == 'j') {
-                    if (!scrolling) {
-                        start = null;
-                        dest = window.scrollY + 50;
-                        speed = 300;
-                        window.requestAnimationFrame(scroll);
-                    } else {
-                        speed = 300;
-                        dest = window.scrollY + 50;
-                    }
+                    Scroller.shared.scroll(50);
                 } else if (key == 'k') {
-                    start = null;
-                    startLocation = window.scrollY;
-                    distance = -300;
-                    
-                    window.requestAnimationFrame(scroll);
+                    Scroller.shared.scroll(-50);
                 } else if (key == 'd') {
-                     if (!scrolling) {
-                        start = null;
-                        dest = window.scrollY + 500;
-                        speed = 3000;
-                        window.requestAnimationFrame(scroll);
-                    } else {
-                        speed = 3000;
-                        dest = window.scrollY + 500;
-                    }
+                    Scroller.shared.scroll(500);
+                } else if (key == 'u') {
+                    Scroller.shared.scroll(-500);
                 }
             }
         </script>
