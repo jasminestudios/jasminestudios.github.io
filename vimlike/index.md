@@ -26,6 +26,14 @@ The latest version of Vimlike is available in AppStore:
 [<img src="/Resources/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://apps.apple.com/app/vimlike/id1584519802)
 
 ## Version History
+### v1.2.4
+• New command: 'y y' to copy the URL and 'y t' to duplicate the tab
+• Enhanced smooth scroll
+
+### v1.2.2
+• Enhanced smooth scroll
+• Support the scroll speed configuration
+
 ### v1.2.1
 * Support a sequence of the keys for the shortcut
 * Updated the default shortcut to go to top of the page as 'g g'
@@ -100,6 +108,8 @@ In Safari Preference, you can Allow or Deny the extensions to specific websites.
 | <kbd>w</kbd> | Next tab |
 | <kbd>t</kbd> | New tab |
 | <kbd>x</kbd> | Close tab |
+| <kbd>y</kbd> <kbd>y</kbd> | Copy current URL to the clipboard |
+| <kbd>y</kbd> <kbd>t</kbd> | Duplicate current tab |
 | <kbd>r</kbd> | Reload tab |
 | <kbd>/</kbd> | Search links |
 | <kbd>i</kbd> | Go to the first edit box |
@@ -201,6 +211,8 @@ settings.map('r', VLCommand.RELOAD);
 settings.map('?', VLCommand.TOGGLE_HELP);
 settings.map('shift+slash', VLCommand.TOGGLE_HELP);
 settings.map('/', VLCommand.SHOW_CONSOLE);
+settings.map('y y', VLCommand.COPY_CURRENT_URL);
+settings.map('y t', VLCommand.DUPLICATE_TAB);
 
 ```
 
@@ -248,6 +260,9 @@ settings.map('/', VLCommand.SHOW_CONSOLE);
 | VLCommand.VIDEO_FULLSCREEN | Play video in a fullscreen |
 | VLCommand.VIDEO_PIP | Play video in a PIP (picture-in-picture) |
 | VLCommand.RELOAD | Reload |
+| VLCommand.COPY_CURRENT_URL | Copy current URL to the clipboard |
+| VLCommand.DUPLICATE_TAB | Duplicate current tab |
+
 
 ### Keys
 Vimlike uses Javascript KeyboardEvent.code for the keyboard command. Following table shows codes for the special keys. 
