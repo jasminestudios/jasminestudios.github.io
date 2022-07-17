@@ -27,12 +27,12 @@ The latest version of Vimlike is available in AppStore:
 
 ## Version History
 ### v1.2.4
-• New command: 'y y' to copy the URL and 'y t' to duplicate the tab
-• Enhanced smooth scroll
+* New command: 'y y' to copy the URL and 'y t' to duplicate the tab
+* Enhanced smooth scroll
 
 ### v1.2.2
-• Enhanced smooth scroll
-• Support the scroll speed configuration
+* Enhanced smooth scroll
+* Support the scroll speed configuration
 
 ### v1.2.1
 * Support a sequence of the keys for the shortcut
