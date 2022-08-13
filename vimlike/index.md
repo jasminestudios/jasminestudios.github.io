@@ -368,4 +368,34 @@ settings.map('s', function(vimlike) {
 
 settings.unmap('space');
 ```
+### instagram.com
+```javascript
 
+// Go to Home
+settings.map('g h', function(vimlike) {
+    window.open("https://www.instagram.com", "_self");
+});
+
+// Go to Inbox
+settings.map('g i', function(vimlike) {
+    window.open("https://www.instagram.com/direct/inbox/", "_self");
+});
+
+// Go to Explorer
+settings.map('g e', function(vimlike) {
+    window.open("https://www.instagram.com/explore/", "_self");
+});
+
+settings.map('backslash', function(vimlike) {
+    vimlike.click('//div[div/*[local-name()="svg" and @aria-label="Close"]]');
+});
+
+settings.map('bracketright', function(vimlike) {
+    vimlike.click('//button[div/span/*[local-name()="svg" and @aria-label="Next"]]');
+});
+
+settings.map('bracketleft', function(vimlike) {
+    vimlike.click('//button[div/span/*[local-name()="svg" and @aria-label="Go back"]]');
+});
+
+```
