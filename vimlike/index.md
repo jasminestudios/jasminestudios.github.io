@@ -312,5 +312,60 @@ settings.map('bracketright', function(vimlike) {
 });
 ```
 
+### youtube.com
+```javascript
+// www.youtube.com
+let watchUrls = ['https://www.youtube.com/watch', 'https://m.youtube.com/watch'];
 
+// Go to Home
+settings.map('g h', function(vimlike) {
+    window.open("https://www.youtube.com", "_self");
+});
+
+// Go to Explorer
+settings.map('g e', function(vimlike) {
+    window.open("https://www.youtube.com/feed/explore", "_self");
+});
+
+// Go to Shorts
+settings.map('g o', function(vimlike) {
+    window.open("https://www.youtube.com/shorts", "_self");
+});
+
+// Go to Subscription
+settings.map('g s', function(vimlike) {
+    window.open("https://www.youtube.com/feed/subscriptions", "_self");
+});
+
+// Next track
+settings.map('bracketright', function(vimlike) {
+    let button = document.querySelector('a.ytp-next-button');
+    
+    if (button != null) {
+        button.click();
+    }
+}, {includes: watchUrls});
+
+// Skip ad
+settings.map('s', function(vimlike) {
+    if (document.querySelector('.ad-showing')) {
+        const video = document.querySelector('video');
+        if (video && video.duration) {
+            video.currentTime = video.duration;
+        }
+    }
+
+    const skip = document.querySelector('button.ytp-ad-skip-button');
+    if (skip) {
+        skip.click();
+    }
+    
+    const close = document.querySelector('button.ytp-ad-overlay-close-button');
+    if (close) {
+        close.click();
+    }
+}, {includes: watchUrls});
+
+settings.unmap('space');
+```
 
