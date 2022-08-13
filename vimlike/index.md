@@ -13,6 +13,7 @@ layout: default
 - [Key Bindings](#key-bindings)
 - [Links](#links)
 - [Customization](#customization)
+- [Website Specific Key Bindings and Script](#website-specific-key-bindings-and-script)
 
 ## Introduction
 VIMlike is Safari extension for the Vim-like keyboard experience. You can navigate a page and open a link with the keyboard shortcuts.
@@ -295,3 +296,21 @@ Vimlike uses Javascript KeyboardEvent.code for the keyboard command. Following t
 | <kbd>'</kbd> | Quote |
 
 KeyboardEvent.code uses the key based on the QWERTY layout. Therefore, key bindings of some of the latin keyboards are different. For example, the code "z" represents for the Z key on a QWERTY layout keyboard, but the same code value also represents the Y key on German keyboards.
+
+## Website Specific Key Bindings and Script
+Vimlike version 1.3.0 or above supports custom key binding and custom script for a specific website.
+
+### Examples
+#### google.com
+```javascript
+settings.map('bracketleft', function(vimlike) {
+    vimlike.click('//a[@id="pnprev"]');
+});
+
+settings.map('bracketright', function(vimlike) {
+    vimlike.click('//a[@id="pnnext"]');
+});
+```
+
+
+
