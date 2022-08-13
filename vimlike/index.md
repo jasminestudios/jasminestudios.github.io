@@ -386,16 +386,33 @@ settings.map('g e', function(vimlike) {
     window.open("https://www.instagram.com/explore/", "_self");
 });
 
+// Close
 settings.map('backslash', function(vimlike) {
     vimlike.click('//div[div/*[local-name()="svg" and @aria-label="Close"]]');
 });
 
+// Next
 settings.map('bracketright', function(vimlike) {
     vimlike.click('//button[div/span/*[local-name()="svg" and @aria-label="Next"]]');
 });
 
+// Prev
 settings.map('bracketleft', function(vimlike) {
     vimlike.click('//button[div/span/*[local-name()="svg" and @aria-label="Go back"]]');
 });
 
 ```
+
+### amazon.com
+```javascript
+// Go to next page
+settings.map('bracketright', function(vimlike) {
+    vimlike.click('//a[contains(@aria-label, "Go to next page")]');
+});
+
+// Go to previous page
+settings.map('bracketleft', function(vimlike) {
+    vimlike.click('//a[contains(@aria-label, "Go to previous page")]');
+});
+```
+
