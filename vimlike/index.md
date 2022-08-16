@@ -27,6 +27,11 @@ The latest version of Vimlike is available in AppStore:
 [<img src="/Resources/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://apps.apple.com/app/vimlike/id1584519802)
 
 ## Version History
+### v1.3.0
+* Supports Website Settings
+* Custom key bindings and javascript for a specific website
+* Supports synchonization of settings across mac, iPad and iPhone via iCloud
+
 ### v1.2.4
 * New command: 'y y' to copy the URL and 'y t' to duplicate the tab
 * Enhanced smooth scroll
