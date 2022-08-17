@@ -27,6 +27,11 @@ The latest version of Vimlike is available in AppStore:
 [<img src="/Resources/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://apps.apple.com/app/vimlike/id1584519802)
 
 ## Version History
+### v1.3.1
+* Javascript validation in keybindings and script settings
+* Fixed the issue with smart quotes and dashes in script editor (many thanks Oğulcan!)
+* Bug fix
+
 ### v1.3.0
 * Supports Website Settings
 * Custom key bindings and javascript for a specific website
