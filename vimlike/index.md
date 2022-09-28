@@ -33,42 +33,62 @@ The latest version of Vimlike is available in AppStore:
 * Advanced option for text selection when focusing textbox
 
 ### v1.3.3
+*13 Sep 2022*
 * Supports custom CSS stylesheet for website settings
 * Supports export and import of website settings
 * Bug fix
 
 ### v1.3.1
+*16 Aug 2022*
 * Javascript validation in keybindings and script settings
 * Fixed the issue with smart quotes and dashes in script editor (many thanks Oğulcan!)
 * Bug fix
 
 ### v1.3.0
+*15 Aug 2022*
 * Supports Website Settings
 * Custom key bindings and javascript for a specific website
 * Supports synchonization of settings across mac, iPad and iPhone via iCloud
 
 ### v1.2.4
+*17 Jul 2022*
 * New command: 'y y' to copy the URL and 'y t' to duplicate the tab
 * Enhanced smooth scroll
+* Bugfix
+
+### v1.2.3
+*17 Jul 2022*
+• New command: 'y y' to copy the URL and 'y t' to duplicate the tab
+• Enhanced smooth scroll
 
 ### v1.2.2
+*10 Jul 2022*
 * Enhanced smooth scroll
 * Support the scroll speed configuration
 
 ### v1.2.1
+*19 Jun 2022*
 * Support a sequence of the keys for the shortcut
 * Updated the default shortcut to go to top of the page as 'g g'
 * New default shortcut to go to tab 'g 1' ... 'g 9'
 * New default shortcut to go to the last tab 'g $'
 
 ### v1.2.0
+*28 May 2022*
 * Fixed the scroll issue
 
 ### v1.1.5
+*3 Feb 2022*
 * Now Vimlike supports iPhone. Browse the web with iPhone and the bluetooth keyboard like a geek
 * Fixed the latin keyboard layout issue (e.g. German, French layouts) with "Ignore Keyboard Layout" option
 
+### v1.1.4
+*26 Dec 2021*
+* Link hints are optimized. Large images, videos and texts are prioritized in link hints.
+* Link hints optimization can be changed in Settings.
+
 ### v1.1.3
+*12 Dec 2021*
 * Added a shortcut to reload a page. In case you customized keyboard shortcuts, please add following;
 ```javascript
 settings.map('r', VLCommand.RELOAD);
@@ -82,6 +102,7 @@ settings.map('r', VLCommand.RELOAD);
 * Added keyboard shortcut help button to open the help page listing the key codes
 
 ### v1.1.1
+*10 Oct 2021*
 * Supports to open the link in background as an option when it opens as a new tab
 * Supports to open the multiple links continuously in background as an option
 * Supports 2 themes - Classic (black text and yellow background) and Terminal (terminal-like green text and black background)
@@ -93,6 +114,7 @@ settings.map('r', VLCommand.RELOAD);
 * Fix the bug: Tab key is back to select the link
 
 ### v1.0
+*4 Oct 2021*
 * Initial release
 
 ## Privacy Policy
