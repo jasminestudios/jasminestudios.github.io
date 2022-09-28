@@ -28,6 +28,7 @@ The latest version of Vimlike is available in AppStore:
 
 ## Version History
 ### v1.3.4
+*26 Sep 2022*
 * Advanced option for click animation on/off
 * Advanced option for text selection when focusing textbox
 
