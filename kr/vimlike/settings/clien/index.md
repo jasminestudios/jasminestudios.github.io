@@ -9,6 +9,7 @@ layout: default
 - [설치](#설치)
 
 ## 소개
+Vimlike는 Chrome의 Vimium처럼 vim키 매핑으로 웹 브라우징을 할 수 있도록 해주는 사파리 확장 앱입니다.    
     <img src="/Resources/vimlike/settings/clien-home.png" width="720"/>
     
     <img src="/Resources/vimlike/settings/clien-article.png" width="720"/>
