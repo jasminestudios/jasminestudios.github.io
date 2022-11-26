@@ -11,7 +11,9 @@ layout: default
 ## 설치
 1. 링크를 클릭하여 클리앙 [vimlike 파일](https://www.jasminestudios.net/vimlike/settings/www%2Eclien%2Enet%2Evimlike) 을 다운로드합니다.
 2. Vimlike 앱을 실행한 후, 왼편 사이드 바에 Website Settings 메뉴를 선택합니다.
-  ![Screen Shot](/Resources/vimlike/settings/clien-website-settings.png)
+  
+    <img src="/Resources/vimlike/settings/clien-website-settings.png" width="720"/>
+
 3. Import 버튼을 클릭한 후, 다운로드한 www.clien.net.vimlike 파일을 선택합니다.
 5. Safari로 돌아가서 클리앙으로 들어갑니다.
 
