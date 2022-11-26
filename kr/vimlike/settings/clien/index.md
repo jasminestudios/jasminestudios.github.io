@@ -12,7 +12,7 @@ layout: default
 * Vimlike는 Chrome의 Vimium처럼 vim키 매핑으로 웹 브라우징을 할 수 있도록 해주는 사파리 확장 앱입니다. 클리앙 확장 설정이 적용된 클리앙 홈페이지는 아래처럼 나옵니다.    
     <img src="/Resources/vimlike/settings/clien-home.png" width="720"/>
     
-* 본문 페이지는 아래처럼 나옵니다.
+* 클리앙 확장 설정은 컨텐츠를 읽는데 초점을 맞출 수 있도록 만들었습니다. 본문 페이지는 아래처럼 나옵니다.
     <img src="/Resources/vimlike/settings/clien-article.png" width="720"/>
 
 * Vimlike의 기본 기능인 링크 기능이 활성화된 화면입니다.
