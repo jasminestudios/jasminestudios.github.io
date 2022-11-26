@@ -5,8 +5,14 @@ layout: default
 
 # 클리앙 커스텀 CSS / 자바스크립트
 
-- [Introduction](#introduction)
+- [소개](#소개)
 - [설치](#설치)
+
+## 소개
+    <img src="/Resources/vimlike/settings/clien-home.png" width="720"/>
+    <img src="/Resources/vimlike/settings/clien-article.png" width="720"/>
+    <img src="/Resources/vimlike/settings/clien-link.png" width="720"/>
+    <img src="/Resources/vimlike/settings/clien-menu.png" width="720"/>
 
 ## 설치
 1. 링크를 클릭하여 클리앙 [vimlike 파일](https://www.jasminestudios.net/vimlike/settings/www%2Eclien%2Enet%2Evimlike) 을 다운로드합니다.
