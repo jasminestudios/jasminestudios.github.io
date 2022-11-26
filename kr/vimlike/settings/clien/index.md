@@ -14,8 +14,11 @@ layout: default
   
     <img src="/Resources/vimlike/settings/clien-website-settings.png" width="720"/>
 
-3. Import 버튼을 클릭한 후, 다운로드한 www.clien.net.vimlike 파일을 선택합니다.
-5. Safari로 돌아가서 클리앙으로 들어갑니다.
+3. Import 버튼을 클릭한 후, 다운로드한 www.clien.net.vimlike 파일을 선택하고, Trust and Open을 선택합니다. 아래 화면이 나오면 설치가 완료되었습니다.
+
+    <img src="/Resources/vimlike/settings/clien-install-complete.png" width="720"/>
+
+4. Safari로 돌아가서 클리앙으로 들어갑니다.
 
 
 ## CSS
