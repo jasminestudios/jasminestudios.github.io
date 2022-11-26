@@ -10,8 +10,11 @@ layout: default
 
 ## 소개
     <img src="/Resources/vimlike/settings/clien-home.png" width="720"/>
+    
     <img src="/Resources/vimlike/settings/clien-article.png" width="720"/>
+    
     <img src="/Resources/vimlike/settings/clien-link.png" width="720"/>
+    
     <img src="/Resources/vimlike/settings/clien-menu.png" width="720"/>
 
 ## 설치
