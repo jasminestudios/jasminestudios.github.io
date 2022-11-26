@@ -5,8 +5,18 @@ layout: default
 
 # 클리앙 커스텀 CSS / 자바스크립트
 
-- [Introduction](#introduction)
+- [소개](#소개)
 - [설치](#설치)
+
+## 소개
+Vimlike는 Chrome의 Vimium처럼 vim키 매핑으로 웹 브라우징을 할 수 있도록 해주는 사파리 확장 앱입니다.    
+    <img src="/Resources/vimlike/settings/clien-home.png" width="720"/>
+    
+    <img src="/Resources/vimlike/settings/clien-article.png" width="720"/>
+    
+    <img src="/Resources/vimlike/settings/clien-link.png" width="720"/>
+    
+    <img src="/Resources/vimlike/settings/clien-menu.png" width="720"/>
 
 ## 설치
 1. 링크를 클릭하여 클리앙 [vimlike 파일](https://www.jasminestudios.net/vimlike/settings/www%2Eclien%2Enet%2Evimlike) 을 다운로드합니다.
@@ -14,8 +24,11 @@ layout: default
   
     <img src="/Resources/vimlike/settings/clien-website-settings.png" width="720"/>
 
-3. Import 버튼을 클릭한 후, 다운로드한 www.clien.net.vimlike 파일을 선택합니다.
-5. Safari로 돌아가서 클리앙으로 들어갑니다.
+3. Import 버튼을 클릭한 후, 다운로드한 www.clien.net.vimlike 파일을 선택하고, Trust and Open을 선택합니다. 아래 화면이 나오면 설치가 완료되었습니다.
+
+    <img src="/Resources/vimlike/settings/clien-install-complete.png" width="720"/>
+
+4. Safari로 돌아가서 클리앙으로 들어갑니다.
 
 
 ## CSS
