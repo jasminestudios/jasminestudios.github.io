@@ -16,7 +16,7 @@ layout: default
 
 
 ## CSS
-'''
+```css
 /* 좌측 메뉴 */
 div.snb {
 }
@@ -183,14 +183,12 @@ html > body > div.nav_container {
         min-width: 1213px !important;
     }
 }
-
-
-'''
+```
 
 
 ## 자바스크립트
 
-'''
+```javascript
 // clien
 
 // Home
@@ -282,4 +280,4 @@ settings.map('m', function(vimlike) {
         meta.setAttribute("content", "width=device-width, initial-scale=1.3");
     }
 });
-'''
+```
