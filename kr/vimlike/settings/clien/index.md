@@ -18,7 +18,7 @@ Vimlike는 Chrome의 Vimium처럼 vim키 매핑으로 웹 브라우징을 할 �
 클리앙 웹사이트 설정이 적용된 본문 페이지는 아래처럼 다른 부수적인 내용에 방해받지 않고 본문 내용을 쉽게 읽도록 표시됩니다.
 <img src="/Resources/vimlike/settings/clien-article.png" width="640"/>
 
-클리앙 확장 설정은 Vimlike의 기본 기능인 vim키 매핑으로 웹 브라우징 하는 것 이외에 추가적으로, 클리앙에 특화된 바로가기 키를 사용할 수 있습니다. 아래 화면은 Vimlike의 기본 기능인 링크 기능이 활성화된 화면입니다. 
+클리앙 확장 설정은 Vimlike의 기본 기능인 vim키 매핑으로 웹 브라우징 하는 것 이외에 추가적으로, 클리앙에 특화된 바로가기 키를 사용할 수 있습니다. Vimlike의 바로가기 키보드 매핑과 클리앙 웹사이트 설정을 사용하면, 터치패드나 아이패드의 화면을 터치하지 않고, 키보드만으로 클리앙을 매우 쉽게 이용할 수 있습니다. 아래 화면은 Vimlike의 기본 기능인 링크 기능이 활성화된 화면입니다. 
 <img src="/Resources/vimlike/settings/clien-link.png" width="640"/>
 
 아래 표는 클리앙 웹사이트 설정에 추가된 바로가기 키입니다. Vimlike의 기본 바로가기 키를 익히려면 [Vimlike 문서](/vimlike/#key-bindings)를 읽으시면 됩니다.
