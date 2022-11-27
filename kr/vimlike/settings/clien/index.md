@@ -9,17 +9,20 @@ layout: default
 - [설치](#설치)
 
 ## 소개
-Vimlike는 Chrome의 Vimium처럼 vim키 매핑으로 웹 브라우징을 할 수 있도록 해주는 사파리 확장 앱입니다. 클리앙 확장 설정이 적용된 클리앙 홈페이지는 아래처럼 나옵니다.    
+* Vimlike는 Chrome의 Vimium처럼 vim키 매핑으로 웹 브라우징을 할 수 있도록 해주는 사파리 확장 앱입니다. 클리앙 확장 설정이 적용된 클리앙 홈페이지는 아래처럼 나옵니다.    
     <img src="/Resources/vimlike/settings/clien-home.png" width="720"/>
     
-본문 페이지는 아래처럼 나옵니다.
+* 클리앙 확장 설정은 컨텐츠를 읽는데 초점을 맞출 수 있도록 만들었습니다. 본문 페이지는 아래처럼 나옵니다.
     <img src="/Resources/vimlike/settings/clien-article.png" width="720"/>
 
-Vimlike의 기본 기능인 링크 기능이 활성화된 화면입니다.
+* Vimlike의 기본 기능인 링크 기능이 활성화된 화면입니다.
     <img src="/Resources/vimlike/settings/clien-link.png" width="720"/>
 
 클리앙의 왼쪽 메뉴나 오른쪽 로그인 창 부분은 macOS의 경우 마우스를 메뉴 영역에 가져 가거나, iPadOS의 경우 해당 영역으 터치하면 나오게 됩니다.
     <img src="/Resources/vimlike/settings/clien-menu.png" width="720"/>
+
+아이패드의 경우, 세로로 돌리면 좌우에 메뉴 영역 없이 컨텐츠가 가득차서 나옵니다.
+    <img src="/Resources/vimlike/settings/clien-portrait.png" width="720"/>
 
 ## 설치
 1. 링크를 클릭하여 클리앙 [vimlike 파일](https://www.jasminestudios.net/vimlike/settings/www%2Eclien%2Enet%2Evimlike) 을 다운로드합니다.
