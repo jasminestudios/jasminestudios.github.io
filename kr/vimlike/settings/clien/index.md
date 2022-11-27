@@ -53,11 +53,11 @@ Vimlike는 특정 웹사이트에 추가적으로 CSS 스타일시트나 자바�
 1. 링크를 클릭하여 [클리앙 웹사이트 설정 파일](https://www.jasminestudios.net/vimlike/settings/www%2Eclien%2Enet%2Evimlike) 을 다운로드합니다.
 2. Vimlike 앱을 실행한 후, 왼편 사이드 바에 Website Settings 메뉴를 선택합니다.
   
-    <img src="/Resources/vimlike/settings/clien-website-settings.png" width="720"/>
+    <img src="/Resources/vimlike/settings/clien-website-settings.png" width="560"/>
 
 3. Import 버튼을 클릭한 후, 다운로드한 www.clien.net.vimlike 파일을 선택하고, Trust and Open을 선택합니다. 아래 화면이 나오면 설치가 완료되었습니다.
 
-    <img src="/Resources/vimlike/settings/clien-install-complete.png" width="720"/>
+    <img src="/Resources/vimlike/settings/clien-install-complete.png" width="560"/>
 
 4. Safari로 돌아가서 클리앙으로 들어갑니다.
 
