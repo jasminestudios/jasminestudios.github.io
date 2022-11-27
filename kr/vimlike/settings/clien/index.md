@@ -22,6 +22,7 @@ Vimlike는 특정 웹사이트에 추가적으로 CSS 스타일시트나 자바�
 <img src="/Resources/vimlike/settings/clien-link.png" width="560"/>
 
 아래 표는 클리앙 웹사이트 설정에 추가된 바로가기 키입니다. [Vimlike 문서](/vimlike/#key-bindings)를 통해 Vimlike의 기본 바로가기 키를 익힐 수 있습니다.
+
 | Key          |Command|
 |:-------------|:----------------------|
 | <kbd>]</kbd> | 다음 페이지로 이동|
