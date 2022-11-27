@@ -46,10 +46,10 @@ Vimlike는 특정 웹사이트에 추가적으로 CSS 스타일시트나 자바�
 
 [<img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://itunes.apple.com/app/id1584519802)
 
-클리앙 웹사이트 설정 파일은 [클리앙 웹사이트 설정 파일](https://www.jasminestudios.net/vimlike/settings/www%2Eclien%2Enet%2E%2D1%2E0%2Evimlike) 링크를 클릭하여 다운로드합니다.
+클리앙 웹사이트 설정 파일은 [클리앙 웹사이트 설정 파일](https://www.jasminestudios.net/vimlike/settings/www.clien.net-1.0.vimlike) 링크를 클릭하여 다운로드합니다.
 
 ## 설치
-1. 클리앙 웹사이트 설정 파일을 [다운로드](#다운로드)합니다.
+1. [클리앙 웹사이트 설정 파일](https://www.jasminestudios.net/vimlike/settings/www.clien.net-1.0.vimlike)을 다운로드합니다.
 2. Vimlike 앱을 실행한 후, 왼편 사이드 바에 Website Settings 메뉴를 선택합니다.
   
     <img src="/Resources/vimlike/settings/clien-website-settings.png" width="560"/>
