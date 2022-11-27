@@ -22,7 +22,7 @@ layout: default
     <img src="/Resources/vimlike/settings/clien-menu.png" width="720"/>
 
 아이패드의 경우, 세로로 돌리면 좌우에 메뉴 영역 없이 컨텐츠가 가득차서 나옵니다.
-    <img src="/Resources/vimlike/settings/clien-portrait.png" width="720"/>
+    <img src="/Resources/vimlike/settings/clien-portrait.png" width="560"/>
 
 ## 설치
 1. 링크를 클릭하여 클리앙 [vimlike 파일](https://www.jasminestudios.net/vimlike/settings/www%2Eclien%2Enet%2Evimlike) 을 다운로드합니다.
