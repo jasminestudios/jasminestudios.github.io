@@ -41,12 +41,13 @@ Vimlike는 Chrome의 Vimium처럼 vim키 매핑으로 웹 브라우징을 할 �
 <img src="/Resources/vimlike/settings/clien-portrait.png" width="480"/>
 
 ## 다운로드
-최근 버전의 Vimlike는 macOS, iPadOS 혹은 iOS 앱스토어에서 다운로드 하실 수 있습니다. 
+최근 버전의 Vimlike는 macOS, iPadOS 혹은 iOS 앱스토어에서 다운로드 하실 수 있습니다.
+
 [<img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://itunes.apple.com/app/id1584519802)
+
 [<img src="/Resources/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://apps.apple.com/app/vimlike/id1584519802)
 
 클리앙 웹사이트 설정 파일은 다음 [클리앙 웹사이트 설정 파일](https://www.jasminestudios.net/vimlike/settings/www%2Eclien%2Enet%2Evimlike) 링크를 클릭하여 다운로드합니다.
-
 
 ## 설치
 1. 링크를 클릭하여 [클리앙 웹사이트 설정 파일](https://www.jasminestudios.net/vimlike/settings/www%2Eclien%2Enet%2Evimlike) 을 다운로드합니다.
