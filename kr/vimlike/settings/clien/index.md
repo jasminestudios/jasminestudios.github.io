@@ -3,7 +3,7 @@ layout: default
 ---
 [_metadata_:apple-itunes-app]:- "app-id=1584519802"
 
-# Vimlike 클리앙 설정
+# Vimlike 클리앙 웹사이트 설정
 
 - [소개](#소개)
 - [설치](#설치)
@@ -11,10 +11,10 @@ layout: default
 ## 소개
 Vimlike는 Chrome의 Vimium처럼 vim키 매핑으로 웹 브라우징을 할 수 있도록 해주는 사파리 확장 앱입니다. Vimlike는 macOS, iPadOS 및 iOS를 지원합니다. Vimlike는 특정 웹사이트에 추가적으로 CSS 스타일시트나 자바스크립트를 설정하는 것이 가능합니다. 클리앙 웹사이트 설정 파일은 클리앙 사이트에 메뉴를 숨기거나 광고를 흑백으로 표시하여 사용자가 좀 더 컨텐츠에 집중할 수 있도록 만들어졌습니다. 
 
-클리앙 확장 설정이 적용된 클리앙 홈페이지는 아래처럼 양 옆의 메뉴가 숨겨진 채로 표시됩니다.
+클리앙 웹사이트 설정이 적용된 클리앙 홈페이지는 아래처럼 양 옆의 메뉴가 숨겨진 채로 표시됩니다.
     <img src="/Resources/vimlike/settings/clien-home.png" width="640"/>
     
-* 클리앙 확장 설정은 컨텐츠를 읽는데 초점을 맞출 수 있도록 만들었습니다. 본문 페이지는 아래처럼 나옵니다.
+클리앙 웹사이트 설정이 적용된 본문 페이지는 아래처럼 본문 내용을 쉽게 읽도록 표시됩니다.
     <img src="/Resources/vimlike/settings/clien-article.png" width="640"/>
 
 * Vimlike의 기본 기능인 링크 기능이 활성화된 화면입니다.
