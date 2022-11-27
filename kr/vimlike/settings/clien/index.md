@@ -7,6 +7,7 @@ layout: default
 
 - [소개](#소개)
 - [설치](#설치)
+- [다운로드] (#다운로드)
 
 ## 소개
 Vimlike는 Chrome의 Vimium처럼 vim키 매핑으로 웹 브라우징을 할 수 있도록 해주는 사파리 확장 앱입니다. Vimlike는 macOS, iPadOS 및 iOS를 지원합니다. Vimlike는 특정 웹사이트에 추가적으로 CSS 스타일시트나 자바스크립트를 설정하는 것이 가능합니다. 클리앙 웹사이트 설정 파일은 클리앙 사이트에 메뉴를 숨기거나 광고를 흑백으로 흐리게 표시하여 사용자가 좀 더 컨텐츠에 집중할 수 있도록 만들어졌습니다. 
@@ -39,8 +40,16 @@ Vimlike는 Chrome의 Vimium처럼 vim키 매핑으로 웹 브라우징을 할 �
 
 <img src="/Resources/vimlike/settings/clien-portrait.png" width="480"/>
 
+## 다운로드
+최근 버전의 Vimlike는 macOS, iPadOS 혹은 iOS 앱스토어에서 다운로드 하실 수 있습니다. 
+[<img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://itunes.apple.com/app/id1584519802)
+[<img src="/Resources/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://apps.apple.com/app/vimlike/id1584519802)
+
+클리앙 웹사이트 설정 파일은 다음 [클리앙 웹사이트 설정 파일](https://www.jasminestudios.net/vimlike/settings/www%2Eclien%2Enet%2Evimlike) 링크를 클릭하여 다운로드합니다.
+
+
 ## 설치
-1. 링크를 클릭하여 클리앙 [vimlike 파일](https://www.jasminestudios.net/vimlike/settings/www%2Eclien%2Enet%2Evimlike) 을 다운로드합니다.
+1. 링크를 클릭하여 [클리앙 웹사이트 설정 파일](https://www.jasminestudios.net/vimlike/settings/www%2Eclien%2Enet%2Evimlike) 을 다운로드합니다.
 2. Vimlike 앱을 실행한 후, 왼편 사이드 바에 Website Settings 메뉴를 선택합니다.
   
     <img src="/Resources/vimlike/settings/clien-website-settings.png" width="720"/>
