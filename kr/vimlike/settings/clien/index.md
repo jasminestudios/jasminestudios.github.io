@@ -36,7 +36,7 @@ Vimlike는 Chrome의 Vimium처럼 vim키 매핑으로 웹 브라우징을 할 �
 
 아이패드의 경우, 세로로 돌리면 좌우에 메뉴 영역 없이 컨텐츠가 가득차서 나옵니다. 클리앙 메뉴를 클릭하고 싶은 경우에는, 아이패드를 다시 가로로 돌린 후에 메뉴 영역을 클릭하면 됩니다.
 
-<img src="/Resources/vimlike/settings/clien-portrait.png" width="420"/>
+<img src="/Resources/vimlike/settings/clien-portrait.png" width="480"/>
 
 ## 다운로드
 최근 버전의 Vimlike는 macOS, iPadOS 혹은 iOS 앱스토어에서 다운로드 하실 수 있습니다.
