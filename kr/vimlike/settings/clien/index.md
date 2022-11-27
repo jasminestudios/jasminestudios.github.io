@@ -19,7 +19,7 @@ layout: default
     <img src="/Resources/vimlike/settings/clien-link.png" width="720"/>
 
 클리앙의 왼쪽 메뉴나 오른쪽 로그인 창 부분은 macOS의 경우 마우스를 메뉴 영역에 가져 가거나, iPadOS의 경우 해당 영역으 터치하면 나오게 됩니다.
-    <img src="/Resources/vimlike/settings/clien-menu.png" width="720"/>
+    <img src="/Resources/vimlike/settings/clien-menu1.png" width="720"/>
 
 아이패드의 경우, 세로로 돌리면 좌우에 메뉴 영역 없이 컨텐츠가 가득차서 나옵니다.
     <img src="/Resources/vimlike/settings/clien-portrait.png" width="720"/>
