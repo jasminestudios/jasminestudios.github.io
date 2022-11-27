@@ -7,10 +7,12 @@ layout: default
 
 - [소개](#소개)
 - [설치](#설치)
-- [다운로드] (#다운로드)
+- [다운로드](#다운로드)
 
 ## 소개
 Vimlike는 Chrome의 Vimium처럼 vim키 매핑으로 웹 브라우징을 할 수 있도록 해주는 사파리 확장 앱입니다. Vimlike는 macOS, iPadOS 및 iOS를 지원합니다. Vimlike는 특정 웹사이트에 추가적으로 CSS 스타일시트나 자바스크립트를 설정하는 것이 가능합니다. 클리앙 웹사이트 설정 파일은 클리앙 사이트에 메뉴를 숨기거나 광고를 흑백으로 흐리게 표시하여 사용자가 좀 더 컨텐츠에 집중할 수 있도록 만들어졌습니다. 
+
+<img src="/Resources/vimlike/settings/clien-contents.png" width="1024"/>
 
 클리앙 웹사이트 설정이 적용된 클리앙 홈페이지는 아래처럼 표시됩니다.
 <img src="/Resources/vimlike/settings/clien-home.png" width="640"/>
@@ -33,7 +35,7 @@ Vimlike는 Chrome의 Vimium처럼 vim키 매핑으로 웹 브라우징을 할 �
 | <kbd>g</kbd> <kbd>i</kbd> | 클리앙 아이포니앙 페이지로 이동|
 | <kbd>g</kbd> <kbd>m</kbd> | 클리앙 MaClien 페이지로 이동|
 
-클리앙의 왼쪽 메뉴나 오른쪽 로그인 창 부분은 macOS의 경우 마우스를 메뉴 영역에 가져 가거나, iPadOS의 경우 해당 영역으 터치하면 나오게 됩니다.
+클리앙의 왼쪽 메뉴나 오른쪽 로그인 창 부분은 macOS의 경우 마우스를 메뉴 영역에 가져 가거나, iPadOS의 경우 해당 영역을 터치하거나 트랙패드로 커서를 이동하면 메뉴가 표시됩니다.
 <img src="/Resources/vimlike/settings/clien-menu.png" width="640"/>
 
 아이패드의 경우, 세로로 돌리면 좌우에 메뉴 영역 없이 컨텐츠가 가득차서 나옵니다. 클리앙 메뉴를 클릭하고 싶은 경우에는, 아이패드를 다시 가로로 돌린 후에 메뉴 영역을 클릭하면 됩니다.
