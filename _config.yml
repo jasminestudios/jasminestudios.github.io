@@ -10,8 +10,4 @@ relative_links:
 # google_analytics: UA-138756895-1
 
 # Analytics
-analytics:
-  provider: "google-gtag"
-  google:
-    measurement_id: "G-C3MM12Q509"
-    anonymize_ip: false
+google_analytics: G-C3MM12Q509
