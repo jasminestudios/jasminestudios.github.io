@@ -27,6 +27,11 @@ The latest version of Vimlike is available in AppStore:
 [<img src="/Resources/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://apps.apple.com/app/vimlike/id1584519802)
 
 ## Version History
+### v1.4.1
+*17 May 2023*
+* Enhanced the script editor with syntax highlighting in Keyboard and Website settings
+* Additional links styles with larger fonts in Appearance settings
+
 ### v1.4.0
 *20 Nov 2022*
 * Migration to Manifest v3
