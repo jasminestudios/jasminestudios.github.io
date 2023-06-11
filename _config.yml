@@ -11,7 +11,7 @@ relative_links:
 
 # Analytics
 analytics:
-  provider               : "google-gtag"
+  provider: "google-gtag"
   google:
-    measurement_id          : "G-C3MM12Q509"
-    anonymize_ip         : # true, false (default)
+    measurement_id: "G-C3MM12Q509"
+    anonymize_ip: false
