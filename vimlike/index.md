@@ -28,6 +28,12 @@ The latest version of Vimlike is available in AppStore:
 
 ## Version History
 ### v1.4.1
+*20 Jun 2023*
+* New command: opening the link below the cursor (default key: a)
+* New command: opening the link below the cursor in a new tab (default key: s)
+* New command: reader view (default key: shift+r)
+
+### v1.4.1
 *17 May 2023*
 * Enhanced the script editor with syntax highlighting in Keyboard and Website settings
 * Additional links styles with larger fonts in Appearance settings
@@ -174,6 +180,9 @@ In Safari Preference, you can Allow or Deny the extensions to specific websites.
 | <kbd>g</kbd> <kbd>1</kbd> ... <kbd>g</kbd> <kbd>9</kbd> | Go to tab 1...9 |
 | <kbd>g</kbd> <kbd>shift</kbd>+<kbd>4</kbd> | Go to the last tab |
 | <kbd>shift</kbd> + <kbd>/</kbd> | Toggle shortcut help |
+| <kbd>a</kbd> | opening the link below the cursor |
+| <kbd>s</kbd> | opening the link below the cursor in a new tab |
+| <kbd>shift</kbd> + <kbd>r</kbd> | Reader mode |
 
 ### Cheatsheet (+Control)
   ![Screen Shot](/Resources/vimlike-keyboard2.jpg) 
