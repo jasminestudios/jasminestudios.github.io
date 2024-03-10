@@ -27,6 +27,15 @@ The latest version of Vimlike is available in AppStore:
 [<img src="/Resources/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://apps.apple.com/app/vimlike/id1584519802)
 
 ## Version History
+### v1.4.7
+*4 Mar 2024*
+* Bugfix
+
+### v1.4.6
+*15 Jan 2024*
+* Scroll enhancement
+* Bugfix
+
 ### v1.4.5
 *9 Jan 2024*
 * Settings UI enhancement
