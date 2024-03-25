@@ -31,7 +31,7 @@ The latest version of Vimlike is available in AppStore:
 *18 Mar 2024*
 * Website specific dark mode settings
 
-* ### v1.4.8
+### v1.4.8
 *16 Mar 2024*
 * Link hints customization
 
