@@ -27,6 +27,11 @@ The latest version of Vimlike is available in AppStore:
 [<img src="/Resources/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://apps.apple.com/app/vimlike/id1584519802)
 
 ## Version History
+### v1.5.0
+*3 Aug 2024*
+* 'o' key will open Search Bar. In Search Bar, you can search website, tabs and history, and open the website in new tab
+* 'shift+z' key will undo closed tab
+
 ### v1.4.9
 *18 Mar 2024*
 * Website specific dark mode settings
@@ -202,6 +207,7 @@ In Safari Preference, you can Allow or Deny the extensions to specific websites.
 | <kbd>w</kbd> | Next tab |
 | <kbd>t</kbd> | New tab |
 | <kbd>x</kbd> | Close tab |
+| <kbd>shift</kbd> + <kbd>z</kbd> | Reopen closed tab |
 | <kbd>y</kbd> <kbd>y</kbd> | Copy current URL to the clipboard |
 | <kbd>y</kbd> <kbd>t</kbd> | Duplicate current tab |
 | <kbd>r</kbd> | Reload tab |
