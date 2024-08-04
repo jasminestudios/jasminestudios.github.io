@@ -219,6 +219,8 @@ In Safari Preference, you can Allow or Deny the extensions to specific websites.
 | <kbd>a</kbd> | opening the link below the cursor |
 | <kbd>s</kbd> | opening the link below the cursor in a new tab |
 | <kbd>shift</kbd> + <kbd>r</kbd> | Reader mode |
+| <kbd>o</kbd> | Open Search Bar |
+
 
 ### Cheatsheet (+Control)
   ![Screen Shot](/Resources/vimlike-keyboard2.jpg) 
