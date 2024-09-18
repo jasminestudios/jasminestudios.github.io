@@ -6,6 +6,9 @@ layout: default
 
 # Vimlike
 
+[!NOTE]
+Highlights
+
 - [Introduction](#introduction)
 - [Downloads](#downloads)
 - [Version History](#version-history)
