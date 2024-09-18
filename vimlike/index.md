@@ -6,8 +6,9 @@ layout: default
 
 # Vimlike
 
-[!NOTE]
-Highlights
+> [!NOTE]
+> Highlights
+
 
 - [Introduction](#introduction)
 - [Downloads](#downloads)
