@@ -6,7 +6,6 @@ layout: default
 
 # Vimlike
 
-> [!IMPORTANT]
 > iPadOS 18.0 Safari has an issue that the focus does not move to the webpage when the tab is created or activated until the webpage gets the focus manually by the webpage touched / clicked, one of the arrow keys (up, down, left, or right) pressed, or tab key pressed.
 >
 > Hence, shortcuts in websites using keyboard events of the webpage do not work (e.g. gmail shortcuts do not work). As Vimlike uses keyboard events of the webpage, Vimlike only works once the webpage gets the focus manually by the webpage touched / clicked, one of the arrow keys (up, down, left, or right) pressed, or tab key pressed as a workaround until Apple fixes Safari bug.
