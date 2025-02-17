@@ -35,6 +35,9 @@ The latest version of Vimlike is available in AppStore:
 [<img src="/Resources/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://apps.apple.com/app/vimlike/id1584519802)
 
 ## Version History
+### v1.5.1
+* Search engine option includes DuckDuckGo and Google
+
 ### v1.5.0
 *3 Aug 2024*
 * 'o' key will open Search Bar. In Search Bar, you can search website, tabs and history, and open the website in new tab
