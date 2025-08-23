@@ -3,17 +3,7 @@ layout: default
 ---
 [_metadata_:apple-itunes-app]:- "app-id=1584519802"
 
-
 # Vimlike
-
-> iPadOS 18.0 Safari has an issue that the focus does not move to the webpage when the tab is created or activated until the webpage gets the focus manually by the webpage touched / clicked, one of the arrow keys (up, down, left, or right) pressed, or tab key pressed.
->
-> Hence, shortcuts in websites using keyboard events of the webpage do not work (e.g. gmail shortcuts do not work). As Vimlike uses keyboard events of the webpage, Vimlike only works once the webpage gets the focus manually by the webpage touched / clicked, one of the arrow keys (up, down, left, or right) pressed, or tab key pressed as a workaround.
->
-> iPadOS 18.1 beta 4 has resolved the problem and Vimlike works fine.
-> 
-> Vimlike works fine with MacOS 15 Sequoia.
-
 - [Introduction](#introduction)
 - [Downloads](#downloads)
 - [Version History](#version-history)
@@ -35,6 +25,18 @@ The latest version of Vimlike is available in AppStore:
 [<img src="/Resources/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://apps.apple.com/app/vimlike/id1584519802)
 
 ## Version History
+### v1.5.5
+* Bug fix
+
+### v1.5.4
+* Option to open search bar result in a new or existing tab
+* Option to start in Insert mode
+* Bug fix
+
+### v1.5.3
+* Option to open a new tab with home page
+* Bug fix
+
 ### v1.5.2
 * Supports AI Assistants (e.g. Chat GPT, Gemini, DeepSeek, Perplexity) in Search Bar for translation and summarization of web pages
 
