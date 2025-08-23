@@ -3,6 +3,8 @@ layout: default
 ---
 [_metadata_:apple-itunes-app]:- "app-id=1584519802"
 
+**_NOTE:_** Vimlike version 1.5.4 has a bug for insert / normal mode loading. Bugfix will be available in v1.5.5.
+
 # Vimlike
 - [Introduction](#introduction)
 - [Downloads](#downloads)
