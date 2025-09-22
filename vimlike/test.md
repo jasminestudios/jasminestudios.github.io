@@ -25,8 +25,8 @@
 * (Note) Refer **diagnosis** of the claim
 * (Rule) **Diagnosis** must not be included in *General Exclusion* in *Appendix*. If **diagnosis** falls within *General Exclusion*, it fails the validation. 
 > **Example**
-> If *weekly indemnity* is covered and MC shows unfit for work and school for X days, it passes the validation.
-> If claim includes outpatient and inpatient treatment for accident injury (within 365 days) but medical reimbursement is not covered, it fails the validation.
+> * If *weekly indemnity* is covered and MC shows unfit for work and school for X days, it passes the validation.
+> * If claim includes outpatient and inpatient treatment for accident injury (within 365 days) but medical reimbursement is not covered, it fails the validation.
 
 ### 4. Verify dispatch address
 ### 5. Verify barred hospital
