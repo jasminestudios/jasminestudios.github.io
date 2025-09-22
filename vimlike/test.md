@@ -17,8 +17,7 @@
 
 #### Step 2. Injury validation
 * Refer **diagnosis** of the claim and medical evidences.
-
-> **_Note_** Do NOT refer **claim cause**
+* Do NOT refer **claim cause**
 * **_(Rule)_** **Injury** of the claim should be bodily injury sustained in an accident and not due to illness and disease
 * **_(Rule)_** Food poisoning, gastronenteritis, bitten by insect causing allergic reaction, dengue fever, or any other stated in customer's policy are accepted as an injury and pass the validation
 
