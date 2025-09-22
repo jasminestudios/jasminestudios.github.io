@@ -34,26 +34,26 @@
 
 #### Step 4. Underwriting exclusions
 * Refer the *exclusion remarks*. e.g. right hand and left knee, loss of hearing
-* Ignore *exclusion codes* and *description* of *IL*
-* (Rule) If *exclusion* applies to the claimed benefit type, if fails the validation.
+* Ignore **exclusion codes** and **description** of **IL**
+* (Rule) If **exclusion** applies to the claimed benefit type, if fails the validation.
 
 #### Step 5. Accident date validity
-* (Rule) *Accident date* must be before *paid to date*
+* (Rule) **Accident date** must be before **paid to date**
 
 #### Step 6. Coverage amount
 
 ### 4. Verify dispatch address
-* (Rule) If *postcode* starts with "UD", it fails the validation and recommend address update
+* (Rule) If **postcode** starts with "UD", it fails the validation and recommend address update
 
 ### 5. Blacklist
-* (Rule) If *blacklist indicator* is "+", medical report must be included in the documents submitted in the claim. If not, it fails the validation and recommends requesting medical report from customer. If medical report was submitted, perform *Section 3 Supporting Document Validation* 
+* (Rule) If **blacklist indicator** is "+", medical report must be included in the documents submitted in the claim. If not, it fails the validation and recommends requesting medical report from customer. If medical report was submitted, perform *Section 3 Supporting Document Validation* 
 
 ### 6. Verify barred hospital
-* Refer *category* of the barred hospital verification
-* (Rule) If *category* is "1", it fails validation.
-* (Rule) If *category* is "2", it fails validation.
-* (Rule) If *category* is "3", medical report must be included in the documents submitted in the claim. If not, it fails the validation and recommends requesting medical report from customer. If medical report was submitted, perform *Section 3 Supporting Document Validation* 
-* (Rule) If *category* is "4", TCM questionnaire must be included in the documents submitted in the claim. If not, it fails the validation and recommends requesting TCM questionnaire from customer. If TCM questionnaire was submitted, perform *Section 3 Supporting Document Validation* 
+* Refer **category** of the barred hospital verification
+* (Rule) If **category** is "1", it fails validation.
+* (Rule) If **category** is "2", it fails validation.
+* (Rule) If **category** is "3", medical report must be included in the documents submitted in the claim. If not, it fails the validation and recommends requesting medical report from customer. If medical report was submitted, perform *Section 3 Supporting Document Validation* 
+* (Rule) If **category** is "4", TCM questionnaire must be included in the documents submitted in the claim. If not, it fails the validation and recommends requesting TCM questionnaire from customer. If TCM questionnaire was submitted, perform *Section 3 Supporting Document Validation* 
 
 
 ### 7. Validate passerby
