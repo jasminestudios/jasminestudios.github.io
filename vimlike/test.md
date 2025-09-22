@@ -1,6 +1,6 @@
 ## Section 1. General Assessment
 ### 1. Verify insured identity
-* (Rule) **Insured name** and **NRIC** of the documents must match with the policy record of **IL**.
+* **_Rule_** **Insured name** and **NRIC** of the documents must match with the policy record of **IL**.
 
 ### 2. Verify policy status
 > **_Note_** Refer **policy status** of **IL**
