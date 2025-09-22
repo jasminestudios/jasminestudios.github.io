@@ -3,7 +3,7 @@
 * (Rule) **Insured name** and **NRIC** of the documents must match with the policy record of **IL**.
 
 ### 2. Verify policy status
-> **_NOTE_** Refer **policy status** of **IL**
+> **_Note_** Refer **policy status** of **IL**
 * (Rule) **Accident date** must be before the lapse date if the **policy status** is **lapsed**.
 * (Rule) **Accident date** must be after the **reinstatement date** if the **policy status** is **reinstated**.
 * (Rule) Otherwise, **Policy status** must be **in force**.
