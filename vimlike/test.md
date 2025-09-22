@@ -34,7 +34,7 @@
 
 #### Step 4. Underwriting exclusions
 * Refer the *exclusion remarks*. e.g. right hand and left knee, loss of hearing
-* (Note) Ignore *exclusion codes* and *description* of *IL*
+* Ignore *exclusion codes* and *description* of *IL*
 * (Rule) If *exclusion* applies to the claimed benefit type, if fails the validation.
 
 #### Step 5. Accident date validity
