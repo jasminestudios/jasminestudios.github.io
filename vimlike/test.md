@@ -4,7 +4,7 @@
 
 ### 2. Verify policy status
 * Refer **policy status** of **IL**
-* **_(Rule)_** **Accident date** must be before the lapse date if the **policy status** is **lapsed**.
+* **_(Rule)_** **Accident date** must be before the **lapse date** if the **policy status** is **lapsed**.
 * **_(Rule)_** **Accident date** must be after the **reinstatement date** if the **policy status** is **reinstated**.
 * **_(Rule)_** Otherwise, **Policy status** must be **in force**.
          
