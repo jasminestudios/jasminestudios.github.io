@@ -23,9 +23,7 @@
 
 #### Step 3. Eligibility check
 * [Note] Refer **diagnosis** of the claim
-* [Rule] **Diagnosis** must not be included in *General Exclusion* in *Appendix*. If **diagnosis** falls within *General Exclusion*, it fails the validation.
-  > test
-
+> [Rule] **Diagnosis** must not be included in *General Exclusion* in *Appendix*. If **diagnosis** falls within *General Exclusion*, it fails the validation.
 
 ### 4. Verify dispatch address
 ### 5. Verify barred hospital
