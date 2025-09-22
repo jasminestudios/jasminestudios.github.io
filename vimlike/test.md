@@ -41,13 +41,13 @@
 
 #### Step 6. Coverage amount
 
-### 4. Verify dispatch address
+### 4. Dispatch address verification
 * **_(Rule)_** If **postcode** starts with "UD", it FAILS validation and recommends address update
 
 ### 5. Blacklist
 * **_(Rule)_** If **blacklist indicator** is "+", medical report must be included in the documents submitted in the claim. If not, it FAILS validation and recommends requesting medical report from customer. If medical report was submitted, perform *Section 3 Supporting Document Validation* 
 
-### 6. Verify barred hospital
+### 6. Barred hospital validation
 * **_(Note)_** Refer **category** of the barred hospital verification
 * **_(Rule)_** If **category** is "1", it FAILS validation.
 * **_(Rule)_** If **category** is "2", it FAILS validation.
