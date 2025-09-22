@@ -4,9 +4,9 @@
 
 ### 2. Verify policy status
 * Refer **policy status** of **IL**
-* **_(Rule)_** ****Accident date** must be before the **lapse date** if the **policy status** is **lapsed**. Otherwise, it FAILS.
-* **_(Rule)_** **Accident date** must be after the **reinstatement date** if the **policy status** is **reinstated**. Otherwise, it FAILS.
-* **_(Rule)_** If **Policy status** is **in force**, it PASSES.
+* **_(Rule)_** **Accident date** must be before the **lapse date** if the **policy status** is **lapsed**. Otherwise, it FAILS validation.
+* **_(Rule)_** **Accident date** must be after the **reinstatement date** if the **policy status** is **reinstated**. Otherwise, it FAILS validation.
+* **_(Rule)_** If **Policy status** is **in force**, it PASSES validation.
          
 ### 3. Validate coverage and exclusion
 #### Step 1. Benefit scope
@@ -19,7 +19,7 @@
 * Refer **diagnosis** of the claim and medical evidences.
 * Do NOT refer **claim cause**
 * **_(Rule)_** **Injury** of the claim should be bodily injury sustained in an accident and not due to illness and disease
-* **_(Rule)_** Food poisoning, gastronenteritis, bitten by insect causing allergic reaction, dengue fever, or any other stated in customer's policy are accepted as an injury and pass the validation
+* **_(Rule)_** Food poisoning, gastronenteritis, bitten by insect causing allergic reaction, dengue fever, or any other stated in customer's policy are accepted as an injury and it PASSES the validation
 
 #### Step 3. Eligibility check
 * Refer **diagnosis** of the claim
