@@ -36,7 +36,7 @@
 * **_(Note)_** Ignore **exclusion codes** and **description** of **IL**
 * (Rule) If **exclusion** applies to the claimed benefit type, if FAILS validation.
 
-#### Step 5. Accident date validity
+#### Step 5. Accident date verification
 * **_(Rule)_** **Accident date** must be before **paid to date**
 
 #### Step 6. Coverage amount
