@@ -1,15 +1,15 @@
 ## Section 1. General Assessment
-### 1. Verify insured identity
+### 1. Insured identity verification
 * **_(Rule)_** **Insured name** and **NRIC** of the documents must match with the policy record of **IL**.
 
-### 2. Verify policy status
+### 2. Policy status verification
 * **_(Note)_** Refer **policy status** of **IL**
 * **_(Rule)_** **Accident date** must be before the **lapse date** if the **policy status** is **lapsed**. Otherwise, it FAILS validation.
 * **_(Rule)_** **Accident date** must be after the **reinstatement date** if the **policy status** is **reinstated**. Otherwise, it FAILS validation.
 * **_(Rule)_** If **Policy status** is **in force**, it PASSES validation.
          
-### 3. Validate coverage and exclusion
-#### Step 1. Benefit scope
+### 3. Coverage and exclusion validation
+#### Step 1. Benefit scope validation
 * **_(Note)_** Refer **benefit type** (aka **coverage code**) of the policy record of **IL**
 * **_(Rule)_** If **benefit type** is in following code list, the benefit is hospitalization and illness-related. Therefore, the claim is out-of-scope and FAILS validation.
 * **_(Rule)_** If **benefit type** is in following code list, the benefit is accident related. Therefore the claim is in-scope and PASSES validation.
@@ -55,5 +55,5 @@
 * **_(Rule)_** If **category** is "4", TCM questionnaire must be included in the documents submitted in the claim. If not, it FAILS validation and recommends requesting TCM questionnaire from customer. If TCM questionnaire was submitted, perform *Section 3 Supporting Document Validation* 
 
 
-### 7. Validate passerby
-### 8. Verify doctor and clinic
+### 7. Passerby validation
+### 8. Doctor and clinic verification
