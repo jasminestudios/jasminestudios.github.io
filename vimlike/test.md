@@ -26,11 +26,11 @@
 * (Note) Refer **diagnosis** of the claim
 * (Rule) **Diagnosis** must not be included in *General Exclusion* in *Appendix*. If **diagnosis** falls within *General Exclusion*, it fails the validation. 
 
-         > **Example**
-         > If *weekly indemnity* is covered and MC shows unfit for work and school for X days, it passes the validation.
+  > **Example**
+  > If *weekly indemnity* is covered and MC shows unfit for work and school for X days, it passes the validation.
 
-         > **Example**
-         > If claim includes outpatient and inpatient treatment for accident injury (within 365 days) but medical reimbursement is not covered, it fails the validation.
+  > **Example**
+  > If claim includes outpatient and inpatient treatment for accident injury (within 365 days) but medical reimbursement is not covered, it fails the validation.
 
 #### Step 4. Underwriting exclusions
 * (Note) Refer the *exclusion remarks*. e.g. right hand and left knee, loss of hearing
