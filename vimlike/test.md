@@ -11,15 +11,15 @@
 ### 3. Validate coverage and exclusion
 #### Step 1. Benefit scope
 * [Note] Refer **benefit type** (aka **coverage code**) of the policy record of **IL**
-* [Rule] If **benefit type** is in following code list, the benefit is hospitalization and illness-related. Therefore, the claim is out-of-scope and fails the validation.
-* [Rule] If **benefit type** is in following code list, the benefit is accident related. Therefore the claim is in-scope and passes the validation.
-* [Rule] If **benefit type** is in following code list, the benefit is TCM. Therefore the claim is in-scope and passes the validation.
+> [Rule] If **benefit type** is in following code list, the benefit is hospitalization and illness-related. Therefore, the claim is out-of-scope and fails the validation.
+> [Rule] If **benefit type** is in following code list, the benefit is accident related. Therefore the claim is in-scope and passes the validation.
+> [Rule] If **benefit type** is in following code list, the benefit is TCM. Therefore the claim is in-scope and passes the validation.
 
 #### Step 2. Injury validation
 * [Note] Refer **diagnosis** of the claim and medical evidences.
 * [Note] Do NOT refer **claim cause**
-* [Rule] **Injury** of the claim should be bodily injury sustained in an accident and not due to illness and disease
-* [Rule] Food poisoning, gastronenteritis, bitten by insect causing allergic reaction, dengue fever, or any other stated in customer's policy are accepted as an injury and pass the validation
+> [Rule] **Injury** of the claim should be bodily injury sustained in an accident and not due to illness and disease
+> [Rule] Food poisoning, gastronenteritis, bitten by insect causing allergic reaction, dengue fever, or any other stated in customer's policy are accepted as an injury and pass the validation
 
 #### Step 3. Eligibility check
 * [Note] Refer **diagnosis** of the claim
