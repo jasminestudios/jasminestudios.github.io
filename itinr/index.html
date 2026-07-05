@@ -1,329 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Itinr — AI Trip Planner that Remembers Your Trip</title>
-<meta name="description" content="Plan from booking emails, record with one-tap check-ins, and get a beautiful recap of your trip. No account needed. Free on the App Store." />
-<meta property="og:title" content="Itinr — Plan it. Live it. Remember it." />
-<meta property="og:description" content="The trip app that turns booking emails into an itinerary, check-ins into a travel log, and your trip into a story worth sharing." />
-<meta property="og:image" content="https://www.jasminestudios.net/itinr/img/07-recap-hero-journey.jpg" />
-<meta property="og:url" content="https://www.jasminestudios.net/itinr/" />
-<meta property="og:site_name" content="Jasmine Studios" />
-<link rel="canonical" href="https://www.jasminestudios.net/itinr/" />
-<link rel="shortcut icon" type="image/png" href="https://itinr.jasminestudios.net/favicon.png" />
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C3MM12Q509"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-C3MM12Q509');
-</script>
-<link rel="stylesheet" href="css/design-system.css" />
-<link rel="stylesheet" href="css/site.css" />
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Itinr",
-  "operatingSystem": "iOS",
-  "applicationCategory": "TravelApplication",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
-}
-</script>
-</head>
-<body class="ds-body">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Itinr — Travel itinerary planner</title>
+        <meta name="description" content="Itinr keeps your whole trip in one place — itinerary, calendar, documents, expenses and to-dos — and uses AI to turn your booking PDFs and photos into a ready-made plan."/>
+        <meta property="og:title" content="Itinr — Travel itinerary planner"/>
+        <meta property="og:description" content="Your whole trip in one place. AI turns booking PDFs and photos into a ready-made itinerary."/>
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:site_name" content="Jasmine Studios"/>
+        <link rel="canonical" href="https://www.jasminestudios.net/itinr"/>
+        <meta property="og:url" content="https://www.jasminestudios.net/itinr"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta property="twitter:title" content="Itinr — Travel itinerary planner"/>
+        <link rel="shortcut icon" type="image/png" href="https://itinr.jasminestudios.net/favicon.png"/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+        <link rel="stylesheet" href="/assets/css/style.css"/>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3MM12Q509"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-C3MM12Q509');
+        </script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card w3-opacity-min">
+                <a href="/home" class="w3-bar-item w3-button w3-padding-small"><b>Home</b></a>
+                <a href="/itinr" class="w3-bar-item w3-button w3-padding-small">Itinr</a>
+                <a href="/vimlike" class="w3-bar-item w3-button w3-padding-small">Vimlike</a>
+                <a href="/better-player" class="w3-bar-item w3-button w3-padding-small">Better Player</a>
+                <a href="/geek-browser" class="w3-bar-item w3-button w3-padding-small">Geek Browser</a>
+                <a href="/one-dictionary" class="w3-bar-item w3-button w3-padding-small">One Dictionary</a>
+            </div>
+        </div>
 
-<!-- ═══════════ Nav ═══════════ -->
-<nav class="top ds-glass">
-  <div class="wrap">
-    <a class="logo" href="#">Itin<span>r</span></a>
-    <a class="link" href="#plan">Plan</a>
-    <a class="link" href="#record">Record</a>
-    <a class="link" href="#remember">Remember</a>
-    <a class="link" href="#plans">Pricing</a>
-    <a class="link" href="#faq">FAQ</a>
-    <div class="spacer"></div>
-    <a class="ds-btn ds-btn--primary" href="#download">Download</a>
-  </div>
-</nav>
+        <!-- Hero -->
+        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:100%" id="band">
+            <img src="https://itinr.jasminestudios.net/favicon.png" alt="Itinr app icon"
+                 style="width:120px;height:120px;border-radius:26px;box-shadow:0 8px 24px rgba(0,0,0,0.15)"/>
+            <h1 class="w3-wide" style="margin-bottom:0">Itinr</h1>
+            <p class="w3-xlarge w3-opacity">Your whole trip in one place.</p>
+            <p class="w3-opacity" style="max-width:640px;margin:0 auto">
+                Itinerary, calendar, documents, expenses and to-dos — together.
+                Drop in your booking PDFs and photos and let AI build the plan for you.
+            </p>
+            <br/>
+            <!-- TODO: replace href with the App Store URL once Itinr is published -->
+            <a href="#" target="_blank" rel="noopener">
+                <img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store"/>
+            </a>
+        </div>
 
-<!-- ═══════════ Hero ═══════════ -->
-<header class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="ds-badge eyebrow">✈️ &nbsp;For independent travelers</span>
-      <h1 class="ds-display">Plan it.<br/>Live it.<br/>Remember it.</h1>
-      <p class="lead">Itinr turns booking emails into an itinerary, check-ins into a travel
-      log, and your trip into a story worth sharing. No account needed — your data stays yours.</p>
-      <div class="cta-row">
-        <a class="appstore-badge" href="#download" aria-label="Download on the App Store">
-          <span class="apple"></span>
-          <span class="t"><small>Download on the</small><b>App Store</b></span>
-        </a>
-        <span class="cta-note">Free to start · No sign-up</span>
-      </div>
-    </div>
-    <div class="phones" aria-hidden="true">
-      <div class="phone back"><img src="img/01-home-travels.jpg" alt="" loading="eager" /></div>
-      <div class="phone front"><img src="img/08-recap-dinner-dishes.jpg" alt="" loading="eager" /></div>
-    </div>
-  </div>
-</header>
+        <!-- Features -->
+        <div class="w3-row-padding w3-content w3-padding-32" style="max-width:1100px">
+            <div class="w3-third w3-container w3-padding-16">
+                <h3>✈️ One tidy itinerary</h3>
+                <p class="w3-opacity">Flights, hotels, transport and activities laid out by day — with a calendar view and a map of where you're going.</p>
+            </div>
+            <div class="w3-third w3-container w3-padding-16">
+                <h3>🤖 AI does the typing</h3>
+                <p class="w3-opacity">Add a booking PDF or a screenshot and Itinr extracts the events automatically. It can even suggest things to pack and do.</p>
+            </div>
+            <div class="w3-third w3-container w3-padding-16">
+                <h3>📄 Documents &amp; tickets</h3>
+                <p class="w3-opacity">Keep passports, reservations and tickets attached to your trip, ready offline when you need them.</p>
+            </div>
+            <div class="w3-third w3-container w3-padding-16">
+                <h3>💰 Expenses</h3>
+                <p class="w3-opacity">Scan receipts, group by day or category, and convert currencies so you always know what you've spent.</p>
+            </div>
+            <div class="w3-third w3-container w3-padding-16">
+                <h3>✅ To-dos &amp; reminders</h3>
+                <p class="w3-opacity">Track packing lists and bookings with local reminders — no account, no server required.</p>
+            </div>
+            <div class="w3-third w3-container w3-padding-16">
+                <h3>🔒 Private by design</h3>
+                <p class="w3-opacity">Your data stays on your device and in your own iCloud. Prefer fully on-device AI? That option sends nothing out.</p>
+            </div>
+        </div>
 
-<!-- ═══════════ 3-axis overview ═══════════ -->
-<section class="center" id="how">
-  <div class="wrap">
-    <h2 class="sec">One timeline, whole trip.</h2>
-    <p class="sec-sub">Other apps do half the trip — planners forget it, journals can't plan it.
-    Itinr carries one timeline from the first booking to the last memory.</p>
-    <div class="axis-grid">
-      <div class="ds-card axis">
-        <div class="icon">🗺</div>
-        <h3>Plan</h3>
-        <p>Drop in anything — get an itinerary.</p>
-      </div>
-      <div class="ds-card axis">
-        <div class="icon">📍</div>
-        <h3>Record</h3>
-        <p>Check in once — capture the whole moment.</p>
-      </div>
-      <div class="ds-card axis">
-        <div class="icon">✨</div>
-        <h3>Remember</h3>
-        <p>Your trip becomes a story.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        <!-- Sharing / export -->
+        <div class="w3-container w3-content w3-center w3-padding-64 w3-light-gray" style="max-width:100%">
+            <h2 class="w3-wide">Share &amp; export</h2>
+            <p class="w3-opacity" style="max-width:640px;margin:0 auto">
+                Share a read-only copy of a trip with travel companions via iCloud,
+                or export the whole itinerary — attachments included — as a self-contained HTML file.
+                Available in 11 languages.
+            </p>
+        </div>
 
-<!-- ═══════════ Plan ═══════════ -->
-<section id="plan">
-  <div class="wrap feature left">
-    <div>
-      <span class="ds-caption section-eyebrow">Plan</span>
-      <h2 class="sec">Drop in anything.<br/>Get an itinerary.</h2>
-      <p class="sec-sub">Paste a booking email, a URL, or snap a confirmation — AI extracts
-      flights, hotels and reservations into a clean day-by-day timeline. Or let AI plan the
-      whole trip from your taste.</p>
-      <ul class="bullets">
-        <li><span class="bi">📄</span><span><b>From your bookings</b>
-          <span class="d">Emails, PDFs, photos, URLs — events extracted automatically, many at once.</span></span></li>
-        <li><span class="bi">✨</span><span><b>AI trip builder</b>
-          <span class="d">Your vibe and interests → neighborhoods → curated spots → a full itinerary.</span></span></li>
-        <li><span class="bi">🗓</span><span><b>One timeline</b>
-          <span class="d">Itinerary, map, expenses, to-dos and documents — one trip, one place.</span></span></li>
-        <li><span class="bi">🔍</span><span><b>AI review</b>
-          <span class="d">Tight connections, empty days, unconfirmed bookings — checked before you fly.</span></span></li>
-      </ul>
-    </div>
-    <div class="shots">
-      <div class="shot"><img src="img/02-itinerary-timeline.jpg" alt="Itinr itinerary timeline with checked-in events" loading="lazy" /></div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════ Record ═══════════ -->
-<section id="record">
-  <div class="wrap feature rev left">
-    <div class="shots">
-      <div class="shot"><img src="img/04-checkin-nearby.jpg" alt="Check in to nearby places" loading="lazy" /></div>
-      <div class="shot"><img src="img/03-timeline-checkin-chip.jpg" alt="Timeline check-in session chip" loading="lazy" /></div>
-    </div>
-    <div>
-      <span class="ds-caption section-eyebrow">Record</span>
-      <h2 class="sec">Check in. It pays you<br/>back instantly.</h2>
-      <p class="sec-sub">Check in at a restaurant and Itinr suggests what to order — from AI
-      or a photo of the actual menu. Snap the receipt and the expense files itself. Photos,
-      notes, dishes: one tap each, all attached to the place.</p>
-      <ul class="bullets">
-        <li><span class="bi">🍽</span><span><b>What to order</b>
-          <span class="d">Menu picks the moment you check in — scan the menu from a photo, URL or text.</span></span></li>
-        <li><span class="bi">🧾</span><span><b>Receipts → expenses</b>
-          <span class="d">Photograph the receipt; the expense links itself to the place.</span></span></li>
-        <li><span class="bi">📷</span><span><b>Everything in place</b>
-          <span class="d">Photos, notes and dishes attach to the event — not lost in your camera roll.</span></span></li>
-        <li><span class="bi">🌙</span><span><b>Never forget a day</b>
-          <span class="d">An evening nudge catches anything you visited but didn't record.</span></span></li>
-      </ul>
-      <div class="kicker-line">Not an app that nags you to journal — an app that makes recording pay off <em>right now</em>.</div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════ Remember (dark) ═══════════ -->
-<section class="remember" id="remember">
-  <div class="wrap feature left">
-    <div>
-      <span class="ds-caption section-eyebrow">Remember</span>
-      <h2 class="sec">When the trip ends,<br/>a gift arrives.</h2>
-      <p class="sec-sub">The morning after you land, your recap is ready: an Instagram-style
-      feed of your trip, day by day — your photos with the story written over them, every dish
-      you ate, what it cost, and the route you traveled.</p>
-      <ul class="bullets">
-        <li><span class="bi">📸</span><span><b>A feed of your trip</b>
-          <span class="d">“Dinner at …” written over your photos, mosaics, flight-route maps.</span></span></li>
-        <li><span class="bi">🍜</span><span><b>Every dish, remembered</b>
-          <span class="d">What you ate, with photo, price and ♥ — right on that restaurant's post.</span></span></li>
-        <li><span class="bi">🗺</span><span><b>Your journey, mapped</b>
-          <span class="d">Only the places you actually went — tap any amount for the full expense.</span></span></li>
-        <li><span class="bi">📖</span><span><b>AI travel story<span class="pro-pill">PRO</span></b>
-          <span class="d">A written story of your trip, from your check-ins, notes and meals.</span></span></li>
-        <li><span class="bi">🖼</span><span><b>Share it, keep it</b>
-          <span class="d">Story cards for social, HTML export, iCloud sync — yours forever.</span></span></li>
-      </ul>
-    </div>
-    <div class="shots">
-      <div class="shot"><img src="img/07-recap-hero-journey.jpg" alt="Trip recap with journey map" loading="lazy" /></div>
-      <div class="shot"><img src="img/09-recap-photo-mosaic.jpg" alt="Recap photo mosaic" loading="lazy" /></div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════ AI & Privacy ═══════════ -->
-<section class="center" id="trust">
-  <div class="wrap">
-    <h2 class="sec">Powerful AI. On your terms.</h2>
-    <p class="sec-sub">AI can draft anyone an itinerary. Itinr makes sure yours survives contact
-    with the real trip — and keeps your travel data private while it does.</p>
-    <div class="trust-grid">
-      <div class="ds-card trust-card">
-        <div class="icon">🍎</div>
-        <h3>Built with Apple Intelligence</h3>
-        <p>On supported devices, AI runs on-device — your data never leaves your phone. Edit your itinerary in airplane mode.</p>
-      </div>
-      <div class="ds-card trust-card">
-        <div class="icon">☁️</div>
-        <h3>Zero-setup AI included</h3>
-        <p>Trip Pass and Pro include unlimited AI on any device — no keys, no setup, nothing to configure.</p>
-      </div>
-      <div class="ds-card trust-card">
-        <div class="icon">🔑</div>
-        <h3>Bring your own key</h3>
-        <p>Prefer your own Claude, Gemini, OpenAI or DeepSeek account? Plug in your key and it's billed to you.</p>
-      </div>
-      <div class="ds-card trust-card">
-        <div class="icon">🪪</div>
-        <h3>No account, ever</h3>
-        <p>No sign-up, no login. Trips live on your device and your own iCloud, synced across your devices.</p>
-      </div>
-    </div>
-    <div class="trust-tag">AI plans. Itinr keeps it real.</div>
-  </div>
-</section>
-
-<!-- ═══════════ Plans ═══════════ -->
-<section class="center" id="plans">
-  <div class="wrap">
-    <h2 class="sec">Pay only when you travel.</h2>
-    <p class="sec-sub">Most travel apps charge you all year for the two weeks you actually travel.
-    Itinr's Trip Pass covers one trip — everything on, no subscription.</p>
-    <div class="plans-grid">
-      <div class="ds-card plan">
-        <div class="name">Free</div>
-        <div class="price">$0</div>
-        <div class="per">forever</div>
-        <ul>
-          <li>Full planning, recording &amp; recap</li>
-          <li>AI taste every month</li>
-          <li>On-device AI on supported iPhones</li>
-          <li>Bring your own API key</li>
-          <li class="dim">One-tap offline trip pack</li>
-        </ul>
-        <a class="ds-btn ds-btn--secondary" href="#download">Start free</a>
-      </div>
-      <div class="ds-card plan star">
-        <div class="name">Trip Pass</div>
-        <div class="price">One trip</div>
-        <div class="per">one-time · 30 days · <b>your first pass lasts 60</b></div>
-        <ul>
-          <li>Everything in Free</li>
-          <li><b>Unlimited AI</b> — itineraries, menu scans, your trip's story</li>
-          <li><b>Whole trip offline</b> — photos, docs &amp; maps in one tap</li>
-          <li>No auto-renewal. Nothing to cancel.</li>
-        </ul>
-        <a class="ds-btn ds-btn--primary" href="#download">Get Trip Pass</a>
-      </div>
-      <div class="ds-card plan">
-        <div class="name">Itinr Pro</div>
-        <div class="price">All year</div>
-        <div class="per">annual · free trial · Family Sharing</div>
-        <ul>
-          <li>Everything in Trip Pass, all year</li>
-          <li>Every trip, always on</li>
-          <li>Share with your family</li>
-          <li>For 3+ trips a year</li>
-        </ul>
-        <a class="ds-btn ds-btn--secondary" href="#download">Go Pro</a>
-      </div>
-    </div>
-    <p class="plans-note">Prices shown in the App Store for your region. Purchases are handled by your
-    App Store account; manage or cancel the annual plan in Settings. No account required — ever.</p>
-  </div>
-</section>
-
-<!-- ═══════════ FAQ ═══════════ -->
-<section id="faq">
-  <div class="wrap">
-    <h2 class="sec center" style="margin-bottom:32px">Questions, answered.</h2>
-    <div class="faq">
-      <details class="ds-card">
-        <summary>Do I need to create an account?</summary>
-        <p>No. There's no sign-up and no login. Your trips are stored on your device and in your own
-        iCloud — Itinr's servers never store your trip data.</p>
-      </details>
-      <details class="ds-card">
-        <summary>Where is my travel data stored?</summary>
-        <p>On your device and in your private iCloud database, synced across your devices. AI requests
-        are passed through for processing only and never retained.</p>
-      </details>
-      <details class="ds-card">
-        <summary>What can I do for free?</summary>
-        <p>Everything — planning, recording, and the recap — plus an AI taste every month. With an
-        Apple Intelligence iPhone or your own API key, AI stays free too.</p>
-      </details>
-      <details class="ds-card">
-        <summary>Is Trip Pass a subscription?</summary>
-        <p>No — it's a one-time purchase for 30 days (your first pass lasts 60). No auto-renewal.
-        When the trip's over, it's simply over.</p>
-      </details>
-      <details class="ds-card">
-        <summary>Can I share a trip with family or friends?</summary>
-        <p>Yes — share via iCloud for viewing or editing together, or send a live web link anyone can
-        open. Pro includes Family Sharing.</p>
-      </details>
-      <details class="ds-card">
-        <summary>Does it work offline?</summary>
-        <p>Viewing your itinerary and recording work offline. The offline trip pack (Trip Pass/Pro)
-        keeps every photo and document on your device in one tap — and on-device AI even works in
-        airplane mode.</p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════ Final CTA ═══════════ -->
-<section class="final" id="download">
-  <div class="wrap">
-    <h2 class="sec">Your next trip deserves<br/>to be remembered.</h2>
-    <p class="sec-sub" style="margin-bottom:32px">Free to start · No sign-up</p>
-    <a class="appstore-badge" href="#" aria-label="Download on the App Store">
-      <span class="apple"></span>
-      <span class="t"><small>Download on the</small><b>App Store</b></span>
-    </a>
-  </div>
-</section>
-
-<!-- ═══════════ Footer ═══════════ -->
-<footer>
-  <div class="wrap">
-    <span><b style="color:var(--ink)">Itinr</b> — plan, record, remember.</span>
-    <div class="spacer"></div>
-    <a href="privacy">Privacy Policy</a>
-    <a href="mailto:support@jasminestudios.net">Support</a>
-    <span>© 2026 Jasmine Studios</span>
-  </div>
-</footer>
-
-</body>
+        <!-- Footer -->
+        <footer class="w3-container w3-center w3-padding-32">
+            <p>
+                <a href="/itinr/privacy">Privacy Policy</a>
+                &nbsp;·&nbsp;
+                <a href="mailto:support@jasminestudios.net">support@jasminestudios.net</a>
+            </p>
+            <p class="w3-opacity w3-small">© Jasmine Studios</p>
+        </footer>
+    </body>
 </html>
