@@ -57,11 +57,18 @@ h2.sec { margin: 0 0 10px; font-size: 40px; font-weight: 800; letter-spacing: -1
 p.sec-sub { color: var(--zinc-deep); font-size: 17px; max-width: 620px; margin: 0 auto 40px; }
 .left p.sec-sub { margin: 0 0 28px; }
 
+/* Modern SVG icons — stroke style, brand-tinted rounded tile (SF-Symbols feel) */
+.ico { display: block; width: 100%; height: 100%; stroke: currentColor; fill: none;
+  stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+.tile { display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 13px; background: var(--brand-tint); color: var(--brand); }
+
 /* 3-axis overview */
 .axis-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 @media (max-width: 760px) { .axis-grid { grid-template-columns: 1fr; } }
 .axis { padding: 28px; text-align: left; }
-.axis .icon { font-size: 30px; margin-bottom: 12px; }
+.axis .icon { width: 48px; height: 48px; margin-bottom: 16px; }
+.axis .icon .ico { width: 26px; height: 26px; }
 .axis h3 { margin: 0 0 6px; font-size: 20px; font-weight: 800; letter-spacing: -.4px; }
 .axis p { margin: 0; color: var(--text-secondary); font-size: 15px; }
 
@@ -73,8 +80,10 @@ p.sec-sub { color: var(--zinc-deep); font-size: 17px; max-width: 620px; margin: 
 .feature ul.bullets li { display: flex; gap: 12px; align-items: flex-start; font-size: 15.5px; }
 .feature ul.bullets .bi {
   flex: 0 0 34px; height: 34px; border-radius: 11px; background: var(--brand-tint);
-  display: flex; align-items: center; justify-content: center; font-size: 16px;
+  color: var(--brand);
+  display: flex; align-items: center; justify-content: center;
 }
+.feature ul.bullets .bi .ico { width: 18px; height: 18px; }
 .feature ul.bullets b { display: block; letter-spacing: -.2px; }
 .feature ul.bullets span.d { color: var(--text-secondary); font-size: 14px; }
 .shots { display: flex; gap: 20px; justify-content: center; }
@@ -93,7 +102,7 @@ section.remember h2.sec { color: #fff; }
 section.remember p.sec-sub { color: rgba(255,255,255,.72); }
 section.remember .bullets b { color: #fff; }
 section.remember .bullets span.d { color: rgba(255,255,255,.6); }
-section.remember .bullets .bi { background: rgba(10,132,255,.22); }
+section.remember .bullets .bi { background: rgba(10,132,255,.22); color: #6cb2ff; }
 section.remember .shot { background: #1c1c1e; box-shadow: 0 24px 48px rgba(0,0,0,.5); }
 .pro-pill { display: inline-block; margin-left: 6px; padding: 2px 8px; border-radius: 999px; background: var(--brand); color: #fff; font: 800 10px/1.5 var(--font-stack); letter-spacing: .4px; vertical-align: 2px; }
 
@@ -102,7 +111,8 @@ section.remember .shot { background: #1c1c1e; box-shadow: 0 24px 48px rgba(0,0,0
 @media (max-width: 900px) { .trust-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 540px) { .trust-grid { grid-template-columns: 1fr; } }
 .trust-card { padding: 24px; text-align: left; }
-.trust-card .icon { font-size: 26px; margin-bottom: 10px; }
+.trust-card .icon { width: 42px; height: 42px; margin-bottom: 14px; }
+.trust-card .icon .ico { width: 22px; height: 22px; }
 .trust-card h3 { margin: 0 0 6px; font-size: 16px; font-weight: 800; letter-spacing: -.3px; }
 .trust-card p { margin: 0; color: var(--text-secondary); font-size: 14px; }
 .trust-tag { margin-top: 32px; font: 800 20px var(--font-stack); letter-spacing: -.4px; }
