@@ -157,15 +157,10 @@ footer a { color: var(--text-secondary); text-decoration: none; }
 footer a:hover { color: var(--brand); }
 footer .spacer { flex: 1; }
 
-/* App Store badge placeholder */
+/* Official App Store badge — Apple-provided artwork (do not restyle the mark). */
 .appstore-badge {
-  display: inline-flex; align-items: center; gap: 10px;
-  background: var(--ink); color: #fff; border-radius: 12px; padding: 10px 20px;
-  text-decoration: none; font-family: var(--font-stack); box-shadow: var(--shadow-control);
+  display: inline-block; line-height: 0;
   transition: transform .15s ease;
 }
 .appstore-badge:hover { transform: translateY(-1px); }
-.appstore-badge .apple { font-size: 26px; line-height: 1; }
-.appstore-badge .t { text-align: left; }
-.appstore-badge .t small { display: block; font-size: 10px; opacity: .75; letter-spacing: .2px; }
-.appstore-badge .t b { font-size: 17px; letter-spacing: -.2px; }
+.appstore-badge img { height: 48px; width: auto; display: block; }
