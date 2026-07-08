@@ -86,7 +86,7 @@ p.sec-sub { color: var(--zinc-deep); font-size: 17px; max-width: 620px; margin: 
 .feature ul.bullets .bi .ico { width: 18px; height: 18px; }
 .feature ul.bullets b { display: block; letter-spacing: -.2px; }
 .feature ul.bullets span.d { color: var(--text-secondary); font-size: 14px; }
-.shots { display: flex; gap: 20px; justify-content: center; }
+.shots { display: flex; gap: 20px; justify-content: center; align-items: flex-start; }
 .shot {
   width: 244px; padding: 9px; background: var(--ink);
   border-radius: 36px; box-shadow: var(--shadow-card);
