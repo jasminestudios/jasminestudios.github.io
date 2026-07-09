@@ -38,17 +38,29 @@
         <!-- Page content -->
 
         <!-- Itinr (featured) -->
+        <style>
+        /* Itinr 페이지 히어로와 동일한 겹친/기울어진 폰 목업 (다크 베젤) */
+        .itinr-hero-phones{position:relative;width:100%;max-width:460px;height:500px;margin:8px auto 0}
+        .itinr-hero-phones .ph{position:absolute;width:230px;padding:9px;background:#0b0b0f;border-radius:38px;
+          box-shadow:0 28px 60px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.08)}
+        .itinr-hero-phones .ph img{width:100%;display:block;border-radius:29px}
+        .itinr-hero-phones .back{left:calc(50% - 212px);top:14px;transform:rotate(-6deg);z-index:1;opacity:.98}
+        .itinr-hero-phones .front{left:calc(50% - 22px);top:52px;transform:rotate(3deg);z-index:2}
+        @media(max-width:520px){
+          .itinr-hero-phones{height:420px;max-width:360px}
+          .itinr-hero-phones .ph{width:188px}
+          .itinr-hero-phones .back{left:calc(50% - 174px)}
+          .itinr-hero-phones .front{left:calc(50% - 16px)}
+        }
+        </style>
         <div class="w3-container w3-content w3-center w3-padding-64 w3-black" style="max-width:100%" id="band">
             <h1 class="w3-wide">Itinr</h1>
             <p class="w3-opacity" style="max-width:640px;margin:0 auto">Plan it. Capture it. Share it. — Itinr turns booking emails into an itinerary, check-ins into a travel log, and your whole trip into a story worth sharing. Private by design, works offline. For iPhone and iPad.</p>
             <br/>
-            <a href="/itinr">
-                <img src="https://www.jasminestudios.net/itinr/img/01-home.jpg" alt="Itinr home"
-                     style="width:220px;max-width:42%;border-radius:24px;margin:6px;vertical-align:top;box-shadow:0 20px 50px rgba(0,0,0,.45)"/>
-                <img src="https://www.jasminestudios.net/itinr/img/07-story.jpg" alt="Itinr trip story"
-                     style="width:220px;max-width:42%;border-radius:24px;margin:6px;vertical-align:top;box-shadow:0 20px 50px rgba(0,0,0,.45)"/>
+            <a href="/itinr" class="itinr-hero-phones" style="display:block">
+                <span class="ph back"><img src="https://www.jasminestudios.net/itinr/img/01-home.jpg" alt="Itinr home"/></span>
+                <span class="ph front"><img src="https://www.jasminestudios.net/itinr/img/02-calendar.jpg" alt="Itinr calendar"/></span>
             </a>
-            <br/>
             <br/>
             <a href="https://apps.apple.com/app/itinr-organize-your-itinerary/id6772980993" target="_blank" rel="noopener">
                 <img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"/>
