@@ -75,7 +75,7 @@ p.sec-sub { color: var(--zinc-deep); font-size: 17px; max-width: 620px; margin: 
 /* Feature split */
 .feature { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
 .feature.rev > .shots { order: -1; }
-@media (max-width: 860px) { .feature, .feature.rev { grid-template-columns: 1fr; gap: 32px; } .feature.rev > .shots { order: 0; } }
+@media (max-width: 860px) { .feature, .feature.rev { grid-template-columns: 1fr; gap: 32px; } .feature.rev > .shots { order: 2; } }
 .feature ul.bullets { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 14px; }
 .feature ul.bullets li { display: flex; gap: 12px; align-items: flex-start; font-size: 15.5px; }
 .feature ul.bullets .bi {
