@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Geek Browser — the keyboard browser with an agent</title>
-<meta name="description" content="A full-screen browser for iPad you drive from the keyboard, with an AI assistant that works on the page for you — and asks before anything that matters. Free. No account. Nothing leaves your device unless you say so." />
-<meta property="og:title" content="Geek Browser — Type it. Hand it off. Keep it yours." />
-<meta property="og:description" content="The Vim-style keyboard browser for iPad, with an AI agent that works on the page in front of you — and asks before it does anything that matters." />
+<title>Geek Browser — the AI browser that stays on your iPad</title>
+<meta name="description" content="An AI browser for iPad, driven from the keyboard. The agent works in the tab in front of you, on your device — no cloud browser, no copied cookies. Run it on Apple Intelligence on-device or your own API key. Free, no account." />
+<meta property="og:title" content="Geek Browser — the AI browser that stays on your iPad" />
+<meta property="og:description" content="The agent works in your tab, on your iPad. Your model, your key, or Apple Intelligence on-device. Keyboard-driven, free, no account." />
 <meta property="og:image" content="https://www.jasminestudios.net/geek-browser/img/04-agent-working.jpg" />
 <meta property="og:url" content="https://www.jasminestudios.net/geek-browser/" />
 <meta property="og:site_name" content="Jasmine Studios" />
@@ -39,10 +39,10 @@
 <nav class="top ds-glass">
   <div class="wrap">
     <a class="logo" href="#">Geek<span>Browser</span></a>
-    <a class="link" href="#keyboard">Keyboard</a>
     <a class="link" href="#agent">Agent</a>
-    <a class="link" href="#private">Private</a>
-    <a class="link" href="#plans">Pricing</a>
+    <a class="link" href="#models">Models</a>
+    <a class="link" href="#keyboard">Keyboard</a>
+    <a class="link" href="#private">Privacy</a>
     <a class="link" href="#faq">FAQ</a>
     <div class="spacer"></div>
     <a class="ds-btn ds-btn--primary" href="https://apps.apple.com/app/id1457482155" target="_blank" rel="noopener">Download</a>
@@ -53,30 +53,28 @@
 <header class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="ds-badge eyebrow">For people who never take their hands off the keyboard</span>
-      <h1 class="ds-display">Type it.<br/>Hand it off.<br/>Keep it yours.</h1>
-      <p class="lead">Geek Browser is a full-screen browser for iPad that you drive from the keyboard,
-      Vim-style. Press a key to follow a link, open a tab, or run a command. Hand the tedious parts
-      to an assistant that works on the page in front of you — and asks before it does anything
-      that matters.</p>
+      <span class="ds-badge eyebrow">An AI browser for iPad, driven from the keyboard</span>
+      <h1 class="ds-display">The agent works<br/>in your tab,<br/>on your iPad.</h1>
+      <p class="lead">Geek Browser reads the page you are on and does the tedious parts for you —
+      clicking, typing, extracting, opening the links that matter. It runs in the browser in your
+      hands, not in a virtual browser somewhere else, and the model is yours to pick: Apple
+      Intelligence on-device, or your own key.</p>
       <div class="cta-row">
         <a class="appstore-badge" href="https://apps.apple.com/app/id1457482155" aria-label="Download on the App Store">
           <img src="img/appstore-badge.svg" alt="Download on the App Store" />
         </a>
-        <span class="cta-note">Free · No account · Runs on iPad and Apple silicon Mac</span>
+        <span class="cta-note">Free · No account · Your model, your key</span>
       </div>
       <div class="keystrip" aria-label="Default keys">
         <span><kbd>f</kbd> follow a link</span>
         <span><kbd>o</kbd> address bar</span>
         <span><kbd>:</kbd> command</span>
-        <span><kbd>/</kbd> find</span>
-        <span><kbd>j</kbd><kbd>k</kbd> scroll</span>
-        <span><kbd>t</kbd> new tab</span>
+        <span><kbd>⌘⇧E</kbd> ask the agent</span>
       </div>
     </div>
     <div class="pads" aria-hidden="true">
-      <div class="pad back"><img src="img/01-link-hints.jpg" alt="" loading="eager" /></div>
-      <div class="pad front"><img src="img/04-agent-working.jpg" alt="" loading="eager" /></div>
+      <div class="pad back"><img src="img/04-agent-working.jpg" alt="" loading="eager" /></div>
+      <div class="pad front"><img src="img/06-agent-answer.jpg" alt="" loading="eager" /></div>
     </div>
   </div>
 </header>
@@ -84,26 +82,140 @@
 <!-- ═══════════ 3-axis overview ═══════════ -->
 <section class="center" id="how">
   <div class="wrap">
-    <h2 class="sec">Browse with keys. Delegate with words.<br/>Own your data.</h2>
-    <p class="sec-sub">Touch browsers make you reach for the screen. Chat apps make you paste the page.
-    Geek Browser keeps both in one window: your hands on the keys, the assistant on the page, and
-    everything on your iPad.</p>
+    <h2 class="sec">AI that acts on the page.<br/>On your terms, at your keyboard.</h2>
+    <p class="sec-sub">Chat apps make you paste the page. Cloud-agent browsers take your session
+    somewhere else to work on it. Geek Browser keeps the whole thing in one window on your iPad:
+    the page, the agent, the keys.</p>
     <div class="axis-grid">
       <div class="ds-card axis">
-        <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2.5"/><path d="M6 10h.01M9.5 10h.01M13 10h.01M16.5 10h.01M6 13.5h.01M9.5 13.5h5M16.5 13.5h.01"/></svg></span>
-        <h3>Keyboard</h3>
-        <p>Every action has a key: links, tabs, scrolling, search, commands. Remap any of them.</p>
-      </div>
-      <div class="ds-card axis">
         <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3.5 13.9 9l5.6 1.9-5.6 1.9L12 18.5l-1.9-5.7-5.6-1.9L10.1 9 12 3.5Z"/><path d="M19 16.5v3M17.5 18h3M5 3.5v3M3.5 5h3"/></svg></span>
-        <h3>Agent</h3>
-        <p>Ask about the page or hand over a task. It clicks, types and reads for you, step by step, in a tab of its own.</p>
+        <h3>Works on the page</h3>
+        <p>Ask about what you are reading, or hand over a task. It clicks, types and reads in a tab of its own, step by step.</p>
       </div>
       <div class="ds-card axis">
-        <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3 5 5.5v6c0 4.3 3 7.2 7 8.5 4-1.3 7-4.2 7-8.5v-6L12 3Z"/><path d="m9 11.5 2 2 4-4"/></svg></span>
-        <h3>Private</h3>
-        <p>No account, no server of ours. Reading tasks can run on-device with Apple Intelligence; cloud AI only with your own key.</p>
+        <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="M10 18h4"/><path d="M12 7.5 13.2 11l3.3 1.2-3.3 1.2L12 16.5l-1.2-3.1-3.3-1.2 3.3-1.2L12 7.5Z"/></svg></span>
+        <h3>Runs where you say</h3>
+        <p>Apple Intelligence on your iPad, or your own key for Claude, OpenAI, Gemini or DeepSeek. Nothing in between.</p>
       </div>
+      <div class="ds-card axis">
+        <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2.5"/><path d="M6 10h.01M9.5 10h.01M13 10h.01M16.5 10h.01M6 13.5h.01M9.5 13.5h5M16.5 13.5h.01"/></svg></span>
+        <h3>Driven from the keys</h3>
+        <p>Vim-style browsing: a key to follow a link, open a tab, run a command, or start the agent. Remap any of them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ Agent ═══════════ -->
+<section id="agent">
+  <div class="wrap feature left">
+    <div>
+      <span class="ds-caption section-eyebrow">The agent</span>
+      <h2 class="sec">Give it the boring half<br/>of the page.</h2>
+      <p class="sec-sub">Type a question in the address bar and press Enter: it answers from the page
+      you are on. Give it a task and it opens a copy of the page in its own tab, marked
+      <span class="star-mark">✦</span>, and works through it while you keep reading. Every step, every
+      token and the running cost show in the side panel. Press <kbd>Esc</kbd> and it stops.</p>
+      <ul class="bullets">
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M4 5.5h16M4 10h10M4 14.5h16M4 19h7"/></svg></span><span><b>Reads, clicks, types</b>
+          <span class="d">Summarize, translate, extract a table into a report, fill a form, follow links, open the five links that matter in background tabs.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="10.5" width="16" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/><path d="M12 14.5v2.5"/></svg></span><span><b>Three permission levels</b>
+          <span class="d">Read only never acts. Guard asks before submitting, paying, posting, deleting or leaving the site. Full access acts on its own. You choose, per run.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3 9.5h18M8 5v4.5"/></svg></span><span><b>Knows your tabs</b>
+          <span class="d">Type <kbd>@</kbd> to bring another open tab into the question. Select text on the page and ask about it from the edit menu.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13.7-5.7L20 8.5"/><path d="M20 4v4.5h-4.5"/><path d="M20 12a8 8 0 0 1-13.7 5.7L4 15.5"/><path d="M4 20v-4.5h4.5"/></svg></span><span><b>Learns the routine</b>
+          <span class="d">A saved command that worked once replays its clicks next time with no model at all — free and instant. If the site changed, the agent takes over from that step and rewrites it.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M6 3.5h8l4 4V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1Z"/><path d="M14 3.5v4h4M8.5 12h7M8.5 16h7"/></svg></span><span><b>Remembers what helps</b>
+          <span class="d">Plain markdown files — your standing preferences, notes per site, a log of the day's tasks. Open them, edit them, roll them back.</span></span></li>
+      </ul>
+      <div class="callout">
+        <span class="bi"><svg class="ico" viewBox="0 0 24 24"><circle cx="8.5" cy="8.5" r="4.5"/><path d="M12 12.5 20 20.5M17.5 18l2-2M14.5 15l2-2"/></svg></span>
+        <span><b>Passwords never reach the agent.</b> At a sign-in page it stops and hands you the tab; iCloud Keychain and passkeys fill there, as in Safari.</span>
+      </div>
+    </div>
+    <div class="shots">
+      <div class="shot"><img src="img/04-agent-working.jpg" alt="The side panel showing the agent's steps while it works in a ✦ tab" loading="lazy" /></div>
+      <div class="shot"><img src="img/05-approval.jpg" alt="The agent asking for approval before opening four background tabs" loading="lazy" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ Where the agent runs ═══════════ -->
+<section class="center" id="where">
+  <div class="wrap">
+    <h2 class="sec">Where the agent runs<br/>is the whole question.</h2>
+    <p class="sec-sub">An AI browser that works for you has to browse as you. Most of them do it by
+    running a browser in their own cloud and handing it your session. Geek Browser does it in the
+    tab in front of you.</p>
+    <div class="compare">
+      <table>
+        <thead>
+          <tr><th scope="col"></th><th scope="col">Cloud-agent browsers</th><th scope="col" class="us">Geek Browser</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Where it browses</th>
+            <td class="them">A virtual browser in the vendor's cloud. Your session cookies are copied to it so it can act as you.</td>
+            <td class="us">The tab in front of you, on your iPad. Cookies and sessions never leave the device.</td>
+          </tr>
+          <tr>
+            <th scope="row">Which model</th>
+            <td class="them">Theirs. You get what the browser ships.</td>
+            <td class="us">Apple Intelligence on your iPad, or your own key for Claude, OpenAI, Gemini or DeepSeek.</td>
+          </tr>
+          <tr>
+            <th scope="row">What it costs</th>
+            <td class="them">The agent sits behind a subscription tier, billed monthly.</td>
+            <td class="us">Free. On-device costs nothing; with your own key you pay your provider, at cost, and set a budget per task.</td>
+          </tr>
+          <tr>
+            <th scope="row">What the vendor sees</th>
+            <td class="them">Browsing context passes through their servers and is kept for a retention window.</td>
+            <td class="us">Nothing. Requests go from your iPad to the provider you chose. There is no server of ours in the path.</td>
+          </tr>
+          <tr>
+            <th scope="row">Account</th>
+            <td class="them">Sign in to use it.</td>
+            <td class="us">There is nothing to sign into.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="compare-note">The left column describes how cloud-agent browsers document their own iPad
+    apps. Compare for yourself — the questions are the right ones to ask of any AI browser.</p>
+  </div>
+</section>
+
+<!-- ═══════════ Models ═══════════ -->
+<section id="models">
+  <div class="wrap feature rev left">
+    <div class="shots solo">
+      <div class="shot"><img src="img/07-settings-ai.jpg" alt="Settings › AI Assistant with the provider, on-device routing and budget" loading="lazy" /></div>
+    </div>
+    <div>
+      <span class="ds-caption section-eyebrow">Your model</span>
+      <h2 class="sec">Bring your own model.<br/>Or bring none at all.</h2>
+      <p class="sec-sub">Reading tasks — summarize, explain, translate — can run with Apple Intelligence
+      on your iPad: free, offline, nothing transmitted. For tasks that act on pages, add your own API
+      key. It stays in the Keychain, and requests go straight from the app to the provider.</p>
+      <div class="models">
+        <span class="model-chip free"><span class="dot"></span>Apple Intelligence <span class="note">on-device</span></span>
+        <span class="model-chip free"><span class="dot"></span>Private Cloud Compute <span class="note">keyless</span></span>
+        <span class="model-chip"><span class="dot"></span>Claude</span>
+        <span class="model-chip"><span class="dot"></span>OpenAI</span>
+        <span class="model-chip"><span class="dot"></span>Gemini</span>
+        <span class="model-chip"><span class="dot"></span>DeepSeek</span>
+      </div>
+      <ul class="bullets">
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><circle cx="8" cy="15" r="3.6"/><path d="m10.7 12.3 8-8M17 5.5 19.3 8M14.8 7.7l1.8 1.8"/></svg></span><span><b>Your key, your bill</b>
+          <span class="d">No markup, no middle tier, no monthly fee to us. You already pay a provider; pay them and nobody else.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3.5v17M7.5 7h7a3 3 0 0 1 0 6h-5a3 3 0 0 0 0 6h7"/></svg></span><span><b>The cost, as it happens</b>
+          <span class="d">Tokens and estimated cost appear in the panel while the task runs. Set a budget per task and a step limit; the run stops at both.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="M10 18h4M8 8h8M8 11.5h8"/></svg></span><span><b>Short questions stay home</b>
+          <span class="d">Turn on on-device reading and a quick summary or translation is answered by your iPad instead of a provider. Off by default; you decide.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3 5 5.5v6c0 4.3 3 7.2 7 8.5 4-1.3 7-4.2 7-8.5v-6L12 3Z"/><path d="m9 11.5 2 2 4-4"/></svg></span><span><b>Page text is data, never orders</b>
+          <span class="d">Everything read from a page is fenced as untrusted, so a hidden line on a web page cannot tell the agent what to do.</span></span></li>
+      </ul>
     </div>
   </div>
 </section>
@@ -122,7 +234,7 @@
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M10 13.5a4 4 0 0 0 5.7 0l2.8-2.8a4 4 0 0 0-5.7-5.7l-1.4 1.4"/><path d="M14 10.5a4 4 0 0 0-5.7 0l-2.8 2.8a4 4 0 0 0 5.7 5.7l1.4-1.4"/></svg></span><span><b>Link hints</b>
           <span class="d"><kbd>f</kbd> labels the links on screen; <kbd>n</kbd> / <kbd>⇧n</kbd> step through them; Enter opens, <kbd>⇧Enter</kbd> opens in a new tab. Point and press <kbd>a</kbd> to click whatever is under the cursor.</span></span></li>
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="m7 9 3 3-3 3M12.5 15H17"/></svg></span><span><b>Command palette</b>
-          <span class="d"><kbd>:</kbd> lists every command with its key. Saved commands sit at the top, most recent first. <code>:tab</code>, <code>:set darkmode=true</code>, <code>:javascript</code>, <code>:ping</code>, and your own.</span></span></li>
+          <span class="d"><kbd>:</kbd> lists every command with its key — and your saved AI commands sit at the top. <code>:tab</code>, <code>:set darkmode=true</code>, <code>:javascript</code>, <code>:ping</code>, and your own.</span></span></li>
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M6.5 17h.01M10 17h4M17.5 17h.01"/><path d="M12 4v6M9.5 7.5 12 10l2.5-2.5"/></svg></span><span><b>A help bar that teaches</b>
           <span class="d">A one-line bar shows the keys for the mode you are in and lights up the one you pressed. Hide it when you know them.</span></span></li>
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M4 7h10M4 12h16M4 17h7"/><path d="m17 5 3 2-3 2M14 15l-3 2 3 2"/></svg></span><span><b>Yours to remap</b>
@@ -131,69 +243,35 @@
       <p class="kicker-line">Works with any hardware keyboard — Magic Keyboard, a Bluetooth keyboard, or the one on your Mac.</p>
     </div>
     <div class="shots">
+      <div class="shot"><img src="img/01-link-hints.jpg" alt="Two-letter labels over every link on a Wikipedia article" loading="lazy" /></div>
       <div class="shot"><img src="img/02-command-palette.jpg" alt="The command palette listing commands with their keys" loading="lazy" /></div>
-      <div class="shot"><img src="img/03-search-bar.jpg" alt="The address bar suggesting a top site, an AI question and a web search" loading="lazy" /></div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════ Agent ═══════════ -->
-<section id="agent">
-  <div class="wrap feature rev left">
-    <div class="shots">
-      <div class="shot"><img src="img/05-approval.jpg" alt="The assistant asking for approval before submitting a form" loading="lazy" /></div>
-      <div class="shot"><img src="img/06-agent-answer.jpg" alt="The assistant answering in the side panel with a formatted summary" loading="lazy" /></div>
-    </div>
-    <div>
-      <span class="ds-caption section-eyebrow">Agent</span>
-      <h2 class="sec">An assistant that works on the page —<br/>and asks before it matters.</h2>
-      <p class="sec-sub">Type a question in the address bar and press Enter: the assistant answers from
-      the page you are on. Give it a task and it opens a copy of the page in its own tab, marked
-      <span class="star-mark">✦</span>, and works through it step by step while you keep reading.
-      Switch to that tab any time to watch or take over.</p>
-      <ul class="bullets">
-        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M4 5.5h16M4 10h10M4 14.5h16M4 19h7"/></svg></span><span><b>Reads, clicks, types</b>
-          <span class="d">Summarize, translate, extract a table, fill a form, follow links, open the five links that matter in background tabs. Each step shows in the side panel as it happens.</span></span></li>
-        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="10.5" width="16" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/><path d="M12 14.5v2.5"/></svg></span><span><b>Three permission levels</b>
-          <span class="d">Read only never acts. Guard asks before leaving the site, submitting a form, buying or posting. Full access acts on its own. You choose, per run.</span></span></li>
-        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3 9.5h18M8 5v4.5"/></svg></span><span><b>Knows your tabs</b>
-          <span class="d">Type <kbd>@</kbd> to bring another open tab into the question. Select text and ask about it from the edit menu.</span></span></li>
-        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13.7-5.7L20 8.5"/><path d="M20 4v4.5h-4.5"/><path d="M20 12a8 8 0 0 1-13.7 5.7L4 15.5"/><path d="M4 20v-4.5h4.5"/></svg></span><span><b>Learns the routine</b>
-          <span class="d">A saved command that worked once replays its clicks next time without the AI. If the site changed, the assistant takes over from that step and updates the routine.</span></span></li>
-        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M6 3.5h8l4 4V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1Z"/><path d="M14 3.5v4h4M8.5 12h7M8.5 16h7"/></svg></span><span><b>Remembers what helps</b>
-          <span class="d">Plain markdown files — your preferences, notes per site, a log of each day's tasks. Open them, edit them, roll them back.</span></span></li>
-      </ul>
-      <div class="callout">
-        <span class="bi"><svg class="ico" viewBox="0 0 24 24"><circle cx="8.5" cy="8.5" r="4.5"/><path d="M12 12.5 20 20.5M17.5 18l2-2M14.5 15l2-2"/></svg></span>
-        <span><b>Passwords never reach the assistant.</b> At a sign-in page it stops and hands you the tab; iCloud Keychain and passkeys fill there, as in Safari.</span>
-      </div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════ Private ═══════════ -->
 <section class="private" id="private">
-  <div class="wrap feature left">
+  <div class="wrap feature rev left">
+    <div class="shots">
+      <div class="shot"><img src="img/08-dark.jpg" alt="Geek Browser in dark mode with the address bar open" loading="lazy" /></div>
+      <div class="shot"><img src="img/03-search-bar.jpg" alt="The address bar offering an AI answer, a top site and web searches" loading="lazy" /></div>
+    </div>
     <div>
-      <span class="ds-caption section-eyebrow">Private</span>
-      <h2 class="sec">Free to use.<br/>Private by design.</h2>
-      <p class="sec-sub">There is no Geek Browser account and no Geek Browser server. History,
-      bookmarks, settings and memory files stay on your iPad and in your own iCloud. AI runs where
-      you decide.</p>
+      <span class="ds-caption section-eyebrow">Privacy</span>
+      <h2 class="sec">No account.<br/>No server of ours.</h2>
+      <p class="sec-sub">History, bookmarks, tabs, settings and the agent's memory files stay on your
+      iPad and in your own iCloud. There is no Geek Browser backend that could hold them, and no
+      analytics SDK in the app.</p>
       <ul class="bullets">
-        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="M10 18h4"/><path d="M12 7.5 13.2 11l3.3 1.2-3.3 1.2L12 16.5l-1.2-3.1-3.3-1.2 3.3-1.2L12 7.5Z"/></svg></span><span><b>On-device first</b>
-          <span class="d">Turn on “Reading tasks on this device” and summaries, explanations and translations run with Apple Intelligence on your iPad: free, offline, nothing sent.</span></span></li>
-        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><circle cx="8" cy="15" r="3.6"/><path d="m10.7 12.3 8-8M17 5.5 19.3 8M14.8 7.7l1.8 1.8"/></svg></span><span><b>Your key, your bill</b>
-          <span class="d">For tasks that act on pages, bring your own key for Claude, OpenAI, Gemini or DeepSeek. Keys stay in the Keychain. Usage and estimated cost show as the assistant works; set a budget per task.</span></span></li>
-        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3 5 5.5v6c0 4.3 3 7.2 7 8.5 4-1.3 7-4.2 7-8.5v-6L12 3Z"/><path d="m9 11.5 2 2 4-4"/></svg></span><span><b>Nothing to leak</b>
-          <span class="d">No analytics SDK in the app. No account. What the assistant sends is the page you are on, your question and the tabs you @-mention — to the provider you chose, and only then.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3 5 5.5v6c0 4.3 3 7.2 7 8.5 4-1.3 7-4.2 7-8.5v-6L12 3Z"/><path d="m9 11.5 2 2 4-4"/></svg></span><span><b>Nothing in the middle</b>
+          <span class="d">What the agent sends is the page you are on, your question and the tabs you @-mention — to the provider you chose, and only then. Not policy: there is no server of ours in the path.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2.5"/><path d="M10 18.5h4"/><path d="m9.5 10 2 2 3.5-3.5"/></svg></span><span><b>Off by default</b>
+          <span class="d">The AI does nothing until you ask it something. Turn it off entirely and you still have the whole browser.</span></span></li>
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="m6 6 12 12"/></svg></span><span><b>Ads and trackers, blocked</b>
           <span class="d">A built-in content blocker, on by default, per site if you like.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M4 5.5h16v13H4z"/><path d="M8 9.5h8M8 13h5"/></svg></span><span><b>Ten languages</b>
+          <span class="d">English, Korean, Japanese, Chinese (Simplified, Traditional and Cantonese), German, French, Spanish, Italian and Portuguese.</span></span></li>
       </ul>
-    </div>
-    <div class="shots">
-      <div class="shot"><img src="img/07-settings-ai.jpg" alt="Settings › AI Assistant with on-device routing and provider keys" loading="lazy" /></div>
-      <div class="shot"><img src="img/08-dark.jpg" alt="Geek Browser in dark mode" loading="lazy" /></div>
     </div>
   </div>
 </section>
@@ -202,17 +280,17 @@
 <section class="center" id="plans">
   <div class="wrap">
     <h2 class="sec">Free. All of it.</h2>
-    <p class="sec-sub">Geek Browser is free, with no in-app purchases and no subscription. The only cost
-    you can ever run into is what your own AI provider bills you — and with Apple Intelligence
-    on-device, that is nothing.</p>
+    <p class="sec-sub">No in-app purchases, no subscription, and no paid tier hiding the agent. The
+    only cost you can ever run into is what your own provider bills you — and on-device, that is
+    nothing.</p>
     <div class="plans-grid single">
       <div class="ds-card plan star">
         <div class="name">Geek Browser</div>
         <div class="price">$0</div>
         <div class="per">iPad · runs on Apple silicon Mac</div>
         <ul>
+          <li><b>The agent</b> — side panel, ✦ tabs, saved commands, memory files</li>
           <li><b>Keyboard browsing</b> — link hints, command palette, content blocker, iCloud sync</li>
-          <li><b>The AI assistant</b> — side panel, saved commands and memory</li>
           <li>AI with Apple Intelligence on-device, free</li>
           <li>AI with your own key (Claude, OpenAI, Gemini, DeepSeek), billed at cost to you</li>
         </ul>
@@ -229,8 +307,41 @@
     <h2 class="sec center" style="margin-bottom:32px">Questions, answered.</h2>
     <div class="faq">
       <details class="ds-card">
+        <summary>Where does the agent actually run?</summary>
+        <p>In the browser on your iPad. It drives a real tab — the ✦ tab — using the same session you
+        are already signed into, so nothing is copied anywhere. Only the model call leaves the device,
+        and only to the provider you picked. With Apple Intelligence on-device, not even that.</p>
+      </details>
+      <details class="ds-card">
+        <summary>Which models can I use?</summary>
+        <p>Apple Intelligence on-device and Apple's Private Cloud Compute need no key at all. For
+        Claude, OpenAI, Gemini or DeepSeek you add your own API key, kept in the Keychain. You can
+        change model per task.</p>
+      </details>
+      <details class="ds-card">
+        <summary>What does the AI cost?</summary>
+        <p>Nothing on-device. With your own key you pay your provider at their prices, with no markup
+        from us. The panel shows tokens and estimated cost while a task runs, and you can set a budget
+        per task. A saved command that already worked replays without the model, for free.</p>
+      </details>
+      <details class="ds-card">
+        <summary>Can a web page hijack the agent?</summary>
+        <p>Everything read from a page is fenced as untrusted content, so text on a page is data to
+        read, never an instruction to follow. On top of that, Guard mode stops for your approval before
+        submitting, paying, posting, deleting or leaving the site, every run has a step limit, and
+        <kbd>Esc</kbd> ends it immediately.</p>
+      </details>
+      <details class="ds-card">
+        <summary>Do I need an account?</summary>
+        <p>No — there is nothing to sign into. No sign-up, no profile, no sync service of ours.</p>
+      </details>
+      <details class="ds-card">
+        <summary>Is it really free?</summary>
+        <p>Yes. No in-app purchases, no subscription, no ads, and the agent is not behind a paid tier.</p>
+      </details>
+      <details class="ds-card">
         <summary>Do I need a keyboard?</summary>
-        <p>Geek Browser works by touch too, but it is designed for a hardware keyboard: Magic Keyboard,
+        <p>Geek Browser works by touch too, but it is built for a hardware keyboard: Magic Keyboard,
         any Bluetooth keyboard, or a Mac's.</p>
       </details>
       <details class="ds-card">
@@ -238,40 +349,14 @@
         <p>Yes, on Apple silicon Macs as an iPad app from the Mac App Store, with the same keys.</p>
       </details>
       <details class="ds-card">
-        <summary>Is it really free?</summary>
-        <p>Yes. No in-app purchases, no subscription, no ads. AI on-device is free; cloud AI runs on
-        your own key at your provider's prices.</p>
-      </details>
-      <details class="ds-card">
-        <summary>Do I need an account or an API key?</summary>
-        <p>No account, ever. AI reading tasks can run on-device with Apple Intelligence. For tasks that
-        act on pages, add your own key for Claude, OpenAI, Gemini or DeepSeek — billed to you at cost.</p>
-      </details>
-      <details class="ds-card">
-        <summary>What can the assistant do, and what will it never do?</summary>
-        <p>It reads, scrolls, clicks, types, fills forms and opens tabs on your say-so. It never sees
-        your passwords, never treats page text as instructions, never runs without a step limit, and
-        stops the moment you press Esc. Settings › About lists it all.</p>
-      </details>
-      <details class="ds-card">
-        <summary>Where is my data?</summary>
-        <p>On your iPad and in your own iCloud: history, bookmarks, settings, saved commands, memory
-        files. There is no Geek Browser server that stores them.</p>
+        <summary>What about passkeys and saved passwords?</summary>
+        <p>Geek Browser is a real browser to iPadOS, so iCloud Keychain fills passwords and passkeys on
+        any site. The agent never sees them: it stops at sign-in pages and hands you the tab.</p>
       </details>
       <details class="ds-card">
         <summary>Can I use my Vimlike settings?</summary>
         <p>Yes. Export from Vimlike's Website Settings and import the file in Settings › Websites. Key
         names, site scripts and per-site commands come along.</p>
-      </details>
-      <details class="ds-card">
-        <summary>What about passkeys and saved passwords?</summary>
-        <p>Geek Browser is a real browser to iPadOS, so iCloud Keychain fills passwords and passkeys on
-        any site. The assistant hands you the tab at sign-in pages.</p>
-      </details>
-      <details class="ds-card">
-        <summary>Which languages?</summary>
-        <p>English, Korean, Japanese, Simplified and Traditional Chinese, Cantonese, German, French,
-        Spanish, Italian and Portuguese.</p>
       </details>
     </div>
   </div>
@@ -280,7 +365,7 @@
 <!-- ═══════════ Final CTA ═══════════ -->
 <section class="final" id="download">
   <div class="wrap">
-    <h2 class="sec">Your hands are already<br/>on the keyboard.</h2>
+    <h2 class="sec">Type it. Hand it off.<br/>Keep it yours.</h2>
     <p class="sec-sub" style="margin-bottom:32px">Geek Browser for iPad, and for Apple silicon Mac from the Mac App Store.</p>
     <a class="appstore-badge" href="https://apps.apple.com/app/id1457482155" aria-label="Download on the App Store">
       <img src="img/appstore-badge.svg" alt="Download on the App Store" />
@@ -296,7 +381,7 @@
 <!-- ═══════════ Footer ═══════════ -->
 <footer>
   <div class="wrap">
-    <span><b style="color:var(--ink)">Geek Browser</b> — type it, hand it off, keep it yours.</span>
+    <span><b style="color:var(--ink)">Geek Browser</b> — the AI browser that stays on your iPad.</span>
     <div class="spacer"></div>
     <a href="help">Help</a>
     <a href="privacy">Privacy Policy</a>
