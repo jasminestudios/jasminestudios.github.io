@@ -40,7 +40,7 @@
   <div class="wrap">
     <a class="logo" href="#">Geek<span>Browser</span></a>
     <a class="link" href="#agent">AI agent</a>
-    <a class="link" href="#models">Models</a>
+    <a class="link" href="#models">Apple Intelligence</a>
     <a class="link" href="#keyboard">Vim keys</a>
     <a class="link" href="#private">Privacy</a>
     <a class="link" href="#faq">FAQ</a>
@@ -199,14 +199,31 @@
       <div class="shot"><img src="img/07-settings-ai.jpg" alt="Settings › AI Assistant with the provider, on-device routing and budget" loading="lazy" /></div>
     </div>
     <div>
-      <span class="ds-caption section-eyebrow">Your model</span>
-      <h2 class="sec">Bring your own model.<br/>Or bring none at all.</h2>
-      <p class="sec-sub">Reading tasks — summarize, explain, translate — can run with Apple Intelligence
-      on your iPad: free, offline, nothing transmitted. For tasks that act on pages, add your own API
-      key. It stays in the Keychain, and requests go straight from the app to the provider.</p>
+      <span class="ds-caption section-eyebrow">Apple Intelligence &amp; your own keys</span>
+      <h2 class="sec">Apple Intelligence,<br/>right there on the iPad.</h2>
+      <p class="sec-sub">Ask what a page says, get it summarized, explained or translated — and the
+      answer comes from the model already on your iPad. No key, no account, no request over the
+      network. When a task needs a bigger model, bring your own key. Either way, nothing passes
+      through us.</p>
+
+      <div class="apple-card">
+        <div class="apple-head">
+          <span class="tile"><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="M10 18h4"/><path d="M12 7.5 13.2 11l3.3 1.2-3.3 1.2L12 16.5l-1.2-3.1-3.3-1.2 3.3-1.2L12 7.5Z"/></svg></span>
+          <div>
+            <h3>Built in. No key required.</h3>
+            <p>Two keyless ways to run, both from Apple.</p>
+          </div>
+        </div>
+        <ul class="apple-points">
+          <li><b>On-device</b><span>Reading tasks are answered by the model on your iPad. Nothing is transmitted, and it works with the network off.</span></li>
+          <li><b>Private Cloud Compute</b><span>For a longer piece of work, Apple's larger model under its own privacy guarantees. Still no key, still no account.</span></li>
+          <li><b>You turn it on</b><span>On-device reading is a switch in Settings › AI Assistant, off until you flip it. Nothing runs before you ask.</span></li>
+        </ul>
+      </div>
+
       <div class="models">
-        <span class="model-chip free"><span class="dot"></span>Apple Intelligence <span class="note">on-device</span></span>
-        <span class="model-chip free"><span class="dot"></span>Private Cloud Compute <span class="note">keyless</span></span>
+        <span class="model-chip apple"><span class="dot"></span>Apple Intelligence <span class="note">on-device · free</span></span>
+        <span class="model-chip apple"><span class="dot"></span>Private Cloud Compute <span class="note">keyless</span></span>
         <span class="model-chip"><span class="dot"></span>Claude</span>
         <span class="model-chip"><span class="dot"></span>OpenAI</span>
         <span class="model-chip"><span class="dot"></span>Gemini</span>
@@ -214,11 +231,9 @@
       </div>
       <ul class="bullets">
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><circle cx="8" cy="15" r="3.6"/><path d="m10.7 12.3 8-8M17 5.5 19.3 8M14.8 7.7l1.8 1.8"/></svg></span><span><b>Your key, your bill</b>
-          <span class="d">No markup, no middle tier, no monthly fee to us. You already pay a provider; pay them and nobody else.</span></span></li>
+          <span class="d">For tasks that act on pages, add a key for Claude, OpenAI, Gemini or DeepSeek. It stays in the Keychain, and requests go straight from the app to the provider — no markup, no monthly fee to us.</span></span></li>
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3.5v17M7.5 7h7a3 3 0 0 1 0 6h-5a3 3 0 0 0 0 6h7"/></svg></span><span><b>The cost, as it happens</b>
-          <span class="d">Tokens and estimated cost appear in the panel while the task runs. Set a budget per task and a step limit; the run stops at both.</span></span></li>
-        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="M10 18h4M8 8h8M8 11.5h8"/></svg></span><span><b>Short questions stay home</b>
-          <span class="d">Turn on on-device reading and a quick summary or translation is answered by your iPad instead of a provider. Off by default; you decide.</span></span></li>
+          <span class="d">Tokens and estimated cost appear in the panel while the task runs. Set a budget per task and a step limit; the run stops at both. On-device, the number stays zero.</span></span></li>
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3 5 5.5v6c0 4.3 3 7.2 7 8.5 4-1.3 7-4.2 7-8.5v-6L12 3Z"/><path d="m9 11.5 2 2 4-4"/></svg></span><span><b>Page text is data, never orders</b>
           <span class="d">Everything read from a page is fenced as untrusted, so a hidden line on a web page cannot tell the AI agent what to do.</span></span></li>
       </ul>
