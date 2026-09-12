@@ -1,4 +1,6 @@
-# Geek Browser
+# Geek Browser — Keys & Commands
+
+[← Geek Browser](/geek-browser/)
 
 - [Introduction](#introduction)
 - [Downloads](#downloads)
@@ -20,7 +22,7 @@ Geek Browser is a full-screen and super-fast web browser for iPad with a VIM-lik
 ## Downloads
 The latest version of Geek Browser is available in AppStore:
 
-[<img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://itunes.apple.com/app/id1457482155)
+[<img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://apps.apple.com/app/id1457482155)
 
 ## Privacy Policy
 Geek Browser does NOT collect any of your data. The data Geek Browser stores locally are your browser history, bookmarks and settings. These are only saved locally. No one, other than you, has access to this data.
