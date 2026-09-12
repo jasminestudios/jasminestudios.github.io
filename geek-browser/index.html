@@ -39,7 +39,6 @@
 <nav class="top ds-glass">
   <div class="wrap">
     <a class="logo" href="#">Geek<span>Browser</span></a>
-    <a class="link" href="#demo">Demo</a>
     <a class="link" href="#agent">Agent</a>
     <a class="link" href="#models">Models</a>
     <a class="link" href="#keyboard">Keyboard</a>
@@ -74,26 +73,11 @@
       </div>
     </div>
     <div class="pads" aria-hidden="true">
-      <div class="pad back"><img src="img/03-search-bar.jpg" alt="" loading="eager" /></div>
+      <div class="pad back"><img src="img/01-link-hints.jpg" alt="" loading="eager" /></div>
       <div class="pad front"><img src="img/06-agent-answer.jpg" alt="" loading="eager" /></div>
     </div>
   </div>
 </header>
-
-<!-- ═══════════ Demo ═══════════ -->
-<section class="center demo" id="demo">
-  <div class="wrap">
-    <h2 class="sec">Twenty seconds, one page.</h2>
-    <p class="sec-sub">Link hints, a task typed into the panel, the steps as they happen, the approval
-    it waits for, and the answer. Recorded on an iPad, at speed.</p>
-    <div class="demo-frame">
-      <video autoplay muted loop playsinline preload="metadata" poster="img/demo-poster.jpg"
-             aria-label="Geek Browser: link hints, a task handed to the agent, an approval, and the answer">
-        <source src="video/demo.mp4" type="video/mp4" />
-      </video>
-    </div>
-  </div>
-</section>
 
 <!-- ═══════════ 3-axis overview ═══════════ -->
 <section class="center" id="how">
@@ -150,8 +134,13 @@
       </div>
     </div>
     <div class="shots">
-      <div class="shot"><img src="img/04-agent-working.jpg" alt="The side panel showing the agent's steps while it works in a ✦ tab" loading="lazy" /></div>
-      <div class="shot"><img src="img/05-approval.jpg" alt="The agent asking for approval before opening four background tabs" loading="lazy" /></div>
+      <div class="shot shot-video">
+        <video autoplay muted loop playsinline preload="metadata" poster="img/agent-poster.jpg"
+               aria-label="A task typed into the panel, the steps as they run, the approval, and the streamed answer">
+          <source src="video/agent.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="shot"><img src="img/05-approval.jpg" alt="The agent asking for approval before opening background tabs" loading="lazy" /></div>
     </div>
   </div>
 </section>
@@ -259,7 +248,12 @@
       <p class="kicker-line">Works with any hardware keyboard — Magic Keyboard, a Bluetooth keyboard, or the one on your Mac.</p>
     </div>
     <div class="shots">
-      <div class="shot"><img src="img/01-link-hints.jpg" alt="Two-letter labels over every link on a Wikipedia article" loading="lazy" /></div>
+      <div class="shot shot-video">
+        <video autoplay muted loop playsinline preload="metadata" poster="img/keyboard-poster.jpg"
+               aria-label="Link hints labelling every link, then the command palette filtering as a command is typed">
+          <source src="video/keyboard.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div class="shot"><img src="img/02-command-palette.jpg" alt="The command palette listing commands with their keys" loading="lazy" /></div>
     </div>
   </div>
@@ -268,8 +262,9 @@
 <!-- ═══════════ Private ═══════════ -->
 <section class="private" id="private">
   <div class="wrap feature rev left">
-    <div class="shots solo">
+    <div class="shots">
       <div class="shot"><img src="img/08-dark.jpg" alt="Geek Browser in dark mode with the address bar open" loading="lazy" /></div>
+      <div class="shot"><img src="img/03-search-bar.jpg" alt="The address bar offering an AI answer, a top site and web searches" loading="lazy" /></div>
     </div>
     <div>
       <span class="ds-caption section-eyebrow">Privacy</span>
@@ -406,13 +401,24 @@
 </footer>
 
 <script>
-  // Still frame for anyone who asked for less motion.
   (function () {
-    var quiet = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (!quiet) return;
-    document.querySelectorAll('video').forEach(function (v) {
-      v.removeAttribute('autoplay'); v.removeAttribute('loop'); v.controls = true; v.pause();
-    });
+    var videos = Array.prototype.slice.call(document.querySelectorAll('video'));
+    // A still frame for anyone who asked for less motion.
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      videos.forEach(function (v) {
+        v.removeAttribute('autoplay'); v.removeAttribute('loop'); v.controls = true; v.pause();
+      });
+      return;
+    }
+    // Otherwise play only what is on screen.
+    if (!('IntersectionObserver' in window)) return;
+    var watch = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { entry.target.play().catch(function () {}); }
+        else { entry.target.pause(); }
+      });
+    }, { threshold: 0.25 });
+    videos.forEach(function (v) { watch.observe(v); });
   })();
 </script>
 
