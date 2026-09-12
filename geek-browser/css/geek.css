@@ -115,3 +115,13 @@ section.private kbd { background: rgba(255,255,255,.12); color: #fff; border-col
 .model-chip .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--brand); }
 .model-chip.free .dot { background: var(--success); }
 .model-chip .note { font-weight: 600; color: var(--text-tertiary); }
+
+/* ── Demo clip ── */
+section.demo { padding-bottom: 56px; }
+.demo-frame {
+  max-width: 900px; margin: 0 auto; padding: 10px 11px;
+  background: var(--ink); border-radius: 24px; box-shadow: var(--shadow-float);
+  line-height: 0;
+}
+.demo-frame video { width: 100%; display: block; border-radius: 14px; background: var(--canvas); }
+@media (max-width: 620px) { .demo-frame { padding: 6px 7px; border-radius: 16px; } .demo-frame video { border-radius: 9px; } }

@@ -39,6 +39,7 @@
 <nav class="top ds-glass">
   <div class="wrap">
     <a class="logo" href="#">Geek<span>Browser</span></a>
+    <a class="link" href="#demo">Demo</a>
     <a class="link" href="#agent">Agent</a>
     <a class="link" href="#models">Models</a>
     <a class="link" href="#keyboard">Keyboard</a>
@@ -78,6 +79,21 @@
     </div>
   </div>
 </header>
+
+<!-- ═══════════ Demo ═══════════ -->
+<section class="center demo" id="demo">
+  <div class="wrap">
+    <h2 class="sec">Twenty seconds, one page.</h2>
+    <p class="sec-sub">Link hints, a task typed into the panel, the steps as they happen, the approval
+    it waits for, and the answer. Recorded on an iPad, at speed.</p>
+    <div class="demo-frame">
+      <video autoplay muted loop playsinline preload="metadata" poster="img/demo-poster.jpg"
+             aria-label="Geek Browser: link hints, a task handed to the agent, an approval, and the answer">
+        <source src="video/demo.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+</section>
 
 <!-- ═══════════ 3-axis overview ═══════════ -->
 <section class="center" id="how">
@@ -388,6 +404,17 @@
     <span>© 2026 Jasmine Studios</span>
   </div>
 </footer>
+
+<script>
+  // Still frame for anyone who asked for less motion.
+  (function () {
+    var quiet = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!quiet) return;
+    document.querySelectorAll('video').forEach(function (v) {
+      v.removeAttribute('autoplay'); v.removeAttribute('loop'); v.controls = true; v.pause();
+    });
+  })();
+</script>
 
 </body>
 </html>
