@@ -121,21 +121,19 @@ section.private kbd { background: rgba(255,255,255,.12); color: #fff; border-col
 .shot video { width: 100%; display: block; border-radius: 12px; background: var(--canvas); }
 .shots .shot-video { align-self: stretch; width: 100%; }
 
-/* ── Apple Intelligence block ── */
-.apple-card {
-  margin-top: 26px; padding: 22px 24px; border-radius: var(--r-20);
+/* ── Apple Intelligence / your own key ── */
+.choice-card {
+  margin-top: 26px; display: grid; gap: 18px;
+  padding: 22px 24px; border-radius: var(--r-20);
   background: var(--surface); border: 1px solid var(--hairline); box-shadow: var(--shadow-card);
 }
-.apple-head { display: flex; gap: 14px; align-items: center; }
-.apple-head .tile { flex: 0 0 44px; height: 44px; }
-.apple-head .tile .ico { width: 24px; height: 24px; }
-.apple-head h3 { margin: 0; font-size: 17px; font-weight: 800; letter-spacing: -.3px; }
-.apple-head p { margin: 2px 0 0; color: var(--text-secondary); font-size: 14px; }
-.apple-points { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 12px; }
-.apple-points li { display: grid; grid-template-columns: 172px 1fr; gap: 14px; align-items: baseline; font-size: 14.5px; }
-.apple-points b { color: var(--brand); font-weight: 800; letter-spacing: -.2px; }
-.apple-points span { color: var(--text-secondary); }
-@media (max-width: 560px) { .apple-points li { grid-template-columns: 1fr; gap: 2px; } }
+.choice + .choice { padding-top: 18px; border-top: 1px solid var(--hairline); }
+.choice .tile { width: 38px; height: 38px; margin-bottom: 12px; }
+.choice .tile .ico { width: 20px; height: 20px; }
+.choice h3 { margin: 0 0 8px; font-size: 16.5px; font-weight: 800; letter-spacing: -.3px; }
+.choice p { margin: 0 0 8px; color: var(--text-secondary); font-size: 14.5px; line-height: 1.5; }
+.choice p:last-child { margin-bottom: 0; }
+.choice p b { color: var(--ink); font-weight: 700; }
 .model-chip.apple { border-color: rgba(10,132,255,.32); background: var(--brand-tint); }
 .model-chip.apple .dot { background: var(--brand); }
 .model-chip.apple .note { color: var(--brand); }
