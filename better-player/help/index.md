@@ -1,4 +1,6 @@
-# Better Player for Youtube
+# Better Player for Youtube — Setup & Help
+
+[← Better Player](/better-player/)
 
 - [Introduction](#introduction)
 - [Downloads](#downloads)
@@ -21,6 +23,15 @@ The latest version of Better Player for Youtube is available in AppStore:
 [<img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://apps.apple.com/app/better-player-for-youtube/id1592876082)
 
 ## Version History
+### v1.4.11
+* Ambient light — the video casts a glow in the colours of the frame playing, with size and strength in settings
+* Focus mode now applies to Shorts, and hides the action buttons beside the reel
+* The video is centred in the window
+* The app and its settings in eleven languages
+* Fixes: focus mode no longer leaves a black page when YouTube rebuilds its player; the Focus Mode and auto-start switches now do what they say
+
+*Versions between v1.2.0 and v1.4.11 are not listed here.*
+
 ### v1.2.0
 * Set up to show / hide buttons
 * Set up to change background and button colors

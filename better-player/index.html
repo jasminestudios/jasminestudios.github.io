@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Better Player — YouTube in a dark room, lit by the video</title>
+<meta name="description" content="A Safari extension for YouTube on iPhone, iPad and Mac. Dims the page around the video, casts an ambient glow in the colours of the frame that is playing, and blocks the ads. Free, no account, nothing collected." />
+<meta property="og:title" content="Better Player — YouTube in a dark room, lit by the video" />
+<meta property="og:description" content="Focus mode dims everything but the video. Ambient light picks up the colours of the frame playing. Ads are gone before the page paints. Free for iPhone, iPad and Mac." />
+<meta property="og:image" content="https://www.jasminestudios.net/better-player/img/01-ambient-coral.jpg" />
+<meta property="og:url" content="https://www.jasminestudios.net/better-player/" />
+<meta property="og:site_name" content="Jasmine Studios" />
+<link rel="canonical" href="https://www.jasminestudios.net/better-player/" />
+<link rel="shortcut icon" type="image/png" href="/Resources/favicon.png" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C3MM12Q509"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-C3MM12Q509');
+</script>
+<link rel="stylesheet" href="css/design-system.css" />
+<link rel="stylesheet" href="css/site.css" />
+<link rel="stylesheet" href="css/player.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Better Player for Youtube",
+  "operatingSystem": "iOS, iPadOS, macOS",
+  "applicationCategory": "UtilitiesApplication",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+</head>
+<body class="ds-body">
+
+<!-- ═══════════ Nav ═══════════ -->
+<nav class="top ds-glass">
+  <div class="wrap">
+    <a class="logo" href="#">Better<span>Player</span></a>
+    <a class="link" href="#focus">Focus mode</a>
+    <a class="link" href="#ambient">Ambient light</a>
+    <a class="link" href="#shorts">Shorts</a>
+    <a class="link" href="#private">Privacy</a>
+    <a class="link" href="#faq">FAQ</a>
+    <div class="spacer"></div>
+    <a class="ds-btn ds-btn--primary" href="https://apps.apple.com/app/id1592876082" target="_blank" rel="noopener">Download</a>
+  </div>
+</nav>
+
+<!-- ═══════════ Hero ═══════════ -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="ds-badge eyebrow">A Safari extension for YouTube</span>
+      <h1 class="ds-display">The video, lit&nbsp;by&nbsp;itself.<br/>Everything else,<br/>out of the way.</h1>
+      <p class="lead">Better Player dims the whole YouTube page around the video, moves it to the
+      middle of the screen, and casts a glow in the colours of the frame that is playing. The ads
+      are hidden before the page paints and the skippable ones skip themselves. One free app for
+      iPhone, iPad and Mac.</p>
+      <div class="cta-row">
+        <a class="appstore-badge" href="https://apps.apple.com/app/id1592876082" aria-label="Download on the App Store">
+          <img src="img/appstore-badge.svg" alt="Download on the App Store" />
+        </a>
+        <span class="cta-note">Free · No account · Nothing collected</span>
+      </div>
+      <div class="keystrip" aria-label="At a glance">
+        <span><kbd>esc</kbd> leave focus mode</span>
+        <span><kbd>10</kbd> skip either way</span>
+        <span>Picture in Picture</span>
+        <span>11 languages</span>
+      </div>
+    </div>
+    <div class="pads" aria-hidden="true">
+      <div class="pad back"><img src="img/02-ambient-mushroom.jpg" alt="" loading="eager" /></div>
+      <div class="pad front"><img src="img/01-ambient-coral.jpg" alt="" loading="eager" /></div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════ Overview ═══════════ -->
+<section class="center" id="how">
+  <div class="wrap">
+    <h2 class="sec">A dark room for one video.</h2>
+    <p class="sec-sub">YouTube is built to pull you sideways — the next thumbnail, the comments,
+    the endless rail down the right. Better Player leaves all of it on the page and takes the light
+    away from it, so the only lit thing on screen is what you came to watch.</p>
+    <div class="axis-grid">
+      <div class="ds-card axis">
+        <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="13" rx="2.5"/><path d="M10 9.5v5l4.5-2.5L10 9.5Z"/></svg></span>
+        <h3>Focus mode</h3>
+        <p>The page goes dark, the video steps forward into the middle of the screen, and the chrome around it disappears.</p>
+      </div>
+      <div class="ds-card axis">
+        <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.2 5.2 7 7M17 17l1.8 1.8M18.8 5.2 17 7M7 17l-1.8 1.8"/></svg></span>
+        <h3>Ambient light</h3>
+        <p>A soft glow spills out from behind the video in the colours of the frame that is playing, and drifts as the scene changes.</p>
+      </div>
+      <div class="ds-card axis">
+        <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3 4.5 6v6c0 4.2 3.1 7.6 7.5 9 4.4-1.4 7.5-4.8 7.5-9V6L12 3Z"/><path d="M9 12.2l2.1 2.1L15.5 10"/></svg></span>
+        <h3>No ads</h3>
+        <p>Ad slots are hidden by a stylesheet before the first paint, and a skippable ad has Skip pressed for it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ Focus mode ═══════════ -->
+<section class="dark" id="focus">
+  <div class="wrap feature left">
+    <div>
+      <span class="ds-caption section-eyebrow">Focus mode</span>
+      <h2 class="sec">Everything but the video,<br/>turned down.</h2>
+      <p class="sec-sub">A dark layer covers the page and the video is lifted through it. Nothing is
+      removed and nothing is rearranged — scroll and the comments are still there, exactly where
+      YouTube put them. Press <kbd>esc</kbd>, or the close button in the corner, and the room lights
+      come back up.</p>
+      <ul class="bullets">
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="M8.5 9.5h7v5h-7z"/></svg></span><span><b>Centred, not just dimmed</b>
+          <span class="d">The player moves to the middle of the window rather than sitting off to the left with a sidebar's worth of empty space beside it.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M4 9V6.5A2.5 2.5 0 0 1 6.5 4H9M15 4h2.5A2.5 2.5 0 0 1 20 6.5V9M20 15v2.5a2.5 2.5 0 0 1-2.5 2.5H15M9 20H6.5A2.5 2.5 0 0 1 4 17.5V15"/></svg></span><span><b>Starts on its own</b>
+          <span class="d">Open a video and focus mode is already on. Switch auto-start off and the page stays as YouTube built it until you ask.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5l3 2"/></svg></span><span><b>Holds through the page's own churn</b>
+          <span class="d">YouTube rebuilds its player as you move from video to video. Better Player watches for that and puts the video back on top rather than losing it behind the dim.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M4 6.5h16M4 12h16M4 17.5h10"/></svg></span><span><b>Rounded corners, or square</b>
+          <span class="d">A small thing, and a switch in settings like everything else here.</span></span></li>
+      </ul>
+      <div class="callout">
+        <span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3.5 20.5 19h-17L12 3.5Z"/><path d="M12 9.5v4M12 16h.01"/></svg></span>
+        <span><b>Focus mode needs YouTube's desktop site.</b> On iPad and Mac that is what you get.
+        On iPhone, YouTube serves its phone layout, and there Better Player gives you the playback
+        controls and the ad blocking — ask for the desktop site and focus mode comes with it.</span>
+      </div>
+    </div>
+    <div class="shots">
+      <div class="shot"><img src="img/04-controller.jpg" alt="A video playing with the rest of the YouTube page dimmed behind it" loading="lazy" /></div>
+      <div class="shot"><img src="img/02-ambient-mushroom.jpg" alt="The same page with a warm glow around the video" loading="lazy" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ Ambient light ═══════════ -->
+<section id="ambient">
+  <div class="wrap feature rev left">
+    <div>
+      <span class="ds-caption section-eyebrow">Ambient light</span>
+      <h2 class="sec">The glow comes from<br/>the frame that is playing.</h2>
+      <p class="sec-sub">Five times a second Better Player reads the frame on screen, takes the
+      colour from each edge of it, and paints that back out behind the video as a soft shadow. A reef
+      throws blue across the page; a field of mushrooms throws yellow-green. It moves the way the
+      scene moves.</p>
+      <ul class="bullets">
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3 15l4.5-4 3.5 3 4-5 5 6"/></svg></span><span><b>Read from the video itself</b>
+          <span class="d">Not an average of the thumbnail or a colour the page declares — the actual pixels of the frame you are looking at.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M4 16c3.5 0 3.5-8 7-8s3.5 8 7 8"/></svg></span><span><b>Eased, not flickering</b>
+          <span class="d">Colours drift toward the new frame instead of snapping to it, so a cut in the video does not strobe the page.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M5 19V9M12 19V5M19 19v-6"/></svg></span><span><b>Size and strength are yours</b>
+          <span class="d">Two sliders in settings: how far the glow spreads, and how strong it is. Turn it down to a hint, or off.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="6.5" y="5" width="3.5" height="14" rx="1"/><rect x="14" y="5" width="3.5" height="14" rx="1"/></svg></span><span><b>Idle when you are</b>
+          <span class="d">Pause the video, or switch to another tab, and the sampling stops. The last glow stays where it was.</span></span></li>
+      </ul>
+    </div>
+    <div class="shots solo">
+      <div class="shot"><img src="img/01-ambient-coral.jpg" alt="A reef video throwing blue light onto the dimmed page around it" loading="lazy" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ Shorts ═══════════ -->
+<section class="dark" id="shorts">
+  <div class="wrap feature left">
+    <div>
+      <span class="ds-caption section-eyebrow">Shorts</span>
+      <h2 class="sec">Shorts, the same way.</h2>
+      <p class="sec-sub">A reel is a video too. Focus mode dims the guide and the rail, lifts the
+      reel through, and lights it the same way — and the column of buttons stacked down its right
+      edge goes with the rest.</p>
+      <ul class="bullets">
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="7.5" y="3" width="9" height="18" rx="2.5"/></svg></span><span><b>The reel, lit and alone</b>
+          <span class="d">Vertical video gets its glow drawn from the columns down each side, where a reel actually has its colour.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M4.5 4.5l15 15M9.8 5.5A9.8 9.8 0 0 1 12 5c5 0 9 4.5 9 7a11 11 0 0 1-2.6 3.9M6.2 8.2A11.4 11.4 0 0 0 3 12c0 2.5 4 7 9 7a9.6 9.6 0 0 0 3.3-.6"/></svg></span><span><b>The action rail goes</b>
+          <span class="d">Like, dislike, comment, share, the rest of the stack beside the reel — hidden while you watch, back when you leave.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 5v14M7 14l5 5 5-5"/></svg></span><span><b>The next reel is untouched</b>
+          <span class="d">Only what sits beside the reel you are watching is hidden. Swipe on and the next one arrives whole.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="2.5" y="7" width="19" height="10" rx="5"/><circle cx="16.5" cy="12" r="3"/></svg></span><span><b>Or leave Shorts alone</b>
+          <span class="d">One switch in settings keeps focus mode to watch pages only.</span></span></li>
+      </ul>
+    </div>
+    <div class="shots solo">
+      <div class="shot"><img src="img/03-shorts.jpg" alt="A vertical Short lit by its own colours with the action buttons hidden" loading="lazy" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ Controller ═══════════ -->
+<section class="center" id="controls">
+  <div class="wrap">
+    <span class="ds-caption section-eyebrow">The controller</span>
+    <h2 class="sec">Big buttons, where<br/>your hands already are.</h2>
+    <p class="sec-sub">YouTube's own controls are built for a mouse. Better Player lays its own row
+    over the dimmed page — large enough to hit on a tablet, and out of the way of the video.</p>
+    <div class="buttons" style="justify-content:center">
+      <span class="button-chip"><svg class="ico" viewBox="0 0 24 24"><path d="M12 6a6 6 0 1 1-5.2 3M12 3.5v5M9.5 6h5"/></svg>Back 10 seconds</span>
+      <span class="button-chip"><svg class="ico" viewBox="0 0 24 24"><path d="M9 6.5v11l9-5.5-9-5.5Z"/></svg>Play and pause</span>
+      <span class="button-chip"><svg class="ico" viewBox="0 0 24 24"><path d="M12 6a6 6 0 1 0 5.2 3M12 3.5v5M14.5 6h-5"/></svg>Forward 10 seconds</span>
+      <span class="button-chip"><svg class="ico" viewBox="0 0 24 24"><path d="M7 6.5v11l8-5.5-8-5.5ZM17 6v12"/></svg>Previous and next</span>
+      <span class="button-chip"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><rect x="12" y="12" width="7" height="5" rx="1.2"/></svg>Picture in Picture</span>
+      <span class="button-chip"><svg class="ico" viewBox="0 0 24 24"><path d="M4 9V5.5A1.5 1.5 0 0 1 5.5 4H9M15 4h3.5A1.5 1.5 0 0 1 20 5.5V9M20 15v3.5a1.5 1.5 0 0 1-1.5 1.5H15M9 20H5.5A1.5 1.5 0 0 1 4 18.5V15"/></svg>Full screen</span>
+      <span class="button-chip"><svg class="ico" viewBox="0 0 24 24"><path d="M4 11 12 4l8 7"/><path d="M6.5 9.5V19h11V9.5"/></svg>Home</span>
+    </div>
+    <p class="kicker-line" style="text-align:center">Every one of them can be switched off. Keep the two you use and let the rest go.</p>
+  </div>
+</section>
+
+<!-- ═══════════ Privacy ═══════════ -->
+<section class="center" id="private">
+  <div class="wrap">
+    <span class="ds-caption section-eyebrow">Privacy</span>
+    <h2 class="sec">No account.<br/>No server of ours.</h2>
+    <p class="sec-sub">Better Player is a Safari extension and nothing else. There is no backend it
+    could send anything to, no analytics SDK inside it, and no sign-in. Your settings live on your
+    own device.</p>
+    <div class="trust-grid">
+      <div class="ds-card trust-card">
+        <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3 4.5 6v6c0 4.2 3.1 7.6 7.5 9 4.4-1.4 7.5-4.8 7.5-9V6L12 3Z"/></svg></span>
+        <h3>Nothing is collected</h3>
+        <p>No browsing history, no watch history, no identifiers. Nothing leaves the extension.</p>
+      </div>
+      <div class="ds-card trust-card">
+        <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="10.5" width="16" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg></span>
+        <h3>Why it asks for access</h3>
+        <p>Safari has to let the extension read and restyle youtube.com for any of this to work. That permission is what the dimming and the ad hiding run on.</p>
+      </div>
+      <div class="ds-card trust-card">
+        <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3.5v17M7 8.5 12 3.5l5 5"/><path d="M4.5 20.5h15"/></svg></span>
+        <h3>Buy nothing, ever</h3>
+        <p>No in-app purchases, no subscription, no ads inside the app.</p>
+      </div>
+      <div class="ds-card trust-card">
+        <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3.2 9.5h17.6M3.2 14.5h17.6M12 3a15 15 0 0 1 0 18A15 15 0 0 1 12 3Z"/></svg></span>
+        <h3>Eleven languages</h3>
+        <p>The app and its settings speak yours, or near enough.</p>
+      </div>
+    </div>
+    <div class="langs">
+      <span class="lang-chip">English</span>
+      <span class="lang-chip">한국어</span>
+      <span class="lang-chip">日本語</span>
+      <span class="lang-chip">简体中文</span>
+      <span class="lang-chip">繁體中文</span>
+      <span class="lang-chip">粵語</span>
+      <span class="lang-chip">Deutsch</span>
+      <span class="lang-chip">Français</span>
+      <span class="lang-chip">Español</span>
+      <span class="lang-chip">Italiano</span>
+      <span class="lang-chip">Português</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ Settings ═══════════ -->
+<section class="center" id="settings">
+  <div class="wrap">
+    <span class="ds-caption section-eyebrow">Settings</span>
+    <h2 class="sec">Nothing here is<br/>decided for you.</h2>
+    <p class="sec-sub">Every part of Better Player is a switch or a slider in the app. Turn the
+    whole thing down to an ad blocker, or up to a cinema.</p>
+    <div class="settings-grid">
+      <div><b>Focus mode</b><span>on / off</span></div>
+      <div><b>Start automatically</b><span>on / off</span></div>
+      <div><b>Ad blocking</b><span>on / off</span></div>
+      <div><b>Apply to Shorts</b><span>on / off</span></div>
+      <div><b>Ambient light</b><span>on / off</span></div>
+      <div><b>Glow size</b><span>slider</span></div>
+      <div><b>Glow strength</b><span>slider</span></div>
+      <div><b>Background darkness</b><span>slider</span></div>
+      <div><b>Centre the video</b><span>on / off</span></div>
+      <div><b>Rounded corners</b><span>on / off</span></div>
+      <div><b>Which buttons show</b><span>each one</span></div>
+      <div><b>Button opacity</b><span>slider</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ Price ═══════════ -->
+<section class="center" id="price">
+  <div class="wrap">
+    <h2 class="sec">Free. All of it.</h2>
+    <p class="sec-sub">No paid tier, no in-app purchase, no subscription. Buy it once — which is to
+    say, don't — and it runs on every device signed into your Apple Account.</p>
+    <div class="plans-grid single">
+      <div class="ds-card plan star">
+        <span class="name">Better Player</span>
+        <span class="price">$0</span>
+        <span class="per">iPhone · iPad · Mac</span>
+        <ul>
+          <li>Focus mode, centring and ambient light</li>
+          <li>Shorts support</li>
+          <li>Ad hiding and auto-skip</li>
+          <li>On-screen controller, Picture in Picture, full screen</li>
+          <li>Eleven languages</li>
+        </ul>
+        <a class="ds-btn ds-btn--primary" href="https://apps.apple.com/app/id1592876082" target="_blank" rel="noopener">Get Better Player</a>
+      </div>
+    </div>
+    <p class="plans-note">Requires Safari on iOS 16 or later, or a Mac. Ambient light, centring and
+    Shorts run on YouTube's desktop site.</p>
+  </div>
+</section>
+
+<!-- ═══════════ FAQ ═══════════ -->
+<section class="center" id="faq">
+  <div class="wrap">
+    <h2 class="sec">Questions, answered.</h2>
+    <div class="faq" style="text-align:left">
+      <details class="ds-card">
+        <summary>How do I turn it on?</summary>
+        <p>Install the app, then enable Better Player in Safari's extension settings and allow it on
+        youtube.com. The app walks you through it, and the <a href="help">setup guide</a> has the
+        screenshots. After that, open a video — focus mode starts on its own unless you tell it not to.</p>
+      </details>
+      <details class="ds-card">
+        <summary>Does it work on iPhone?</summary>
+        <p>Yes, with a difference. YouTube serves iPhone its phone layout, and there Better Player
+        gives you the playback controller and the ad blocking. Focus mode, ambient light and Shorts
+        support are built on YouTube's desktop site — you get them on iPad and Mac, and on iPhone if
+        you ask Safari for the desktop site.</p>
+      </details>
+      <details class="ds-card">
+        <summary>Does it block every ad?</summary>
+        <p>It hides the ad slots on the page before the first paint, clears the ones YouTube injects
+        into the feed afterwards, and presses Skip on a skippable ad in the player as soon as the
+        button appears. An unskippable ad still has to play; nothing here breaks YouTube's playback
+        to get around one.</p>
+      </details>
+      <details class="ds-card">
+        <summary>Why does it need access to the website?</summary>
+        <p>Because restyling a page is the whole job. Safari will not let an extension dim
+        youtube.com, move the player or hide an ad slot without permission to read and change that
+        site. Better Player asks for youtube.com and does nothing with it beyond what you see here.</p>
+      </details>
+      <details class="ds-card">
+        <summary>Can I keep the ad blocking and drop the rest?</summary>
+        <p>Yes. Switch focus mode off and Better Player leaves the page alone apart from the ads. The
+        reverse works too — ad blocking off, the dark room on.</p>
+      </details>
+      <details class="ds-card">
+        <summary>Does the glow slow the video down?</summary>
+        <p>It reads a handful of pixels five times a second, and stops entirely when the video is
+        paused or the tab is in the background. If you would rather it did not run at all, one switch
+        turns it off.</p>
+      </details>
+      <details class="ds-card">
+        <summary>Do I buy it again for my Mac?</summary>
+        <p>No. It is one free app, and the Mac version comes from the Mac App Store under the same
+        Apple Account.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ Final CTA ═══════════ -->
+<section class="final" id="download">
+  <div class="wrap">
+    <h2 class="sec">Turn the lights down.</h2>
+    <p class="sec-sub" style="margin-bottom:32px">Better Player for iPhone, iPad and Mac.</p>
+    <a class="appstore-badge" href="https://apps.apple.com/app/id1592876082" aria-label="Download on the App Store">
+      <img src="img/appstore-badge.svg" alt="Download on the App Store" />
+    </a>
+    <div class="final-links">
+      <a href="help">Setup guide</a>
+      <a href="/geek-browser">Geek Browser</a>
+      <a href="/vimlike">Vimlike for Safari</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ Footer ═══════════ -->
+<footer>
+  <div class="wrap">
+    <span><b style="color:var(--ink)">Better Player</b> — YouTube in a dark room, lit by the video.</span>
+    <div class="spacer"></div>
+    <a href="help">Help</a>
+    <a href="mailto:support@jasminestudios.net">Support</a>
+    <span>© 2026 Jasmine Studios</span>
+  </div>
+</footer>
+
+</body>
+</html>
