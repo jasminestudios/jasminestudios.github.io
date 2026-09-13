@@ -80,6 +80,11 @@ section.dark .callout { background: rgba(10,132,255,.16); color: rgba(255,255,25
 section.dark .callout .bi { background: rgba(255,255,255,.10); color: #6cb2ff; }
 section.dark .callout b { color: #fff; }
 
+/* A phone, shown beside copy rather than stacked in the hero */
+.shots.phone-only { max-width: 300px; }
+.shots.phone-only .shot { padding: 9px 10px; border-radius: 42px; }
+.shots.phone-only .shot img { border-radius: 33px; }
+
 /* The controller's buttons, as a row of chips */
 .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
 .button-chip {
