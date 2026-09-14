@@ -1,6 +1,4 @@
-# Better Player for Youtube — Setup & Help
-
-[← Better Player](/better-player/)
+# Better Player for Youtube
 
 - [Introduction](#introduction)
 - [Downloads](#downloads)
