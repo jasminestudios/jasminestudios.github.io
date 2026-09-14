@@ -5,9 +5,7 @@ layout: default
 
 **_NOTE:_** Vimlike version 1.5.4 has a bug for insert / normal mode loading. Bugfix will be available in v1.5.5.
 
-<sub>[← Vimlike home](/vimlike/)</sub>
-
-# Vimlike Documentation
+# Vimlike
 - [Introduction](#introduction)
 - [Downloads](#downloads)
 - [Version History](#version-history)
