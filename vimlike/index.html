@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vimlike — vim's keyboard for Safari, plus an AI that can use the page</title>
+<meta name="description" content="A free Safari extension that brings vim's keyboard to the web: jump to any link with two keys, one bar for tabs, history and search, and an assistant that reads and operates the page. No account. iPhone, iPad, Mac and Vision Pro." />
+<meta property="og:title" content="Vimlike — Navigate. Search. Ask." />
+<meta property="og:description" content="Vim's keyboard for Safari, one bar for everything you'd otherwise hunt for, and an assistant that can actually use the page. Free, no account." />
+<meta property="og:image" content="https://www.jasminestudios.net/vimlike/img/01-link-hints.png" />
+<meta property="og:url" content="https://www.jasminestudios.net/vimlike/" />
+<meta property="og:site_name" content="Jasmine Studios" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="canonical" href="https://www.jasminestudios.net/vimlike/" />
+<meta name="apple-itunes-app" content="app-id=1584519802" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C3MM12Q509"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-C3MM12Q509');
+</script>
+<link rel="stylesheet" href="css/design-system.css" />
+<link rel="stylesheet" href="css/site.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Vimlike",
+  "operatingSystem": "iOS, iPadOS, macOS, visionOS",
+  "applicationCategory": "BrowserApplication",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+</head>
+<body class="ds-body">
+
+<!-- ═══════════ Nav ═══════════ -->
+<nav class="top ds-glass">
+  <div class="wrap">
+    <a class="logo" href="#">Vim<span>like</span></a>
+    <a class="link" href="#keyboard">Keyboard</a>
+    <a class="link" href="#search">Search Bar</a>
+    <a class="link" href="#ai">AI</a>
+    <a class="link" href="#privacy">Privacy</a>
+    <a class="link" href="#faq">FAQ</a>
+    <div class="spacer"></div>
+    <a class="ds-btn ds-btn--primary" href="https://apps.apple.com/app/id1584519802" target="_blank" rel="noopener">Download</a>
+  </div>
+</nav>
+
+<!-- ═══════════ Hero ═══════════ -->
+<header class="hero">
+  <div class="wrap">
+    <span class="ds-badge eyebrow">Free Safari extension · iPhone, iPad, Mac &amp; Vision Pro</span>
+    <h1 class="ds-display">Navigate. Search. Ask.</h1>
+    <p class="lead">Vimlike brings vim's keyboard to Safari — <kbd>j</kbd> <kbd>k</kbd> to scroll,
+    <kbd>f</kbd> to hit any link on screen, <kbd>t</kbd> for a new tab. Press <kbd>o</kbd> for one bar
+    that already knows your tabs and your history. Press <kbd>\</kbd> and an assistant reads the page,
+    works it, and answers. No account, no servers, nothing to sign up for.</p>
+    <div class="cta-row">
+      <span class="badges">
+        <a class="appstore-badge" href="https://apps.apple.com/app/id1584519802" target="_blank" rel="noopener" aria-label="Download on the App Store">
+          <img src="img/appstore-badge.svg" alt="Download on the App Store" />
+        </a>
+      </span>
+      <span class="cta-note">Free · No account · No in-app purchases</span>
+    </div>
+  </div>
+  <div class="wrap wrap--wide hero-shot">
+    <figure class="frame">
+      <img src="img/01-link-hints.png" width="1600" height="1000"
+           alt="Hacker News with a Vimlike hint label on every link — press f, type the label, the link opens" />
+    </figure>
+  </div>
+</header>
+
+<!-- ═══════════ Three axes ═══════════ -->
+<section class="center" id="how">
+  <div class="wrap">
+    <h2 class="sec">Three ways to drive the page.<br/>One keyboard.</h2>
+    <p class="sec-sub">Most extensions hand you a list of shortcuts. Vimlike gives you the shortcuts, a
+    command bar that searches everything you have open, and an assistant that can actually operate the
+    page — all without your hands leaving the keys.</p>
+    <div class="axis-grid">
+      <div class="ds-card axis">
+        <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><path d="M12 4v16"/><path d="m6 14 6 6 6-6"/><path d="m6 10 6-6 6 6"/></svg></span>
+        <h3>Navigate</h3>
+        <p>Scroll, jump to any link, move between tabs — no trackpad.</p>
+      </div>
+      <div class="ds-card axis">
+        <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20.5 20.5-3.8-3.8"/></svg></span>
+        <h3>Search</h3>
+        <p>One bar for the web, your open tabs, your history and your commands.</p>
+      </div>
+      <div class="ds-card axis">
+        <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3.5 13.9 9l5.6 1.9-5.6 1.9L12 18.3l-1.9-5.5L4.5 10.9 10.1 9 12 3.5Z"/><path d="M18.5 16.5 19.2 18.6 21.3 19.3 19.2 20 18.5 22.1 17.8 20 15.7 19.3 17.8 18.6 18.5 16.5Z"/></svg></span>
+        <h3>Ask</h3>
+        <p>An assistant that reads the page, clicks through it, and reports back.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ Keyboard ═══════════ -->
+<section id="keyboard">
+  <div class="wrap wrap--wide feature left">
+    <div>
+      <span class="ds-caption section-eyebrow">Keyboard</span>
+      <h2 class="sec">Vim's muscle memory,<br/>on every page.</h2>
+      <p class="sec-sub">The keys you already know — <kbd>h</kbd> <kbd>j</kbd> <kbd>k</kbd> <kbd>l</kbd>,
+      <kbd>gg</kbd>, <kbd>G</kbd>, <kbd>d</kbd>, <kbd>u</kbd> — and link hints that turn every link on
+      screen into a two-letter jump.</p>
+      <ul class="bullets">
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.5.5l2.5-2.5a5 5 0 0 0-7-7l-1.4 1.4"/><path d="M14 11a5 5 0 0 0-7.5-.5L4 13a5 5 0 0 0 7 7l1.4-1.4"/></svg></span><span><b>Link hints</b>
+          <span class="d">Press <kbd>f</kbd> and every link gets a label. Type it to open; <kbd>⇧F</kbd> opens in a background tab. Optionally put images, videos and headlines first.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="14" rx="2.5"/><path d="M3 10h18M8 6V4M16 6V4"/></svg></span><span><b>Tabs without the mouse</b>
+          <span class="d"><kbd>t</kbd> to open, <kbd>x</kbd> to close, <kbd>q</kbd> / <kbd>w</kbd> to move between, <kbd>⇧X</kbd> to bring one back.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h7"/></svg></span><span><b>Modes, like vim</b>
+          <span class="d">Normal to navigate, Insert to type. <kbd>Esc</kbd> — or <kbd>`</kbd> / <kbd>§</kbd> if that's easier on your layout — always takes you back.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2.5"/><path d="M6.5 10h1M10 10h1M13.5 10h1M17 10h1M8 14h8"/></svg></span><span><b>Remap anything</b>
+          <span class="d">A visual shortcut editor, or a settings script if you'd rather write it. Exclude a shortcut on the sites where it gets in the way.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg></span><span><b>The rest of it</b>
+          <span class="d">Dark mode on any site, reader view, video fullscreen and picture-in-picture, zoom, go up a URL, copy the URL, and <kbd>?</kbd> for the cheat sheet.</span></span></li>
+      </ul>
+    </div>
+    <div class="shots">
+      <figure class="frame">
+        <img src="img/links.gif" width="900" height="563" loading="lazy"
+             alt="Pressing f labels every link, then typing a label follows it" />
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ Search Bar ═══════════ -->
+<section id="search">
+  <div class="wrap wrap--wide feature rev left">
+    <div>
+      <span class="ds-caption section-eyebrow">Search Bar</span>
+      <h2 class="sec">One bar instead of<br/>four places to look.</h2>
+      <p class="sec-sub">Press <kbd>o</kbd> and start typing. Vimlike searches your open tabs, your local
+      history, your most-visited sites and the web at once — and the same bar is where you talk to the
+      assistant.</p>
+      <ul class="bullets">
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span><span><b>Everything in one list</b>
+          <span class="d">Top site, open tabs, local history and web search suggestions, ranked together. Enter opens what's highlighted.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 8v4l2.5 2.5"/><circle cx="12" cy="12" r="8.5"/></svg></span><span><b>History that works like a shell</b>
+          <span class="d"><kbd>↑</kbd> on an empty bar walks back through what you ran before — and what you ran <em>on this site</em> comes back first.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="m5 7 4 4-4 4M12 15h7"/></svg></span><span><b>Type <kbd>:</kbd> for commands</b>
+          <span class="d">Your saved AI commands appear as you type. <code>:sum</code>, <code>:table</code>, <code>:kr</code> — or the ones you make.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20.5 20.5-3.8-3.8M8.5 11h5"/></svg></span><span><b>Find a link by name</b>
+          <span class="d"><kbd>/</kbd> filters the page's links as you type. Enter opens.</span></span></li>
+      </ul>
+    </div>
+    <div class="shots">
+      <figure class="frame">
+        <img src="img/02-search-bar.png" width="1600" height="1000" loading="lazy"
+             alt="The Vimlike search bar with an Ask AI row and web search suggestions" />
+      </figure>
+      <figure class="frame">
+        <img src="img/commands.gif" width="900" height="563" loading="lazy"
+             alt="Typing a colon opens the saved-command palette, which filters as you type" />
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ AI ═══════════ -->
+<section class="ai" id="ai">
+  <div class="wrap wrap--wide feature left">
+    <div>
+      <span class="ds-caption section-eyebrow">AI Assistant</span>
+      <h2 class="sec">An assistant that can use<br/>the page, not just read it.</h2>
+      <p class="sec-sub">Ask a question, get the answer inline. Ask for something done and it clicks,
+      types, extracts, opens tabs and reports back — stopping to ask you first before anything it can't
+      undo.</p>
+      <ul class="bullets">
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M4 5.5h16v13H4z"/><path d="m8 10 2 2-2 2M13 14h3"/></svg></span><span><b>It operates the page</b>
+          <span class="d">Reads the article, clicks buttons, fills forms, picks from dropdowns, pulls tables into rows, scrolls, navigates, opens tabs, reads your <em>other</em> tabs, searches your history, takes a screenshot when the answer is visual.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M7 4h10a2 2 0 0 1 2 2v14l-7-4-7 4V6a2 2 0 0 1 2-2Z"/></svg></span><span><b>Commands you keep</b>
+          <span class="d">Give any prompt a <code>:shortcut</code>. Limit it to one site so it only shows up there. Give it a key and it runs without opening the bar at all.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span><span><b>Make a command by describing it</b>
+          <span class="d">Type <code>:cmd summarize the reviews on this page</code> and the assistant writes the command, names it, scopes it to the site you're on, and saves it.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h5M14 3v5h5"/></svg></span><span><b>Reports, not walls of text</b>
+          <span class="d">Long results open as a formatted page you can copy as Markdown or print to PDF.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 8.5v4l2.5 1.5"/></svg></span><span><b>Memory and skills</b>
+          <span class="d">Standing preferences — “always answer in Korean”, “compare prices with shipping” — travel with every request. Attach step-by-step instructions to a command and it follows them.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3 5 5.5v6c0 4.3 3 7.2 7 8.5 4-1.3 7-4.2 7-8.5v-6L12 3Z"/></svg></span><span><b>Your provider, your key</b>
+          <span class="d">Apple Intelligence runs on-device with no key and nothing leaving your Mac or iPhone. Or bring your own key for Claude, OpenAI, Gemini or DeepSeek. Or skip the API entirely — “Open in browser” mode drops the page and your prompt straight into ChatGPT, Gemini, Claude or Perplexity.</span></span></li>
+      </ul>
+      <p class="ai-guard">⚠&nbsp; It asks before it clicks Delete, Pay or Submit.</p>
+    </div>
+    <div class="shots">
+      <figure class="frame">
+        <img src="img/04-ai-answer.png" width="1600" height="1000" loading="lazy"
+             alt="An AI answer streaming inline in the Vimlike bar, summarizing the page in bullets" />
+      </figure>
+      <div class="shots shots--two">
+        <figure class="frame">
+          <img src="img/05-guardrail.png" width="1600" height="1000" loading="lazy"
+               alt="A confirmation prompt reading: Open 100 links in background tabs? with Allow and Skip" />
+        </figure>
+        <figure class="frame">
+          <img src="img/06-report.png" width="1600" height="1000" loading="lazy"
+               alt="A generated Vimlike report page with a comparison table, Copy Markdown and Print buttons" />
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ Privacy ═══════════ -->
+<section class="center" id="privacy">
+  <div class="wrap">
+    <h2 class="sec">No account. No servers.<br/>Nothing phoning home.</h2>
+    <div class="trust-grid" style="margin-top:36px">
+      <div class="ds-card trust-card">
+        <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></svg></span>
+        <h3>Nothing to sign up for</h3>
+        <p>There is no Vimlike account and no Vimlike backend. Install it and it works.</p>
+      </div>
+      <div class="ds-card trust-card">
+        <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>
+        <h3>Your history stays here</h3>
+        <p>The history the search bar searches is stored on your device, and you can delete it in Settings whenever you like.</p>
+      </div>
+      <div class="ds-card trust-card">
+        <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><rect x="4.5" y="10" width="15" height="10" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span>
+        <h3>API keys in the Keychain</h3>
+        <p>Not in a settings file, not in iCloud, and never handed to the web page you're on.</p>
+      </div>
+      <div class="ds-card trust-card">
+        <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-8 6 6 0 0 0-11.6 1.6A3.5 3.5 0 0 0 7 18Z"/></svg></span>
+        <h3>Sync is your iCloud, or nothing</h3>
+        <p>Settings and saved commands sync through your own private iCloud — or stay on one device if you turn it off.</p>
+      </div>
+    </div>
+    <p class="trust-tag">When you use an AI provider, your prompt and the page's text go to the provider
+    you picked, and nowhere else. Apple Intelligence on-device sends nothing off the device at all.</p>
+  </div>
+</section>
+
+<!-- ═══════════ Price ═══════════ -->
+<section class="center" id="price">
+  <div class="wrap">
+    <div class="ds-card price-card">
+      <p class="big">Free. All of it.</p>
+      <p>No subscription, no in-app purchases, no pro tier, no “unlock”. If you bring your own API key
+      the AI costs are billed by your provider at their rates — or use Apple Intelligence on-device and
+      pay nothing at all.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FAQ ═══════════ -->
+<section id="faq">
+  <div class="wrap">
+    <h2 class="sec center" style="margin-bottom:32px">Questions, answered.</h2>
+    <div class="faq">
+      <details class="ds-card">
+        <summary>Do I need an API key?</summary>
+        <p>Not for the keyboard or the search bar — those need nothing. For AI, Apple Intelligence runs
+        on-device for free on supported devices. Other providers need your own key, or you can use
+        “Open in browser” mode, which uses ChatGPT, Gemini, Claude or Perplexity through their own websites.</p>
+      </details>
+      <details class="ds-card">
+        <summary>Which devices does it work on?</summary>
+        <p>iPhone, iPad, Mac and Apple Vision Pro — iOS and iPadOS 16.6 or later, macOS 13 or later.</p>
+      </details>
+      <details class="ds-card">
+        <summary>Can I change the shortcuts?</summary>
+        <p>All of them. There's a visual editor where you record a key and pick a command, and a settings
+        script for anyone who prefers writing it. You can also disable a shortcut on specific sites.</p>
+      </details>
+      <details class="ds-card">
+        <summary>Does it change how sites look?</summary>
+        <p>Only when you ask it to. Dark mode, custom CSS and custom scripts are per-site and off by default.</p>
+      </details>
+      <details class="ds-card">
+        <summary>Is my browsing sent anywhere?</summary>
+        <p>No. There's no analytics on your browsing and no Vimlike server to send it to. The only thing
+        that ever leaves your device is what you explicitly ask the AI about, and it goes to the provider
+        you chose.</p>
+      </details>
+      <details class="ds-card">
+        <summary>What languages is it in?</summary>
+        <p>English, Korean, Japanese, Chinese (Simplified and Traditional), Cantonese, German, Spanish,
+        French, Italian and Portuguese.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ Final CTA ═══════════ -->
+<section class="final" id="download">
+  <div class="wrap">
+    <h2 class="sec">Put your hands back<br/>on the keyboard.</h2>
+    <p class="sec-sub" style="margin-bottom:32px">Free · No account · iPhone, iPad, Mac &amp; Vision Pro</p>
+    <span class="badges">
+      <a class="appstore-badge" href="https://apps.apple.com/app/id1584519802" target="_blank" rel="noopener" aria-label="Download on the App Store">
+        <img src="img/appstore-badge.svg" alt="Download on the App Store" />
+      </a>
+      <a class="appstore-badge" href="https://apps.apple.com/app/id1584519802" target="_blank" rel="noopener" aria-label="Download on the Mac App Store">
+        <img src="img/macappstore-badge.svg" alt="Download on the Mac App Store" />
+      </a>
+    </span>
+  </div>
+</section>
+
+<!-- ═══════════ Footer ═══════════ -->
+<footer>
+  <div class="wrap">
+    <span><b style="color:var(--ink)">Vimlike</b> — vim's keyboard, Safari's browser, your own AI.</span>
+    <div class="spacer"></div>
+    <a href="help/">Documentation</a>
+    <a href="keys/">Key bindings</a>
+    <a href="help/#privacy-policy">Privacy</a>
+    <a href="mailto:support@jasminestudios.net">Support</a>
+    <a href="/kr/vimlike/">한국어</a>
+    <span>© 2026 Jasmine Studios</span>
+  </div>
+</footer>
+
+</body>
+</html>

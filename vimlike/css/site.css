@@ -1,0 +1,206 @@
+/* ============================================================
+   Vimlike — landing page styles (on top of design-system.css)
+   Narrative: Navigate → Search → Ask.
+
+   Same studio system as Itinr, different identity: Itinr leads with
+   hero blue over photography; Vimlike's own UI is a near-black floating
+   command bar with amber link-hint labels, so the page leads with ink
+   and spends amber only where Vimlike itself does — the hints.
+   Screenshots are interface, not photographs: wide Safari window captures
+   with a real drop shadow, never phone bezels.
+   ============================================================ */
+
+:root {
+  /* Re-point the shared brand tokens at Vimlike's own palette. */
+  --brand:          #18181B;          /* the command bar */
+  --brand-pressed:  #000000;
+  --brand-tint:     rgba(24, 24, 27, .06);
+
+  --hint:           #E0A008;          /* the link-hint label */
+  --hint-tint:      rgba(224, 160, 8, .14);
+  --hint-deep:      #8A6000;
+
+  --shadow-brand:   0 8px 20px rgba(24, 24, 27, .22);
+
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+.wrap--wide { max-width: 1200px; }
+
+/* ── Keys: the page's one piece of product vernacular ── */
+kbd {
+  display: inline-block;
+  font: 600 .86em/1.35 var(--mono);
+  padding: 2px 7px;
+  border: 1px solid var(--hairline);
+  border-bottom-width: 2px;
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 1px 0 rgba(9,9,11,.04);
+  white-space: nowrap;
+}
+code {
+  font: 600 .88em var(--mono);
+  color: var(--hint-deep);
+  background: var(--hint-tint);
+  padding: 1px 6px;
+  border-radius: 6px;
+}
+
+/* ── Nav ── */
+nav.top { position: sticky; top: 0; z-index: 50; padding: 14px 0; }
+nav.top .wrap { display: flex; align-items: center; gap: 28px; }
+.logo { font: 800 22px/1 var(--font-stack); letter-spacing: -.5px; color: var(--ink); text-decoration: none; }
+.logo span { color: var(--hint); }
+nav.top a.link { color: var(--text-secondary); text-decoration: none; font: 600 14px var(--font-stack); }
+nav.top a.link:hover { color: var(--ink); }
+nav.top .spacer { flex: 1; }
+nav.top .ds-btn { padding: 10px 18px; font-size: 14px; }
+@media (max-width: 780px) { nav.top a.link { display: none; } }
+
+/* ── Hero: centered thesis, then the shot that explains it ── */
+header.hero { padding: 76px 0 0; text-align: center; }
+.hero h1 { margin: 0 0 20px; }
+.hero .lead {
+  font-size: 19px; color: var(--zinc-deep);
+  max-width: 640px; margin: 0 auto 28px;
+}
+.hero .cta-row { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
+.hero .cta-note { font: 600 13px var(--font-stack); color: var(--text-secondary); }
+.eyebrow { display: inline-block; margin-bottom: 18px; background: var(--hint-tint); color: var(--hint-deep); }
+
+.hero-shot { margin-top: 52px; }
+
+/* ── Screenshot frames ──
+   Every shot is a Safari window capture: it already carries the browser's own
+   chrome and transparent rounded corners, so a mockup frame around it would
+   read as a second window. Just cast a shadow that follows the real shape. */
+.frame { margin: 0; line-height: 0; }
+.frame img {
+  width: 100%; height: auto; display: block;
+  border-radius: 12px;
+  filter: drop-shadow(0 1px 2px rgba(9,9,11,.10)) drop-shadow(0 18px 38px rgba(9,9,11,.18));
+}
+section.ai .frame img {
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,.4)) drop-shadow(0 22px 44px rgba(0,0,0,.55));
+}
+
+/* ── Sections ── */
+section { padding: 84px 0; }
+.center { text-align: center; }
+.section-eyebrow { color: var(--hint-deep); margin-bottom: 12px; display: block; }
+h2.sec { margin: 0 0 12px; font-size: 40px; font-weight: 800; letter-spacing: -1.6px; line-height: 1.08; text-wrap: balance; }
+p.sec-sub { color: var(--zinc-deep); font-size: 17px; max-width: 640px; margin: 0 auto 40px; }
+.left p.sec-sub { margin: 0 0 28px; }
+@media (max-width: 640px) { h2.sec { font-size: 31px; letter-spacing: -1.1px; } }
+
+/* Icons — stroke style in an ink tile */
+.ico { display: block; width: 100%; height: 100%; stroke: currentColor; fill: none;
+  stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+.tile { display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 13px; background: var(--brand-tint); color: var(--ink); }
+
+/* 3-axis overview */
+.axis-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+@media (max-width: 760px) { .axis-grid { grid-template-columns: 1fr; } }
+.axis { padding: 28px; text-align: left; }
+.axis .icon { width: 48px; height: 48px; margin-bottom: 16px; }
+.axis .icon .ico { width: 26px; height: 26px; }
+.axis h3 { margin: 0 0 6px; font-size: 20px; font-weight: 800; letter-spacing: -.4px; }
+.axis p { margin: 0; color: var(--text-secondary); font-size: 15px; }
+
+/* ── Feature blocks: text column + wide shot ── */
+.feature { display: grid; grid-template-columns: .82fr 1.18fr; gap: 48px; align-items: center; }
+.feature.rev > .shots { order: -1; }
+@media (max-width: 940px) {
+  .feature, .feature.rev { grid-template-columns: 1fr; gap: 30px; }
+  .feature.rev > .shots { order: 2; }
+}
+ul.bullets { list-style: none; margin: 26px 0 0; padding: 0; display: grid; gap: 15px; }
+ul.bullets li { display: flex; gap: 13px; align-items: flex-start; font-size: 15.5px; }
+ul.bullets .bi {
+  flex: 0 0 34px; height: 34px; border-radius: 11px;
+  background: var(--brand-tint); color: var(--ink);
+  display: flex; align-items: center; justify-content: center;
+}
+ul.bullets .bi .ico { width: 18px; height: 18px; }
+ul.bullets b { display: block; letter-spacing: -.2px; }
+ul.bullets span.d { color: var(--text-secondary); font-size: 14px; }
+
+.shots { display: grid; gap: 16px; }
+.shots--two { grid-template-columns: 1fr 1fr; }
+@media (max-width: 620px) { .shots--two { grid-template-columns: 1fr; } }
+
+/* ── AI section: ink ground, the one place the page goes dark ── */
+section.ai { background: var(--ink); color: #fff; border-radius: var(--r-28); margin: 0 12px; }
+section.ai h2.sec { color: #fff; }
+section.ai p.sec-sub { color: rgba(255,255,255,.72); }
+section.ai .section-eyebrow { color: var(--hint); }
+section.ai ul.bullets b { color: #fff; }
+section.ai ul.bullets span.d { color: rgba(255,255,255,.62); }
+section.ai ul.bullets .bi { background: rgba(224,160,8,.18); color: var(--hint); }
+section.ai kbd { background: #26262A; border-color: rgba(255,255,255,.16); color: #fff; box-shadow: none; }
+section.ai code { background: rgba(224,160,8,.16); color: #F0BA43; }
+.ai-guard {
+  margin-top: 28px; padding: 16px 20px; border-radius: var(--r-16);
+  background: rgba(224,160,8,.12); border: 1px solid rgba(224,160,8,.28);
+  font: 600 15px var(--font-stack); color: #F3C765;
+}
+
+/* ── Trust ── */
+.trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+@media (max-width: 900px) { .trust-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 540px) { .trust-grid { grid-template-columns: 1fr; } }
+.trust-card { padding: 24px; text-align: left; }
+.trust-card .icon { width: 42px; height: 42px; margin-bottom: 14px; }
+.trust-card .icon .ico { width: 22px; height: 22px; }
+.trust-card h3 { margin: 0 0 6px; font-size: 16px; font-weight: 800; letter-spacing: -.3px; }
+.trust-card p { margin: 0; color: var(--text-secondary); font-size: 14px; }
+.trust-tag { margin-top: 30px; color: var(--zinc-deep); font-size: 15px; max-width: 680px; margin-left: auto; margin-right: auto; }
+
+/* ── Price: one confident block, not a fake comparison table ── */
+.price-card { max-width: 640px; margin: 0 auto; padding: 44px 36px; text-align: center; }
+.price-card .big { font: 800 46px/1 var(--font-stack); letter-spacing: -2px; margin: 0 0 10px; }
+.price-card p { margin: 0 auto; color: var(--zinc-deep); font-size: 16px; max-width: 460px; }
+
+/* ── FAQ ── */
+.faq { max-width: 720px; margin: 0 auto; display: grid; gap: 10px; }
+.faq details { border-radius: var(--r-16); padding: 4px 22px; }
+.faq summary {
+  cursor: pointer; font: 700 15.5px/1.4 var(--font-stack); padding: 15px 0;
+  letter-spacing: -.2px; list-style: none;
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--hint-deep); font-size: 20px; font-weight: 600; }
+.faq details[open] summary::after { content: "–"; }
+.faq details p { margin: 0 0 16px; color: var(--text-secondary); font-size: 14.5px; }
+
+/* ── Final CTA ── */
+section.final { text-align: center; padding: 92px 0 96px; }
+section.final h2 { font-size: 44px; }
+@media (max-width: 640px) { section.final h2 { font-size: 32px; } }
+
+/* ── Footer ── */
+footer { border-top: 1px solid var(--hairline); padding: 32px 0 48px; color: var(--text-tertiary); font-size: 13px; }
+footer .wrap { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
+footer a { color: var(--text-secondary); text-decoration: none; }
+footer a:hover { color: var(--ink); }
+footer .spacer { flex: 1; }
+
+/* ── App Store badges — Apple artwork, never restyled ── */
+.badges { display: inline-flex; gap: 12px; align-items: center; flex-wrap: wrap; justify-content: center; }
+.appstore-badge { display: inline-block; line-height: 0; transition: transform .15s ease; }
+.appstore-badge:hover { transform: translateY(-1px); }
+.appstore-badge img { height: 48px; width: auto; display: block; }
+
+a:focus-visible, summary:focus-visible, .ds-btn:focus-visible {
+  outline: 2px solid var(--hint); outline-offset: 3px; border-radius: 6px;
+}
