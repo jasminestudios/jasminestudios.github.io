@@ -1,54 +1,121 @@
-<html>
+<html lang="ko">
     <head>
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Jasmine Studios</title>
         <meta property="og:title" content="Jasmine Studios" />
-        <meta property="og:locale" content="en_US" />
-        <link rel="canonical" href="https://www.jasminestudios.net/geek-browser/help/" />
-        <meta property="og:url" content="https://www.jasminestudios.net/geek-browser/help/" />
+        <meta property="og:locale" content="ko_KR" />
+        <link rel="canonical" href="https://www.jasminestudios.net/kr/home/" />
+        <meta property="og:url" content="https://www.jasminestudios.net/kr/home/" />
         <meta property="og:site_name" content="Jasmine Studios" />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="Jasmine Studios" />
         <meta property="twitter:title" content="Jasmine Studios" />
+        <link rel="shortcut icon" type="image/x-icon" href="/Resources/favicon.png">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
         <link rel="stylesheet" href="/assets/css/style.css?v=82b6a317bd45456f5ee05e41eaf12ba53768e9a0"/>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3MM12Q509"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-C3MM12Q509');
+        </script>
     </head>
     <body>
         <!-- Navbar -->
         <div class="w3-top">
             <div class="w3-bar w3-black w3-card w3-opacity-min">
-                <a href="/home" class="w3-bar-item w3-button w3-padding-large"><b>Jasmine Studios</b></a>
-                <a href="/vimlike/help" class="w3-bar-item w3-button w3-padding-large">Vimlike</a>
-                <a href="/geek-browser/help" class="w3-bar-item w3-button w3-padding-large">Geek Browser</a>
+                <a href="/kr/home/" class="w3-bar-item w3-button w3-padding-small"><b>홈</b></a>
+                <a href="/itinr" class="w3-bar-item w3-button w3-padding-small">Itinr</a>
+                <a href="/vimlike" class="w3-bar-item w3-button w3-padding-small">Vimlike</a>
+                <a href="/kr/better-player/" class="w3-bar-item w3-button w3-padding-small">Better Player</a>
+                <a href="/geek-browser" class="w3-bar-item w3-button w3-padding-small">Geek Browser</a>
+                <a href="/home" class="w3-bar-item w3-button w3-padding-small w3-right">English</a>
+                <a href="/one-dictionary" class="w3-bar-item w3-button w3-padding-small">One Dictionary</a>
             </div>
         </div>
-        
+
         <!-- Page content -->
-        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:100%" id="band">
+
+        <!-- Itinr (featured) -->
+        <style>
+        /* Itinr 페이지 히어로와 동일한 겹친/기울어진 폰 목업 (다크 베젤) */
+        .itinr-hero-phones{position:relative;width:100%;max-width:460px;height:500px;margin:8px auto 0}
+        .itinr-hero-phones .ph{position:absolute;width:230px;padding:9px;background:#0b0b0f;border-radius:38px;
+          box-shadow:0 28px 60px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.08)}
+        .itinr-hero-phones .ph img{width:100%;display:block;border-radius:29px}
+        .itinr-hero-phones .back{left:calc(50% - 212px);top:14px;transform:rotate(-6deg);z-index:1;opacity:.98}
+        .itinr-hero-phones .front{left:calc(50% - 22px);top:52px;transform:rotate(3deg);z-index:2}
+        @media(max-width:520px){
+          .itinr-hero-phones{height:420px;max-width:360px}
+          .itinr-hero-phones .ph{width:188px}
+          .itinr-hero-phones .back{left:calc(50% - 174px)}
+          .itinr-hero-phones .front{left:calc(50% - 16px)}
+        }
+        </style>
+        <div class="w3-container w3-content w3-center w3-padding-64 w3-black" style="max-width:100%" id="band">
+            <h1 class="w3-wide">Itinr</h1>
+            <p class="w3-opacity" style="max-width:640px;margin:0 auto">계획하고, 기록하고, 공유하세요. Itinr는 예약 메일을 일정표로, 체크인을 여행 기록으로, 여행 전체를 공유하고 싶은 이야기로 바꿔 줍니다. 개인정보를 우선으로 설계했고 오프라인에서도 동작합니다. iPhone과 iPad용.</p>
+            <br/>
+            <a href="/itinr" class="itinr-hero-phones" style="display:block">
+                <span class="ph back"><img src="https://www.jasminestudios.net/itinr/img/01-home.jpg" alt="Itinr 홈"/></span>
+                <span class="ph front"><img src="https://www.jasminestudios.net/itinr/img/02-calendar.jpg" alt="Itinr 캘린더"/></span>
+            </a>
+            <br/>
+            <a href="https://apps.apple.com/app/itinr-organize-your-itinerary/id6772980993" target="_blank" rel="noopener">
+                <img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"/>
+            </a>
+        </div>
+
+        <div class="w3-container w3-content w3-center w3-padding-64 w3-light-gray" style="max-width:100%">
             <h1 class="w3-wide">Vimlike</h1>
-            <p class="w3-opacity"><i>A Safari extension for the Vim-like keyboard experience</i></p>
-            <a href="/vimlike/help"><img src="/Resources/vimlike-screen1.png" style="width:80%; max-width:750px"/></a>
+            <p class="w3-opacity">Mac과 iPad에서 Vim처럼 키보드로 웹을 탐색하는 Safari 확장</p>
+            <a href="/vimlike/help"><img src="/Resources/vimlike.png" style="width:80%; max-width:750px"/></a>
             <br/>
             <br/>
-            <a href="https://itunes.apple.com/app/id1584519802" target="_blank">
+            <a href="https://apps.apple.com/app/vimlike/id1584519802" target="_blank">
                 <img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"/>
             </a>
         </div>
         
+        
         <div class="w3-container w3-content w3-center w3-padding-64 w3-black" style="max-width:100%" id="band">
-            <h1 class="w3-wide">Geek Browser</h1>
-            <p class="w3-opacity"><i>Fast web browser for iPad with a Vim-like keyboard access and command line interface</i></p>
-            <a href="/geek-browser/help"><img src="/Resources/geekbrowser01.png" style="width:80%; max-width:750px"/></a>
+            <h1 class="w3-wide">Better Player for Youtube</h1>
+            <p class="w3-opacity">Mac, iPad, iPhone에서 YouTube를 앱보다 편하게 보는 Safari 확장</p>
+            <a href="/better-player"><img src="/Resources/better-player.png" style="width:80%; max-width:750px"/></a>
             <br/>
             <br/>
-            <a href="https://itunes.apple.com/app/id1457482155" target="_blank">
-                <img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg"/>
+            <a href="https://apps.apple.com/app/better-player-for-youtube/id1592876082" target="_blank">
+                <img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"/>
             </a>
         </div>
         
+        <div class="w3-container w3-content w3-center w3-padding-64 w3-light-gray" style="max-width:100%">
+            <h1 class="w3-wide">Geek Browser</h1>
+            <p class="w3-opacity">AI 에이전트와 Vim 키를 하나로 담은 iPad 브라우저. 기기 내 Apple Intelligence 또는 내 API 키로 동작합니다. 무료, 계정 불필요.</p>
+            <a href="/geek-browser"><img src="/geek-browser/img/04-agent-working.jpg" alt="탭에서 작업 중인 Geek Browser AI 에이전트" style="width:80%; max-width:750px; border-radius:12px; box-shadow:0 12px 32px rgba(0,0,0,.18)"/></a>
+            <br/>
+            <br/>
+            <a href="https://apps.apple.com/app/id1457482155" target="_blank" rel="noopener">
+                <img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"/>
+            </a>
+        </div>
+        
+        <!--div class="w3-container w3-content w3-center w3-padding-64" style="max-width:100%">
+            <h1 class="w3-wide">One Dictionary</h1>
+            <p class="w3-opacity">Extensible and offline dictionary for iPhone and iPad</p>
+            <a href="/one-dictionary"><img src="/Resources/one-dictionary.png" style="width:80%; max-width:750px"/></a>
+            <br/>
+            <br/>
+            <a href="https://apps.apple.com/us/app/one-dictionary/id1207632925" target="_blank">
+                <img src="/Resources/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"/>
+            </a>
+        </div-->
+        
         <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-xlarge w3-light-gray">
-            <p class="w3-small">Copyright 2021 Jasmine Studios</a></p>
+            <p class="w3-small">Copyright © 2026 Jasmine Studios. All rights reserved.</p>
+            <p class="w3-small">문의: <a href="mailto:support@jasminestudios.net">support@jasminestudios.net</a></p>    
         </footer>
     </body>
 </html>

@@ -1,42 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://www.jasminestudios.net/</loc>
-  <lastmod>2022-01-21T12:57:08+00:00</lastmod>
-</url>
-<url>
-  <loc>https://www.jasminestudios.net/better-player/</loc>
-  <lastmod>2022-01-21T12:57:08+00:00</lastmod>
-</url>
-<url>
-  <loc>https://www.jasminestudios.net/one-dictionary/</loc>
-  <lastmod>2022-01-21T12:57:08+00:00</lastmod>
-</url>
-<url>
-  <loc>https://www.jasminestudios.net/geek-browser/</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-</url>
-<url>
-  <loc>https://www.jasminestudios.net/geek-browser/help/</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-</url>
-<url>
-  <loc>https://www.jasminestudios.net/geek-browser/privacy</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-</url>
-<url>
-  <loc>https://www.jasminestudios.net/vimlike/</loc>
-  <lastmod>2022-01-21T12:57:08+00:00</lastmod>
-</url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.jasminestudios.net/</loc>
+    <lastmod>2026-09-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/home/</loc>
+    <lastmod>2026-09-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/kr/home/</loc>
+    <lastmod>2026-09-27</lastmod>
+  </url>
   <url>
     <loc>https://www.jasminestudios.net/itinr/</loc>
+    <lastmod>2026-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/itinr/privacy</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/itinr/ai-models/</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/itinr/ai-models/claude</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/itinr/ai-models/openai</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/itinr/ai-models/gemini</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/itinr/ai-models/deepseek</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/geek-browser/</loc>
+    <lastmod>2026-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/geek-browser/help/</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/geek-browser/privacy</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/kr/geek-browser/help/</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/vimlike/</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/vimlike/help/</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/vimlike/keys/</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/better-player/</loc>
+    <lastmod>2026-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/better-player/help/</loc>
+    <lastmod>2026-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/kr/better-player/</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jasminestudios.net/one-dictionary/</loc>
+    <lastmod>2026-07-08</lastmod>
   </url>
 </urlset>
