@@ -1,9 +1,20 @@
 <!--meta http-equiv="refresh" content="0; URL='https://jasminestudios.github.io/swift-browser/help/'" /-->
 <link rel="shortcut icon" type="image/x-icon" href="/Resources/favicon.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C3MM12Q509"></script>
 <script language="javascript">
-  if (window.navigator.language == "ko-kr") {
-      window.open("/home/", "_self");
-  } else {
-      window.open("/home/", "_self");
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Redirect only after the page_view is sent, so the original referrer is
+  // attributed here rather than lost on /home/. Fall back after 1s if blocked.
+  var redirected = false;
+  function goHome() {
+    if (redirected) return;
+    redirected = true;
+    window.location.replace("/home/");
   }
+  gtag('config', 'G-C3MM12Q509', { 'event_callback': goHome });
+  setTimeout(goHome, 1000);
 </script>

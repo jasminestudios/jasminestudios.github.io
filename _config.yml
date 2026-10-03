@@ -11,3 +11,6 @@ relative_links:
 
 # Analytics
 google_analytics: G-C3MM12Q509
+
+exclude:
+  - scripts

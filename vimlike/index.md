@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Vimlike — Vim keys for Safari on Mac, iPad and iPhone
+description: Vimlike is a free Safari extension that brings Vim keyboard shortcuts to Safari. Scroll, jump to any link and open it from the keyboard, no mouse needed. For Mac, iPad and iPhone.
 ---
 [_metadata_:apple-itunes-app]:- "app-id=1584519802"
 
