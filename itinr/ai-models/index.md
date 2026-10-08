@@ -5,8 +5,8 @@ title: API Key Guides
 
 # Itinr — API Key Guides
 
-Itinr can call several LLM providers to extract events from your travel documents.
-The **Free Default Model** option requires no setup — for unlimited use, you can plug in your own API key from any of these providers:
+Itinr uses **Apple Intelligence** by default on supported iPhones — no setup, private and free.
+If you prefer another model (or your iPhone doesn't support Apple Intelligence), you can plug in your own API key from any of these providers:
 
 - [Claude (Anthropic)](claude) — premium quality, $5 free credit
 - [Gemini (Google)](gemini) — most generous free tier (1,500 req/day)
@@ -17,7 +17,7 @@ The **Free Default Model** option requires no setup — for unlimited use, you c
 
 | Your situation                        | Recommendation                        |
 | ------------------------------------- | ------------------------------------- |
-| Just want it to work, no setup        | **Free Default Model** (built-in)     |
+| Just want it to work, no setup        | **Apple Intelligence** (built-in)     |
 | In Hong Kong / mainland China         | **DeepSeek**                          |
 | Want a free tier with high quota      | **Gemini** (if your region supports)  |
 | Want best quality, willing to pay     | **Claude Sonnet/Opus**                |
