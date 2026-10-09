@@ -36,7 +36,7 @@
 /* Landscape shots in feature sections — stacked, not side by side */
 .shots { flex-direction: column; align-items: stretch; gap: 18px; max-width: 520px; margin: 0 auto; }
 .shot { width: 100%; padding: 8px 9px; border-radius: 20px; }
-.shot img { width: 100%; display: block; border-radius: 12px; }
+.shot img, .shot video { width: 100%; display: block; border-radius: 12px; }
 .shots .shot:nth-child(2) { margin-top: 0; align-self: flex-end; width: 90%; }
 .shots.solo { max-width: 560px; }
 
@@ -83,7 +83,7 @@ section.dark .callout b { color: #fff; }
 /* A phone, shown beside copy rather than stacked in the hero */
 .shots.phone-only { max-width: 300px; }
 .shots.phone-only .shot { padding: 9px 10px; border-radius: 42px; }
-.shots.phone-only .shot img { border-radius: 33px; }
+.shots.phone-only .shot img, .shots.phone-only .shot video { border-radius: 33px; }
 
 /* The controller's buttons, as a row of chips */
 .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
