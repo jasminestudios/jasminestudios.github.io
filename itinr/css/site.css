@@ -92,6 +92,7 @@ p.sec-sub { color: var(--zinc-deep); font-size: 17px; max-width: 620px; margin: 
   border-radius: 36px; box-shadow: var(--shadow-card);
 }
 .shot img, .shot video { width: 100%; display: block; border-radius: 28px; }
+.shot video { aspect-ratio: 9 / 16; object-fit: cover; background: #000; }
 .shots .shot:nth-child(2) { margin-top: 44px; }
 @media (max-width: 560px) { .shots { flex-direction: column; align-items: center; } .shots .shot:nth-child(2) { margin-top: 0; } }
 .kicker-line { margin-top: 28px; font: 600 15px var(--font-stack); color: var(--zinc-deep); }
