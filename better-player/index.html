@@ -7,7 +7,7 @@
 <meta name="description" content="Ambient light extension for YouTube in Safari on iPhone, iPad and Mac. Casts a glow in the colours of the frame that is playing, dims the page around the video, and blocks the ads. Free, no account, nothing collected." />
 <meta property="og:title" content="Better Player — YouTube in a dark room, lit by the video" />
 <meta property="og:description" content="Focus mode dims everything but the video. Ambient light picks up the colours of the frame playing. Ads are gone before the page paints. Free for iPhone, iPad and Mac." />
-<meta property="og:image" content="https://www.jasminestudios.net/better-player/img/01-ambient-coral.jpg" />
+<meta property="og:image" content="https://www.jasminestudios.net/better-player/video/ipad-focus.jpg" />
 <meta property="og:url" content="https://www.jasminestudios.net/better-player/" />
 <meta property="og:site_name" content="Jasmine Studios" />
 <link rel="canonical" href="https://www.jasminestudios.net/better-player/" />
@@ -64,31 +64,33 @@
 </nav>
 
 <!-- ═══════════ Hero ═══════════ -->
-<header class="hero">
-  <div class="wrap hero-grid">
-    <div>
+<header class="hero hero-dark">
+  <div class="wrap">
+    <div class="hero-copy">
       <span class="ds-badge eyebrow">A Safari extension for YouTube</span>
-      <h1 class="ds-display">The video, lit&nbsp;by&nbsp;itself.<br/>Everything else,<br/>out of the way.</h1>
+      <h1 class="ds-display">The video, lit&nbsp;by&nbsp;itself.<br/>Everything else, out&nbsp;of&nbsp;the&nbsp;way.</h1>
       <p class="lead">Better Player dims the whole YouTube page around the video, moves it to the
       middle of the screen, and casts a glow in the colours of the frame that is playing. The ads
-      are hidden before the page paints and the skippable ones skip themselves. One free app for
-      iPhone, iPad and Mac.</p>
+      are hidden before the page paints. One free app for iPhone, iPad and Mac.</p>
       <div class="cta-row">
         <a class="appstore-badge" href="https://apps.apple.com/app/id1592876082" aria-label="Download on the App Store">
           <img src="/better-player/img/appstore-badge.svg" alt="Download on the App Store" />
         </a>
         <span class="cta-note">Free · No account · Nothing collected</span>
       </div>
-      <div class="keystrip" aria-label="At a glance">
-        <span><kbd>esc</kbd> leave focus mode</span>
-        <span><kbd>10</kbd> skip either way</span>
-        <span>Picture in Picture</span>
-        <span>11 languages</span>
-      </div>
     </div>
-    <div class="pads" aria-hidden="true">
-      <div class="pad back"><img src="/better-player/img/02-ambient-mushroom.jpg" alt="" loading="eager" /></div>
-      <div class="pad front"><img src="/better-player/img/01-ambient-coral.jpg" alt="" loading="eager" /></div>
+    <figure class="hero-stage">
+      <div class="hero-pad">
+        <video src="/better-player/video/ipad-focus.mp4" poster="/better-player/video/ipad-focus.jpg" autoplay muted loop playsinline preload="auto" aria-label="Focus mode on iPad: the page dims around the video, the glow takes the colours of each scene, and the big buttons skip ten seconds"></video>
+      </div>
+      <figcaption>Focus mode and ambient light on iPad, recorded on the device. The glow is read from the frame that is playing.</figcaption>
+    </figure>
+    <div class="keystrip" aria-label="At a glance">
+      <span><kbd>esc</kbd> leave focus mode</span>
+      <span><kbd>10</kbd> skip either way</span>
+      <span>Picture in Picture</span>
+      <span>Landscape with the lock on</span>
+      <span>11 languages</span>
     </div>
   </div>
 </header>
@@ -149,7 +151,7 @@
     </div>
     <div class="shots">
       <div class="shot"><img src="/better-player/img/06-mac-ambient.jpg" alt="Focus mode in Safari on a Mac, the page dark behind the video" loading="lazy" /></div>
-      <div class="shot"><video src="/better-player/video/ipad-focus.mp4" poster="/better-player/video/ipad-focus.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Focus mode on iPad: the page dims, the glow follows the colours of each scene, and the big buttons skip ten seconds"></video></div>
+      <div class="shot"><img src="/better-player/img/04-controller.jpg" alt="The same thing on iPad, with the playback controls over the dimmed page" loading="lazy" /></div>
     </div>
   </div>
 </section>
@@ -254,7 +256,7 @@
           <span class="d">Prefer YouTube's full screen? Pick System Default in settings and the button does that instead.</span></span></li>
       </ul>
     </div>
-    <div class="shots phone-only">
+    <div class="shots phone-only phone-video">
       <div class="shot"><video src="/better-player/video/iphone-landscape.mp4" poster="/better-player/video/iphone-landscape.jpg" autoplay muted loop playsinline preload="metadata" aria-label="An iPhone locked to portrait: tap full screen and the video turns sideways; tap for controls, drag the edge to scrub, double-tap to skip, swipe to come back"></video></div>
     </div>
   </div>
