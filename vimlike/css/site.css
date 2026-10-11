@@ -152,6 +152,13 @@ section.ai code { background: rgba(224,160,8,.16); color: #F0BA43; }
   font: 600 15px var(--font-stack); color: #F3C765;
 }
 
+/* ── Learn more ── */
+.learn { margin: 22px 0 0; }
+.learn a { font: 600 16px/1.4 var(--font-stack); color: var(--hint-deep); text-decoration: none; letter-spacing: -.2px; }
+.learn a:hover { text-decoration: underline; }
+.learn a span { font-weight: 700; margin-left: 2px; }
+section.ai .learn a { color: #F0BA43; }
+
 /* ── Trust ── */
 .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 @media (max-width: 900px) { .trust-grid { grid-template-columns: repeat(2, 1fr); } }
