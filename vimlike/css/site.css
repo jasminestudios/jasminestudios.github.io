@@ -213,3 +213,16 @@ footer .spacer { flex: 1; }
 a:focus-visible, summary:focus-visible, .ds-btn:focus-visible {
   outline: 2px solid var(--hint); outline-offset: 3px; border-radius: 6px;
 }
+
+/* ── New in 2.0 tour: one feature per section, numbered the way the release notes list them ── */
+section.tour-head { padding-bottom: 20px; }
+.tour-list { list-style: none; margin: 0 auto; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 10px; max-width: 760px; counter-reset: t; }
+.tour-list li { counter-increment: t; }
+.tour-list a { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--ink); font: 600 13.5px var(--font-stack); padding: 7px 12px 7px 8px; border-radius: 999px; border: 1px solid var(--hairline); background: var(--surface); }
+.tour-list a::before { content: counter(t); display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--ink); color: #fff; font: 700 11px/1 var(--font-stack); }
+.tour-list a:hover { border-color: var(--hint); }
+section.tour { padding: 72px 0; }
+section.tour + section.tour { border-top: 1px solid var(--hairline); }
+.tour-index { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: var(--ink); color: #fff; font: 700 12px/1 var(--font-stack); margin-right: 6px; vertical-align: middle; }
+section.ai .tour-index { background: var(--hint); color: #18181B; }
+section.ai .tour-list a { color: var(--ink); }
