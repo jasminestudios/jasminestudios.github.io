@@ -226,3 +226,30 @@ section.tour + section.tour { border-top: 1px solid var(--hairline); }
 .tour-index { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: var(--ink); color: #fff; font: 700 12px/1 var(--font-stack); margin-right: 6px; vertical-align: middle; }
 section.ai .tour-index { background: var(--hint); color: #18181B; }
 section.ai .tour-list a { color: var(--ink); }
+
+/* ── Galleries: several screens in one place, scrolled sideways, as apple.com does it ── */
+.gallery { display: grid; gap: 14px; }
+.gallery-strip {
+  display: flex; gap: 20px; overflow-x: auto; overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+  padding: 24px 24px 36px;             /* room for the frames' drop shadows */
+  margin: -24px -24px -36px;
+  scrollbar-width: none;
+}
+.gallery-strip::-webkit-scrollbar { display: none; }
+.gallery-strip > .frame { flex: 0 0 100%; scroll-snap-align: center; scroll-snap-stop: always; }
+.gallery-strip:focus-visible { outline: 2px solid var(--hint); outline-offset: 10px; border-radius: 14px; }
+.gallery-nav { display: flex; align-items: center; justify-content: center; gap: 14px; }
+.gallery-dots { display: flex; gap: 8px; }
+.gallery-dots button { width: 8px; height: 8px; padding: 0; border: 0; border-radius: 50%; background: rgba(9,9,11,.18); cursor: pointer; transition: background .15s, transform .15s; }
+.gallery-dots button[aria-current="true"] { background: var(--ink); transform: scale(1.25); }
+.gallery-arrow {
+  width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--hairline); background: var(--surface); color: var(--ink);
+  font: 500 20px/1 var(--font-stack); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; padding: 0 0 2px;
+}
+.gallery-arrow:hover { border-color: var(--ink); }
+.gallery-arrow:disabled { opacity: .3; cursor: default; border-color: var(--hairline); }
+section.ai .gallery-dots button { background: rgba(255,255,255,.28); }
+section.ai .gallery-dots button[aria-current="true"] { background: var(--hint); }
+section.ai .gallery-arrow { background: rgba(255,255,255,.08); color: #fff; border-color: rgba(255,255,255,.18); }
+section.ai .gallery-arrow:hover { border-color: var(--hint); }
