@@ -232,12 +232,17 @@ section.ai .tour-list a { color: var(--ink); }
 .gallery-strip {
   display: flex; gap: 20px; overflow-x: auto; overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
-  padding: 24px 24px 36px;             /* room for the frames' drop shadows */
-  margin: -24px -24px -36px;
-  scrollbar-width: none;
+  scrollbar-width: none; border-radius: 12px;
 }
 .gallery-strip::-webkit-scrollbar { display: none; }
-.gallery-strip > .frame { flex: 0 0 100%; scroll-snap-align: center; scroll-snap-stop: always; }
+.gallery-strip > .frame { flex: 0 0 100%; scroll-snap-align: start; scroll-snap-stop: always; }
+/* Inside a strip the drop shadow would be clipped at the strip's edges; a hairline and a
+   flat shadow on the strip itself stand in for it. */
+.gallery-strip > .frame img, .gallery-strip > .frame video { filter: none; border: 1px solid var(--hairline); }
+.gallery { padding-bottom: 2px; }
+.gallery .gallery-strip { box-shadow: 0 1px 2px rgba(9,9,11,.08), 0 18px 38px rgba(9,9,11,.16); }
+section.ai .gallery .gallery-strip { box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 22px 44px rgba(0,0,0,.55); }
+section.ai .gallery-strip > .frame img, section.ai .gallery-strip > .frame video { border-color: rgba(255,255,255,.1); }
 .gallery-strip:focus-visible { outline: 2px solid var(--hint); outline-offset: 10px; border-radius: 14px; }
 .gallery-nav { display: flex; align-items: center; justify-content: center; gap: 14px; }
 .gallery-dots { display: flex; gap: 8px; }
