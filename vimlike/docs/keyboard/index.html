@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vimlike Keyboard Settings — the shortcut editor and the settings script</title>
+<meta name="description" content="How to remap Vimlike: Default, Custom and Script modes in Settings › Keyboard. The shortcut table, recording a key, excluding a shortcut on some sites, conflict rules, and the settings-script API with every command." />
+<link rel="canonical" href="https://www.jasminestudios.net/vimlike/docs/keyboard/" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C3MM12Q509"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-C3MM12Q509');
+</script>
+<link rel="stylesheet" href="/vimlike/css/design-system.css" />
+<link rel="stylesheet" href="/vimlike/css/site.css" />
+<link rel="stylesheet" href="/vimlike/css/docs.css" />
+</head>
+<body class="ds-body">
+
+<nav class="top ds-glass">
+  <div class="wrap">
+    <a class="logo" href="/vimlike/">Vim<span>like</span></a>
+    <a class="link" href="/vimlike/docs/">Docs</a>
+    <a class="link" href="/vimlike/docs/keys/">Keys</a>
+    <a class="link" href="/vimlike/docs/keyboard/" aria-current="page">Keyboard</a>
+    <a class="link" href="/vimlike/docs/ai/">AI</a>
+    <a class="link" href="/vimlike/docs/websites/">Websites</a>
+    <div class="spacer"></div>
+    <a class="ds-btn ds-btn--primary" href="https://apps.apple.com/app/id1584519802" target="_blank" rel="noopener">Download</a>
+  </div>
+</nav>
+
+<div class="wrap wrap--wide docs">
+  <aside class="docs-nav" aria-label="Documentation">
+    <div class="group">Documentation</div>
+    <a href="/vimlike/docs/">Overview</a>
+    <a href="/vimlike/docs/keys/">Keys</a>
+    <a href="/vimlike/docs/keyboard/" aria-current="page">Keyboard settings</a>
+    <div class="sub">
+      <a href="#modes">Three modes</a>
+      <a href="#table">The shortcut table</a>
+      <a href="#edit">Adding and editing</a>
+      <a href="#conflicts">Conflicts</a>
+      <a href="#script">The settings script</a>
+      <a href="#commands">Every command</a>
+      <a href="#related">Related settings</a>
+    </div>
+    <a href="/vimlike/docs/ai/">AI assistant</a>
+    <a href="/vimlike/docs/websites/">Websites &amp; site packs</a>
+    <div class="group">More</div>
+    <a href="/vimlike/help/">Versions &amp; privacy</a>
+    <a href="/vimlike/">Product page</a>
+  </aside>
+
+  <article class="doc">
+    <h1>Keyboard settings <span class="new">2.0</span></h1>
+    <p class="lead">Settings › Keyboard is where the key map lives. Since 2.0 it is a table you edit — pick a command,
+    record a key, limit it to some sites — and the script is still there underneath for anyone who would rather write it.</p>
+
+    <figure class="shot">
+      <img src="/vimlike/img/10-keyboard-editor.png" width="1600" height="1000" loading="lazy"
+           alt="Settings › Keyboard in Custom mode: shortcuts grouped by category with their key caps, and the Add Shortcut sheet open on one" />
+      <figcaption>Custom mode: the key map as a table, grouped the way the commands are used.</figcaption>
+    </figure>
+
+    <h2 id="modes">Three modes</h2>
+    <table>
+      <tr><th>Mode</th><th>What it does</th></tr>
+      <tr><td class="k"><b>Default</b></td><td>The key map the app ships, shown as a read-only table so you can see what is bound. Nothing to maintain.</td></tr>
+      <tr><td class="k"><b>Custom</b></td><td>The same table, editable. Switching to Custom seeds it with the default map; from there you add, change and delete shortcuts. The app turns the table into a settings script for you.</td></tr>
+      <tr><td class="k"><b>Script</b></td><td>A code editor with the settings script itself, validated as you type. For anything the table cannot express — a binding that depends on a function you wrote, say. A script that only uses <code>settings.map</code> opens back as a table; one with other JavaScript stays a script, and the table says so.</td></tr>
+    </table>
+    <p>Three keys are outside all three modes: <kbd>Esc</kbd> (Normal mode), <kbd>↩</kbd> (open the selected link) and
+    <kbd>⌫</kbd> (delete a label letter) are bound by the system map first and are not in the table.</p>
+
+    <h2 id="table">The shortcut table</h2>
+    <p>Commands are grouped: Scrolling, Links, Link Mode, Tabs, Navigation, View &amp; Media, Search &amp; AI. Each row is
+    one command with its key caps; a command may have several rows (Half Page Down has <kbd>d</kbd> and <kbd>Space</kbd>).
+    Rows with an exclusion show the sites it is off on. Right-click (or swipe on iOS) to edit or delete.</p>
+    <p><b>Link Mode</b> is its own group because its keys only apply after <kbd>f</kbd>: Next Link, Previous Link, Open
+    Selected Link, Open Selected Link in a New Tab. They may share a key with a Normal-mode shortcut without conflicting
+    — the modes never see the same key press.</p>
+    <p><b>Restore Shortcuts to Default</b> throws the table away and seeds it again.</p>
+
+    <h2 id="edit">Adding and editing a shortcut</h2>
+    <ol class="steps">
+      <li><b>Add Shortcut</b> at the top of the table, or Edit on a row, opens the sheet.</li>
+      <li><b>Command</b> — a grouped list of every command (<a href="#commands">below</a>), with search.</li>
+      <li><b>Keyboard Shortcut</b> — type the chord the way the script spells it (<code>g g</code>, <code>ctrl+f</code>,
+        <code>shift+slash</code>), or press <b>Record</b> and press the keys on a hardware keyboard; two keys pressed in a
+        row become a sequence. The preview shows the key caps as the cheat sheet will.</li>
+      <li><b>Exclude on URLs</b> — one URL prefix per line. The shortcut does nothing on pages that start with it. This
+        is how Space scrolls everywhere except YouTube and Netflix watch pages, where it plays and pauses.</li>
+      <li><b>Done</b>. The table re-sorts into its groups and the script is regenerated and saved; open tabs pick it
+        up on their next load.</li>
+    </ol>
+    <p class="note"><b>Keys on a site, not everywhere.</b> A key that should exist on one website only — "open the inbox" on
+    Gmail — belongs in that <a href="/vimlike/docs/websites/">website's settings</a>, not here. Press <kbd>g</kbd><kbd>k</kbd>
+    on the page and click the element, or let the AI suggest the keys.</p>
+
+    <h2 id="conflicts">Conflicts</h2>
+    <p>A row turns orange when it collides with another in the same mode: the same key twice, or a key that is also the
+    start of a sequence (<kbd>g</kbd> next to <kbd>g</kbd><kbd>g</kbd> — the single key would never fire). Saving is still
+    allowed; the later binding wins, as in the script. A Normal-mode key and a Link-mode key never conflict.</p>
+
+    <h2 id="script">The settings script</h2>
+    <p>Custom mode writes this file; Script mode lets you edit it. It is JavaScript with one call that matters:</p>
+<pre><code>// settings.map(keys, command [, { excludes: [urlPrefix, …] }])
+settings.map('j', VLCommand.SCROLL_DOWN);
+settings.map('g g', VLCommand.SCROLL_TO_TOP);
+settings.map('shift+f', VLCommand.ACTIVATE_LINK_WITH_NEW_TAB);
+settings.map('space', VLCommand.HALF_PAGE_DOWN,
+             { excludes: ['https://www.youtube.com/watch', 'https://www.netflix.com/watch/'] });</code></pre>
+    <h3>Key grammar</h3>
+    <ul>
+      <li>One chord is optional modifiers then one key: <code>ctrl+</code>, <code>shift+</code>, <code>command+</code>,
+        <code>alt+</code> — then a letter, a digit, or a named key: <code>slash</code>, <code>period</code>, <code>comma</code>,
+        <code>semicolon</code>, <code>quote</code>, <code>backquote</code>, <code>bracketleft</code>, <code>bracketright</code>,
+        <code>backslash</code>, <code>minus</code>, <code>equal</code>, <code>space</code>, <code>tab</code>, <code>enter</code>.</li>
+      <li>A sequence is chords separated by spaces: <code>'g shift+t'</code>.</li>
+      <li>A shifted symbol may be written as itself: <code>'?'</code> is <code>'shift+slash'</code>, <code>':'</code> is
+        <code>'shift+semicolon'</code>.</li>
+      <li>Keys are matched by the character the layout produces. <b>Ignore Keyboard Layout</b> (Settings › Advanced)
+        matches by physical key instead, so a Korean or Dvorak layout still gets <kbd>j</kbd> where QWERTY has it.</li>
+    </ul>
+    <p>In Custom and Script modes the shipped map is <em>not</em> loaded underneath — what the script maps is the
+    whole key map. Deleting a row is enough to unbind a key.</p>
+
+    <h2 id="commands">Every command</h2>
+    <p>The <code>VLCommand</code> names the table and the script use.</p>
+    <table>
+      <tr><th>Group</th><th>Commands</th></tr>
+      <tr><td class="k">Scrolling</td><td><code>SCROLL_DOWN</code> <code>SCROLL_UP</code> <code>SCROLL_LEFT</code> <code>SCROLL_RIGHT</code> <code>HALF_PAGE_DOWN</code> <code>HALF_PAGE_UP</code> <code>PAGE_DOWN</code> <code>PAGE_UP</code> <code>SCROLL_TO_TOP</code> <code>SCROLL_TO_BOTTOM</code></td></tr>
+      <tr><td class="k">Links</td><td><code>ACTIVATE_LINK</code> <code>ACTIVATE_LINK_WITH_NEW_TAB</code> <code>SHOW_CONSOLE</code> (find a link) <code>FIND_TEXT</code> <code>PICK_KEY</code> <code>OPEN_LINK_AT_POINTER</code> <code>OPEN_LINK_AT_POINTER_IN_NEW_TAB</code> <code>OPEN_LINK_AT_POINTER_IN_NEW_INCOGNITO_TAB</code></td></tr>
+      <tr><td class="k">Link mode</td><td><code>NEXT_LINK</code> <code>PREV_LINK</code> <code>OPEN_SELECTED_LINK</code> <code>OPEN_SELECTED_LINK_IN_NEW_TAB</code></td></tr>
+      <tr><td class="k">Tabs</td><td><code>NEW_TAB</code> <code>CLOSE_TAB</code> <code>NEXT_TAB</code> <code>PREV_TAB</code> <code>MOVE_TAB_TO_LEFT</code> <code>RESTORE_TAB</code> <code>DUPLICATE_TAB</code> <code>DUPLICATE_INCOGNITO_TAB</code> <code>OPEN_LAST_TAB</code> <code>OPEN_TAB1</code> … <code>OPEN_TAB9</code> <code>MARK_TAB</code> <code>OPEN_MARK_TAB</code></td></tr>
+      <tr><td class="k">Navigation</td><td><code>GO_BACK</code> <code>GO_FORWARD</code> <code>GO_TO_URL_UP</code> <code>GO_TO_URL_ROOT</code> <code>RELOAD</code> <code>COPY_CURRENT_URL</code></td></tr>
+      <tr><td class="k">View &amp; media</td><td><code>VISUAL_MODE</code> <code>VISUAL_LINE_MODE</code> <code>CARET_MODE</code> <code>DARK_MODE</code> <code>ZOOM_IN</code> <code>VIDEO_FULLSCREEN</code> <code>VIDEO_PIP</code> <code>TOGGLE_HELP</code> <code>FOCUS_INPUT</code> <code>INSERT_MODE</code></td></tr>
+      <tr><td class="k">Search &amp; AI</td><td><code>SHOW_COMMAND_BAR</code> (the bar) <code>SHOW_AI_BAR</code> <code>SHOW_AI_COMMAND_BAR</code> (the <kbd>:</kbd> palette)</td></tr>
+    </table>
+    <p class="muted"><code>DARK_MODE</code>, <code>MARK_TAB</code>, <code>OPEN_MARK_TAB</code>, <code>MOVE_TAB_TO_LEFT</code>,
+    <code>SHOW_AI_BAR</code> and the Open-Link-At-Pointer commands have no default key; bind one if you want them.</p>
+
+    <h2 id="related">Related settings</h2>
+    <table>
+      <tr><th>Where</th><th>What</th></tr>
+      <tr><td class="k">Keyboard › Special Keys</td><td><kbd>`</kbd> (US) or <kbd>§</kbd> (UK) acts as Esc — for Apple's iPad keyboards, which have none.</td></tr>
+      <tr><td class="k">Keyboard › Shortcut Help</td><td>The cheat sheet along the bottom of the window, on by default on Mac and iPad. <kbd>?</kbd> toggles it on a page.</td></tr>
+      <tr><td class="k">Links</td><td>Hint labels in letters, numbers, both or your own characters; put images, videos and headlines first; blur images while hints show; animate the click.</td></tr>
+      <tr><td class="k">Search Bar</td><td>What the bar searches (tabs, history, top sites, the web — Google or DuckDuckGo), opening results in a new tab, the history and scroll keys, Enter required to open a found link.</td></tr>
+      <tr><td class="k">General</td><td>Start in Normal or Insert mode, scroll animation and speed, what a new tab opens with.</td></tr>
+      <tr><td class="k">Advanced</td><td>Ignore keyboard layout, stop pages focusing a field on load, select a field's text when Vimlike focuses it, show script errors in the HUD.</td></tr>
+    </table>
+
+    <p class="next">Next: <a href="/vimlike/docs/ai/">AI assistant →</a></p>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span><b style="color:var(--ink)">Vimlike</b> — vim's keyboard, Safari's browser, your own AI.</span>
+    <div class="spacer"></div>
+    <a href="/vimlike/docs/">Documentation</a>
+    <a href="/vimlike/help/">Versions &amp; privacy</a>
+    <a href="mailto:support@jasminestudios.net">Support</a>
+    <span>© 2026 Jasmine Studios</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vimlike AI Assistant — the bar, saved commands, tools, providers and guardrails</title>
+<meta name="description" content="How Vimlike's AI assistant works in Safari: asking from the bar, the : command palette, saved commands with shortcuts, keys and site limits, the 28 tools it can use on the page, Apple Intelligence and bring-your-own-key providers, permissions, memory and token usage." />
+<link rel="canonical" href="https://www.jasminestudios.net/vimlike/docs/ai/" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C3MM12Q509"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-C3MM12Q509');
+</script>
+<link rel="stylesheet" href="/vimlike/css/design-system.css" />
+<link rel="stylesheet" href="/vimlike/css/site.css" />
+<link rel="stylesheet" href="/vimlike/css/docs.css" />
+</head>
+<body class="ds-body">
+
+<nav class="top ds-glass">
+  <div class="wrap">
+    <a class="logo" href="/vimlike/">Vim<span>like</span></a>
+    <a class="link" href="/vimlike/docs/">Docs</a>
+    <a class="link" href="/vimlike/docs/keys/">Keys</a>
+    <a class="link" href="/vimlike/docs/keyboard/">Keyboard</a>
+    <a class="link" href="/vimlike/docs/ai/" aria-current="page">AI</a>
+    <a class="link" href="/vimlike/docs/websites/">Websites</a>
+    <div class="spacer"></div>
+    <a class="ds-btn ds-btn--primary" href="https://apps.apple.com/app/id1584519802" target="_blank" rel="noopener">Download</a>
+  </div>
+</nav>
+
+<div class="wrap wrap--wide docs">
+  <aside class="docs-nav" aria-label="Documentation">
+    <div class="group">Documentation</div>
+    <a href="/vimlike/docs/">Overview</a>
+    <a href="/vimlike/docs/keys/">Keys</a>
+    <a href="/vimlike/docs/keyboard/">Keyboard settings</a>
+    <a href="/vimlike/docs/ai/" aria-current="page">AI assistant</a>
+    <div class="sub">
+      <a href="#ask">Asking</a>
+      <a href="#palette">The palette</a>
+      <a href="#commands">Saved commands</a>
+      <a href="#tools">What it can do</a>
+      <a href="#guardrails">Guardrails</a>
+      <a href="#providers">Providers</a>
+      <a href="#memory">Memory &amp; usage</a>
+      <a href="#reports">Reports</a>
+    </div>
+    <a href="/vimlike/docs/websites/">Websites &amp; site packs</a>
+    <div class="group">More</div>
+    <a href="/vimlike/help/">Versions &amp; privacy</a>
+    <a href="/vimlike/">Product page</a>
+  </aside>
+
+  <article class="doc">
+    <h1>AI assistant</h1>
+    <p class="lead">An assistant in the bar that reads the page and, when you ask, works it: clicks, types, pulls tables out,
+    opens tabs, reads your other tabs — and stops to ask before anything it cannot undo. It runs on Apple Intelligence with
+    no key, or on your own key for Claude, OpenAI, Gemini or DeepSeek.</p>
+
+    <figure class="shot">
+      <img src="/vimlike/img/04-ai-answer.png" width="1600" height="1000" loading="lazy"
+           alt="An AI answer streaming inline in the Vimlike bar over a Wikipedia article" />
+      <figcaption>Answers stream into the bar, over the page, in its own language.</figcaption>
+    </figure>
+
+    <h2 id="ask">Asking</h2>
+    <ul>
+      <li>Press <kbd>o</kbd>, type a question, press <kbd>⌘↩</kbd>. The bar is also the search bar, so plain <kbd>↩</kbd>
+        searches; <kbd>⌘↩</kbd> asks. Pick the <b>Ask AI</b> row with the arrows and <kbd>↩</kbd> does the same.</li>
+      <li>Select text first and the question is about the selection. In <a href="/vimlike/docs/keys/#visual">visual
+        mode</a>, <kbd>:</kbd> asks about what you selected.</li>
+      <li>While a run works, the bar shows each step; close the bar and a small pill in the corner keeps showing progress.
+        <kbd>Esc</kbd> stops a run — from the bar or the page. Settings › AI Assistant decides what typing during a
+        run does: queue it, send it to the run as a steer, or cancel.</li>
+      <li>The answer streams into the bar and stays until you close it. Long answers become a <a href="#reports">report</a>.</li>
+    </ul>
+
+    <h2 id="palette">The <kbd>:</kbd> palette</h2>
+    <p>Type <kbd>:</kbd> on a page (or in an empty bar) and your saved commands appear as rows; keep typing to filter.
+    <kbd>↩</kbd> runs the highlighted one. A command followed by text runs with that text as its argument:
+    <code>:translate korean</code>.</p>
+    <p>Three built-in rows need no setup and belong to the <a href="/vimlike/docs/websites/">website</a> you are on:</p>
+    <table>
+      <tr><th>Row</th><th>Does</th></tr>
+      <tr><td class="k"><code>:keys</code></td><td><b>Suggest shortcuts</b> — the AI proposes keys for this site's places; you try them before saving.</td></tr>
+      <tr><td class="k"><code>:clean</code></td><td><b>Clean up this page</b> — hide or dim ads, banners, sidebars, comments. <code>:clean hide the footer</code> asks for one thing.</td></tr>
+      <tr><td class="k"><code>:repair</code></td><td>Find the targets of your keys again after the site changed its layout.</td></tr>
+    </table>
+
+    <h2 id="commands">Saved commands</h2>
+    <p>A saved command is a prompt with a name and a <code>:shortcut</code>. Seven come with the app; make your own in
+    Settings › AI Assistant › Saved Commands, or on one site in Settings › Websites.</p>
+    <table>
+      <tr><th>Shortcut</th><th>Does</th></tr>
+      <tr><td class="k"><code>:sum</code></td><td>Summarise the page in a few bullets, in the page's language</td></tr>
+      <tr><td class="k"><code>:find</code></td><td>Asks what you are looking for, finds where the page answers it, quotes it and scrolls there</td></tr>
+      <tr><td class="k"><code>:table</code></td><td>Pulls the page's repeating items — results, products, rows — into a table; a big one opens as a report</td></tr>
+      <tr><td class="k"><code>:translate</code> <i>language</i></td><td>Translates the page in place, or only the selection if there is one</td></tr>
+      <tr><td class="k"><code>:kr</code> · <code>:en</code></td><td>Translate into Korean, into English</td></tr>
+      <tr><td class="k"><code>:links</code></td><td>Opens every link in the main article in background tabs — after asking</td></tr>
+    </table>
+    <h3>What a command can carry</h3>
+    <table>
+      <tr><th>Field</th><th>Meaning</th></tr>
+      <tr><td class="k">Shortcut</td><td>The alias after <kbd>:</kbd>. <code>${input}</code> in the prompt takes the text typed after it.</td></tr>
+      <tr><td class="k">Only on</td><td>A site limit. The command shows in the palette, and its key works, only on matching pages — so <code>:comments</code> can mean one thing on YouTube and another on GitHub.</td></tr>
+      <tr><td class="k">Keyboard shortcut</td><td>A key that runs it straight from the page, without the bar. Press the keys in the field to record them.</td></tr>
+      <tr><td class="k">Open in browser</td><td>Whether the command is offered in that mode too (only commands that read the page can be).</td></tr>
+      <tr><td class="k">Step limit</td><td>How many tool calls this command may make, when the default is too few or too many.</td></tr>
+      <tr><td class="k">Skill</td><td>Step-by-step instructions the assistant follows when this command runs — how to read this site's result list, which filter to click first.</td></tr>
+    </table>
+    <p>Site packs can bring commands too, with a fixed hotkey vocabulary: <kbd>a</kbd><kbd>s</kbd> is a summary of this
+    page on every site that has one, <kbd>a</kbd><kbd>c</kbd> the comments or reviews, <kbd>a</kbd><kbd>b</kbd> a briefing
+    of many stories. A command of yours with the same shortcut replaces the pack's.</p>
+
+    <h2 id="tools">What it can do on the page</h2>
+    <p>In Direct API mode the assistant works by calling tools; it decides which, you see each call in the bar. The 28 tools:</p>
+    <table>
+      <tr><th>Group</th><th>Tools</th></tr>
+      <tr><td class="k">Read the page</td><td><code>get_page</code> the readable text, title, URL and selection · <code>get_links</code> · <code>get_selection</code> · <code>get_snapshot</code> every interactive element with a stable ref · <code>extract</code> repeating items into rows · <code>capture_screenshot</code> when the content is visual · <code>wait_for</code> until something appears or the page settles</td></tr>
+      <tr><td class="k">Other tabs &amp; history</td><td><code>list_tabs</code> · <code>read_tab</code> another tab's text without switching to it · <code>search_history</code> your local history by keyword</td></tr>
+      <tr><td class="k">Open pages &amp; click</td><td><code>click</code> by ref · <code>click_link</code> by text · <code>press</code> a key on an element · <code>navigate</code> the current tab · <code>go_back</code> · <code>reload</code> · <code>open_url</code> · <code>open_urls_in_background_tabs</code> · <code>scroll</code></td></tr>
+      <tr><td class="k">Type into pages</td><td><code>fill</code> a field · <code>select_option</code> in a dropdown · <code>check</code> a box or switch</td></tr>
+      <tr><td class="k">Change the page</td><td><code>translate_page</code> in place · <code>set_dark_mode</code></td></tr>
+      <tr><td class="k">Results</td><td><code>show_report</code> a formatted page · <code>copy_result</code> to the clipboard · <code>save_command</code> · <code>propose_site_key</code> a key for an element</td></tr>
+    </table>
+    <p>Every tool runs inside the page in your Safari, on your device. Nothing is sent to the provider but the text the
+    assistant asked to read and your question.</p>
+
+    <h2 id="guardrails">Guardrails and permissions</h2>
+    <ul>
+      <li><b>Confirm risky page actions</b> (on by default): before a click that looks like Delete, Pay, Send, Submit or
+        anything else hard to undo — and before opening several tabs — the bar shows the action with <b>Allow</b> and
+        <b>Skip</b>. <kbd>↩</kbd> allows, <kbd>Esc</kbd> skips.</li>
+      <li><b>One rule per kind of tool</b>: Read the page, Open pages &amp; click, Type into pages, Change the page, Take
+        screenshots — each Allow, Ask or Deny. "Never type into pages" is one switch, not a list.</li>
+      <li><b>Max agent steps</b> caps a run (20 by default); a command can set its own.</li>
+      <li>Your API key lives in the Keychain. The page never sees it, and neither does iCloud.</li>
+    </ul>
+    <figure class="shot">
+      <img src="/vimlike/img/05-guardrail.png" width="1600" height="1000" loading="lazy"
+           alt="A confirmation reading Open 5 links in background tabs? with Allow and Skip" />
+    </figure>
+
+    <h2 id="providers">Providers and modes</h2>
+    <table>
+      <tr><th>Mode</th><th>How it works</th></tr>
+      <tr><td class="k"><b>Direct API</b></td><td>Vimlike calls the provider and shows the answer inline; tools, saved commands, keys and site suggestions all need this mode.</td></tr>
+      <tr><td class="k"><b>Open in browser</b></td><td>No key at all: the chosen chat site — ChatGPT, Claude, Gemini, Perplexity or DeepSeek — opens in a new tab with your prompt and the page's text typed in. Only commands that read the page apply.</td></tr>
+    </table>
+    <table>
+      <tr><th>Provider</th><th>Notes</th></tr>
+      <tr><td class="k"><b>Apple Intelligence</b></td><td>No key. Runs on Private Cloud Compute, so nothing is stored and nothing is yours to pay for. Needs a device and OS that offer it.</td></tr>
+      <tr><td class="k"><b>Claude</b> · <b>OpenAI</b> · <b>Gemini</b> · <b>DeepSeek</b></td><td>Paste your own key; pick a model; <b>Test</b> checks it. OpenAI-compatible servers work through a custom host URL. Costs are billed by the provider to your account.</td></tr>
+    </table>
+
+    <figure class="shot">
+      <img src="/vimlike/img/12-ai-settings.png" width="1600" height="1000" loading="lazy"
+           alt="Settings › AI Assistant: Direct API or Open in browser, confirm risky actions, max steps, one Allow/Ask/Deny rule per kind of tool, and the provider with its key and model" />
+      <figcaption>Settings › AI Assistant: mode, guardrails, one rule per kind of tool, and the provider.</figcaption>
+    </figure>
+
+    <h2 id="memory">Memory and usage</h2>
+    <ul>
+      <li><b>Memory</b> — up to 4,000 characters of standing preferences sent with every request: "Always answer in Korean",
+        "Compare prices including shipping". Stored on your device (and your iCloud, if sync is on).</li>
+      <li><b>Token usage</b> — the last 200 requests, by model and by task, so you can see what is expensive (translating
+        a whole page usually is). Recorded on this device only.</li>
+    </ul>
+
+    <h2 id="reports">Reports</h2>
+    <p>When an answer is more than a few lines — a comparison, an extracted table, a long summary — it opens as a report
+    page in a new tab: headings, tables and links rendered, with <b>Copy Markdown</b> and <b>Print</b> (to PDF) at the top.</p>
+    <figure class="shot">
+      <img src="/vimlike/img/06-report.png" width="1600" height="1000" loading="lazy"
+           alt="A Vimlike report page with a comparison table and Copy Markdown and Print buttons" />
+    </figure>
+
+    <p class="next">Next: <a href="/vimlike/docs/websites/">Websites &amp; site packs →</a></p>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span><b style="color:var(--ink)">Vimlike</b> — vim's keyboard, Safari's browser, your own AI.</span>
+    <div class="spacer"></div>
+    <a href="/vimlike/docs/">Documentation</a>
+    <a href="/vimlike/help/">Versions &amp; privacy</a>
+    <a href="mailto:support@jasminestudios.net">Support</a>
+    <span>© 2026 Jasmine Studios</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vimlike Websites &amp; Site Packs — per-site keys, AI-made shortcuts and signed packs</title>
+<meta name="description" content="How Vimlike shapes one website: the toolbar popup, Suggest shortcuts and Clean up this page, keys you add by picking an element, the website's own styles, CSS, script and switches, and the signed site pack catalogue with its JSON format." />
+<link rel="canonical" href="https://www.jasminestudios.net/vimlike/docs/websites/" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C3MM12Q509"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-C3MM12Q509');
+</script>
+<link rel="stylesheet" href="/vimlike/css/design-system.css" />
+<link rel="stylesheet" href="/vimlike/css/site.css" />
+<link rel="stylesheet" href="/vimlike/css/docs.css" />
+</head>
+<body class="ds-body">
+
+<nav class="top ds-glass">
+  <div class="wrap">
+    <a class="logo" href="/vimlike/">Vim<span>like</span></a>
+    <a class="link" href="/vimlike/docs/">Docs</a>
+    <a class="link" href="/vimlike/docs/keys/">Keys</a>
+    <a class="link" href="/vimlike/docs/keyboard/">Keyboard</a>
+    <a class="link" href="/vimlike/docs/ai/">AI</a>
+    <a class="link" href="/vimlike/docs/websites/" aria-current="page">Websites</a>
+    <div class="spacer"></div>
+    <a class="ds-btn ds-btn--primary" href="https://apps.apple.com/app/id1584519802" target="_blank" rel="noopener">Download</a>
+  </div>
+</nav>
+
+<div class="wrap wrap--wide docs">
+  <aside class="docs-nav" aria-label="Documentation">
+    <div class="group">Documentation</div>
+    <a href="/vimlike/docs/">Overview</a>
+    <a href="/vimlike/docs/keys/">Keys</a>
+    <a href="/vimlike/docs/keyboard/">Keyboard settings</a>
+    <a href="/vimlike/docs/ai/">AI assistant</a>
+    <a href="/vimlike/docs/websites/" aria-current="page">Websites &amp; site packs</a>
+    <div class="sub">
+      <a href="#popup">The popup</a>
+      <a href="#suggest">Suggest shortcuts</a>
+      <a href="#clean">Clean up this page</a>
+      <a href="#mine">A website's own settings</a>
+      <a href="#packs">Site packs</a>
+      <a href="#format">The pack format</a>
+      <a href="#transfer">Export &amp; import</a>
+    </div>
+    <div class="group">More</div>
+    <a href="/vimlike/help/">Versions &amp; privacy</a>
+    <a href="/vimlike/">Product page</a>
+  </aside>
+
+  <article class="doc">
+    <h1>Websites &amp; site packs <span class="new">2.0</span></h1>
+    <p class="lead">Every website can have settings of its own in Vimlike: keys for its places, styles that hide its
+    clutter, AI commands, CSS, a script, and switches. Two things fill them — a signed <b>site pack</b> from the catalogue,
+    and <b>you</b>, by hand or by asking the AI. The two are kept apart, and yours win.</p>
+
+    <h2 id="popup">The toolbar popup</h2>
+    <figure class="shot">
+      <img src="/vimlike/img/09-popup.png" width="1600" height="1000" loading="lazy"
+           alt="The Vimlike toolbar popup on Hacker News: a Site Pack card with the pack installed and its keys, and a This Website card with Suggest shortcuts and Clean up this page" />
+      <figcaption>Top: the site pack. Below: what is yours on this website.</figcaption>
+    </figure>
+    <table>
+      <tr><th>Card</th><th>What is in it</th></tr>
+      <tr><td class="k"><b>Site Pack</b></td><td>Shown only when the catalogue has a pack for this site. Before installing: its name, what it does, how many keys. After: every key with a switch, the keys it hands back to the site, its CSS, Update when a new version is out, Remove. Installing applies at once, no reload.</td></tr>
+      <tr><td class="k"><b>This Website</b></td><td><b>✦ My shortcuts</b> — what the AI made for you here, each key and style with a ✕, and the two buttons below: <b>Suggest shortcuts</b> and <b>Clean up this page</b>. Under it, the site's switches: Vimlike on/off/auto, start in Normal or Insert, dark mode. <b>Customize</b> turns the website's own settings on for a site that only had a pack.</td></tr>
+    </table>
+
+    <h2 id="suggest">Suggest shortcuts</h2>
+    <figure class="shot">
+      <img src="/vimlike/img/07-suggest.png" width="1600" height="1000" loading="lazy"
+           alt="CNN with the Vimlike Try panel listing eight suggested keys, the top story outlined on the page" />
+      <figcaption>Try it — the keys already work; nothing is saved until you say so.</figcaption>
+    </figure>
+    <ol class="steps">
+      <li>Press <b>✦ Suggest shortcuts</b> in the popup, or type <code>:keys</code> in the bar. The AI looks at the page —
+        what can be pressed, what the site's places are — and proposes keys in the <kbd>g</kbd> family: <kbd>g</kbd><kbd>h</kbd>
+        home, <kbd>g</kbd><kbd>n</kbd> new, <kbd>g</kbd><kbd>s</kbd> search. It never picks a key you already use.</li>
+      <li>The <b>Try</b> panel opens in the bar's window. Every key is live: press one and watch the page. Each suggested
+        element is outlined; untick anything you do not want. A key marked <i>may break</i> rests on a fragile selector.</li>
+      <li><b>＋ Add or change…</b> asks for more in your words — "a key for the Subscribe button", "use other keys for World",
+        "turn on Watch" — with chips to start the sentence.</li>
+      <li><kbd>↩</kbd> or <b>Save</b> keeps them in this website's settings. <kbd>Esc</kbd> or <b>Discard</b> throws the
+        draft away. The draft survives moving to another page of the site while you try.</li>
+    </ol>
+    <p>A key for a place whose contents change — the top story, the first result — follows the <em>place</em>, not today's
+    item. Keys are clicks and addresses, never code: the AI answers with which element and which key, and Vimlike builds the
+    XPath and checks it on the page before it is shown to you.</p>
+    <p class="note"><b>By hand instead.</b> Press <kbd>g</kbd><kbd>k</kbd> on any page, click the element, press the key you
+    want and name it. Or in Settings › Websites › the site › <b>Add…</b>, give a key a click target, an address, or several
+    steps (click, move to the next match, scroll, wait, open).</p>
+
+    <h2 id="clean">Clean up this page</h2>
+    <p><b>✧ Clean up this page</b> in the popup, or <code>:clean</code>, opens the same panel aimed at styles. Chips offer the
+    usual culprits — ads and promos, banners and pop-ups, the sidebar, comments, dim the rest, reading mode — or say what should
+    go. Each result is a style: <b>hide</b>, <b>dim</b>, or <b>show on hover</b>, applied to one area of the page. The main
+    text can never be hidden. Styles land in the website's settings as CSS; Settings › Websites › My Styles lists them in words
+    and removes them one by one.</p>
+
+    <h2 id="mine">A website's own settings</h2>
+    <p>Settings › Websites lists every website with settings, A to Z, and opens each as one sheet in two groups.</p>
+    <figure class="shot">
+      <img src="/vimlike/img/11-websites.png" width="1600" height="1000" loading="lazy"
+           alt="Settings › Websites with a site's sheet open: the Site Pack card on top and Website Settings below" />
+    </figure>
+    <table>
+      <tr><th>Website Settings</th><th>What it holds</th></tr>
+      <tr><td class="k">My Keys &amp; AI Commands</td><td>Keys the AI suggested or you added, and AI commands limited to this site. A tag on each says what it does — Click, Open, Steps, AI — and opens its editor; click the key to re-record it.</td></tr>
+      <tr><td class="k">My Styles</td><td>The hide/dim/hover styles from Clean up this page, with the request they came from.</td></tr>
+      <tr><td class="k">Keys I give back</td><td>Vimlike keys that should do nothing on this site, so its own shortcuts get them — <code>j k slash</code> on a site with vim keys of its own.</td></tr>
+      <tr><td class="k">Switches</td><td>Vimlike, start-up mode and dark mode for this site. Auto follows the pack's suggestion, then your global settings.</td></tr>
+      <tr><td class="k">CSS &amp; Script</td><td>Your own stylesheet and JavaScript for the site, loaded after the pack's so yours wins. This is the one place code of yours runs.</td></tr>
+    </table>
+    <p>A site that only has a pack has no website settings until you turn them on — <b>Enable Website Settings</b> in the
+    sheet, or Customize in the popup. <b>Delete Website Settings</b> removes only yours; the pack stays.</p>
+
+    <h2 id="packs">Site packs</h2>
+    <p>A site pack is one signed file for one website, published by Jasmine Studios: keys for the site's places, a few AI
+    commands, optional CSS that tidies it, and the Vimlike keys it hands back so the site's own shortcuts work. The catalogue
+    is in Settings › Websites, below your sites, and the popup offers the pack for the site you are on.</p>
+    <ul>
+      <li><b>Signed, and checked every time.</b> A pack is verified on your device each time it is used. A pack that no longer
+        verifies does not run.</li>
+      <li><b>No JavaScript.</b> A pack can click, open an address, run a short list of steps, hide and dim — nothing else. What
+        a pack can do only grows with an app update, not with a pack update.</li>
+      <li><b>Versions.</b> Shown as "1.1 (8)": the version people see, and the build. Updates are off by default; a new version
+        shows an <b>Update</b> button, and installing it keeps your switches and re-keyed keys.</li>
+      <li><b>Keys you can change.</b> Switch any pack key off, record another key for it, or copy it into your own keys to edit
+        its target. The pack itself stays as published; your changes sit beside it.</li>
+      <li><b>First visit.</b> The HUD announces a pack's main keys the first time you open the site (Settings › Websites ›
+        Preferences: first visit, always, never).</li>
+    </ul>
+    <p class="muted">Packs at the time of writing: Amazon, Bing, ChatGPT, Claude, Clien, DuckDuckGo, Figma, GitHub, Gmail,
+    Google Calendar, Google Docs, Google Drive, Google News, Google Search, The Guardian, Hacker News, Instagram, Jira, Netflix,
+    Reddit, Slack, Stack Overflow, Wikipedia, X and YouTube. Want one for a site you use? <a href="mailto:support@jasminestudios.net">Tell us</a>.</p>
+
+    <h2 id="format">The pack format</h2>
+    <p>For the curious — and for anyone who wants to read what an installed pack does: <b>View Source</b> in the site's sheet
+    shows exactly this.</p>
+<pre><code>{
+  "format": "vimlike-site-pack/1",
+  "id": "hacker-news",
+  "name": "Hacker News",
+  "description": "Next page, open the top story, jump to new, ask, show, past, comments and jobs",
+  "version": 3,                 // build; "marketingVersion": "1.0" is what people see
+  "minBuild": 261,              // the app build that understands this pack
+  "host": "news.ycombinator.com",
+  "match": ["^https://news\\.ycombinator\\.com/"],
+  "actions": [
+    { "id": "next",  "title": "Next page",         "keys": "bracketright", "click": "//a[@class='morelink']" },
+    { "id": "new",   "title": "New",               "keys": "g n",          "open": "https://news.ycombinator.com/newest" },
+    { "id": "top",   "title": "Open the top story","keys": "backslash",
+      "steps": [ { "click": "(//span[@class='titleline']/a)[1]" } ] }
+  ],
+  "unmap": ["j", "k"],          // Vimlike keys released to the site (optional)
+  "css": "…", "cssDescription": "Hides the footer",
+  "commands": [ { "shortcut": "comments", "name": "Top comments", "prompt": "…", "key": "a c" } ],
+  "hud": ["next", "top"],       // what the first visit announces
+  "localized": { "ko": { "name": "해커 뉴스", "titles": { "next": "다음 페이지" } } }
+}</code></pre>
+    <p>An action has exactly one of <code>click</code> (an XPath), <code>open</code> (an address) or <code>steps</code>. Steps run
+    in order: <code>click</code> (one XPath or a list — the first that exists), <code>open</code>, <code>wait</code> (ms),
+    <code>move</code> to the next or previous match of an XPath, <code>reveal</code> one element, <code>scroll</code> top or
+    bottom, <code>media</code> end — each with an optional <code>if</code> / <code>unless</code>. A <code>"trigger": "load"</code>
+    action runs when the page loads. Your own keys use the same steps.</p>
+
+    <h2 id="transfer">Export and import</h2>
+    <p>Settings › Websites › Backup writes every website's settings — packs, keys, AI commands, CSS, scripts and switches — to one
+    <code>.vimlike</code> file, and a site's sheet exports that site alone. Importing replaces the settings of a site that is already
+    there. Settings also sync through your own iCloud when you allow it.</p>
+
+    <p class="next">Back to the <a href="/vimlike/docs/">overview</a> · <a href="/vimlike/help/">Versions &amp; privacy →</a></p>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span><b style="color:var(--ink)">Vimlike</b> — vim's keyboard, Safari's browser, your own AI.</span>
+    <div class="spacer"></div>
+    <a href="/vimlike/docs/">Documentation</a>
+    <a href="/vimlike/help/">Versions &amp; privacy</a>
+    <a href="mailto:support@jasminestudios.net">Support</a>
+    <span>© 2026 Jasmine Studios</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Vimlike — vim's keyboard for Safari, plus an AI that can use the page</title>
-<meta name="description" content="A free Safari extension that brings vim's keyboard to the web: jump to any link with two keys, one bar for tabs, history and search, and an assistant that reads and operates the page. No account. iPhone, iPad, Mac and Vision Pro." />
+<title>Vimlike — vim's keyboard for Safari, site packs, and an AI that can use the page</title>
+<meta name="description" content="A free Safari extension that brings vim's keyboard to the web: jump to any link with two keys, one bar for tabs, history, search and the AI, keys the AI suggests for each site, and signed site packs for YouTube, Gmail, Reddit and more. No account. iPhone, iPad, Mac and Vision Pro." />
 <meta property="og:title" content="Vimlike — Navigate. Search. Ask." />
-<meta property="og:description" content="Vim's keyboard for Safari, one bar for everything you'd otherwise hunt for, and an assistant that can actually use the page. Free, no account." />
+<meta property="og:description" content="Vim's keyboard for Safari, one bar for everything you'd otherwise hunt for, keys for every site you use, and an assistant that can actually use the page. Free, no account." />
 <meta property="og:image" content="https://www.jasminestudios.net/vimlike/img/01-link-hints.png" />
 <meta property="og:url" content="https://www.jasminestudios.net/vimlike/" />
 <meta property="og:site_name" content="Jasmine Studios" />
@@ -44,8 +44,10 @@
     <a class="link" href="#keyboard">Keyboard</a>
     <a class="link" href="#search">Search Bar</a>
     <a class="link" href="#ai">AI</a>
+    <a class="link" href="#websites">Websites</a>
     <a class="link" href="#privacy">Privacy</a>
     <a class="link" href="#faq">FAQ</a>
+    <a class="link" href="/vimlike/docs/">Docs</a>
     <div class="spacer"></div>
     <a class="ds-btn ds-btn--primary" href="https://apps.apple.com/app/id1584519802" target="_blank" rel="noopener">Download</a>
   </div>
@@ -54,12 +56,12 @@
 <!-- ═══════════ Hero ═══════════ -->
 <header class="hero">
   <div class="wrap">
-    <span class="ds-badge eyebrow">Free Safari extension · iPhone, iPad, Mac &amp; Vision Pro</span>
+    <span class="ds-badge eyebrow">Vimlike 2.0 · Free Safari extension · iPhone, iPad, Mac &amp; Vision Pro</span>
     <h1 class="ds-display">Navigate. Search. Ask.</h1>
     <p class="lead">Vimlike brings vim's keyboard to Safari — <kbd>j</kbd> <kbd>k</kbd> to scroll,
     <kbd>f</kbd> to hit any link on screen, <kbd>t</kbd> for a new tab. Press <kbd>o</kbd> for one bar
-    that already knows your tabs and your history. Press <kbd>\</kbd> and an assistant reads the page,
-    works it, and answers. No account, no servers, nothing to sign up for.</p>
+    that already knows your tabs and your history; press <kbd>⌘↩</kbd> there and an assistant reads the page,
+    works it, and answers. On the sites you live in, it suggests the keys. No account, no servers, nothing to sign up for.</p>
     <div class="cta-row">
       <span class="badges">
         <a class="appstore-badge" href="https://apps.apple.com/app/id1584519802" target="_blank" rel="noopener" aria-label="Download on the App Store">
@@ -82,8 +84,8 @@
   <div class="wrap">
     <h2 class="sec">Three ways to drive the page.<br/>One keyboard.</h2>
     <p class="sec-sub">Most extensions hand you a list of shortcuts. Vimlike gives you the shortcuts, a
-    command bar that searches everything you have open, and an assistant that can actually operate the
-    page — all without your hands leaving the keys.</p>
+    command bar that searches everything you have open, an assistant that can actually operate the
+    page — and, new in 2.0, keys made for each website, by a signed site pack or by the AI.</p>
     <div class="axis-grid">
       <div class="ds-card axis">
         <span class="icon tile"><svg class="ico" viewBox="0 0 24 24"><path d="M12 4v16"/><path d="m6 14 6 6 6-6"/><path d="m6 10 6-6 6 6"/></svg></span>
@@ -120,8 +122,10 @@
           <span class="d"><kbd>t</kbd> to open, <kbd>x</kbd> to close, <kbd>q</kbd> / <kbd>w</kbd> to move between, <kbd>⇧X</kbd> to bring one back.</span></span></li>
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h7"/></svg></span><span><b>Modes, like vim</b>
           <span class="d">Normal to navigate, Insert to type. <kbd>Esc</kbd> — or <kbd>`</kbd> / <kbd>§</kbd> if that's easier on your layout — always takes you back.</span></span></li>
-        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2.5"/><path d="M6.5 10h1M10 10h1M13.5 10h1M17 10h1M8 14h8"/></svg></span><span><b>Remap anything</b>
-          <span class="d">A visual shortcut editor, or a settings script if you'd rather write it. Exclude a shortcut on the sites where it gets in the way.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2.5"/><path d="M6.5 10h1M10 10h1M13.5 10h1M17 10h1M8 14h8"/></svg></span><span><b>Remap anything — in a table <span class="ds-badge" style="vertical-align:middle;margin-left:4px">2.0</span></b>
+          <span class="d">Settings › Keyboard lists every command by group. Record a key, exclude the shortcut on the sites where it gets in the way, see conflicts as you go. The settings script is still there for anyone who would rather write it.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/><path d="m9 4 1.5 3M14 4l-1.5 3"/></svg></span><span><b>Select text like vim</b>
+          <span class="d"><kbd>v</kbd> starts a selection, <kbd>⇧V</kbd> by lines, <kbd>c</kbd> a caret. <kbd>w</kbd> <kbd>b</kbd> <kbd>f</kbd> move it, <kbd>y</kbd> copies, <kbd>:</kbd> asks the AI about it.</span></span></li>
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg></span><span><b>The rest of it</b>
           <span class="d">Dark mode on any site, reader view, video fullscreen and picture-in-picture, zoom, go up a URL, copy the URL, and <kbd>?</kbd> for the cheat sheet.</span></span></li>
       </ul>
@@ -130,6 +134,10 @@
       <figure class="frame">
         <img src="/vimlike/img/links.gif" width="900" height="563" loading="lazy"
              alt="Pressing f labels every link, then typing a label follows it" />
+      </figure>
+      <figure class="frame">
+        <img src="/vimlike/img/10-keyboard-editor.png" width="1600" height="1000" loading="lazy"
+             alt="Settings › Keyboard: every shortcut in a table by group, with key caps, and a sheet to record a new key" />
       </figure>
     </div>
   </div>
@@ -143,14 +151,14 @@
       <h2 class="sec">One bar instead of<br/>four places to look.</h2>
       <p class="sec-sub">Press <kbd>o</kbd> and start typing. Vimlike searches your open tabs, your local
       history, your most-visited sites and the web at once — and the same bar is where you talk to the
-      assistant.</p>
+      assistant: <kbd>⌘↩</kbd> asks instead of searching.</p>
       <ul class="bullets">
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span><span><b>Everything in one list</b>
           <span class="d">Top site, open tabs, local history and web search suggestions, ranked together. Enter opens what's highlighted.</span></span></li>
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 8v4l2.5 2.5"/><circle cx="12" cy="12" r="8.5"/></svg></span><span><b>History that works like a shell</b>
           <span class="d"><kbd>↑</kbd> on an empty bar walks back through what you ran before — and what you ran <em>on this site</em> comes back first.</span></span></li>
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="m5 7 4 4-4 4M12 15h7"/></svg></span><span><b>Type <kbd>:</kbd> for commands</b>
-          <span class="d">Your saved AI commands appear as you type. <code>:sum</code>, <code>:table</code>, <code>:kr</code> — or the ones you make.</span></span></li>
+          <span class="d">Your saved AI commands appear as you type. <code>:sum</code>, <code>:table</code>, <code>:kr</code> — or the ones you make. <code>:keys</code> and <code>:clean</code> shape the site you're on.</span></span></li>
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20.5 20.5-3.8-3.8M8.5 11h5"/></svg></span><span><b>Find a link by name</b>
           <span class="d"><kbd>/</kbd> filters the page's links as you type. Enter opens.</span></span></li>
       </ul>
@@ -179,17 +187,17 @@
       undo.</p>
       <ul class="bullets">
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M4 5.5h16v13H4z"/><path d="m8 10 2 2-2 2M13 14h3"/></svg></span><span><b>It operates the page</b>
-          <span class="d">Reads the article, clicks buttons, fills forms, picks from dropdowns, pulls tables into rows, scrolls, navigates, opens tabs, reads your <em>other</em> tabs, searches your history, takes a screenshot when the answer is visual.</span></span></li>
+          <span class="d">28 tools: it reads the article, clicks buttons, fills forms, picks from dropdowns, pulls tables into rows, scrolls, navigates, opens tabs, reads your <em>other</em> tabs, searches your history, takes a screenshot when the answer is visual.</span></span></li>
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M7 4h10a2 2 0 0 1 2 2v14l-7-4-7 4V6a2 2 0 0 1 2-2Z"/></svg></span><span><b>Commands you keep</b>
           <span class="d">Give any prompt a <code>:shortcut</code>. Limit it to one site so it only shows up there. Give it a key and it runs without opening the bar at all.</span></span></li>
-        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span><span><b>Make a command by describing it</b>
-          <span class="d">Type <code>:cmd summarize the reviews on this page</code> and the assistant writes the command, names it, scopes it to the site you're on, and saves it.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span><span><b>Permissions you set once</b>
+          <span class="d">Read the page, open pages and click, type into pages, change the page, take screenshots — each Allow, Ask or Deny. A step limit per run, and per command.</span></span></li>
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h5M14 3v5h5"/></svg></span><span><b>Reports, not walls of text</b>
           <span class="d">Long results open as a formatted page you can copy as Markdown or print to PDF.</span></span></li>
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 8.5v4l2.5 1.5"/></svg></span><span><b>Memory and skills</b>
           <span class="d">Standing preferences — “always answer in Korean”, “compare prices with shipping” — travel with every request. Attach step-by-step instructions to a command and it follows them.</span></span></li>
         <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3 5 5.5v6c0 4.3 3 7.2 7 8.5 4-1.3 7-4.2 7-8.5v-6L12 3Z"/></svg></span><span><b>Your provider, your key</b>
-          <span class="d">Apple Intelligence runs on-device with no key and nothing leaving your Mac or iPhone. Or bring your own key for Claude, OpenAI, Gemini or DeepSeek. Or skip the API entirely — “Open in browser” mode drops the page and your prompt straight into ChatGPT, Gemini, Claude or Perplexity.</span></span></li>
+          <span class="d">Apple Intelligence needs no key and runs on Private Cloud Compute, where nothing is kept. Or bring your own key for Claude, OpenAI, Gemini or DeepSeek. Or skip the API entirely — “Open in browser” mode drops the page and your prompt straight into ChatGPT, Gemini, Claude, Perplexity or DeepSeek.</span></span></li>
       </ul>
       <p class="ai-guard">⚠&nbsp; It asks before it clicks Delete, Pay or Submit.</p>
     </div>
@@ -208,6 +216,38 @@
                alt="A generated Vimlike report page with a comparison table, Copy Markdown and Print buttons" />
         </figure>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ Websites ═══════════ -->
+<section id="websites">
+  <div class="wrap wrap--wide feature rev left">
+    <div>
+      <span class="ds-caption section-eyebrow">Websites &amp; Site Packs · New in 2.0</span>
+      <h2 class="sec">Keys for the sites<br/>you actually live in.</h2>
+      <p class="sec-sub">A global key map is only half of it. On Gmail you want <kbd>g</kbd><kbd>i</kbd> for the inbox;
+      on CNN, <kbd>g</kbd><kbd>w</kbd> for World. Vimlike gets you there two ways, and never with code.</p>
+      <ul class="bullets">
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3.5 13.9 9l5.6 1.9-5.6 1.9L12 18.3l-1.9-5.5L4.5 10.9 10.1 9 12 3.5Z"/></svg></span><span><b>Suggest shortcuts</b>
+          <span class="d">One button in the popup. The AI looks at the site's places and proposes keys for them — <kbd>g</kbd><kbd>h</kbd> home, <kbd>g</kbd><kbd>s</kbd> search, <kbd>g</kbd><kbd>o</kbd> the top story — live, to try before you save. Say what to change in your own words.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/><path d="m16 15 3 3M19 15l-3 3"/></svg></span><span><b>Clean up this page</b>
+          <span class="d">Ads, banners, the sidebar, the comments — hidden or dimmed on request. Styles, not scripts, and each one removable.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3 5 5.5v6c0 4.3 3 7.2 7 8.5 4-1.3 7-4.2 7-8.5v-6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg></span><span><b>Site packs, signed</b>
+          <span class="d">Ready-made keys for YouTube, Gmail, Google Search and News, Reddit, Wikipedia, GitHub, Hacker News, Netflix and more — signed by Jasmine Studios, checked on your device every time, versioned, updated when you say. A pack can click, open and restyle. It cannot run JavaScript.</span></span></li>
+        <li><span class="bi"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 10h18M9 10v10"/></svg></span><span><b>Yours and the pack's, kept apart</b>
+          <span class="d">Your keys, styles, AI commands, CSS and switches live beside the pack, win over it, and can be removed on their own. Press <kbd>g</kbd><kbd>k</kbd> on any element to give it a key by hand.</span></span></li>
+      </ul>
+    </div>
+    <div class="shots">
+      <figure class="frame">
+        <img src="/vimlike/img/07-suggest.png" width="1600" height="1000" loading="lazy"
+             alt="CNN with Vimlike's Try panel listing eight suggested keys for the site's sections and the top story" />
+      </figure>
+      <figure class="frame">
+        <img src="/vimlike/img/09-popup.png" width="1600" height="1000" loading="lazy"
+             alt="The Vimlike popup on Hacker News: the installed site pack's keys above, and the This Website card with Suggest shortcuts and Clean up this page below" />
+      </figure>
     </div>
   </div>
 </section>
@@ -272,8 +312,21 @@
       </details>
       <details class="ds-card">
         <summary>Can I change the shortcuts?</summary>
-        <p>All of them. There's a visual editor where you record a key and pick a command, and a settings
-        script for anyone who prefers writing it. You can also disable a shortcut on specific sites.</p>
+        <p>All of them. Settings › Keyboard is a table of every command: record a key, exclude a shortcut on
+        specific sites, see conflicts. A settings script is there for anyone who prefers writing it.
+        <a href="/vimlike/docs/keyboard/">How it works →</a></p>
+      </details>
+      <details class="ds-card">
+        <summary>What is a site pack?</summary>
+        <p>One signed file for one website — keys for its places, a few AI commands, optional CSS that tidies it,
+        and the Vimlike keys it hands back so the site's own shortcuts keep working. Packs are published by Jasmine
+        Studios, verified on your device each time they run, and contain no JavaScript.
+        <a href="/vimlike/docs/websites/">More →</a></p>
+      </details>
+      <details class="ds-card">
+        <summary>Does the AI change my settings or the page?</summary>
+        <p>Only what you keep. Suggest shortcuts and Clean up this page show a draft you try first; Save writes keys
+        and styles into that website's settings, Discard throws it away. The AI never writes code into Vimlike.</p>
       </details>
       <details class="ds-card">
         <summary>Does it change how sites look?</summary>
@@ -315,9 +368,10 @@
   <div class="wrap">
     <span><b style="color:var(--ink)">Vimlike</b> — vim's keyboard, Safari's browser, your own AI.</span>
     <div class="spacer"></div>
-    <a href="/vimlike/">Documentation</a>
-    <a href="/vimlike/keys/">Key bindings</a>
-    <a href="/vimlike/#privacy-policy">Privacy</a>
+    <a href="/vimlike/docs/">Documentation</a>
+    <a href="/vimlike/docs/keys/">Keys</a>
+    <a href="/vimlike/help/">Versions</a>
+    <a href="/vimlike/help/#privacy-policy">Privacy</a>
     <a href="mailto:support@jasminestudios.net">Support</a>
     <a href="/kr/vimlike/">한국어</a>
     <span>© 2026 Jasmine Studios</span>

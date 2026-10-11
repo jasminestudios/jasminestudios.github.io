@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vimlike Keys — every default keyboard shortcut, by mode</title>
+<meta name="description" content="The complete Vimlike key map for Safari: scrolling, link hints, tabs, navigation, the bar, Insert, Visual and Caret modes, and the keys the bar itself answers to. Generated from the key map the app ships." />
+<link rel="canonical" href="https://www.jasminestudios.net/vimlike/docs/keys/" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C3MM12Q509"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-C3MM12Q509');
+</script>
+<link rel="stylesheet" href="/vimlike/css/design-system.css" />
+<link rel="stylesheet" href="/vimlike/css/site.css" />
+<link rel="stylesheet" href="/vimlike/css/docs.css" />
+</head>
+<body class="ds-body">
+
+<nav class="top ds-glass">
+  <div class="wrap">
+    <a class="logo" href="/vimlike/">Vim<span>like</span></a>
+    <a class="link" href="/vimlike/docs/">Docs</a>
+    <a class="link" href="/vimlike/docs/keys/" aria-current="page">Keys</a>
+    <a class="link" href="/vimlike/docs/keyboard/">Keyboard</a>
+    <a class="link" href="/vimlike/docs/ai/">AI</a>
+    <a class="link" href="/vimlike/docs/websites/">Websites</a>
+    <div class="spacer"></div>
+    <a class="ds-btn ds-btn--primary" href="https://apps.apple.com/app/id1584519802" target="_blank" rel="noopener">Download</a>
+  </div>
+</nav>
+
+<div class="wrap wrap--wide docs">
+  <aside class="docs-nav" aria-label="Documentation">
+    <div class="group">Documentation</div>
+    <a href="/vimlike/docs/">Overview</a>
+    <a href="/vimlike/docs/keys/" aria-current="page">Keys</a>
+    <div class="sub">
+      <a href="#modes">Modes</a>
+      <a href="#scrolling">Scrolling</a>
+      <a href="#links">Links</a>
+      <a href="#tabs">Tabs</a>
+      <a href="#navigation">Navigation</a>
+      <a href="#bar">Bar</a>
+      <a href="#visual">Visual mode</a>
+      <a href="#in-the-bar">In the bar</a>
+      <a href="#system">System keys</a>
+    </div>
+    <a href="/vimlike/docs/keyboard/">Keyboard settings</a>
+    <a href="/vimlike/docs/ai/">AI assistant</a>
+    <a href="/vimlike/docs/websites/">Websites &amp; site packs</a>
+    <div class="group">More</div>
+    <a href="/vimlike/help/">Versions &amp; privacy</a>
+    <a href="/vimlike/">Product page</a>
+  </aside>
+
+  <article class="doc">
+    <h1>Keys</h1>
+    <p class="lead">The default key map, as the app ships it. Every one of these can be changed, removed or limited to
+    some sites in <a href="/vimlike/docs/keyboard/">Settings › Keyboard</a>; a <a href="/vimlike/docs/websites/">site
+    pack</a> or your own website settings may add keys on top, or hand some of these back to the site.</p>
+
+    <p class="toc"><a href="#modes">Modes</a> <a href="#scrolling">Scrolling</a> <a href="#links">Links</a>
+    <a href="#tabs">Tabs</a> <a href="#navigation">Navigation</a> <a href="#bar">Bar</a> <a href="#modes-1">Mode keys</a>
+    <a href="#view-media">View &amp; media</a> <a href="#visual">Visual mode</a> <a href="#in-the-bar">In the bar</a>
+    <a href="#system">System keys</a></p>
+
+    <h2 id="modes">Modes</h2>
+    <p>Like vim, Vimlike is modal. Which mode you are in decides what a key does.</p>
+    <table>
+      <tr><th>Mode</th><th>What it is</th></tr>
+      <tr><td class="k"><b>Normal</b></td><td>The keys below work. This is where a page starts (or Insert, per site or globally in Settings › General).</td></tr>
+      <tr><td class="k"><b>Insert</b></td><td>Every key goes to the page. You enter it by clicking into a field, with <kbd>i</kbd> or <kbd>⌃i</kbd>; <kbd>Esc</kbd> brings Normal back. On a keyboard without a comfortable Esc, Settings › Keyboard can make <kbd>`</kbd> or <kbd>§</kbd> act as Esc.</td></tr>
+      <tr><td class="k"><b>Link</b></td><td>After <kbd>f</kbd> or <kbd>⇧F</kbd>: every link and button carries a label; typing it opens the link. <kbd>n</kbd> / <kbd>⇧N</kbd> move the selection, <kbd>↩</kbd> opens it, <kbd>⌫</kbd> deletes a typed letter, <kbd>Esc</kbd> leaves.</td></tr>
+      <tr><td class="k"><b>Visual</b></td><td>Select text with vim's motions: <kbd>v</kbd>, <kbd>⇧V</kbd> for lines, <kbd>c</kbd> for a caret without a selection. <a href="#visual">The keys</a>.</td></tr>
+      <tr><td class="k"><b>Bar</b></td><td>The bar is open (<kbd>o</kbd>, <kbd>/</kbd> or <kbd>:</kbd>). It has <a href="#in-the-bar">keys of its own</a>.</td></tr>
+    </table>
+    <p class="note"><b>Two-key sequences.</b> Keys like <kbd>g</kbd><kbd>g</kbd> are pressed one after the other, not held together. A key written <kbd>⌃f</kbd> is held with Control; <kbd>⇧G</kbd> is Shift and G.</p>
+
+    <h2 id="default-map">The default key map</h2>
+<h3 id="scrolling">Scrolling</h3>
+<table>
+<tr><th>Key</th><th>Does</th></tr>
+<tr><td class="k"><kbd>j</kbd></td><td>Scroll down<span class="d">One line at a time; hold it to keep going.</span></td></tr>
+<tr><td class="k"><kbd>k</kbd></td><td>Scroll up</td></tr>
+<tr><td class="k"><kbd>h</kbd></td><td>Scroll left</td></tr>
+<tr><td class="k"><kbd>l</kbd></td><td>Scroll right</td></tr>
+<tr><td class="k"><kbd>d</kbd><span class="muted"> · </span><kbd>Space</kbd></td><td>Half page down<span class="d">Space is released on YouTube and Netflix watch pages, where it plays and pauses.</span></td></tr>
+<tr><td class="k"><kbd>u</kbd><span class="muted"> · </span><kbd>⇧Space</kbd></td><td>Half page up</td></tr>
+<tr><td class="k"><kbd>⌃f</kbd></td><td>Page down</td></tr>
+<tr><td class="k"><kbd>⌃b</kbd></td><td>Page up</td></tr>
+<tr><td class="k"><kbd>g</kbd><kbd>g</kbd></td><td>Top of the page</td></tr>
+<tr><td class="k"><kbd>⇧G</kbd></td><td>Bottom of the page</td></tr>
+</table>
+<h3 id="links">Links</h3>
+<table>
+<tr><th>Key</th><th>Does</th></tr>
+<tr><td class="k"><kbd>f</kbd></td><td>Link hints<span class="d">Every link and button on screen gets a label; type it and the link opens. Esc leaves link mode.</span></td></tr>
+<tr><td class="k"><kbd>⇧F</kbd></td><td>Link hints → new tab<span class="d">Same labels; the link opens in a background tab.</span></td></tr>
+<tr><td class="k"><kbd>/</kbd></td><td>Find a link by name<span class="d">The bar filters the page's links as you type; Enter opens the highlighted one.</span></td></tr>
+<tr><td class="k"><kbd>g</kbd><kbd>/</kbd></td><td>Find text on the page<span class="d">Type, Enter; the match is selected and scrolled to. n / N for the next and previous match.</span></td></tr>
+<tr><td class="k"><kbd>g</kbd><kbd>k</kbd></td><td>Add a key to an element<span class="d">Click a button or link on the page, press the key you want for it, name it. Saved into the website's settings.</span></td></tr>
+</table>
+<h3 id="link-mode">Link mode</h3>
+<table>
+<tr><th>Key</th><th>Does</th></tr>
+<tr><td class="k"><kbd>n</kbd><span class="muted"> · </span><kbd>Tab</kbd></td><td>Next link<span class="d">While hints are showing: move the selection to the next label.</span></td></tr>
+<tr><td class="k"><kbd>⇧N</kbd><span class="muted"> · </span><kbd>⇧Tab</kbd></td><td>Previous link</td></tr>
+</table>
+<h3 id="tabs">Tabs</h3>
+<table>
+<tr><th>Key</th><th>Does</th></tr>
+<tr><td class="k"><kbd>t</kbd></td><td>New tab<span class="d">Empty, or your home page (Settings › General).</span></td></tr>
+<tr><td class="k"><kbd>x</kbd></td><td>Close tab</td></tr>
+<tr><td class="k"><kbd>⇧Z</kbd></td><td>Reopen the closed tab</td></tr>
+<tr><td class="k"><kbd>w</kbd><span class="muted"> · </span><kbd>⌃k</kbd><span class="muted"> · </span><kbd>g</kbd><kbd>t</kbd></td><td>Next tab</td></tr>
+<tr><td class="k"><kbd>q</kbd><span class="muted"> · </span><kbd>⌃j</kbd><span class="muted"> · </span><kbd>g</kbd><kbd>⇧T</kbd></td><td>Previous tab</td></tr>
+<tr><td class="k"><kbd>g</kbd><kbd>1</kbd></td><td>Tab 1<span class="d">g 2 … g 9 for the others.</span></td></tr>
+<tr><td class="k"><kbd>g</kbd><kbd>$</kbd></td><td>Last tab</td></tr>
+<tr><td class="k"><kbd>y</kbd><kbd>t</kbd></td><td>Duplicate the tab</td></tr>
+<tr><td class="k"><kbd>y</kbd><kbd>⇧T</kbd></td><td>Duplicate into a private tab</td></tr>
+</table>
+<h3 id="navigation">Navigation</h3>
+<table>
+<tr><th>Key</th><th>Does</th></tr>
+<tr><td class="k"><kbd>⇧H</kbd></td><td>Back</td></tr>
+<tr><td class="k"><kbd>⇧L</kbd></td><td>Forward</td></tr>
+<tr><td class="k"><kbd>r</kbd></td><td>Reload</td></tr>
+<tr><td class="k"><kbd>g</kbd><kbd>u</kbd></td><td>Up one level in the URL<span class="d">/blog/2026/post → /blog/2026/</span></td></tr>
+<tr><td class="k"><kbd>g</kbd><kbd>⇧U</kbd></td><td>To the site's root</td></tr>
+<tr><td class="k"><kbd>y</kbd><kbd>y</kbd></td><td>Copy the URL</td></tr>
+</table>
+<h3 id="bar">Bar</h3>
+<table>
+<tr><th>Key</th><th>Does</th></tr>
+<tr><td class="k"><kbd>o</kbd></td><td>Open the bar<span class="d">Search the web, your tabs and your history; or ask the AI with ⌘↩.</span></td></tr>
+<tr><td class="k"><kbd>:</kbd></td><td>Command palette<span class="d">The bar with ":" — your saved AI commands, :keys, :clean and :repair.</span></td></tr>
+</table>
+<h3 id="modes">Modes</h3>
+<table>
+<tr><th>Key</th><th>Does</th></tr>
+<tr><td class="k"><kbd>i</kbd></td><td>Focus the first text field<span class="d">Puts the cursor in the page's first input and enters Insert mode.</span></td></tr>
+<tr><td class="k"><kbd>⌃i</kbd></td><td>Insert mode<span class="d">Every key goes to the page until Esc.</span></td></tr>
+<tr><td class="k"><kbd>v</kbd></td><td>Visual mode<span class="d">Select text with vim motions (below).</span></td></tr>
+<tr><td class="k"><kbd>⇧V</kbd></td><td>Visual line mode</td></tr>
+<tr><td class="k"><kbd>c</kbd></td><td>Caret mode<span class="d">Move a cursor through the text without selecting; v starts a selection from it.</span></td></tr>
+</table>
+<h3 id="view-media">View &amp; media</h3>
+<table>
+<tr><th>Key</th><th>Does</th></tr>
+<tr><td class="k"><kbd>m</kbd></td><td>Zoom<span class="d">Toggles the page zoom.</span></td></tr>
+<tr><td class="k"><kbd>⌃u</kbd></td><td>Video full screen<span class="d">The first video on the page.</span></td></tr>
+<tr><td class="k"><kbd>⌃p</kbd></td><td>Picture in picture</td></tr>
+<tr><td class="k"><kbd>?</kbd></td><td>Shortcut help<span class="d">The cheat sheet along the bottom of the window, with this site's pack keys.</span></td></tr>
+</table>
+
+    <h2 id="visual">Visual mode</h2>
+    <p>Press <kbd>v</kbd> on a page and a selection starts at the top of what is on screen; <kbd>⇧V</kbd> selects whole lines; <kbd>c</kbd> places a caret you can move first. Inside, the keys are vim's, and every other key is swallowed so a stray letter cannot scroll you away.</p>
+    <table>
+      <tr><th>Key</th><th>Does</th></tr>
+      <tr><td class="k"><kbd>h</kbd> <kbd>j</kbd> <kbd>k</kbd> <kbd>l</kbd></td><td>Move the cursor, extending the selection</td></tr>
+      <tr><td class="k"><kbd>w</kbd> <kbd>b</kbd> <kbd>e</kbd></td><td>By word: forward, back, to the end of the word</td></tr>
+      <tr><td class="k"><kbd>0</kbd> <kbd>$</kbd></td><td>To the start or end of the line</td></tr>
+      <tr><td class="k"><kbd>g</kbd><kbd>g</kbd> · <kbd>⇧G</kbd></td><td>To the start or end of the page</td></tr>
+      <tr><td class="k"><kbd>f</kbd> <kbd>t</kbd> · <kbd>⇧F</kbd> <kbd>⇧T</kbd></td><td>Jump to the next (or previous) typed character on the line; <kbd>;</kbd> and <kbd>,</kbd> repeat the search either way</td></tr>
+      <tr><td class="k"><kbd>a</kbd><kbd>w</kbd> · <kbd>a</kbd><kbd>s</kbd></td><td>Select the word or the sentence under the cursor</td></tr>
+      <tr><td class="k"><kbd>o</kbd></td><td>Swap which end of the selection moves</td></tr>
+      <tr><td class="k"><kbd>v</kbd> <kbd>⇧V</kbd> <kbd>c</kbd></td><td>Switch between character, line and caret selection</td></tr>
+      <tr><td class="k"><kbd>y</kbd></td><td>Copy the selection and leave visual mode</td></tr>
+      <tr><td class="k"><kbd>/</kbd></td><td>Find text from the cursor; <kbd>n</kbd> / <kbd>⇧N</kbd> for the next and previous match. The prompt is a real field, so Korean, Japanese and Chinese input methods work in it</td></tr>
+      <tr><td class="k"><kbd>:</kbd></td><td>Ask the AI about the selection</td></tr>
+      <tr><td class="k"><kbd>Esc</kbd></td><td>Back to Normal mode, selection kept</td></tr>
+    </table>
+
+    <h2 id="in-the-bar">In the bar</h2>
+    <p>The bar opens with <kbd>o</kbd>. Typing searches at once; <kbd>/</kbd> or <kbd>:</kbd> as the first key switches it to link search or the command palette, and <kbd>⌫</kbd> on an empty bar switches back.</p>
+    <table>
+      <tr><th>Key</th><th>Does</th></tr>
+      <tr><td class="k"><kbd>↩</kbd></td><td>Open the highlighted row — a tab, a history entry, a web search, a saved command</td></tr>
+      <tr><td class="k"><kbd>⌘↩</kbd></td><td>Send what you typed to the AI as a question, from any mode of the bar</td></tr>
+      <tr><td class="k"><kbd>↓</kbd> <kbd>↑</kbd> · <kbd>Tab</kbd> <kbd>⇧Tab</kbd></td><td>Move the highlight</td></tr>
+      <tr><td class="k"><kbd>↑</kbd> on an empty bar</td><td>Walk back through what you ran before, like a shell; what you ran on this site comes first. <kbd>↩</kbd> brings its suggestions up instead of running it. <kbd>⇧↑</kbd> / <kbd>⇧↓</kbd> walk history even with text in the bar</td></tr>
+      <tr><td class="k"><kbd>⌃j</kbd> <kbd>⌃k</kbd> <kbd>⌃f</kbd> <kbd>⌃b</kbd></td><td>Scroll the page behind the bar (a line, a page) without closing it</td></tr>
+      <tr><td class="k"><kbd>⌃[</kbd> · <kbd>Esc</kbd></td><td>Close the bar. <kbd>⌃[</kbd> is for iPadOS, which keeps Esc for itself while a field has focus</td></tr>
+    </table>
+    <p class="muted">The history and scroll keys can be turned off in Settings › Search Bar.</p>
+
+    <h2 id="system">System keys</h2>
+    <p>Three keys are bound before any key map loads and cannot be remapped or given back to a site: <kbd>Esc</kbd> returns to Normal mode, <kbd>↩</kbd> opens the selected link in link mode, <kbd>⌫</kbd> deletes a typed label letter. <kbd>Tab</kbd> is never released to a site either.</p>
+
+    <p class="next">Next: <a href="/vimlike/docs/keyboard/">Keyboard settings →</a></p>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span><b style="color:var(--ink)">Vimlike</b> — vim's keyboard, Safari's browser, your own AI.</span>
+    <div class="spacer"></div>
+    <a href="/vimlike/docs/">Documentation</a>
+    <a href="/vimlike/help/">Versions &amp; privacy</a>
+    <a href="mailto:support@jasminestudios.net">Support</a>
+    <span>© 2026 Jasmine Studios</span>
+  </div>
+</footer>
+
+</body>
+</html>

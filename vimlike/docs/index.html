@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vimlike Documentation — keys, keyboard settings, AI assistant, websites and site packs</title>
+<meta name="description" content="Everything Vimlike does, for people who want the details: every keyboard shortcut and mode, the shortcut editor and settings script, the AI assistant's bar, commands, tools and providers, and website settings with site packs." />
+<link rel="canonical" href="https://www.jasminestudios.net/vimlike/docs/" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C3MM12Q509"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-C3MM12Q509');
+</script>
+<link rel="stylesheet" href="/vimlike/css/design-system.css" />
+<link rel="stylesheet" href="/vimlike/css/site.css" />
+<link rel="stylesheet" href="/vimlike/css/docs.css" />
+</head>
+<body class="ds-body">
+
+<nav class="top ds-glass">
+  <div class="wrap">
+    <a class="logo" href="/vimlike/">Vim<span>like</span></a>
+    <a class="link" href="/vimlike/docs/" aria-current="page">Docs</a>
+    <a class="link" href="/vimlike/docs/keys/">Keys</a>
+    <a class="link" href="/vimlike/docs/keyboard/">Keyboard</a>
+    <a class="link" href="/vimlike/docs/ai/">AI</a>
+    <a class="link" href="/vimlike/docs/websites/">Websites</a>
+    <div class="spacer"></div>
+    <a class="ds-btn ds-btn--primary" href="https://apps.apple.com/app/id1584519802" target="_blank" rel="noopener">Download</a>
+  </div>
+</nav>
+
+<div class="wrap wrap--wide docs">
+  <aside class="docs-nav" aria-label="Documentation">
+    <div class="group">Documentation</div>
+    <a href="/vimlike/docs/" aria-current="page">Overview</a>
+    <a href="/vimlike/docs/keys/">Keys</a>
+    <a href="/vimlike/docs/keyboard/">Keyboard settings</a>
+    <a href="/vimlike/docs/ai/">AI assistant</a>
+    <a href="/vimlike/docs/websites/">Websites &amp; site packs</a>
+    <div class="group">More</div>
+    <a href="/vimlike/help/">Versions &amp; privacy</a>
+    <a href="/vimlike/">Product page</a>
+  </aside>
+
+  <article class="doc">
+    <h1>Vimlike, in detail.</h1>
+    <p class="lead">Vimlike is a Safari extension for iPhone, iPad, Mac and Vision Pro that puts vim's keyboard on
+    every web page, adds one bar for search and the AI, and lets you shape each website — by hand, with a signed
+    site pack, or by asking the AI. These pages are the reference: every key, every setting, and how the pieces fit.</p>
+
+    <h2 id="start">Five minutes to start</h2>
+    <ol class="steps">
+      <li>Install Vimlike from the App Store and turn it on in Safari › Settings › Extensions. The app's
+        <b>Setup</b> page walks through it on each device.</li>
+      <li>On any page, press <kbd>j</kbd> and <kbd>k</kbd> to scroll, <kbd>f</kbd> to label every link, and type a
+        label to open it. <kbd>?</kbd> shows the cheat sheet; <kbd>Esc</kbd> always returns to Normal mode.</li>
+      <li>Press <kbd>o</kbd> for the bar. Type to search your tabs, history and the web; press <kbd>⌘↩</kbd> to ask
+        the AI about the page instead. <kbd>:</kbd> opens the command palette.</li>
+      <li>Open the toolbar popup on a site you use a lot. Install its <b>site pack</b> if one is offered, or press
+        <b>Suggest shortcuts</b> and let the AI propose keys for that site's places — try them, then save.</li>
+      <li>In the app, <b>Settings › Keyboard</b> remaps anything in a table; <b>Settings › AI Assistant</b> picks a
+        provider (Apple Intelligence needs no key).</li>
+    </ol>
+
+    <h2 id="sections">The reference</h2>
+    <div class="cards">
+      <a href="/vimlike/docs/keys/">
+        <h3>Keys</h3>
+        <p>The whole default key map, by what it does: scrolling, link hints, tabs, the bar, visual mode, and what the bar itself answers to.</p>
+      </a>
+      <a href="/vimlike/docs/keyboard/">
+        <h3>Keyboard settings <span class="new">2.0</span></h3>
+        <p>Default, Custom and Script modes. The shortcut table, recording a key, excluding a site, conflicts — and the settings-script API for anyone who prefers to write it.</p>
+      </a>
+      <a href="/vimlike/docs/ai/">
+        <h3>AI assistant</h3>
+        <p>The bar and the palette, saved commands with shortcuts, keys and site limits, the 28 tools the assistant can use, providers and modes, guardrails and permissions, memory, usage.</p>
+      </a>
+      <a href="/vimlike/docs/websites/">
+        <h3>Websites &amp; site packs <span class="new">2.0</span></h3>
+        <p>What a website's settings hold, the toolbar popup, Suggest shortcuts and Clean up this page, the signed site pack catalogue, the pack format, export and import.</p>
+      </a>
+    </div>
+
+    <h2 id="model">How the pieces fit</h2>
+    <p>Three layers, each one on top of the last:</p>
+    <ul>
+      <li><b>Global keys</b> — the key map in Settings › Keyboard. Same on every site.</li>
+      <li><b>A site pack</b> — a signed file from the catalogue, installed into one website: keys for that site's
+        places, a few AI commands, optional CSS, and the Vimlike keys it hands back to the site. Never any JavaScript.</li>
+      <li><b>The website's own settings</b> — yours: keys the AI suggested or you added, styles that hide or dim parts of
+        the page, AI commands, CSS, a script, and the site's switches. These win over the pack's where they meet.</li>
+    </ul>
+    <p>The AI assistant sits across all three. It answers in the bar, runs saved commands, and — on a site — proposes
+      keys and styles that land in the website's own settings, never in a pack.</p>
+
+    <h2 id="platforms">Platforms and requirements</h2>
+    <p>iOS and iPadOS 16.6 or later, macOS 13 or later, visionOS. A hardware keyboard is the point on iPad; on iPhone
+      the toolbar popup, site packs and the AI still work without one. Settings sync through your own iCloud when
+      you let them.</p>
+    <p class="muted">Vimlike has no account and no server of its own. What the search bar searches stays on your
+      device; what you ask the AI goes to the provider you chose and nowhere else.</p>
+
+    <p class="next">Next: <a href="/vimlike/docs/keys/">Keys →</a></p>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span><b style="color:var(--ink)">Vimlike</b> — vim's keyboard, Safari's browser, your own AI.</span>
+    <div class="spacer"></div>
+    <a href="/vimlike/docs/">Documentation</a>
+    <a href="/vimlike/help/">Versions &amp; privacy</a>
+    <a href="mailto:support@jasminestudios.net">Support</a>
+    <span>© 2026 Jasmine Studios</span>
+  </div>
+</footer>
+
+</body>
+</html>
