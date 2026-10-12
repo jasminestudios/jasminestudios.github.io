@@ -152,15 +152,3 @@ section.dark .callout b { color: #fff; }
 .final-links a { color: var(--text-secondary); text-decoration: none; }
 .final-links a:hover { color: var(--brand); }
 
-/* iPhone Duo — three store-style frames side by side, stacked on narrow screens */
-#duo .center-copy { max-width: 640px; margin: 0 auto 36px; text-align: center; }
-#duo .center-copy.chips { margin: 36px auto 0; }
-#duo .chips .buttons { justify-content: center; margin-top: 0; }
-.shots.duo { flex-direction: row; align-items: flex-start; justify-content: center; max-width: 1000px; gap: 24px; }
-.shots.duo .shot { width: 40%; padding: 0; border-radius: 22px; overflow: hidden; background: #ebecf4; box-shadow: 0 18px 40px rgba(9,9,11,.14); }
-.shots.duo .shot:nth-child(2) { margin-top: 0; align-self: flex-start; width: 40%; }
-.shots.duo .shot img { border-radius: 0; }
-@media (max-width: 720px) {
-  .shots.duo { flex-direction: column; align-items: stretch; max-width: 420px; }
-  .shots.duo .shot, .shots.duo .shot:nth-child(2) { width: 100%; }
-}
