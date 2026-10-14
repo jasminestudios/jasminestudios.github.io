@@ -114,6 +114,16 @@ section.dark .callout { background: rgba(10,132,255,.16); color: rgba(255,255,25
 section.dark .callout .bi { background: rgba(255,255,255,.10); color: #6cb2ff; }
 section.dark .callout b { color: #fff; }
 
+/* Focus mode on iPhone: the Duo pair under the feature grid */
+.duo-row { display: flex; gap: 36px; justify-content: center; align-items: flex-end; flex-wrap: wrap; margin-top: 56px; }
+.duo-row figure { margin: 0; text-align: center; }
+.duo-row .shot.open { width: 360px; border-radius: 30px; }
+.duo-row .shot.open img { border-radius: 22px; }
+.duo-row .shot.closed { width: 250px; border-radius: 34px; }
+.duo-row .shot.closed img { border-radius: 26px; }
+.duo-row figcaption { margin-top: 14px; font: 600 13px var(--font-stack); color: rgba(255,255,255,.6); }
+@media (max-width: 560px) { .duo-row .shot.open { width: 300px; } .duo-row .shot.closed { width: 220px; } }
+
 /* A phone, shown beside copy rather than stacked in the hero */
 .shots.phone-only { max-width: 300px; }
 .shots.phone-only .shot { padding: 9px 10px; border-radius: 42px; }
