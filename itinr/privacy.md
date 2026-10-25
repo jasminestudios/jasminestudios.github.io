@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Itinr** · Last updated: 2026-10-04
+**Itinr** · Last updated: 2026-10-18
 
 This privacy policy explains what information Itinr handles, where it goes,
 and what choices you have. Itinr is published by **Jasmine Studios**.
@@ -14,7 +14,7 @@ If anything below is unclear, please contact us at [support@jasminestudios.net](
 * Itinr is **free**. There are no accounts, no sign-ins and no in-app purchases.
 * Your trips live **on your device** and, if you use iCloud, in **your own iCloud account**. We can't read them.
 * **AI is optional.** It runs with Apple Intelligence on your iPhone, or with your own API key sent straight to the AI company you choose. You can turn AI off completely in **Settings → AI**; the app keeps working on your device.
-* Our servers only see trip details when you use one of two optional features: a **web share link** or **Edit with AI** (connecting Claude or ChatGPT). Both are described below.
+* Our servers only see trip details when you use one of three optional features: a **web share link**, **Edit with AI** (connecting Claude or ChatGPT), or **Email import** (forwarding booking emails). All three are described below.
 * The app contains **no** analytics, advertising or tracking SDK. We do not sell or share your data.
 
 ---
@@ -107,6 +107,32 @@ or ChatGPT) can read it and send back changes.
   any time.
 * The AI app you connect is a separate service with its own privacy policy.
 
+### Email import (forwarding booking emails)
+When you turn on Email import in **Settings → Email Import**, Itinr gives this
+device a private address (for example `t-k7x2m9qf4a@in.jasminestudios.net`).
+Emails you forward to it reach Itinr on your device.
+
+* **No account:** the address is tied to a key pair created on your device.
+  The private keys stay in your device's Keychain and are never sent to us.
+* **What the server does:** when an email arrives, our server reads it in
+  memory just long enough to keep the text and PDF or image attachments, then
+  **encrypts it with your device's public key** before storing it. It does not
+  write the unencrypted email to disk or to logs, and it cannot decrypt what it
+  stored.
+* **Retention:** the encrypted copy is deleted as soon as your device downloads
+  it, and in any case after **7 days**.
+* **Sender lock (on by default):** to accept mail only from you, the server
+  keeps a one-way hash of each sender address you allow, never the address
+  itself. Mail from other senders is returned to them unread.
+* **Notification:** we send a push notification that says a booking email
+  arrived. It doesn't include the sender or the contents.
+* **On your device:** the email waits in Booking Emails until you add it to a
+  trip or delete it. Reading the booking uses Apple Intelligence, your own API
+  key, or built-in rules, as described above.
+* **Turning it off:** turning off Email import or getting a new address deletes
+  the address and anything still waiting on the server. Mail sent to an old
+  address is rejected.
+
 ### Server logs
 Our servers run on **Cloudflare**. To keep them working and prevent abuse,
 they keep request counters keyed by IP address, and Cloudflare keeps standard
@@ -180,7 +206,7 @@ kept for **30 days**. Updating to 1.7 or later stops this entirely.
 ## What we don't do
 
 * No accounts, sign-ups or sign-ins.
-* No collection of your name, email, phone number or contacts.
+* No collection of your name, email, phone number or contacts, beyond what is inside emails you choose to forward with Email import.
 * No tracking across other apps or websites, and no advertising.
 * No selling, renting or sharing of your data.
 
