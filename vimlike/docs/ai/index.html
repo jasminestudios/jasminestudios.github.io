@@ -24,6 +24,7 @@
     <a class="logo" href="/vimlike/">Vim<span>like</span></a>
     <a class="link" href="/vimlike/docs/">Docs</a>
     <a class="link" href="/vimlike/docs/keys/">Keys</a>
+    <a class="link" href="/vimlike/docs/commands/">Commands</a>
     <a class="link" href="/vimlike/docs/keyboard/">Keyboard</a>
     <a class="link" href="/vimlike/docs/ai/" aria-current="page">AI</a>
     <a class="link" href="/vimlike/docs/websites/">Websites</a>
@@ -37,15 +38,18 @@
     <div class="group">Documentation</div>
     <a href="/vimlike/docs/">Overview</a>
     <a href="/vimlike/docs/keys/">Keys</a>
+    <a href="/vimlike/docs/commands/">Commands</a>
     <a href="/vimlike/docs/keyboard/">Keyboard settings</a>
     <a href="/vimlike/docs/ai/" aria-current="page">AI assistant</a>
     <div class="sub">
       <a href="#ask">Asking</a>
-      <a href="#palette">The palette</a>
+      <a href="#chats">Saved chats</a>
+      <a href="#palette">In the command line</a>
       <a href="#commands">Saved commands</a>
       <a href="#tools">What it can do</a>
       <a href="#guardrails">Guardrails</a>
       <a href="#providers">Providers</a>
+      <a href="#off">Turning it off</a>
       <a href="#memory">Memory &amp; usage</a>
       <a href="#reports">Reports</a>
     </div>
@@ -77,11 +81,22 @@
         <kbd>Esc</kbd> stops a run — from the bar or the page. Settings › AI Assistant decides what typing during a
         run does: queue it, send it to the run as a steer, or cancel.</li>
       <li>The answer streams into the bar and stays until you close it. Long answers become a <a href="#reports">report</a>.</li>
+      <li>Once it has finished, <b>Copy</b> and <b>Regenerate</b> sit under the answer. You can also select part of it
+        and copy that with <kbd>⌘C</kbd> — the bar stays open while you select.</li>
     </ul>
 
-    <h2 id="palette">The <kbd>:</kbd> palette</h2>
-    <p>Type <kbd>:</kbd> on a page (or in an empty bar) and your saved commands appear as rows; keep typing to filter.
-    <kbd>↩</kbd> runs the highlighted one. A command followed by text runs with that text as its argument:
+    <h2 id="chats">Saved chats <span class="new">2.0.2</span></h2>
+    <p>Each conversation in the bar is kept as a thread: ask a follow-up and it carries on from the answers before it.
+    <code>:chats</code> lists your saved conversations, newest first, with the page each started on; type a few words to
+    find one, <kbd>↩</kbd> to reopen it and keep going. <code>:chats clear</code> deletes them all, after asking.</p>
+    <p class="muted">The last 50 conversations are kept, on this device only, in Safari's storage for Vimlike. Turn off
+    <b>Save chat history</b> in Settings › AI Assistant and nothing is saved.</p>
+
+    <h2 id="palette">AI commands in the <kbd>:</kbd> command line</h2>
+    <p>Type <kbd>:</kbd> on a page (or in an empty bar) and the <a href="/vimlike/docs/commands/">command line</a> opens:
+    Vimlike's own commands, and your saved AI commands under <b>AI Commands</b> (a site's own under <b>This site</b>);
+    keep typing to filter. <kbd>↩</kbd> runs the highlighted one; when nothing matches, the lit <b>Ask AI</b> row sends
+    what you typed as a question. A command followed by text runs with that text as its argument:
     <code>:translate korean</code>.</p>
     <p>Three built-in rows need no setup and belong to the <a href="/vimlike/docs/websites/">website</a> you are on:</p>
     <table>
@@ -163,6 +178,13 @@
            alt="Settings › AI Assistant: Direct API or Open in browser, confirm risky actions, max steps, one Allow/Ask/Deny rule per kind of tool, and the provider with its key and model" />
       <figcaption>Settings › AI Assistant: mode, guardrails, one rule per kind of tool, and the provider.</figcaption>
     </figure>
+
+    <h2 id="off">Turning the AI off</h2>
+    <p>Switch off <b>Enable AI Assistant</b> in Settings › AI Assistant and Vimlike has no AI at all: the bar searches
+    and runs commands but no longer offers to ask, <kbd>:</kbd> lists no AI commands, and a site pack's AI keys are
+    unbound and left out of the help. Everything else — keys, link hints, the command line, site packs — works as before.</p>
+    <p class="muted">If the AI is on but cannot run on this device (no key, and Apple Intelligence unavailable), the bar
+    behaves the same way and one quiet row under <kbd>:</kbd> says why.</p>
 
     <h2 id="memory">Memory and usage</h2>
     <ul>

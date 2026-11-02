@@ -24,6 +24,7 @@
     <a class="logo" href="/vimlike/">Vim<span>like</span></a>
     <a class="link" href="/vimlike/docs/">Docs</a>
     <a class="link" href="/vimlike/docs/keys/" aria-current="page">Keys</a>
+    <a class="link" href="/vimlike/docs/commands/">Commands</a>
     <a class="link" href="/vimlike/docs/keyboard/">Keyboard</a>
     <a class="link" href="/vimlike/docs/ai/">AI</a>
     <a class="link" href="/vimlike/docs/websites/">Websites</a>
@@ -48,6 +49,7 @@
       <a href="#in-the-bar">In the bar</a>
       <a href="#system">System keys</a>
     </div>
+    <a href="/vimlike/docs/commands/">Commands</a>
     <a href="/vimlike/docs/keyboard/">Keyboard settings</a>
     <a href="/vimlike/docs/ai/">AI assistant</a>
     <a href="/vimlike/docs/websites/">Websites &amp; site packs</a>
@@ -121,6 +123,9 @@
 <tr><td class="k"><kbd>g</kbd><kbd>$</kbd></td><td>Last tab</td></tr>
 <tr><td class="k"><kbd>y</kbd><kbd>t</kbd></td><td>Duplicate the tab</td></tr>
 <tr><td class="k"><kbd>y</kbd><kbd>⇧T</kbd></td><td>Duplicate into a private tab</td></tr>
+<tr><td class="k"><kbd>g</kbd><kbd>w</kbd></td><td>Tab groups<span class="d">Lists your tab groups in the bar; Enter swaps this window's tabs for the group's. See :group.</span></td></tr>
+<tr><td class="k"><kbd>g</kbd><kbd>]</kbd></td><td>Next tab group</td></tr>
+<tr><td class="k"><kbd>g</kbd><kbd>[</kbd></td><td>Previous tab group</td></tr>
 </table>
 <h3 id="navigation">Navigation</h3>
 <table>
@@ -136,7 +141,7 @@
 <table>
 <tr><th>Key</th><th>Does</th></tr>
 <tr><td class="k"><kbd>o</kbd></td><td>Open the bar<span class="d">Search the web, your tabs and your history; or ask the AI with ⌘↩.</span></td></tr>
-<tr><td class="k"><kbd>:</kbd></td><td>Command palette<span class="d">The bar with ":" — your saved AI commands, :keys, :clean and :repair.</span></td></tr>
+<tr><td class="k"><kbd>:</kbd></td><td>Command line<span class="d">The bar with ":" — Vimlike's commands by group, this site's keys and your AI commands. See Commands.</span></td></tr>
 </table>
 <h3 id="modes">Modes</h3>
 <table>
@@ -175,22 +180,24 @@
     </table>
 
     <h2 id="in-the-bar">In the bar</h2>
-    <p>The bar opens with <kbd>o</kbd>. Typing searches at once; <kbd>/</kbd> or <kbd>:</kbd> as the first key switches it to link search or the command palette, and <kbd>⌫</kbd> on an empty bar switches back.</p>
+    <p>The bar opens with <kbd>o</kbd>. Typing searches at once; <kbd>/</kbd> or <kbd>:</kbd> as the first key switches it to link search or the <a href="/vimlike/docs/commands/">command line</a>, and <kbd>⌫</kbd> on an empty bar switches back. The placeholder says what <kbd>↩</kbd> will do, and the icon at the left shows the mode: search, commands or links.</p>
     <table>
       <tr><th>Key</th><th>Does</th></tr>
-      <tr><td class="k"><kbd>↩</kbd></td><td>Open the highlighted row — a tab, a history entry, a web search, a saved command</td></tr>
+      <tr><td class="k"><kbd>↩</kbd></td><td>Run the highlighted row — a tab, a history entry, a web search, a command. Only the lit row runs; with nothing lit, <kbd>↩</kbd> does what the placeholder says. A click or tap on a row runs it too</td></tr>
       <tr><td class="k"><kbd>⌘↩</kbd></td><td>Send what you typed to the AI as a question, from any mode of the bar</td></tr>
       <tr><td class="k"><kbd>↓</kbd> <kbd>↑</kbd> · <kbd>Tab</kbd> <kbd>⇧Tab</kbd></td><td>Move the highlight</td></tr>
       <tr><td class="k"><kbd>↑</kbd> on an empty bar</td><td>Walk back through what you ran before, like a shell; what you ran on this site comes first. <kbd>↩</kbd> brings its suggestions up instead of running it. <kbd>⇧↑</kbd> / <kbd>⇧↓</kbd> walk history even with text in the bar</td></tr>
       <tr><td class="k"><kbd>⌃j</kbd> <kbd>⌃k</kbd> <kbd>⌃f</kbd> <kbd>⌃b</kbd></td><td>Scroll the page behind the bar (a line, a page) without closing it</td></tr>
+      <tr><td class="k">Empty bar</td><td>The last three things you typed on this site show under <b>Recent</b>, with a clock icon. Picking one puts it back in the bar for <kbd>↩</kbd> to run; <b>Clear Recent</b>, the last row, forgets them. The search bar and the command line keep separate lists</td></tr>
       <tr><td class="k"><kbd>⌃[</kbd> · <kbd>Esc</kbd></td><td>Close the bar. <kbd>⌃[</kbd> is for iPadOS, which keeps Esc for itself while a field has focus</td></tr>
     </table>
+    <p>A row with a key of its own shows it as key caps at the right edge — <kbd>g</kbd><kbd>w</kbd> beside Tab Groups — so the bar teaches the shortcut while you use it.</p>
     <p class="muted">The history and scroll keys can be turned off in Settings › Search Bar.</p>
 
     <h2 id="system">System keys</h2>
     <p>Three keys are bound before any key map loads and cannot be remapped or given back to a site: <kbd>Esc</kbd> returns to Normal mode, <kbd>↩</kbd> opens the selected link in link mode, <kbd>⌫</kbd> deletes a typed label letter. <kbd>Tab</kbd> is never released to a site either.</p>
 
-    <p class="next">Next: <a href="/vimlike/docs/keyboard/">Keyboard settings →</a></p>
+    <p class="next">Next: <a href="/vimlike/docs/commands/">Commands →</a></p>
   </article>
 </div>
 

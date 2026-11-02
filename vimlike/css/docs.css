@@ -35,6 +35,8 @@
 .doc td { padding: 8px 10px 8px 0; border-bottom: 1px solid var(--hairline); vertical-align: top; line-height: 1.5; }
 .doc td.k { white-space: nowrap; width: 150px; }
 .doc td.k kbd + kbd { margin-left: 3px; }
+/* A command's argument goes under it, so long ones wrap instead of widening the column. */
+.doc td.k i { display: block; white-space: normal; color: var(--text-secondary); font-size: 13px; margin-top: 3px; }
 .doc td .d { color: var(--text-secondary); font-size: 13.5px; display: block; margin-top: 2px; }
 .doc tr:last-child td { border-bottom: 0; }
 .doc kbd { font-size: 13px; }

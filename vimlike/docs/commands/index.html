@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vimlike Commands — the ":" command line, every command by group</title>
+<meta name="description" content="Press : on any page for Vimlike's command line: Reader, Dark Mode, zoom, cookie banners, video speed, screenshots, QR codes, tab groups, settings and more — every command with its aliases and arguments." />
+<link rel="canonical" href="https://www.jasminestudios.net/vimlike/docs/commands/" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C3MM12Q509"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-C3MM12Q509');
+</script>
+<link rel="stylesheet" href="/vimlike/css/design-system.css" />
+<link rel="stylesheet" href="/vimlike/css/site.css" />
+<link rel="stylesheet" href="/vimlike/css/docs.css" />
+</head>
+<body class="ds-body">
+
+<nav class="top ds-glass">
+  <div class="wrap">
+    <a class="logo" href="/vimlike/">Vim<span>like</span></a>
+    <a class="link" href="/vimlike/docs/">Docs</a>
+    <a class="link" href="/vimlike/docs/keys/">Keys</a>
+    <a class="link" href="/vimlike/docs/commands/" aria-current="page">Commands</a>
+    <a class="link" href="/vimlike/docs/keyboard/">Keyboard</a>
+    <a class="link" href="/vimlike/docs/ai/">AI</a>
+    <a class="link" href="/vimlike/docs/websites/">Websites</a>
+    <div class="spacer"></div>
+    <a class="ds-btn ds-btn--primary" href="https://apps.apple.com/app/id1584519802" target="_blank" rel="noopener">Download</a>
+  </div>
+</nav>
+
+<div class="wrap wrap--wide docs">
+  <aside class="docs-nav" aria-label="Documentation">
+    <div class="group">Documentation</div>
+    <a href="/vimlike/docs/">Overview</a>
+    <a href="/vimlike/docs/keys/">Keys</a>
+    <a href="/vimlike/docs/commands/" aria-current="page">Commands</a>
+    <div class="sub">
+      <a href="#using">Using it</a>
+      <a href="#page">Page</a>
+      <a href="#clean-up">Clean up</a>
+      <a href="#video">Video</a>
+      <a href="#copy-share">Copy and Share</a>
+      <a href="#navigate">Navigate</a>
+      <a href="#tabs">Tabs and Windows</a>
+      <a href="#tab-groups">Tab Groups</a>
+      <a href="#close-tabs">Close Tabs</a>
+      <a href="#search">Search</a>
+      <a href="#vimlike">Vimlike</a>
+      <a href="#set">:set options</a>
+    </div>
+    <a href="/vimlike/docs/keyboard/">Keyboard settings</a>
+    <a href="/vimlike/docs/ai/">AI assistant</a>
+    <a href="/vimlike/docs/websites/">Websites &amp; site packs</a>
+    <div class="group">More</div>
+    <a href="/vimlike/help/">Versions &amp; privacy</a>
+    <a href="/vimlike/">Product page</a>
+  </aside>
+
+    <article class="doc">
+    <h1>Commands <span class="new">2.0.2</span></h1>
+    <p class="lead">Press <kbd>:</kbd> on any page and the bar becomes a command line: Vimlike's own commands, grouped by
+    what they do, beside this site's keys and your AI commands. Type a few letters to narrow it, <kbd>↩</kbd> to run. It
+    is vim's <code>:</code>, for the web.</p>
+
+    <h2 id="using">Using it</h2>
+    <ul>
+      <li><b><kbd>:</kbd> alone lists everything</b>, in sections: <b>This site</b> first (the site pack's keys and the
+        AI commands for this site), then Page, Clean up, Video, Copy and Share, Navigate, Tabs and Windows, Tab Groups,
+        Close Tabs, Search and Vimlike, then your <b>AI Commands</b>.</li>
+      <li><b>Typing filters</b> across all of them by name, shortcut or alias: <code>:dar</code> finds Dark Mode,
+        <code>:q</code> Close Tab. Shortcuts can be cut short — <code>:vers</code> runs <code>:version</code>.</li>
+      <li><b>Text after a command is its argument</b>: <code>:zoom 150</code>, <code>:speed 1.5</code>,
+        <code>:g safari extensions</code>. The row shows what the command takes, and a command that needs one waits for it.</li>
+      <li><b>A row with a key shows it</b> as key caps at its right edge, so <kbd>⇧H</kbd> or <kbd>g</kbd><kbd>w</kbd>
+        is there to learn next time.</li>
+      <li><b>Hard-to-undo commands ask first</b> — closing several tabs, deleting a tab group, removing a site pack.
+        <kbd>↩</kbd> goes ahead, <kbd>Esc</kbd> stops.</li>
+      <li><b>Nothing matches?</b> With the AI assistant on, what you typed becomes a question: the lit <b>Ask AI</b> row
+        sends it.</li>
+      <li><b>Recent</b> — on an empty <kbd>:</kbd>, the last commands you ran on this site come first; <kbd>↑</kbd> walks
+        back through them too. <code>:.</code> runs the last command again.</li>
+    </ul>
+    <p class="note"><b>Where it works.</b> Commands marked <span class="muted">Mac only</span> need macOS Safari's window
+      and tab controls. Video commands appear only on pages with a video, Share only where Safari can share.</p>
+
+    <h2 id="page">Page</h2>
+<table>
+<tr><th>Command</th><th>Does</th></tr>
+<tr><td class="k"><code>:reader</code></td><td>Reader<span class="d">Safari's Reader view for this page.</span></td></tr>
+<tr><td class="k"><code>:dark</code></td><td>Dark Mode<span class="d">Toggles Vimlike's dark mode on this page. <code>:setlocal dark=enabled</code> keeps it for the site.</span></td></tr>
+<tr><td class="k"><code>:zoom</code> <i>in · out · reset · 150</i></td><td>Zoom<span class="d">Steps like Safari's View menu, or straight to a percentage. On iPhone and iPad it toggles the page zoom. Alias <code>:z</code>.</span></td></tr>
+<tr><td class="k"><code>:find</code> <i>text</i></td><td>Find Text<span class="d">Finds text on the page and selects it; <kbd>n</kbd> / <kbd>⇧N</kbd> for the next and previous match. Alias <code>:/</code>.</span></td></tr>
+<tr><td class="k"><code>:speak</code> <i>stop</i></td><td>Read Aloud<span class="d">Reads the page's main text aloud with the system voice; run it again, or <code>:speak stop</code>, to stop. Aliases <code>:read</code>, <code>:tts</code>.</span></td></tr>
+<tr><td class="k"><code>:source</code></td><td>View Source<span class="d">The page's HTML in a panel over the page, to copy or save.</span></td></tr>
+<tr><td class="k"><code>:print</code></td><td>Print<span class="d">Safari's print sheet — or Save as PDF.</span></td></tr>
+</table>
+
+    <h2 id="clean-up">Clean up</h2>
+<table>
+<tr><th>Command</th><th>Does</th></tr>
+<tr><td class="k"><code>:cookie</code></td><td>Dismiss Cookie Banner<span class="d">Finds the consent banner and clicks its Accept button. Aliases <code>:dismiss</code>, <code>:consent</code>.</span></td></tr>
+<tr><td class="k"><code>:hide</code></td><td>Hide Element<span class="d">Point at a part of the page and click it; it stays hidden on this site.</span></td></tr>
+<tr><td class="k"><code>:unhide</code></td><td>Show Hidden Elements<span class="d">Brings back everything <code>:hide</code> hid on this site.</span></td></tr>
+<tr><td class="k"><code>:nocomments</code></td><td>Hide Comments<span class="d">Hides the comment section on this site; run it again to show it.</span></td></tr>
+<tr><td class="k"><code>:unlock</code></td><td>Allow Copy and Right-Click<span class="d">For pages that block selecting, copying or the context menu.</span></td></tr>
+<tr><td class="k"><code>:strip</code></td><td>Strip Tracking from the URL<span class="d">Removes <code>utm_</code>, <code>fbclid</code> and the like from the address, without reloading.</span></td></tr>
+</table>
+    <p class="muted">For more than one element, <code>:clean</code> asks the AI to <a href="/vimlike/docs/websites/">clean up the page</a>.</p>
+
+    <h2 id="video">Video</h2>
+<table>
+<tr><th>Command</th><th>Does</th></tr>
+<tr><td class="k"><code>:pip</code></td><td>Picture in Picture<span class="d">The first video on the page.</span></td></tr>
+<tr><td class="k"><code>:fullscreen</code></td><td>Fullscreen<span class="d">Alias <code>:fs</code>.</span></td></tr>
+<tr><td class="k"><code>:speed</code> <i>1.5</i></td><td>Video Speed<span class="d">Every video on the page. Without a number it steps through 1×, 1.25×, 1.5×, 2×. Alias <code>:rate</code>.</span></td></tr>
+</table>
+
+    <h2 id="copy-share">Copy and Share</h2>
+<table>
+<tr><th>Command</th><th>Does</th></tr>
+<tr><td class="k"><code>:copy</code> <i>title · md · clean · selection</i></td><td>Copy URL<span class="d">The address; or the title; a Markdown link; the address without tracking; the selection as Markdown. Aliases <code>:yank</code>, <code>:y</code>.</span></td></tr>
+<tr><td class="k"><code>:tabs</code> <i>md</i></td><td>Copy All Tabs as Links<span class="d">Every open tab as "title — address" lines, or a Markdown list with <code>md</code>.</span></td></tr>
+<tr><td class="k"><code>:share</code></td><td>Share<span class="d">The system share sheet for this page.</span></td></tr>
+<tr><td class="k"><code>:shot</code> <i>full</i></td><td>Screenshot<span class="d">What is on screen, or the whole page with <code>full</code>, shown over the page to copy or save. Aliases <code>:screenshot</code>, <code>:capture</code>.</span></td></tr>
+<tr><td class="k"><code>:qr</code></td><td>Show QR Code for This Page<span class="d">Scan it with your phone to carry the page over.</span></td></tr>
+<tr><td class="k"><code>:openin</code> <i>chrome · firefox · edge · brave · arc</i></td><td>Open in Another Browser<span class="d">Opens this page in the browser you name, if it is installed.</span></td></tr>
+</table>
+
+    <h2 id="navigate">Navigate</h2>
+<table>
+<tr><th>Command</th><th>Does</th></tr>
+<tr><td class="k"><code>:open</code> <i>URL</i></td><td>Open Address<span class="d">Opens the address in this tab. Without one, the bar fills with this page's address to edit, like vim's <code>:e</code>. Aliases <code>:e</code>, <code>:edit</code>.</span></td></tr>
+<tr><td class="k"><code>:reload</code> <i>!</i></td><td>Reload<span class="d"><code>:reload !</code> skips the cache. Alias <code>:r</code>.</span></td></tr>
+<tr><td class="k"><code>:next</code> · <code>:prev</code></td><td>Next Page · Previous Page<span class="d">Follows the page's own next or previous link; where there is none, steps the page number in the address (<code>/page/3</code> → <code>/page/4</code>). Aliases <code>:]]</code>, <code>:[[</code>.</span></td></tr>
+</table>
+
+    <h2 id="tabs">Tabs and Windows</h2>
+<table>
+<tr><th>Command</th><th>Does</th></tr>
+<tr><td class="k"><code>:tabnew</code> <i>URL</i></td><td>New Tab<span class="d">Aliases <code>:nt</code>, <code>:new</code>.</span></td></tr>
+<tr><td class="k"><code>:tab</code> <i>number or title</i></td><td>Go to Tab<span class="d"><code>:tab 3</code> is the third tab; <code>:tab maps</code> lists the matching tabs under the row. Aliases <code>:b</code>, <code>:buffer</code>.</span></td></tr>
+<tr><td class="k"><code>:tabnext</code> · <code>:tabprev</code></td><td>Next Tab · Previous Tab<span class="d">Aliases <code>:tn</code>, <code>:tp</code>.</span></td></tr>
+<tr><td class="k"><code>:last</code></td><td>Last Tab</td></tr>
+<tr><td class="k"><code>:dup</code></td><td>Duplicate Tab</td></tr>
+<tr><td class="k"><code>:restore</code></td><td>Reopen Closed Tab<span class="d">Alias <code>:undo</code>.</span></td></tr>
+<tr><td class="k"><code>:pin</code></td><td>Pin or Unpin Tab</td></tr>
+<tr><td class="k"><code>:mute</code> <i>others</i></td><td>Mute or Unmute Tab<span class="d"><span class="muted">Mac only.</span> <code>:mute others</code> mutes every other tab.</span></td></tr>
+<tr><td class="k"><code>:rename</code> <i>title</i></td><td>Rename Tab<span class="d">Until the page changes its own title or reloads.</span></td></tr>
+<tr><td class="k"><code>:detach</code></td><td>Move Tab to New Window<span class="d"><span class="muted">Mac only.</span> </span></td></tr>
+<tr><td class="k"><code>:winnew</code> <i>URL</i></td><td>New Window<span class="d"><span class="muted">Mac only.</span> </span></td></tr>
+<tr><td class="k"><code>:private</code> <i>URL</i></td><td>New Private Window<span class="d"><span class="muted">Mac only.</span> Vimlike needs to be allowed in Private Browsing (Safari › Settings › Extensions).</span></td></tr>
+</table>
+
+    <h2 id="tab-groups">Tab Groups</h2>
+    <p>A tab group is a named set of tabs you can switch a window between: Work in the morning, Trip in the evening. A
+    window shows one group at a time. Switching keeps the window's tabs under the group it was showing, closes them,
+    and opens the other group's — so it works the same on iPhone, iPad and Mac. Tabs in a window that showed no group
+    are kept under <b>Other Tabs</b>, so switching never loses them.</p>
+<table>
+<tr><th>Command</th><th>Does</th></tr>
+<tr><td class="k"><code>:group save</code> <i>name</i></td><td>Save this window as a group<span class="d">Keeps the window's web pages under that name, and the window now shows that group.</span></td></tr>
+<tr><td class="k"><code>:group</code> <i>name</i></td><td>Switch to a group<span class="d"><code>:group</code> alone lists them with their tab counts; a few letters are enough. Aliases <code>:tg</code>, <code>:groups</code>.</span></td></tr>
+<tr><td class="k"><code>:group new</code> <i>name</i></td><td>Start an empty group<span class="d">The window's tabs are kept under the group it was showing.</span></td></tr>
+<tr><td class="k"><code>:group move</code> <i>name</i></td><td>Move this tab to another group<span class="d">The tab leaves this window and waits in that group; a new name makes a new group.</span></td></tr>
+<tr><td class="k"><code>:group delete</code> <i>name</i></td><td>Delete a group<span class="d">Asks first. Open tabs are not closed.</span></td></tr>
+<tr><td class="k"><code>:groupnext</code> · <code>:groupprev</code></td><td>Next · previous group<span class="d">In the order the groups were saved. Aliases <code>:gnext</code>, <code>:gprev</code>.</span></td></tr>
+</table>
+    <p>The keys: <kbd>g</kbd><kbd>w</kbd> lists the groups, <kbd>g</kbd><kbd>]</kbd> and <kbd>g</kbd><kbd>[</kbd> step
+    through them.</p>
+    <p class="note"><b>Good to know.</b> These are Vimlike's own groups, separate from Safari's Tab Groups, which
+      extensions cannot reach. A reopened tab starts fresh — no back history, no half-filled form. Pinned tabs stay put.
+      Only web pages go in a group, and nothing from a private window is kept. If another window already shows the
+      group you ask for, Vimlike brings that window forward instead of opening it twice. Groups saved with
+      <code>:session</code> in earlier builds are tab groups now.</p>
+
+    <h2 id="close-tabs">Close Tabs</h2>
+<table>
+<tr><th>Command</th><th>Does</th></tr>
+<tr><td class="k"><code>:close</code></td><td>Close Tab<span class="d">Alias <code>:q</code>.</span></td></tr>
+<tr><td class="k"><code>:closeothers</code></td><td>Close Other Tabs<span class="d">In this window; asks first. Aliases <code>:only</code>, <code>:tabonly</code>.</span></td></tr>
+<tr><td class="k"><code>:closeright</code> · <code>:closeleft</code></td><td>Close Tabs to the Right · Left<span class="d">Asks first.</span></td></tr>
+<tr><td class="k"><code>:closedupes</code></td><td>Close Duplicate Tabs<span class="d">Every tab whose address another tab already has; asks first. Alias <code>:dedupe</code>.</span></td></tr>
+</table>
+    <p class="muted">Pinned tabs are never closed by these.</p>
+
+    <h2 id="search">Search</h2>
+    <p>A keyword, then what to look for; the results open in a new tab.</p>
+<table>
+<tr><th>Command</th><th>Does</th></tr>
+<tr><td class="k"><code>:g</code> <i>terms</i></td><td>Google</td></tr>
+<tr><td class="k"><code>:w</code> <i>terms</i></td><td>Wikipedia</td></tr>
+<tr><td class="k"><code>:yt</code> <i>terms</i></td><td>YouTube</td></tr>
+<tr><td class="k"><code>:gh</code> <i>terms</i></td><td>GitHub</td></tr>
+<tr><td class="k"><code>:ddg</code> <i>terms</i></td><td>DuckDuckGo</td></tr>
+<tr><td class="k"><code>:maps</code> <i>terms</i></td><td>Google Maps</td></tr>
+</table>
+
+    <h2 id="vimlike">Vimlike</h2>
+<table>
+<tr><th>Command</th><th>Does</th></tr>
+<tr><td class="k"><code>:help</code></td><td>Help<span class="d">The cheat sheet along the bottom of the window. Alias <code>:?</code>.</span></td></tr>
+<tr><td class="k"><code>:key</code></td><td>Add a Key Here<span class="d">Click a button or link and give it a key, saved in this website's settings — the same as <kbd>g</kbd><kbd>k</kbd>.</span></td></tr>
+<tr><td class="k"><code>:chats</code> <i>text · clear</i></td><td>Chat History<span class="d">Your saved AI conversations, newest first; pick one to read it and ask a follow-up. <code>:chats clear</code> deletes them, after asking. Alias <code>:history</code>.</span></td></tr>
+<tr><td class="k"><code>:set</code> <i>option</i></td><td>Settings<span class="d">Changes a Vimlike setting from the page. <a href="#set">The options</a>.</span></td></tr>
+<tr><td class="k"><code>:setlocal</code> <i>vimlike · dark · startup</i></td><td>This Site<span class="d">The toolbar popup's switches for this website: <code>:setlocal dark=enabled</code>, <code>:setl startup=insert</code>. Each takes <code>auto</code>, or <code>enabled</code> / <code>disabled</code> (<code>view</code> / <code>insert</code> for startup).</span></td></tr>
+<tr><td class="k"><code>:pack</code> <i>install · update · remove</i></td><td>Site Pack<span class="d">Installs, updates or removes this site's <a href="/vimlike/docs/websites/">site pack</a>. Removing asks first.</span></td></tr>
+<tr><td class="k"><code>:.</code></td><td>Repeat Last Command<span class="d">Runs the last command again with the same argument. Commands that asked first are not repeated. Alias <code>:repeat</code>.</span></td></tr>
+<tr><td class="k"><code>:review</code></td><td>Rate Vimlike on the App Store<span class="d">Opens Vimlike's App Store page at the review form. Thank you.</span></td></tr>
+<tr><td class="k"><code>:version</code></td><td>Version<span class="d">Vimlike's version and the AI model in use. Alias <code>:about</code>.</span></td></tr>
+</table>
+    <p>With the AI assistant in Direct API mode, three more act on the website you are on: <code>:keys</code> (Suggest
+    shortcuts), <code>:clean</code> (Clean up this page) and <code>:repair</code> — see
+    <a href="/vimlike/docs/websites/">Websites &amp; site packs</a>. Your saved AI commands, such as <code>:sum</code> and
+    <code>:translate</code>, are in <a href="/vimlike/docs/ai/#commands">AI assistant</a>.</p>
+
+    <h2 id="set"><code>:set</code> options</h2>
+    <p>Vim's forms: <code>:set smoothscroll</code> turns an option on, <code>:set nosmoothscroll</code> off,
+    <code>:set smoothscroll!</code> flips it, and <code>:set engine=duckduckgo</code> gives a value. <code>:set</code> alone
+    lists every option with its current value. A change is saved as if made in the app's Settings.</p>
+<table>
+<tr><th>Option</th><th>Sets</th></tr>
+<tr><td class="k"><code>hints</code></td><td>Link hint keys<span class="d">numeric · alpha · alpha-numeric</span></td></tr>
+<tr><td class="k"><code>uppercase</code></td><td>Upper-case link hints<span class="d">on/off</span></td></tr>
+<tr><td class="k"><code>blur</code></td><td>Blur images behind link hints<span class="d">on/off</span></td></tr>
+<tr><td class="k"><code>smoothscroll</code></td><td>Smooth scrolling<span class="d">on/off</span></td></tr>
+<tr><td class="k"><code>scrollduration</code></td><td>Scroll duration (ms)<span class="d">10–2000</span></td></tr>
+<tr><td class="k"><code>background</code></td><td>Open new tabs in the background<span class="d">on/off</span></td></tr>
+<tr><td class="k"><code>staylink</code></td><td>Stay in link mode after opening in a new tab<span class="d">on/off</span></td></tr>
+<tr><td class="k"><code>preventfocus</code></td><td>Keep pages from focusing a field on load<span class="d">on/off</span></td></tr>
+<tr><td class="k"><code>help</code></td><td>Help bar<span class="d">on/off</span></td></tr>
+<tr><td class="k"><code>dark</code></td><td>Dark mode on every site<span class="d">on/off</span></td></tr>
+<tr><td class="k"><code>vimlike</code></td><td>Vimlike<span class="d">on/off</span></td></tr>
+<tr><td class="k"><code>newtab</code></td><td>Search bar results open in a new tab<span class="d">on/off</span></td></tr>
+<tr><td class="k"><code>engine</code></td><td>Search engine<span class="d">google · duckduckgo</span></td></tr>
+<tr><td class="k"><code>websearch</code></td><td>Web search suggestions<span class="d">on/off</span></td></tr>
+<tr><td class="k"><code>tabsearch</code></td><td>Tab suggestions<span class="d">on/off</span></td></tr>
+<tr><td class="k"><code>history</code></td><td>History suggestions<span class="d">on/off</span></td></tr>
+<tr><td class="k"><code>topsite</code></td><td>Top site suggestion<span class="d">on/off</span></td></tr>
+<tr><td class="k"><code>startup</code></td><td>Pages start in<span class="d">auto · view · insert</span></td></tr>
+<tr><td class="k"><code>ignorelayout</code></td><td>Ignore keyboard layout<span class="d">on/off</span></td></tr>
+<tr><td class="k"><code>backquoteesc</code></td><td><kbd>`</kbd> works as Esc<span class="d">on/off</span></td></tr>
+<tr><td class="k"><code>sectionesc</code></td><td><kbd>§</kbd> works as Esc<span class="d">on/off</span></td></tr>
+<tr><td class="k"><code>historykeys</code></td><td><kbd>↑</kbd> <kbd>↓</kbd> recall history in the bar<span class="d">on/off</span></td></tr>
+<tr><td class="k"><code>scrollkeys</code></td><td><kbd>⌃j</kbd> <kbd>⌃k</kbd> scroll from the bar<span class="d">on/off</span></td></tr>
+</table>
+
+    <p class="next">Next: <a href="/vimlike/docs/keyboard/">Keyboard settings →</a></p>
+</article>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span><b style="color:var(--ink)">Vimlike</b> for Safari</span>
+    <div class="spacer"></div>
+    <a href="/vimlike/docs/">Documentation</a>
+    <a href="/vimlike/help/">Versions &amp; privacy</a>
+    <a href="mailto:support@jasminestudios.net">Support</a>
+    <span>© 2026 Jasmine Studios</span>
+  </div>
+</footer>
+
+</body>
+</html>

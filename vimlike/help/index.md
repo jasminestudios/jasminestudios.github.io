@@ -22,6 +22,17 @@ The latest version of Vimlike is available in AppStore:
 [<img src="/Resources/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg">](https://apps.apple.com/app/vimlike/id1584519802)
 
 ## Version History
+### v2.0.2
+*November 2026*
+* Command line: press ":" to run Vimlike's commands — Reader, Dark Mode, zoom, dismiss cookie banners, video speed and Picture in Picture, screenshots, QR codes, copy all tabs as links, settings (:set) and more, grouped by what they do, each with its key. [All commands](/vimlike/docs/commands/)
+* Tab groups: ":group save Work" keeps a window's tabs as a group, and Vimlike switches the window between groups. g w lists them; g ] and g [ step through
+* Search bar: the placeholder says what Enter will do, Enter runs only the highlighted command, recent entries come back with one click (and Clear Recent), every row works with a click or tap, and the icon switches between search, commands and links
+* AI answers: Copy and Regenerate buttons, selectable text, and saved chats you can reopen and continue with :chats. Saving chats can be turned off in Settings › AI Assistant
+* With the AI Assistant off, the bar no longer offers to ask the AI
+* The bar keeps a usable width in narrow windows
+* Website settings for addresses with a port (localhost:3000) no longer pile up
+* The popup and Setup link to this documentation, and :review takes you to the App Store to rate Vimlike
+
 ### v2.0
 *October 2026*
 * Keyboard shortcuts as a table: Settings › Keyboard › Custom lists every command by group — record a key, exclude a shortcut on some sites, see conflicts. The settings script is still there in Script mode
