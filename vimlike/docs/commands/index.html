@@ -136,7 +136,7 @@
 <tr><th>Command</th><th>Does</th></tr>
 <tr><td class="k"><code>:open</code> <i>URL</i></td><td>Open Address<span class="d">Opens the address in this tab. Without one, the bar fills with this page's address to edit, like vim's <code>:e</code>. Aliases <code>:e</code>, <code>:edit</code>.</span></td></tr>
 <tr><td class="k"><code>:reload</code> <i>!</i></td><td>Reload<span class="d"><code>:reload !</code> skips the cache. Alias <code>:r</code>.</span></td></tr>
-<tr><td class="k"><code>:next</code> · <code>:prev</code></td><td>Next Page · Previous Page<span class="d">Follows the page's own next or previous link; where there is none, steps the page number in the address (<code>/page/3</code> → <code>/page/4</code>). Aliases <code>:]]</code>, <code>:[[</code>.</span></td></tr>
+<tr><td class="k"><code>:next</code><br><code>:prev</code></td><td>Next Page · Previous Page<span class="d">Follows the page's own next or previous link; where there is none, steps the page number in the address (<code>/page/3</code> → <code>/page/4</code>). Aliases <code>:]]</code>, <code>:[[</code>.</span></td></tr>
 </table>
 
     <h2 id="tabs">Tabs and Windows</h2>
@@ -144,7 +144,7 @@
 <tr><th>Command</th><th>Does</th></tr>
 <tr><td class="k"><code>:tabnew</code> <i>URL</i></td><td>New Tab<span class="d">Aliases <code>:nt</code>, <code>:new</code>.</span></td></tr>
 <tr><td class="k"><code>:tab</code> <i>number or title</i></td><td>Go to Tab<span class="d"><code>:tab 3</code> is the third tab; <code>:tab maps</code> lists the matching tabs under the row. Aliases <code>:b</code>, <code>:buffer</code>.</span></td></tr>
-<tr><td class="k"><code>:tabnext</code> · <code>:tabprev</code></td><td>Next Tab · Previous Tab<span class="d">Aliases <code>:tn</code>, <code>:tp</code>.</span></td></tr>
+<tr><td class="k"><code>:tabnext</code><br><code>:tabprev</code></td><td>Next Tab · Previous Tab<span class="d">Aliases <code>:tn</code>, <code>:tp</code>.</span></td></tr>
 <tr><td class="k"><code>:last</code></td><td>Last Tab</td></tr>
 <tr><td class="k"><code>:dup</code></td><td>Duplicate Tab</td></tr>
 <tr><td class="k"><code>:restore</code></td><td>Reopen Closed Tab<span class="d">Alias <code>:undo</code>.</span></td></tr>
@@ -168,7 +168,7 @@
 <tr><td class="k"><code>:group new</code> <i>name</i></td><td>Start an empty group<span class="d">The window's tabs are kept under the group it was showing.</span></td></tr>
 <tr><td class="k"><code>:group move</code> <i>name</i></td><td>Move this tab to another group<span class="d">The tab leaves this window and waits in that group; a new name makes a new group.</span></td></tr>
 <tr><td class="k"><code>:group delete</code> <i>name</i></td><td>Delete a group<span class="d">Asks first. Open tabs are not closed.</span></td></tr>
-<tr><td class="k"><code>:groupnext</code> · <code>:groupprev</code></td><td>Next · previous group<span class="d">In the order the groups were saved. Aliases <code>:gnext</code>, <code>:gprev</code>.</span></td></tr>
+<tr><td class="k"><code>:groupnext</code><br><code>:groupprev</code></td><td>Next · previous group<span class="d">In the order the groups were saved. Aliases <code>:gnext</code>, <code>:gprev</code>.</span></td></tr>
 </table>
     <p>The keys: <kbd>g</kbd><kbd>w</kbd> lists the groups, <kbd>g</kbd><kbd>]</kbd> and <kbd>g</kbd><kbd>[</kbd> step
     through them.</p>
@@ -183,7 +183,7 @@
 <tr><th>Command</th><th>Does</th></tr>
 <tr><td class="k"><code>:close</code></td><td>Close Tab<span class="d">Alias <code>:q</code>.</span></td></tr>
 <tr><td class="k"><code>:closeothers</code></td><td>Close Other Tabs<span class="d">In this window; asks first. Aliases <code>:only</code>, <code>:tabonly</code>.</span></td></tr>
-<tr><td class="k"><code>:closeright</code> · <code>:closeleft</code></td><td>Close Tabs to the Right · Left<span class="d">Asks first.</span></td></tr>
+<tr><td class="k"><code>:closeright</code><br><code>:closeleft</code></td><td>Close Tabs to the Right · Left<span class="d">Asks first.</span></td></tr>
 <tr><td class="k"><code>:closedupes</code></td><td>Close Duplicate Tabs<span class="d">Every tab whose address another tab already has; asks first. Alias <code>:dedupe</code>.</span></td></tr>
 </table>
     <p class="muted">Pinned tabs are never closed by these.</p>
