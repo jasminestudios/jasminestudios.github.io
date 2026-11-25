@@ -60,18 +60,41 @@ Better Player for YouTube의 최신 버전은 App Store에서 다운로드할 �
 
   <img src="/Resources/better-player/mac-setup-05.png" width="720"/>
 
-### iOS
-1. 설정 앱을 실행하고 Safari > 확장 프로그램으로 이동합니다. 다음과 같이 Better Player를 켭니다.
+### iPhone 및 iPad
+Better Player는 Safari 확장 프로그램입니다. 영상을 볼 별도의 앱이 없습니다. 한 번 켜고 youtube.com에서 허용한 다음, 쓰던 Safari에서 그대로 보면 됩니다.
+
+**1. Safari에서 Better Player 켜기**
+
+Better Player 앱을 엽니다. 앱은 확장 프로그램이 켜져 있는지 보여 주는 "*설정하기*" 화면으로 열립니다. "*Safari 확장 프로그램 설정 열기*"를 탭하고 Better Player를 켭니다. (이 버튼과 켜짐 / 꺼짐 표시는 Better Player 1.5.8, iOS 26.2 이상에서 나옵니다.)
+
+  <img src="/Resources/better-player/ios-setup-app-ko.png" width="360" alt="Better Player 앱의 설정하기 화면: Safari 확장 프로그램 꺼짐, Safari 확장 프로그램 설정 열기, 세 단계"/>
+
+그 이전 버전에서는 아래 두 가지 중 한 가지 방법으로 직접 스위치를 찾습니다.
+
+* 설정 앱에서: *설정 > 앱 > Safari > 확장 프로그램 > Better Player* (iOS 18 이전에는 *설정 > Safari > 확장 프로그램*).
+* Safari를 떠나지 않고: 주소 옆의 페이지 메뉴를 탭하고 "*확장 프로그램 관리*"를 선택한 다음 Better Player를 켭니다.
 
   <img src="/Resources/better-player/ipad-setup-01.png" width="680"/>
 
-2. "*모든 웹사이트*"를 선택하고 "*허용*"을 선택합니다.
+**2. youtube.com에서 허용하기**
+
+같은 설정 화면의 "*권한*"에서 *youtube.com*을 "*허용*"으로 설정합니다. 이 단계를 건너뛰면 YouTube를 처음 열 때 Safari가 Better Player를 실행해도 되는지 묻습니다. "*항상 허용*"을 선택하세요. Safari가 묻지 않으면 주소 옆의 페이지 메뉴를 탭하고 *Better Player*를 선택해 허용합니다.
+
+Safari가 권한을 묻는 것은 Better Player가 YouTube 페이지의 모양을 바꾸기 때문이며, 데이터는 수집하지 않습니다. [개인 정보 정책](#개인-정보-정책)을 참조하세요.
 
   <img src="/Resources/better-player/ipad-setup-02.png" width="680"/>
 
-3. 설정이 완료되었습니다. *youtube.com*으로 이동하여 원하는 YouTube 동영상을 재생합니다. Better Player for Youtube가 동영상 배경을 어둡게 하고 광고를 건너뛰는 것을 볼 수 있습니다.
+**3. Safari에서 시청하기**
+
+앱에서 "*Safari에서 YouTube 열기*"를 탭하거나 Safari에서 *youtube.com*을 직접 열고 동영상을 재생합니다. YouTube 앱이 아니라 Safari에서 보세요. Better Player는 Safari 안에서 동작합니다. 영상 주변이 어두워지고 광고를 건너뜁니다.
 
   <img src="/Resources/better-player/ipad-setup-03.png" width="680"/>
+
+**아무 변화가 없다면**
+
+* 페이지를 새로 고칩니다. 확장 프로그램을 켜기 전에 열려 있던 탭에는 아직 적용되지 않습니다.
+* YouTube 앱이 아니라 Safari의 youtube.com인지 확인합니다.
+* 주소 옆의 페이지 메뉴를 탭합니다. Better Player가 목록에 있고 youtube.com에서 허용되어 있어야 합니다.
 
 ## 개인 정보 정책
 Better Player for Youtube는 귀하의 데이터를 수집하지 않습니다. 설정 정보만 로컬에 저장되며, 당신 외에는 아무도 이 데이터에 접근할 수 없습니다.

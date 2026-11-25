@@ -64,18 +64,41 @@ The latest version of Better Player for Youtube is available in AppStore:
 
   <img src="/Resources/better-player/mac-setup-05.png" width="720"/>
 
-### iOS
-1. Launch Settings app and go to Safari > Extensions. Turn on Better Player as follows;
+### iPhone and iPad
+Better Player is a Safari extension: there is no separate app to watch in. You switch it on once, allow it on youtube.com, and carry on watching in Safari.
+
+**1. Turn on Better Player in Safari**
+
+Open the Better Player app. It opens on *Setup*, which shows whether the extension is on. Tap *Open Safari Extension Settings* and switch Better Player on. (The button and the Enabled / Disabled line need Better Player 1.5.8 and iOS 26.2 or later.)
+
+  <img src="/Resources/better-player/ios-setup-app-en.png" width="360" alt="The Setup screen of the Better Player app: Safari extension Disabled, Open Safari Extension Settings, and the three steps"/>
+
+On an earlier version, find the switch yourself, either way:
+
+* In the Settings app: *Settings > Apps > Safari > Extensions > Better Player* (*Settings > Safari > Extensions* before iOS 18).
+* Without leaving Safari: tap the page menu beside the address, choose *Manage Extensions* and switch Better Player on.
 
   <img src="/Resources/better-player/ipad-setup-01.png" width="680"/>
 
-2. Touch *All Websites* and and select *Allow*;
+**2. Allow it on youtube.com**
+
+On the same settings page, under *Permissions*, set *youtube.com* to *Allow*. If you skip this, Safari asks the first time you open YouTube whether Better Player may run there: choose *Always Allow*. If Safari does not ask, tap the page menu beside the address, choose *Better Player* and allow it there.
+
+Safari asks because Better Player restyles the YouTube page; it does not collect any of your data. See the [Privacy Policy](#privacy-policy).
 
   <img src="/Resources/better-player/ipad-setup-02.png" width="680"/>
 
-3. All set. Go to *youtube.com* and play the youtube video you want to watch. You'll see the Better Player for Youtube darken the background of the video and it skips the ads.
+**3. Watch in Safari**
+
+Tap *Open YouTube in Safari* in the app, or open *youtube.com* in Safari yourself, and play a video. Watch in Safari, not in the YouTube app: Better Player works inside Safari. The page dims around the video and the ads are skipped.
 
   <img src="/Resources/better-player/ipad-setup-03.png" width="680"/>
+
+**If nothing changes**
+
+* Reload the page. A tab that was open before the extension was switched on does not have it yet.
+* Check that you are on youtube.com in Safari and not in the YouTube app.
+* Tap the page menu beside the address: Better Player should be listed and allowed for youtube.com.
 
 ## Privacy Policy
 Better Player for Youtube does NOT collect any of your data. The only data Better Player for Youtube stores are your settings. These are only saved locally. No one, other than you, has access to this data.
